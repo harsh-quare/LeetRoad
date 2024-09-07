@@ -46,4 +46,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1484-linked-list-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1484-linked-list-in-binary-tree) |
+## Math
+|  |
+| ------- |
+| [2050-count-good-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/2050-count-good-numbers) |
+## Recursion
+|  |
+| ------- |
+| [2050-count-good-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/2050-count-good-numbers) |
 <!---LeetCode Topics End-->
