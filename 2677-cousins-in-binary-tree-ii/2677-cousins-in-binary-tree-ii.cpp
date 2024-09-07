@@ -13,66 +13,37 @@ class Solution {
 public:
     TreeNode* replaceValueInTree(TreeNode* root) {
         queue<TreeNode*> q;
-        TreeNode* rt = root;
-        q.push(rt);
-        vector<int> sums; //saare levels ke level sum ko store krlo
+        q.push(root);  
+        int lvlSum = root->val; //levelSum
 
         while(!q.empty()){
             int sz = q.size();
-            int levelSum = 0;
+            int childSum = 0;
 
             while(sz--){
                 TreeNode* node= q.front();
                 q.pop();
 
-                levelSum += node->val;
+                node->val = lvlSum - node->val;
 
                 if(node->left){
                     q.push(node->left);
+                    childSum += node->left->val;
                 }
 
                 if(node->right) {
                     q.push(node->right);
+                    childSum += node->right->val; 
+                }
+
+                if(node->left != NULL && node->right != NULL){
+                    int tempSum = node->left->val + node->right->val;
+                    node->left->val = tempSum;
+                    node->right->val = tempSum;
                 }
             }
 
-            sums.push_back(levelSum);
-        }
-
-        //ab fir se traverse kro and tree ko modify kro
-        TreeNode* r = root;
-        queue<pair<TreeNode*, int>> qq;
-        qq.push({r, root->val});
-        int i = 0;
-        while(!qq.empty()){
-            int sz= qq.size();
-
-            while(sz--){
-                TreeNode* node = qq.front().first;
-                int childSum = qq.front().second;
-                qq.pop();
-
-                int curChSum = 0;
-
-                if(i <= 1) node->val = 0;
-                else node->val = sums[i] - childSum;
-
-                if(node->left){
-                    curChSum += node->left->val;
-                }
-                if(node->right){
-                    curChSum += node->right->val;
-                }
-
-                if(node->left){
-                    qq.push({node->left, curChSum});
-                }
-                if(node->right){
-                    qq.push({node->right, curChSum});
-                }
-
-            }
-            i++; //next level
+            lvlSum = childSum;
         }
 
         return root;
