@@ -1,24 +1,22 @@
 #define mod 1000000007
 class Solution {
 public:   
-    long long power(long long val, long long cnt){
-        long long ans = 1;
+    long long power(long long x, long long y){  //x^y
+        if(y == 0) return 1;
 
-        while(cnt > 0){
-            if(cnt % 2 == 1){
-                ans *= val;
-                ans %= mod;
-            }
+        long long ans = power(x, y/2);
+        ans *= ans;
+        ans %= mod;
 
-            val *= val;
-            val %= mod;
-            cnt /= 2;
+        if(y % 2 != 0){
+            ans *= x;
+            ans %= mod;
         }
 
         return ans % mod;
     } 
     int countGoodNumbers(long long n) {
-        long long evens = n/2 + n % 2;
+        long long evens = n/2 + n%2;
         long long odds = n/2;
 
         long long total = (power(5, evens)*power(4, odds)) % mod;
