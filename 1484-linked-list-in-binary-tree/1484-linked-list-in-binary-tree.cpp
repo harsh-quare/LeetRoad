@@ -21,17 +21,15 @@
  */
 class Solution {
 public:
-    void solve(TreeNode* &root, vector<TreeNode*>& v, int val){
-        if(root == NULL) return ;
-
-        //LNR
-        solve(root->left, v, val);
-
-        if(root->val == val){
-            v.push_back(root);
+    bool isSubPath(ListNode* head, TreeNode* root) {
+        if(root == NULL || head == NULL) return false;
+        if(root->val == head->val){
+            if(dfs(root, head)) return true;
         }
 
-        solve(root->right, v, val);
+        bool l = isSubPath(head, root->left);
+        bool r = isSubPath(head, root->right);
+        return l || r;
     }
 
     bool dfs(TreeNode* &node, ListNode* head){
@@ -43,22 +41,6 @@ public:
         bool l = dfs(node->left, head->next);
         bool r = dfs(node->right, head->next);
         
-        return l | r;
-    }
-
-    bool isSubPath(ListNode* head, TreeNode* root) {
-        vector<TreeNode*> v;
-        solve(root, v, head->val);
-
-        if(v.size() == 0) return false;
-
-        for(int i = 0; i<v.size(); i++){
-            TreeNode* node = v[i];
-            cout << node->val << endl;
-            if(dfs(node, head)){
-                return true;
-            }
-        }
-        return false;
+        return l || r;
     }
 };
