@@ -11,22 +11,24 @@
 class Solution {
 public:
     vector<ListNode*> splitListToParts(ListNode* head, int k) {
-        int len = 0;
         ListNode* temp = head;
+        int len = 0;
         while(temp != NULL){
-            len++;
             temp = temp->next;
+            len++;
         }
-        
-        int extra = len%k;
-        int base = len/k;
-        vector<ListNode*> ans(k);
+
+        int width = len / k;
+        int rem = len % k;
+
+        vector<ListNode*> ans(k, NULL);
         temp = head;
 
-        for(int i = 0; i<k; i++){
-            ans[i] = temp;
+        for(int i = 0; i<k; i++){   //jab tk k parts me divide na ho jaye
 
-            for(int j = 0; j < base + (i < extra ? 1 : 0) - 1; j++){
+            ListNode* node = temp;     //iss head ko store kr lo abhi ke liye, and process kro pahle poori current part ki LL ko
+
+            for(int j = 0; j < width + (i < rem ? 1 : 0)-1; j++){
                 if(temp != NULL){
                     temp = temp->next;
                 }
@@ -35,10 +37,11 @@ public:
             if(temp != NULL){
                 ListNode* prev = temp;
                 temp = temp->next;
-                prev->next= NULL;
+                prev->next = NULL;
             }
-        }
 
+            ans[i] = node;  //ab ans me store kr do current part ko
+        }
         return ans;
     }
 };
