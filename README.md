@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Linked List
 |  |
 | ------- |
+| [0725-split-linked-list-in-parts](https://github.com/harsh-quare/LeetRoad/tree/master/0725-split-linked-list-in-parts) |
 | [1484-linked-list-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1484-linked-list-in-binary-tree) |
 ## Math
 |  |
