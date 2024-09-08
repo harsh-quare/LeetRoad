@@ -19,28 +19,23 @@ public:
         }
         
         int extra = len%k;
+        int base = len/k;
         vector<ListNode*> ans(k);
-        int i = 0;
+        temp = head;
 
-        while(head != NULL){
-            ListNode* prev = NULL;
-            ans[i++] = head;
-            int cnt = len/k;
-            if(extra > 0){
-                cnt++;
-                while(head != NULL && cnt--){
-                    prev = head;
-                    head = head->next;
+        for(int i = 0; i<k; i++){
+            ans[i] = temp;
+
+            for(int j = 0; j < base + (i < extra ? 1 : 0) - 1; j++){
+                if(temp != NULL){
+                    temp = temp->next;
                 }
-                prev->next = NULL;
-                extra--;
             }
-            else{
-                while(head != NULL && cnt--){
-                    prev = head;
-                    head = head->next;
-                }
-                prev->next = NULL;
+
+            if(temp != NULL){
+                ListNode* prev = temp;
+                temp = temp->next;
+                prev->next= NULL;
             }
         }
 
