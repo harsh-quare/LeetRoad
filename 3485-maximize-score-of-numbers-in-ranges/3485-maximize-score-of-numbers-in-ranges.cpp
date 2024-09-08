@@ -23,8 +23,7 @@ public:
         int ans = -1;
 
         while(low <= high){
-            // int mid = low + (high-low)/2;
-            long long mid = low + (high-low)/2;
+            int mid = low + (high-low)/2;
             
             if(isOkay(mid, start, d)){
                 ans = mid;
