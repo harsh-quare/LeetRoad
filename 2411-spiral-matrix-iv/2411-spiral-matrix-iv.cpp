@@ -12,34 +12,59 @@ class Solution {
 public:
     vector<vector<int>> spiralMatrix(int m, int n, ListNode* head) {
         vector<vector<int>> mat(m, vector<int>(n, -1));
+        ListNode* temp = head;
+        int i = 0, j = 0;
+        int c = n, r = m-1;
 
-        int rs = 0, re = m-1;
-        int cs = 0, ce = n-1;
-
-        while(head != NULL){
-            for(int i = cs; i <= ce && head != NULL; i++){
-                mat[rs][i] = head->val;
-                head = head->next;
+        while(temp != NULL){
+            //top-L to top-R move
+            for(int l = 0; l < c && temp != NULL; l++){
+                mat[i][j] = temp->val;
+                j++;
+                temp = temp->next;
             }
-            rs++; //next row me aa ja
+            i++;
+            j--;
+            c--;
 
-            for(int i = rs; i <= re && head != NULL; i++){
-                mat[i][ce] = head->val;
-                head = head->next;
+            // cout << i << "," << j << " ";
+             
+            //top-R to bottom-R move
+            for(int k = 0; k < r && temp != NULL; k++){
+                mat[i][j] = temp->val;
+                i++;
+                temp = temp->next;
             }
-            ce--; //last col ka koi kaam nhi ab
+            i--;
+            j--;
+            r--;
 
-            for(int i = ce; i >= cs && head != NULL; i--){
-                mat[re][i] = head->val;
-                head = head->next;
+            // cout << i << "," << j << " ";
+            
+            //bottom-R to bottom-L move
+            for(int l = 0; l < c && temp != NULL; l++){
+                mat[i][j] = temp->val;
+                j--;
+                temp = temp->next;
             }
-            re--;
+            j++;
+            i--;
+            c--;
 
-            for(int i = re; i >= rs && head != NULL; i--){
-                mat[i][cs] = head->val;
-                head = head->next;
+            // cout << i << "," << j << " ";
+            
+            //bottom-L to top-L move
+            for(int k = 0; k < r && temp != NULL; k++){
+                mat[i][j] = temp->val;
+                i--;
+                temp = temp->next;
             }
-            cs++;
+            i++;
+            j++;
+            r--;
+            
+            // cout << i << "," << j << " ";
+            // cout << endl;
         }
 
         return mat;
