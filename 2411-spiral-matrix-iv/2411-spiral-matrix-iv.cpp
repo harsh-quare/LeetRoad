@@ -27,7 +27,7 @@ public:
             j--;
             c--;
 
-            cout << i << "," << j << " ";
+            // cout << i << "," << j << " ";
              
             //top-R to bottom-R move
             for(int k = 0; k < r && temp != NULL; k++){
@@ -39,7 +39,7 @@ public:
             j--;
             r--;
 
-            cout << i << "," << j << " ";
+            // cout << i << "," << j << " ";
             
             //bottom-R to bottom-L move
             for(int l = 0; l < c && temp != NULL; l++){
@@ -51,7 +51,7 @@ public:
             i--;
             c--;
 
-            cout << i << "," << j << " ";
+            // cout << i << "," << j << " ";
             
             //bottom-L to top-L move
             for(int k = 0; k < r && temp != NULL; k++){
@@ -63,8 +63,8 @@ public:
             j++;
             r--;
             
-            cout << i << "," << j << " ";
-            cout << endl;
+            // cout << i << "," << j << " ";
+            // cout << endl;
         }
 
         return mat;
