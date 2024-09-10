@@ -6,7 +6,6 @@ public:
         int len = 0;
         ListNode* temp = head;
         
-        // Calculate the length of the list
         while (temp != NULL) {
             len++;
             temp = temp->next;
@@ -17,27 +16,30 @@ public:
         int cnt = 0;
         ListNode* prevT = NULL;
 
-        while (cnt < len && temp != NULL) {
+        while(cnt < len && temp != NULL){
             int groupLength = min(groupSize, len - cnt);
-            cout << cnt << " " << groupSize << " " << groupLength << endl;
+            // cout << cnt << " " << groupSize << " " << groupLength << endl;
 
-            if (groupLength % 2 != 0) {
-                // Move the pointer to the end of the current group
-                for (int j = 0; j < groupLength - 1 && temp != NULL; j++) {
+            if(groupLength % 2 != 0){
+                //move the pointer to the end of the current group
+                for(int j = 0; j < groupLength-1 && temp != NULL; j++){
                     temp = temp->next;
                 }
-                prevT = temp; // Store the last node of the current group
-                if (temp != NULL) temp = temp->next; // Move to the next group
+                prevT = temp; //store the last node of the current group
+                if(temp != NULL) temp = temp->next; //move to the next group
+
                 cnt += groupLength;
                 groupSize++;
-            } else {
-                // Reverse the even-length group
-                ListNode* tail = temp; // Mark the beginning of the group (before reversing)
+            } 
+            
+            else{
+                //reverse the even-length group
+                ListNode* tail = temp; //mark the beginning of the group (before reversing)
                 ListNode* prev = NULL;
                 ListNode* nxt = NULL;
                 int itr = 0;
                 
-                // Reverse groupLength nodes
+                //reverse groupLength nodes
                 while (temp != NULL && itr < groupLength) {
                     nxt = temp->next;
                     temp->next = prev;
@@ -46,15 +48,15 @@ public:
                     itr++;
                 }
 
-                ListNode* revHead = prev; // New head of the reversed group
+                ListNode* revHead = prev; //new head of the reversed group
                 
-                // Connect the previous group with the reversed group
+                //connect the previous group with the reversed group
                 if (prevT != NULL) prevT->next = revHead;
                 
-                // Connect the tail (original head of the group before reversal) to the rest of the list
+                //connect the tail (original head of the group before reversal) to the rest of the list
                 if (tail != NULL) tail->next = temp;
 
-                // Update prevT to the current tail (after reversal)
+                //update prevT to the current tail (after reversal)
                 prevT = tail;
                 
                 cnt += groupLength;
