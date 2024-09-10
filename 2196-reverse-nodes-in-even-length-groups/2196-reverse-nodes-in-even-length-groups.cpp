@@ -1,64 +1,67 @@
-/**
- * Definition for singly-linked list.
- * struct ListNode {
- *     int val;
- *     ListNode *next;
- *     ListNode() : val(0), next(nullptr) {}
- *     ListNode(int x) : val(x), next(nullptr) {}
- *     ListNode(int x, ListNode *next) : val(x), next(next) {}
- * };
- */
 class Solution {
 public:
     ListNode* reverseEvenLengthGroups(ListNode* head) {
-        if(head->next == NULL) return head;
+        if (head->next == NULL) return head;
+        
         int len = 0;
         ListNode* temp = head;
-
-        while(temp != NULL){
+        
+        // Calculate the length of the list
+        while (temp != NULL) {
             len++;
             temp = temp->next;
         }
-
+        
         temp = head;
-        int i = 1;
+        int groupSize = 1;
         int cnt = 0;
         ListNode* prevT = NULL;
 
-        while(cnt < len && temp != NULL){
-            int it = min(i, len-cnt);
-            cout << cnt << " " << i << " " << it << endl;
-            // cout << it << endl;
-            if(it % 2 != 0){
-                for(int j = 0; j < it-1 && temp != NULL; j++){
+        while (cnt < len && temp != NULL) {
+            int groupLength = min(groupSize, len - cnt);
+            cout << cnt << " " << groupSize << " " << groupLength << endl;
+
+            if (groupLength % 2 != 0) {
+                // Move the pointer to the end of the current group
+                for (int j = 0; j < groupLength - 1 && temp != NULL; j++) {
                     temp = temp->next;
                 }
-                prevT = temp;  //last node ko store kr le, ye use me aayegi jab next even length wala part reverse krenge and uske reversed head ko isse connect krna padega
-                if(temp != NULL) temp = temp->next;
-                cnt += it;
-                i++;
-            }
-            else{
-                //reverse the it number of nodes
-                ListNode* tail = temp;  //reverse krne ke baad yahi tail rahegi and isko next part se connect krna padega
-                ListNode* nxt = NULL;
+                prevT = temp; // Store the last node of the current group
+                if (temp != NULL) temp = temp->next; // Move to the next group
+                cnt += groupLength;
+                groupSize++;
+            } else {
+                // Reverse the even-length group
+                ListNode* tail = temp; // Mark the beginning of the group (before reversing)
                 ListNode* prev = NULL;
+                ListNode* nxt = NULL;
                 int itr = 0;
-                while(temp != NULL && itr < it){
+                
+                // Reverse groupLength nodes
+                while (temp != NULL && itr < groupLength) {
                     nxt = temp->next;
                     temp->next = prev;
                     prev = temp;
                     temp = nxt;
                     itr++;
                 }
-                ListNode* revHead = prev;
-                if(prevT != NULL) prevT->next = revHead;
-                if(tail != NULL) tail->next = temp;
+
+                ListNode* revHead = prev; // New head of the reversed group
+                
+                // Connect the previous group with the reversed group
+                if (prevT != NULL) prevT->next = revHead;
+                
+                // Connect the tail (original head of the group before reversal) to the rest of the list
+                if (tail != NULL) tail->next = temp;
+
+                // Update prevT to the current tail (after reversal)
                 prevT = tail;
-                cnt += it;
-                i++;
+                
+                cnt += groupLength;
+                groupSize++;
             }
         }
+
         return head;
     }
 };
