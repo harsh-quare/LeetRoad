@@ -6,11 +6,8 @@ public:
 
         for(int i = 0; i < n; i++){
             if(maxi < i) return false; //index i can't be reached
-
             maxi = max(maxi, i + nums[i]);  //take the jump of nums[i]
-
-            if(maxi >= n-1) return true;
         }   
-        return false;
+        return true;
     }
 };
