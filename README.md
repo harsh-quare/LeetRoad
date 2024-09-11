@@ -101,5 +101,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [1441-minimum-flips-to-make-a-or-b-equal-to-c](https://github.com/harsh-quare/LeetRoad/tree/master/1441-minimum-flips-to-make-a-or-b-equal-to-c) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/harsh-quare/LeetRoad/tree/master/2323-minimum-bit-flips-to-convert-number) |
 <!---LeetCode Topics End-->
