@@ -1,23 +1,16 @@
 class Solution {
 public:
-    bool solve(vector<int>& nums, int id, vector<int>& dp){
-        int n = nums.size();
-        if(id == n-1){
-            return true;
-        }
-
-        if(dp[id] != -1) return dp[id];
-
-        //take, 1,2,...nums[id] steps and check if you can reach or not
-        for(int i = 1; i <= nums[id]; i++){
-            if(solve(nums, id+i, dp)) return dp[id] = true;
-        }
-        return dp[id] = false;
-    }
     bool canJump(vector<int>& nums) {
-        //try all ways
         int n = nums.size();
-        vector<int> dp(n, -1);
-        return solve(nums, 0, dp);
+        int maxi = 0;
+
+        for(int i = 0; i < n; i++){
+            if(maxi < i) return false; //index i can't be reached
+
+            maxi = max(maxi, i + nums[i]);  //take the jump of nums[i]
+
+            if(maxi >= n-1) return true;
+        }   
+        return false;
     }
 };
