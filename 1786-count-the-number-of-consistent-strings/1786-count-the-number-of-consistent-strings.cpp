@@ -2,11 +2,9 @@ class Solution {
 public:
     int countConsistentStrings(string allowed, vector<string>& words) {
         vector<int> alw(26, 0);
-        int cnt = 0;
         int ans = 0;
         for(auto ch: allowed){
-            if(alw[ch-'a'] == 0) cnt++;
-            alw[ch-'a']++;
+            alw[ch-'a'] = 1;
         }
 
         for(auto s: words){
