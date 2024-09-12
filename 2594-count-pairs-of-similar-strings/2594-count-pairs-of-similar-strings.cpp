@@ -1,30 +1,22 @@
 class Solution {
 public:
     int similarPairs(vector<string>& words) {
-        int cnt = 0;
-
-        for(int i = 0; i < words.size(); i++){
-            string s = words[i];
-            unordered_set<char> st;
+        unordered_map<int, int> mp;
+        for(auto s: words){
+            int mask = 0;
             for(auto ch: s){
-                st.insert(ch);
+                mask |= 1 << (ch-'a');
+                // cout << mask << " ";
+                // cout << 1 << (ch-'a') << " ";
             }
+            // cout << endl;
+            // cout << mask << endl;
+            mp[mask]++;
+        }
 
-            for(int j = i+1; j < words.size(); j++){
-                bool isValid = true;
-                string s2 = words[j];
-                unordered_set<char> tmp;
-                for(auto ch: s2){
-                    if(st.find(ch) == st.end()){  
-                        //agar current character is string ka nhi h purane ke set me, to ye string to valid nhi ho skti
-                        isValid = false; 
-                        break;
-                    }
-                    tmp.insert(ch);
-                }
-
-                if(isValid == true && tmp.size() == st.size()) cnt++;
-            }
+        int cnt = 0;
+        for(auto x: mp){
+            cnt += (x.second - 1) * x.second / 2;
         }
 
         return cnt;
