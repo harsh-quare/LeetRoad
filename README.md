@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [1786-count-the-number-of-consistent-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/harsh-quare/LeetSole/tree/master/2677-cousins-in-binary-tree-ii) |
 ## Tree
 |  |
@@ -69,6 +70,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0059-spiral-matrix-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0059-spiral-matrix-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/0215-kth-largest-element-in-an-array) |
 | [0921-spiral-matrix-iii](https://github.com/harsh-quare/LeetRoad/tree/master/0921-spiral-matrix-iii) |
+| [1786-count-the-number-of-consistent-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2411-spiral-matrix-iv](https://github.com/harsh-quare/LeetRoad/tree/master/2411-spiral-matrix-iv) |
 ## Divide and Conquer
 |  |
@@ -104,6 +106,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1441-minimum-flips-to-make-a-or-b-equal-to-c](https://github.com/harsh-quare/LeetRoad/tree/master/1441-minimum-flips-to-make-a-or-b-equal-to-c) |
+| [1786-count-the-number-of-consistent-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2323-minimum-bit-flips-to-convert-number](https://github.com/harsh-quare/LeetRoad/tree/master/2323-minimum-bit-flips-to-convert-number) |
 ## Dynamic Programming
 |  |
@@ -115,4 +118,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0045-jump-game-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/harsh-quare/LeetRoad/tree/master/0055-jump-game) |
+## String
+|  |
+| ------- |
+| [1786-count-the-number-of-consistent-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1786-count-the-number-of-consistent-strings) |
+## Counting
+|  |
+| ------- |
+| [1786-count-the-number-of-consistent-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1786-count-the-number-of-consistent-strings) |
 <!---LeetCode Topics End-->
