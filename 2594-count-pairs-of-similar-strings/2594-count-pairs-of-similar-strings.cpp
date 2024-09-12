@@ -2,6 +2,7 @@ class Solution {
 public:
     int similarPairs(vector<string>& words) {
         unordered_map<int, int> mp;
+        int ans = 0;
         for(auto s: words){
             int mask = 0;
             for(auto ch: s){
@@ -11,14 +12,9 @@ public:
             }
             // cout << endl;
             // cout << mask << endl;
-            mp[mask]++;
+            ans += mp[mask]++;
         }
 
-        int cnt = 0;
-        for(auto x: mp){
-            cnt += (x.second - 1) * x.second / 2;
-        }
-
-        return cnt;
+        return ans;
     }
 };
