@@ -10,7 +10,6 @@ public:
         }
 
         for(auto s: words){
-            unordered_map<char, int> mp;
             bool isValid = true;
             for(auto ch: s){
                 if(alw[ch-'a'] == 0) {   //agar ye wala character allowed string me h hi nhi, 
@@ -18,9 +17,7 @@ public:
                     isValid = false; 
                     break;
                 }
-                mp[ch]++;
             }
-
             if(isValid == true) ans++;
         }
 
