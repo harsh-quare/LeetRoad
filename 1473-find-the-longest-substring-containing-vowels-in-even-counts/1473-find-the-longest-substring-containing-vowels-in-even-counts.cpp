@@ -10,19 +10,19 @@ public:
 
         for(int i = 0; i < s.size(); i++){
             if(s[i] == 'a'){
-                cnt[0] = (cnt[0] + 1) % 2;  //if it has occured even number of times, it will be zero or else it will be 1
+                cnt[0] = cnt[0]^1;//if it has occured even number of times, it will be zero or else it will be 1
             }
             else if(s[i] == 'e'){
-                cnt[1] = (cnt[1] + 1) % 2;
+                cnt[1] = cnt[1]^1;
             }
             else if(s[i] == 'i'){
-                cnt[2] = (cnt[2] + 1) % 2;
+                cnt[2] = cnt[2]^1;
             }
             else if(s[i] == 'o'){
-                cnt[3] = (cnt[3] + 1) % 2;
+                cnt[3] = cnt[3]^1;
             }
             else if(s[i] == 'u'){
-                cnt[4] = (cnt[4] + 1) % 2;
+                cnt[4] = cnt[4]^1;
             }
 
             //Ab string nikal lo and check kr lo map me
