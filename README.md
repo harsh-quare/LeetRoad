@@ -45,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/0215-kth-largest-element-in-an-array) |
+| [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 ## Linked List
 |  |
@@ -57,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [2050-count-good-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/2050-count-good-numbers) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/harsh-quare/LeetRoad/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 ## Recursion
@@ -71,6 +73,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0055-jump-game](https://github.com/harsh-quare/LeetRoad/tree/master/0055-jump-game) |
 | [0059-spiral-matrix-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0059-spiral-matrix-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/0215-kth-largest-element-in-an-array) |
+| [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [0921-spiral-matrix-iii](https://github.com/harsh-quare/LeetRoad/tree/master/0921-spiral-matrix-iii) |
 | [1435-xor-queries-of-a-subarray](https://github.com/harsh-quare/LeetRoad/tree/master/1435-xor-queries-of-a-subarray) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -130,6 +133,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/harsh-quare/LeetRoad/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1786-count-the-number-of-consistent-strings) |
 | [2594-count-pairs-of-similar-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2594-count-pairs-of-similar-strings) |
