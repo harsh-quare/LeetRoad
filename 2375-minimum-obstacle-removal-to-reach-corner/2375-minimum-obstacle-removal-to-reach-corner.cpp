@@ -18,6 +18,8 @@ public:
             int y = pq.top().second.second;
             pq.pop();
 
+            if(x == n-1 && y == m-1) return dist[x][y];  //early stopping
+
             for(int i = 0; i < 4; i++){
                 int nx = x + dir[i][0];
                 int ny = y + dir[i][1];
