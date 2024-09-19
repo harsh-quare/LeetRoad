@@ -65,12 +65,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
 | [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [2050-count-good-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/2050-count-good-numbers) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/harsh-quare/LeetRoad/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 ## Recursion
 |  |
 | ------- |
+| [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
 | [2050-count-good-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/2050-count-good-numbers) |
 ## Array
 |  |
@@ -142,6 +144,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0045-jump-game-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/harsh-quare/LeetRoad/tree/master/0055-jump-game) |
+| [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
 ## Greedy
 |  |
 | ------- |
@@ -152,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0179-largest-number](https://github.com/harsh-quare/LeetRoad/tree/master/0179-largest-number) |
+| [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
 | [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/harsh-quare/LeetRoad/tree/master/0920-uncommon-words-from-two-sentences) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/harsh-quare/LeetRoad/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
@@ -184,4 +188,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/harsh-quare/LeetRoad/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
+## Memoization
+|  |
+| ------- |
+| [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
 <!---LeetCode Topics End-->
