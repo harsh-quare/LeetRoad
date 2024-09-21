@@ -7,6 +7,7 @@ public:
         for(int i = 0; i < 10; i++){
             int child = val*10 + i;
             if(child <= n) solve(child, n, ans);
+            else break;
         }
     }
     vector<int> lexicalOrder(int n) {
