@@ -5,7 +5,8 @@ public:
 
         if(val <= n) ans.push_back(val);
         for(int i = 0; i < 10; i++){
-            solve(val*10 + i, n, ans);
+            int child = val*10 + i;
+            if(child <= n) solve(child, n, ans);
         }
     }
     vector<int> lexicalOrder(int n) {
