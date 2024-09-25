@@ -44,7 +44,7 @@ public:
             for(int i = 0; i < 26; i++){
                 if(node->child[i] != NULL){
                     //recursively search in each non-null child node
-                    if (searchInNode(word, node->child[i], id + 1)) {
+                    if(searchInNode(word, node->child[i], id + 1)){
                         return true;
                     }
                 }
