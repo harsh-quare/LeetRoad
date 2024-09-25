@@ -3,6 +3,7 @@ public:
     TrieNode* children[26];
     bool isEnd;
     int prefCnt;
+
     TrieNode(){
         isEnd = false;
         prefCnt = 0;
@@ -11,9 +12,8 @@ public:
         }
     }
 };
-
 class Trie{
-    public:
+public:
     TrieNode* root;
 
     Trie(){
@@ -22,31 +22,31 @@ class Trie{
 
     void insert(string word){
         TrieNode* temp = root;
-        for(char c: word){
-            int id = c-'a';
-            if(temp->children[id] == NULL){
-                temp->children[id] = new TrieNode();
+        for(auto c: word){
+            int idx = c-'a';
+            if(temp->children[idx] == NULL){
+                temp->children[idx] = new TrieNode();
             }
-            temp = temp->children[id];
-            temp->prefCnt++;  //increment the prefix count for each node
+            temp = temp->children[idx];
+            temp->prefCnt++;
         }
         temp->isEnd = true;
     }
-    
-    //calculate the score for a word based on its prefix counts in the Trie
-    int count(const string& word){
-        //count how many strings are there with 'word' as prefix
+
+    int getScore(string word){
+        int score = 0;
         TrieNode* temp = root;
-        int cnt = 0;
-        for(char c: word){
-            int id = c-'a';
+
+        for(auto c: word){
+            int id= c-'a';
             if(temp->children[id] == NULL){
-                break; //if the prefix doesn't exist, no need to continue
+                break;
             }
             temp = temp->children[id];
-            cnt += temp->prefCnt;
+            score += temp->prefCnt;
         }
-        return cnt;
+
+        return score;
     }
 };
 class Solution {
@@ -59,8 +59,8 @@ public:
             t.insert(s);
         }
 
-        for(int j = 0; j < n; j++){
-            ans[j] = t.count(words[j]);
+        for(int i = 0; i<n; i++){
+            ans[i] = t.getScore(words[i]);
         }
 
         return ans;
