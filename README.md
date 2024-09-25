@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0211-design-add-and-search-words-data-structure](https://github.com/harsh-quare/LeetRoad/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0386-lexicographical-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/0386-lexicographical-numbers) |
 | [0971-shortest-bridge](https://github.com/harsh-quare/LeetRoad/tree/master/0971-shortest-bridge) |
 | [1035-cousins-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1035-cousins-in-binary-tree) |
@@ -160,6 +161,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0179-largest-number](https://github.com/harsh-quare/LeetRoad/tree/master/0179-largest-number) |
+| [0211-design-add-and-search-words-data-structure](https://github.com/harsh-quare/LeetRoad/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0214-shortest-palindrome](https://github.com/harsh-quare/LeetRoad/tree/master/0214-shortest-palindrome) |
 | [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
 | [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
@@ -216,8 +218,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Trie
 |  |
 | ------- |
+| [0211-design-add-and-search-words-data-structure](https://github.com/harsh-quare/LeetRoad/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0386-lexicographical-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/0386-lexicographical-numbers) |
 | [0440-k-th-smallest-in-lexicographical-order](https://github.com/harsh-quare/LeetRoad/tree/master/0440-k-th-smallest-in-lexicographical-order) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2755-extra-characters-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2755-extra-characters-in-a-string) |
+## Design
+|  |
+| ------- |
+| [0211-design-add-and-search-words-data-structure](https://github.com/harsh-quare/LeetRoad/tree/master/0211-design-add-and-search-words-data-structure) |
 <!---LeetCode Topics End-->
