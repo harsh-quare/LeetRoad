@@ -1,33 +1,26 @@
 class MyCalendarTwo {
 public:
-    set<pair<int, int>> doubleBooking;  //store where double booking happened : overlapping interval
-    set<pair<int, int>> singleBooking;  //unique non-overlapping intervals
-
-    bool checkOverlap(int start1, int end1, int start2, int end2){
-        return max(start1, start2) < min(end1, end2);
-    }
-
-    pair<int, int> overlappedRegion(int start1, int end1, int start2, int end2){
-        return {max(start1, start2), min(end1, end2)};
-    }
-
+    //Sweep Line algorithm
+    map<int, int> eventCnt;
     MyCalendarTwo() {
         
     }
     
     bool book(int start, int end) {
-        //check if it overlaps with doubleBooked interval
-        for(auto p: doubleBooking){
-            if(checkOverlap(p.first, p.second, start, end)) return false;
-        }
+        eventCnt[start]++;
+        eventCnt[end]--;
 
-        for(auto p: singleBooking){
-            if(checkOverlap(p.first, p.second, start, end)){
-                doubleBooking.insert(overlappedRegion(p.first, p.second, start, end));
+        int changes = 0;
+        for(auto it: eventCnt){
+            changes += it.second;
+
+            if(changes >= 3){
+                eventCnt[start]--;
+                eventCnt[end]++;
+                return false;
             }
         }
 
-        singleBooking.insert({start, end});
         return true;
     }
 };
