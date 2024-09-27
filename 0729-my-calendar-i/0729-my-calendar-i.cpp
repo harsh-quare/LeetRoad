@@ -1,21 +1,24 @@
 class MyCalendar {
 public:
-    map<int, int> mp;
+    //Sweep line algorithm
+    map<int, int> eventCount;
     MyCalendar() {
         
     }
     
     bool book(int start, int end) {
-        auto next = mp.lower_bound(start);
-        if(next != mp.end() && next->first < end){
-            return false;
-        }
+        eventCount[start]++;
+        eventCount[end]--;
 
-        if(next != mp.begin() && prev(next)->second > start){
-            return false;
+        int ongoingEvents = 0;
+        for (auto &[time, change] : eventCount) {
+            ongoingEvents += change;
+            if (ongoingEvents >= 2) {
+                eventCount[start]--;
+                eventCount[end]++;
+                return false;
+            }
         }
-
-        mp[start] = end;
         return true;
     }
 };
