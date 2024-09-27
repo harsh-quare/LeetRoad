@@ -1,25 +1,21 @@
 class MyCalendar {
 public:
-    set<pair<int, int>> st;
+    map<int, int> mp;
     MyCalendar() {
         
     }
     
     bool book(int start, int end) {
-        auto it = st.lower_bound({start, end});
-
-        //checking if the curr event overlaps with the next event
-        if(it != st.end() && it->first < end){
+        auto next = mp.lower_bound(start);
+        if(next != mp.end() && next->first < end){
             return false;
         }
 
-        //checking if the curr event overlaps with the previous event
-        if(it != st.begin()){
-            auto prevIt = prev(it);
-            if(start < prevIt->second) return false;
+        if(next != mp.begin() && prev(next)->second > start){
+            return false;
         }
-        
-        st.insert({start, end});
+
+        mp[start] = end;
         return true;
     }
 };
