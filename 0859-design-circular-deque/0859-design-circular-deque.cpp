@@ -1,115 +1,67 @@
 class MyCircularDeque {
-    int* arr;
     int size;
-    int front;
     int rear;
+    int front;
+    vector<int> arr;
+    int curSize;
 public:
     MyCircularDeque(int k) {
         size = k;
-        arr = new int[size];
-        front = rear = -1;
+        arr = vector<int>(size, 0);
+        front = 0;
+        rear = size-1;
+        curSize = 0;
     }
     
     bool insertFront(int value) {
-        if(isFull()){
-            return false;
-        }
-        else if(isEmpty()){
-            front = rear = 0;
-        }
-        else if(front == 0 && rear != size-1){
-            front = size-1;
-        }
-        else {
-            front--;
-        }
+        if(isFull()) return false;
+        front = (front - 1 + size) % size;
         arr[front] = value;
+        curSize++;
         return true;
     }
     
     bool insertLast(int value) {
-        if(isFull()){
+        if(isFull()){  //already full h
             return false;
         }
-        else if(isEmpty()){
-            front = rear = 0;
-        }
-        else if(rear == size-1 && front != 0){
-            rear = 0;
-        }
-        else{
-            rear++;
-        }
+        rear = (rear + 1) % size;
         arr[rear] = value;
+        curSize++;
         return true;
     }
     
     bool deleteFront() {
-        if(isEmpty()){
-            return false;
-        }
-
-        int ans = arr[front];
-        arr[front] = -1;
-
-        if(front == rear){
-            front = rear = -1;
-        }
-        else if(front == size-1){
-            front = 0;
-        }
-        else{
-            front++;
-        }
-
+        if(isEmpty()) return false; //empty array me se delete krna not possible
+        front = (front + 1) % size;
+        curSize--;
         return true;
     }
     
     bool deleteLast() {
-        if(isEmpty()){
-            return false;
-        }
-        int ans = arr[rear];
-        arr[rear] = -1;
-
-        if(front == rear){
-            front = rear = -1;
-        }
-        else if(rear == 0){
-            rear = size-1;
-        }
-        else{
-            rear--;
-        }
-
+        if(isEmpty()) return false;
+        rear = (rear - 1 + size) % size;
+        curSize--;
         return true;
     }
     
     int getFront() {
-        if(front == -1){
-            return -1;
-        }
+        if(isEmpty()) return -1;
         return arr[front];
     }
     
     int getRear() {
-        if(front == -1){
-            return -1;
-        }
+        if(isEmpty()) return -1;
         return arr[rear];
     }
     
     bool isEmpty() {
-        if(front == -1 && rear == -1){
-            return true;
-        }
+        if(curSize == 0) return true;
         return false;
     }
     
     bool isFull() {
-        if(front == (rear+1)%size){
-            return true;
-        }
+        if(curSize == size) return true;
         return false;
     }
 };
