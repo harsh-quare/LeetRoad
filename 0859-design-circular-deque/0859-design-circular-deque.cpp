@@ -12,7 +12,7 @@ public:
     
     bool insertFront(int value) {
         if(front == (rear+1)%size) return false;
-        else if(front == -1 && rear == -1){
+        else if(front == -1){
             front = rear = 0;
         }
         else if(front == 0 && rear != size-1){
@@ -27,12 +27,10 @@ public:
     }
     
     bool insertLast(int value) {
-        if(isFull()){  //already full h
+        if(front == (rear + 1) % size){  //already full h
             return false;
         }
-        else if(isEmpty()) {
-            front = rear = 0;
-        }
+        else if(front == -1) front = rear = 0;
         else if(rear == size-1 && front != 0){
             rear = 0;
         }
@@ -43,7 +41,7 @@ public:
     }
     
     bool deleteFront() {
-        if(isEmpty()) return false; //empty array me se delete krna not possible
+        if(front == -1 && rear == -1) return false; //empty array me se delete krna not possible
         int val = arr[front];
         arr[front] = -1;
         if(front == rear) front = rear = -1; //front == rear means only single element present in the array  
@@ -54,7 +52,7 @@ public:
     }
     
     bool deleteLast() {
-        if(isEmpty()) return false;
+        if(front == -1 && rear == -1) return false;
         
         int val = arr[rear];
         arr[rear] = -1;
