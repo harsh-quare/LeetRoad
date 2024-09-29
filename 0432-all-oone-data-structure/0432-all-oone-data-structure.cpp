@@ -1,39 +1,36 @@
 class AllOne {
 public:
     unordered_map<string, int> freq;
+    set<pair<int,string>> st;
     AllOne() {
 
     }
     
     void inc(string key) {
+        st.erase({freq[key],key});
         freq[key]++;
+
+        st.insert({freq[key], key});
     }
     
     void dec(string key) {
+        st.erase({freq[key],key});
         freq[key]--;
+
+        if(freq[key] > 0){
+            st.insert({freq[key], key});
+        }
     }
     
     string getMaxKey() {
-        int mx = 0;
-        string ans = "";
-        for(auto& val:freq){
-            if(val.second > mx){
-                mx = val.second;
-                ans = val.first;
-            }
-        }
+        if(st.size()==0){return "";}
+        string ans = prev(st.end())->second;
         return ans;
     }
     
     string getMinKey() {
-        int mini = INT_MAX;
-        string ans = "";
-        for(auto& val:freq){
-            if(val.second!=0 and val.second < mini){
-                mini = val.second;
-                ans = val.first;
-            }
-        }
+        if(st.size()==0){return "";}
+        string ans = st.begin()->second;
         return ans;
     }
 };
