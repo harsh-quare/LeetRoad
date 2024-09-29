@@ -5,19 +5,27 @@ public:
         return false;
     }
     int countOfSubstrings(string word, int k) {
+        int n = word.size();
         int ans = 0;
-        int minLen = k+5;
-        if(word.length() < minLen) return 0;
-        for(int i = 0; i < word.length(); i++){
-            unordered_set<char> st;
-            int vowCnt = 0, consCnt = 0;
-            for(int j = i; j < word.length(); j++){
-                if(isVowel(word[j]) && st.find(word[j]) == st.end()) {
-                    vowCnt++; 
-                    st.insert(word[j]);
+
+        unordered_set<char> st;
+        st.insert('a'), st.insert('e'), st.insert('o'), st.insert('i'), st.insert('u');
+
+        for(int j = 0; j < n; j++){
+            unordered_set<char> newSt;
+            int consCnt = 0;
+
+            for(int i = j; i < n; i++){
+                char c = word[i];
+
+                if(st.find(c) != st.end()){
+                    newSt.insert(c);
                 }
-                else if(!isVowel(word[j])) consCnt++;
-                if(vowCnt == 5 && consCnt == k) ans++;
+                else if(!isVowel(c)) consCnt++;
+
+                if(newSt.size() == 5 && consCnt == k) ans++;
+
+                if(consCnt > k) break;
             }
         }
 
