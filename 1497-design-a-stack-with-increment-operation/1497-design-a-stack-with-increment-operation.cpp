@@ -1,32 +1,39 @@
 class CustomStack {
-int size;
-int curSize;
-vector<int> arr;
+vector<int> st;
+vector<int> increments;
+int n;
 public:
     CustomStack(int maxSize) {
-        size = maxSize;
-        curSize = 0;
+        n = maxSize;
     }
     
     void push(int x) {
-        if(curSize < size){
-            arr.push_back(x);
-            curSize++;
+        if(st.size() < n){
+            st.push_back(x);
+            increments.push_back(0); //no increment as of now for this index element
         }
-        else return ;
     }
     
     int pop() {
-        if(curSize == 0) return -1;
-        int val = arr.back();
-        arr.pop_back();
-        curSize--;
-        return val;
+        if(st.size() == 0) return -1;
+
+        int idx = st.size()-1; //top element index
+        if(idx > 0){
+            increments[idx-1] += increments[idx];  //lazy propogation
+        }
+
+        int top = st[idx] + increments[idx];
+        st.pop_back();
+        increments.pop_back();
+
+        return top;
     }
     
     void increment(int k, int val) {
-        for(int i = 0; i < min(k, curSize); i++){
-            arr[i] += val;
+        //k can be greater than st.size()'
+        int idx = min(k, (int)st.size()) - 1;  //1-based to 0-based
+        if(idx >= 0){
+            increments[idx] += val;  //max index wale element me store kr lo and baad me usse pahle wale small indices pe lazy propagate krte jao
         }
     }
 };
