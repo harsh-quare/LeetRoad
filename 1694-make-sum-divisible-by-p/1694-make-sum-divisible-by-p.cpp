@@ -1,31 +1,28 @@
 class Solution {
 public:
     int minSubarray(vector<int>& nums, int p) {
+        int n = nums.size();
         long long sum = accumulate(nums.begin(), nums.end(), 0LL);
-        if(sum % p == 0) return 0;
 
-        // (TotalSum - subArrSum) % p == 0
-        // TotalSum % p == subArrSum % p
-        // let TotalSum % p == targetRemainder
         int target = sum % p;
-        //Now I need a subarray whose sum%p == target
+        if(target == 0) return 0;
 
         unordered_map<int, int> mp;
+        int prefSum = 0, minLen = n;
         mp[0] = -1;
-        long long prefSum = 0;
-        int minLen = nums.size();
-        for(int i = 0; i < nums.size(); i++){
-            prefSum += nums[i];
-            int curRem = prefSum % p;
-            int needed = (curRem - target + p) % p;
+
+        for(int i = 0; i < n; i++){
+            prefSum = (prefSum + nums[i]) % p;
+
+            int needed = (prefSum - target + p) % p;
 
             if(mp.find(needed) != mp.end()){
                 minLen = min(minLen, i - mp[needed]);
             }
 
-            mp[curRem] = i;
+            mp[prefSum] = i;
         }
 
-        return minLen == nums.size() ? -1 : minLen;
+        return minLen == n ? -1 : minLen;
     }
 };
