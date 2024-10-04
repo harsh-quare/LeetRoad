@@ -1,36 +1,21 @@
 class Solution {
 public:
     long long dividePlayers(vector<int>& skill) {
+        sort(skill.begin(), skill.end());
         int n = skill.size();
-        long long total = 0;
 
-        unordered_map<int, int> mp;
-        for(auto x: skill){
-            total += x;
-            mp[x]++;
+        if(n == 2) return (long long)skill[0]*skill[1];
+
+        int equalSum = skill[0] + skill[n-1];
+        long long chemistry = skill[0]*skill[n-1];
+
+        for(int i = 1; i < n/2; i++){
+            if(skill[i] + skill[n-i-1] != equalSum) return -1;
+            else{
+                chemistry += (long long)skill[i]*skill[n-i-1];
+            }
         }
 
-        int groups = n/2;
-        if(total % groups != 0) return -1;
-        
-        long long equalSum = total / groups;
-        long long chemistry = 0;
-
-        for(auto it: mp){
-            int x = it.first;
-            long long needed = equalSum - x;
-            if(mp.find(needed) == mp.end() || mp[x] != mp[needed]) return -1;
-            else{
-                if(mp[x] != -1 && mp[needed] != -1){
-                    long long curChem = mp[x]*x*needed;
-                    if(x == needed) curChem /= 2;  //mp[x] dono ke liye same h and 2 baar use ho gya ek tarah se upar
-                    chemistry += curChem;
-                    mp[x] = -1;
-                    mp[needed] = -1;
-                }
-            }
-        }   
-
-        return chemistry;     
+        return chemistry;
     }
 };
