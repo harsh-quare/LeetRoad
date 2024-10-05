@@ -68,6 +68,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2210-find-target-indices-after-sorting-array](https://github.com/harsh-quare/LeetRoad/tree/master/2210-find-target-indices-after-sorting-array) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/harsh-quare/LeetRoad/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
+| [3387-minimum-operations-to-make-median-of-array-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/3387-minimum-operations-to-make-median-of-array-equal-to-k) |
 ## Linked List
 |  |
 | ------- |
@@ -131,6 +132,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2594-count-pairs-of-similar-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2594-count-pairs-of-similar-strings) |
 | [2713-find-the-divisibility-array-of-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2713-find-the-divisibility-array-of-a-string) |
 | [2755-extra-characters-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2755-extra-characters-in-a-string) |
+| [3387-minimum-operations-to-make-median-of-array-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/3387-minimum-operations-to-make-median-of-array-equal-to-k) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -191,6 +193,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/harsh-quare/LeetRoad/tree/master/0055-jump-game) |
 | [0179-largest-number](https://github.com/harsh-quare/LeetRoad/tree/master/0179-largest-number) |
+| [3387-minimum-operations-to-make-median-of-array-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/3387-minimum-operations-to-make-median-of-array-equal-to-k) |
 ## String
 |  |
 | ------- |
