@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0432-all-oone-data-structure](https://github.com/harsh-quare/LeetRoad/tree/master/0432-all-oone-data-structure) |
+| [0438-find-all-anagrams-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0567-permutation-in-string](https://github.com/harsh-quare/LeetRoad/tree/master/0567-permutation-in-string) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/harsh-quare/LeetRoad/tree/master/0920-uncommon-words-from-two-sentences) |
 | [1256-rank-transform-of-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/1256-rank-transform-of-an-array) |
@@ -197,6 +198,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0211-design-add-and-search-words-data-structure](https://github.com/harsh-quare/LeetRoad/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0214-shortest-palindrome](https://github.com/harsh-quare/LeetRoad/tree/master/0214-shortest-palindrome) |
 | [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
+| [0438-find-all-anagrams-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [0567-permutation-in-string](https://github.com/harsh-quare/LeetRoad/tree/master/0567-permutation-in-string) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/harsh-quare/LeetRoad/tree/master/0920-uncommon-words-from-two-sentences) |
@@ -306,5 +308,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sliding Window
 |  |
 | ------- |
+| [0438-find-all-anagrams-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0567-permutation-in-string](https://github.com/harsh-quare/LeetRoad/tree/master/0567-permutation-in-string) |
 <!---LeetCode Topics End-->
