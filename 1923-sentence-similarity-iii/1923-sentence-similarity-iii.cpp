@@ -1,9 +1,9 @@
 class Solution {
 public:
-    vector<string> splitWords(const string& sentence) {
+    deque<string> splitWords(const string& sentence) {
         stringstream ss(sentence);
         string word;
-        vector<string> words;
+        deque<string> words;
         
         while(ss >> word){
             words.push_back(word);
@@ -18,27 +18,19 @@ public:
             swap(sentence1, sentence2);
         }
         
-        vector<string> words1 = splitWords(sentence1);
-        vector<string> words2 = splitWords(sentence2);
+        deque<string> deq1 = splitWords(sentence1);
+        deque<string> deq2 = splitWords(sentence2);
         
-        int n = words1.size();
-        int m = words2.size();
-        
-        int lcp = 0;
-        while(lcp < m && words1[lcp] == words2[lcp]){
-            lcp++;
+        while(!deq1.empty() && !deq2.empty() && deq1.front() == deq2.front()){
+            deq1.pop_front();
+            deq2.pop_front();
+        }
+
+        while(!deq1.empty() && !deq2.empty() && deq1.back() == deq2.back()){
+            deq1.pop_back();
+            deq2.pop_back();
         }
         
-        int lcs = 0;
-        while(lcs < m && words1[n - 1 - lcs] == words2[m - 1 - lcs]){
-            lcs++;
-        }
-        
-        //checking if the entire shorter sentence is matched in either prefix or suffix
-        if(lcp + lcs >= m){
-            return true;
-        }
-        
-        return false;
+        return deq2.empty();
     }
 };
