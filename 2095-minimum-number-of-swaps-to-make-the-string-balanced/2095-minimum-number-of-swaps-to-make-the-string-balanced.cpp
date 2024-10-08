@@ -1,18 +1,20 @@
 class Solution {
 public:
     int minSwaps(string s) {
-        stack<char> st;
+        // stack<char> st;
+        int size = 0;
 
         for(char c: s){
             if(c == '['){
-                st.push(c);
+                size++;
             }
-            else if(!st.empty()){
-                st.pop();  //balancing closing bracket with an opening bracket int the stack
+            else if(size > 0){
+                // st.pop();  //balancing closing bracket with an opening bracket int the stack
+                size--;
             }
         }
         
         // (Number of opening_brackets + 1) / 2;
-        return (st.size() + 1) / 2;
+        return (size + 1) / 2;
     }
 };
