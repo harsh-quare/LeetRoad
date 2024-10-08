@@ -1,25 +1,18 @@
 class Solution {
 public:
     int minSwaps(string s) {
-        if(s.size() == 0) return 0;
+        stack<char> st;
 
-        // har 2 criminals me se ek ko sahi krna h, dusra wala apne aap sahi ho jayega
-        // ]]] me agar pahlo ko sahi kr diya, to dusra apne aap valid ho gya, fir bas 3rd ko sahi krne ki jarurat h
-        // ]]]] agar yahi aisa hota, to hame 1st ko and 3rd ko sahi krna pdta
-
-        int imbalance = 0;
-        int maxImbalance = 0;
-        
         for(char c: s){
             if(c == '['){
-                imbalance--;
-            } 
-            else{
-                imbalance++;
+                st.push(c);
             }
-            maxImbalance = max(maxImbalance, imbalance);
+            else if(!st.empty()){
+                st.pop();  //balancing closing bracket with an opening bracket int the stack
+            }
         }
-
-        return (maxImbalance + 1) / 2;
+        
+        // (Number of opening_brackets + 1) / 2;
+        return (st.size() + 1) / 2;
     }
 };
