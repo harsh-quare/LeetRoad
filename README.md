@@ -197,6 +197,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/harsh-quare/LeetRoad/tree/master/0055-jump-game) |
 | [0179-largest-number](https://github.com/harsh-quare/LeetRoad/tree/master/0179-largest-number) |
+| [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/harsh-quare/LeetRoad/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [3387-minimum-operations-to-make-median-of-array-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/3387-minimum-operations-to-make-median-of-array-equal-to-k) |
 ## String
 |  |
@@ -212,6 +213,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/harsh-quare/LeetRoad/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1923-sentence-similarity-iii](https://github.com/harsh-quare/LeetRoad/tree/master/1923-sentence-similarity-iii) |
+| [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/harsh-quare/LeetRoad/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/harsh-quare/LeetRoad/tree/master/2190-count-common-words-with-one-occurrence) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2594-count-pairs-of-similar-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2594-count-pairs-of-similar-strings) |
@@ -310,12 +312,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1497-design-a-stack-with-increment-operation](https://github.com/harsh-quare/LeetRoad/tree/master/1497-design-a-stack-with-increment-operation) |
+| [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/harsh-quare/LeetRoad/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2800-minimum-string-length-after-removing-substrings](https://github.com/harsh-quare/LeetRoad/tree/master/2800-minimum-string-length-after-removing-substrings) |
 ## Two Pointers
 |  |
 | ------- |
 | [0567-permutation-in-string](https://github.com/harsh-quare/LeetRoad/tree/master/0567-permutation-in-string) |
 | [1923-sentence-similarity-iii](https://github.com/harsh-quare/LeetRoad/tree/master/1923-sentence-similarity-iii) |
+| [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/harsh-quare/LeetRoad/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/harsh-quare/LeetRoad/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 ## Sliding Window
 |  |
