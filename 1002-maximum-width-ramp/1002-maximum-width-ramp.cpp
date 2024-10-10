@@ -14,13 +14,11 @@ public:
         int j = 0;  //maxToRight array me traverse
         int ans = 0; 
         while(j < n){  //j ek baar khatam ho gya to hame or better answer nahi mil payega
-            if(nums[i] <= maxToRight[j]){
-                ans = max(ans, j-i);
-                j++;
-            }
-            else{
+            while(nums[i] > maxToRight[j]){
                 i++;
             }
+            ans = max(ans, j-i);
+            j++;
         }
 
         return ans;
