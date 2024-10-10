@@ -2,19 +2,23 @@ class Solution {
 public:
     int maxWidthRamp(vector<int>& nums) {
         int ans = 0;
-        int n = nums.size();
+        int n= nums.size();
 
-        vector<pair<int, int>> vp;
+        stack<pair<int, int>> st;
+
+        // storing values in decreasing order in stack
         for(int i = 0; i < n; i++){
-            vp.push_back({nums[i], i});
+            if(st.empty() || nums[i] < st.top().first){
+                st.push({nums[i], i});
+            }
         }
 
-        sort(vp.begin(), vp.end());
-        int minId = vp[0].second;  //minimum index seen so far
-
-        for(int i = 1; i < n; i++){
-            ans = max(ans, vp[i].second - minId);
-            minId = min(minId, vp[i].second);
+        for(int i = n-1; i >= 0; i--){
+            while(!st.empty() && nums[i] >= st.top().first){
+                int idx = st.top().second;
+                ans = max(ans, i-idx);
+                st.pop();
+            }
         }
 
         return ans;
