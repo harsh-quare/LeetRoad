@@ -30,7 +30,7 @@ public:
 
             if(frndNumber == targetFriend) return assigned;
 
-            departChair.push({times[frndNumber][1], frndNumber});
+            departChair.push({times[frndNumber][1], assigned});
         }
 
         return -1;
