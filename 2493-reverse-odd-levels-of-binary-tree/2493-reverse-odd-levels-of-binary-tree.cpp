@@ -11,45 +11,19 @@
  */
 class Solution {
 public:
-    TreeNode* reverseOddLevels(TreeNode* root) {
-        //two pass solution
-        unordered_map<int, vector<int>> mp;
-        int l = 0;
-
-        queue<TreeNode*> q;
-        q.push(root);
-        vector<int> real;
+    void reverse(TreeNode* lt, TreeNode* rt, int lvl){
+        if(!lt || !rt) return ;
         
-        while(!q.empty()){
-            int sz = q.size();
-            vector<int> nxtLvl;
-            int ptr = real.size()-1;
-            while(sz--){
-                TreeNode* node = q.front();
-                q.pop();
-
-                if(l % 2 != 0){
-                    node->val = real[ptr];
-                    ptr--;
-                }
-
-                if(node->left){
-                    if(l % 2 == 0){
-                        nxtLvl.push_back(node->left->val);
-                    }
-                    q.push(node->left);
-                }
-                if(node->right){
-                    if(l % 2 == 0){
-                        nxtLvl.push_back(node->right->val);
-                    }
-                    q.push(node->right);
-                }
-            }
-            real = nxtLvl;
-            l++;
+        if(lvl % 2 != 0){
+            swap(lt->val, rt->val);
         }
 
+        reverse(lt->left, rt->right, lvl+1);
+        reverse(lt->right, rt->left, lvl+1);
+    }
+    TreeNode* reverseOddLevels(TreeNode* root) {
+        if(!root) return root;
+        reverse(root->left, root->right, 1);
         return root;
     }
 };
