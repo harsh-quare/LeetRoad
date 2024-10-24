@@ -18,6 +18,10 @@ public:
             swap(lt->val, rt->val);
         }
 
+        //lt ke left ko rt ke right se swap krenge tabhi to reverse type hoga
+        //and lt ke right ko rt ke left se swap krna padega
+        //isko visualize kro and you will get ur answer
+
         reverse(lt->left, rt->right, lvl+1);
         reverse(lt->right, rt->left, lvl+1);
     }
