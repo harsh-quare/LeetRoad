@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/harsh-quare/LeetRoad/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/harsh-quare/LeetRoad/tree/master/2190-count-common-words-with-one-occurrence) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/harsh-quare/LeetRoad/tree/master/2581-divide-players-into-teams-of-equal-skill) |
+| [2586-longest-square-streak-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/2586-longest-square-streak-in-an-array) |
 | [2594-count-pairs-of-similar-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2594-count-pairs-of-similar-strings) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/harsh-quare/LeetSole/tree/master/2677-cousins-in-binary-tree-ii) |
 | [2755-extra-characters-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2755-extra-characters-in-a-string) |
@@ -80,6 +81,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1256-rank-transform-of-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/1256-rank-transform-of-an-array) |
 | [2210-find-target-indices-after-sorting-array](https://github.com/harsh-quare/LeetRoad/tree/master/2210-find-target-indices-after-sorting-array) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/harsh-quare/LeetRoad/tree/master/2581-divide-players-into-teams-of-equal-skill) |
+| [2586-longest-square-streak-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/2586-longest-square-streak-in-an-array) |
 | [2646-kth-largest-sum-in-a-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/2646-kth-largest-sum-in-a-binary-tree) |
 | [3387-minimum-operations-to-make-median-of-array-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/3387-minimum-operations-to-make-median-of-array-equal-to-k) |
 ## Linked List
@@ -148,6 +150,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/harsh-quare/LeetRoad/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/harsh-quare/LeetRoad/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/harsh-quare/LeetRoad/tree/master/2581-divide-players-into-teams-of-equal-skill) |
+| [2586-longest-square-streak-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/2586-longest-square-streak-in-an-array) |
 | [2594-count-pairs-of-similar-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2594-count-pairs-of-similar-strings) |
 | [2713-find-the-divisibility-array-of-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2713-find-the-divisibility-array-of-a-string) |
 | [2755-extra-characters-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2755-extra-characters-in-a-string) |
@@ -210,6 +213,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0045-jump-game-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/harsh-quare/LeetRoad/tree/master/0055-jump-game) |
 | [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
+| [2586-longest-square-streak-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/2586-longest-square-streak-in-an-array) |
 | [2755-extra-characters-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2755-extra-characters-in-a-string) |
 ## Greedy
 |  |
@@ -314,6 +318,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0729-my-calendar-i](https://github.com/harsh-quare/LeetRoad/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0731-my-calendar-ii) |
 | [2210-find-target-indices-after-sorting-array](https://github.com/harsh-quare/LeetRoad/tree/master/2210-find-target-indices-after-sorting-array) |
+| [2586-longest-square-streak-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/2586-longest-square-streak-in-an-array) |
 ## Segment Tree
 |  |
 | ------- |
