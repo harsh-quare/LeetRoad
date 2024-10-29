@@ -1,8 +1,7 @@
 class Solution {
 public:
     int solve(int i, int j, vector<vector<int>>& grid, int m, int n, int prev, vector<vector<int>>& dp){
-        if(i < 0 || j < 0 || i >= m || j >= n) return 0;
-        if(j != 0 && grid[i][j] <= prev) return 0;
+        if(i < 0 || j < 0 || i >= m || j >= n || grid[i][j] <= prev) return 0;
 
         if(dp[i][j] != -1) return dp[i][j];
 
@@ -20,7 +19,7 @@ public:
 
         int ans = 0;
         for(int i = 0; i < m; i++){
-            ans = max(ans, solve(i, 0, grid, m, n, grid[i][0], dp));
+            ans = max(ans, solve(i, 0, grid, m, n, -1, dp));
         }
 
         return ans-1;
