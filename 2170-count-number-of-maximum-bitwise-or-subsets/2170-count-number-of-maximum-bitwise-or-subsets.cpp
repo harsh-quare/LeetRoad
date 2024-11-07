@@ -1,17 +1,10 @@
 class Solution {
 public:
-    void solve(int id, vector<int>& nums, vector<int>& help, int& ans, int& maxi){
+    void solve(int id, vector<int>& nums, vector<int>& help, int& ans, int maxi){
         if(id >= nums.size()){
             int orSum = 0;
-            for(auto& x: help){
-                orSum = orSum | x;
-            }
-
-            if(orSum > maxi){
-                maxi = orSum;
-                ans = 0;  //reset
-            }    
-
+            for(auto& x: help) orSum = orSum | x;
+            
             if(orSum == maxi){
                 ans++;
             }   
@@ -31,6 +24,7 @@ public:
         vector<int> help;
         int ans = 0;
         int maxi = 0;
+        for(auto x: nums) maxi = maxi | x;
         solve(0, nums, help, ans, maxi);
         return ans;
     }
