@@ -15,10 +15,9 @@ public:
         }
 
         int maxi = 0;
-        // for(int i = 0; i < 256; i++){
-            // maxi = max(maxi, bits[i]);
-        // }
-        maxi= *max_element(bits.begin(), bits.end());
+        for(int i = 0; i < 256; i++){
+            maxi = max(maxi, bits[i]);
+        }
 
         return maxi;
     }
