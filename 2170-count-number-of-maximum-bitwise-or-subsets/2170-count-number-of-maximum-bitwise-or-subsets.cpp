@@ -1,31 +1,22 @@
 class Solution {
 public:
-    void solve(int id, vector<int>& nums, vector<int>& help, int& ans, int maxi){
-        if(id >= nums.size()){
-            int orSum = 0;
-            for(auto& x: help) orSum = orSum | x;
-            
-            if(orSum == maxi){
-                ans++;
-            }   
-
-            return ;
+    int solve(int id, vector<int>& nums, int curOr, int maxOr){
+        if(id >= nums.size()){ 
+            return (curOr == maxOr ? 1 : 0);
         }
 
-        //include current element
-        help.push_back(nums[id]);
-        solve(id+1, nums, help, ans, maxi);
-        help.pop_back(); //backtrack: vapas nikal do jisko daala tha, dusre path pe jaane se pahle
-
         //Not include
-        solve(id+1, nums, help, ans, maxi);
+        int notPick = solve(id+1, nums, curOr, maxOr);
+
+        //include current element
+        int pick = solve(id+1, nums, curOr | nums[id], maxOr);
+
+        return pick + notPick;
     }
+    
     int countMaxOrSubsets(vector<int>& nums) {
-        vector<int> help;
-        int ans = 0;
         int maxi = 0;
         for(auto x: nums) maxi = maxi | x;
-        solve(0, nums, help, ans, maxi);
-        return ans;
+        return solve(0, nums, 0, maxi);
     }
 };
