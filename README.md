@@ -222,6 +222,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/harsh-quare/LeetRoad/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2594-count-pairs-of-similar-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2594-count-pairs-of-similar-strings) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
+| [3394-minimum-array-end](https://github.com/harsh-quare/LeetRoad/tree/master/3394-minimum-array-end) |
 | [3601-find-the-k-th-character-in-string-game-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3601-find-the-k-th-character-in-string-game-ii) |
 ## Dynamic Programming
 |  |
