@@ -1,24 +1,22 @@
 class Solution {
 public:
     long long minEnd(int n, int x) {
-        // edge cases: 7: 111, right me koi jagah nhi h, to left me badhana padega
-        long long val = x;  //first value is always x, minimum of all
-        long long mask = n-1;
+        vector<short> shifts;
+        long long cur = x;
+        long long calc = n - 1;
         
-        int l1 = 0, l2 = 0;
-
-        while(mask){
-            long long m = (mask & 1);
-            mask >>= 1;
-
-            while((1LL << l2) & val){
-                l2++;
-            }
-
-            val |= (m << l2);
-            l2++;
+        for(int i = 0; i < 32; i++){   //find bit positions in x which are 0
+            if(!((1 << i) & x)) shifts.push_back(i);
+        }
+        for(int i = 32; i < 64; i++){
+            shifts.push_back(i);
         }
 
-        return val;
+        // for(auto x: shifts) cout << x << ' ';
+        
+        for(int i = 0; calc > 0; i++, calc >>= 1) {
+            cur += (calc & 1) << shifts[i];
+        }
+        return cur;
     }
 };
