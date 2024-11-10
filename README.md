@@ -165,6 +165,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2755-extra-characters-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2755-extra-characters-in-a-string) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
+| [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3387-minimum-operations-to-make-median-of-array-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/3387-minimum-operations-to-make-median-of-array-equal-to-k) |
 ## Divide and Conquer
 |  |
@@ -222,6 +223,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/harsh-quare/LeetRoad/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2594-count-pairs-of-similar-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2594-count-pairs-of-similar-strings) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
+| [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3394-minimum-array-end](https://github.com/harsh-quare/LeetRoad/tree/master/3394-minimum-array-end) |
 | [3601-find-the-k-th-character-in-string-game-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3601-find-the-k-th-character-in-string-game-ii) |
 ## Dynamic Programming
@@ -388,6 +390,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0438-find-all-anagrams-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0567-permutation-in-string](https://github.com/harsh-quare/LeetRoad/tree/master/0567-permutation-in-string) |
 | [1755-defuse-the-bomb](https://github.com/harsh-quare/LeetRoad/tree/master/1755-defuse-the-bomb) |
+| [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 ## Union Find
 |  |
 | ------- |
