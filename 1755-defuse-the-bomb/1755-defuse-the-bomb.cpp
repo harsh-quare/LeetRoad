@@ -2,23 +2,28 @@ class Solution {
 public:
     vector<int> decrypt(vector<int>& code, int k) {
         int n = code.size();
-        vector<int> ans(n);
+        vector<int> ans;
 
         for(int i = 0; i < n; i++){
-            int sum = 0;
-
-            if(k > 0){       // when k > 0, sum the next k elements
-                for(int j = 1; j <= k; j++){
-                    sum += code[(i + j) % n];
+            if(k == 0) ans.push_back(0);
+            else if(k > 0){
+                int val = 0;
+                int j = 0;
+                while(j < k){
+                    val += code[(i+1 + j + n) % n];
+                    j++;
                 }
+                ans.push_back(val);
             }
-            else if(k < 0){  // when k < 0, sum the previous abs(k) elements
-                for(int j = 1; j <= abs(k); j++){
-                    sum += code[(i - j + n) % n];
+            else{
+                int val = 0;
+                int j = 0;
+                while(j < abs(k)){
+                    val += code[(i-1 - j + n) % n];
+                    j++;
                 }
+                ans.push_back(val);
             }
-
-            ans[i] = sum;
         }
 
         return ans;
