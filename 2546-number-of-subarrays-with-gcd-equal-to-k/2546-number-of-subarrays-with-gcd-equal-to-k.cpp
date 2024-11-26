@@ -1,28 +1,16 @@
 class Solution {
 public:
-    int gcd(int a, int b){
-        if(a == 0) return b;
-
-        return gcd(b%a, a);
-    }
     int subarrayGCD(vector<int>& nums, int k) {
-        int n = nums.size();
-        int cnt = 0;
-
-        for(int i = 0; i < n; i++){
-            if(nums[i] % k != 0) continue;
-
-            for(int j = i; j < n; j++){
-
-                int res = nums[i];
-                for(int k = i+1; k <= j; k++){
-                    res = gcd(nums[k], res);
-                }
-
-                if(res == k) cnt++;
+        int ans = 0;
+        int i, j, n = nums.size(), g = 0;
+        for(i = 0; i < n; i++){
+            g = nums[i];
+            for(j = i; j < n; j++){
+                g = __gcd(g, nums[j]);     //take gcd all number from i...to...j
+                if(g == k) ans++;          //if gcd == k than increment ans by one
+                else if(g < k) break; //if gcd < k than break subarray's loop because we cann't find a subarray whose gcd==k
             }
         }
-
-        return cnt;
+        return ans;
     }
 };
