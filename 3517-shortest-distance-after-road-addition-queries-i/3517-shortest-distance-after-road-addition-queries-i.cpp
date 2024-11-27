@@ -1,43 +1,39 @@
 class Solution {
 public:
-    #define pii pair<int, int> 
-    //dist, nbr-node
-    unordered_map<int, vector<pii>> adj; //O(V+E)
+    int bfs(int n, vector<vector<int>>& adj){
+        vector<bool> vis(n, false);
+        vis[0] = true;
+        queue<int> q;
+        q.push(0);      
+        
+        int level = 0;
 
-    int dijkstra(int n){
-        vector<int> dist(n, INT_MAX);
-        //single source to all nodes shortest dist
-        //here: 0 --> n-1
+        while(!q.empty()){
+            int sz = q.size();
+            while(sz--){
+                int cur = q.front();
+                q.pop();
 
-        dist[0] = 0;
-        priority_queue<pii, vector<pii>, greater<pii>> pq;
-        pq.push({0, 0});  //dist, node
+                if(cur == n-1){  //reached destination
+                    return level;
+                }
 
-        while(!pq.empty()){
-            int d = pq.top().first;
-            int node = pq.top().second;
-            pq.pop();
-
-            if(node == n-1) return dist[n-1];  //iske baad isse shorter value nhi milegi gue to priority_queue nature
-
-            for(auto& p: adj[node]){
-                int nbrNode = p.second;
-                int wt = p.first;
-
-                if(dist[nbrNode] > d + wt){
-                    dist[nbrNode] = d + wt;
-                    pq.push({d + wt, nbrNode});
+                for(auto& nbr: adj[cur]){
+                    if(!vis[nbr]){
+                        q.push(nbr);
+                        vis[nbr] = true;
+                    }
                 }
             }
+            level++;
         }
-
-        return dist[n-1];
+        return -1;
     }
     
     vector<int> shortestDistanceAfterQueries(int n, vector<vector<int>>& queries) {
-
+        vector<vector<int>> adj(n);
         for(int i = 0; i<n-1; i++){
-            adj[i].push_back({1, i+1});  //each edge weight is 1
+            adj[i].push_back(i+1);
         }
 
         vector<int> ans;
@@ -46,8 +42,8 @@ public:
             int u = q[0];
             int v = q[1];
 
-            adj[u].push_back({1, v});
-            ans.push_back(dijkstra(n));
+            adj[u].push_back(v);
+            ans.push_back(bfs(n, adj));
         }
 
         return ans;
