@@ -24,9 +24,9 @@ public:
                 int nbrNode = p.second;
                 int wt = p.first;
 
-                if(dist[nbrNode] > dist[node] + wt){
-                    dist[nbrNode] = dist[node] + wt;
-                    pq.push({dist[nbrNode], nbrNode});
+                if(dist[nbrNode] > d + wt){
+                    dist[nbrNode] = d + wt;
+                    pq.push({d + wt, nbrNode});
                 }
             }
         }
