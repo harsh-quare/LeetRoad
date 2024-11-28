@@ -1,26 +1,26 @@
 class Solution {
 public:
-    // 0-1 BFS
+    // Dijkstra's
+    #define pip pair<int, pair<int, int>>
     int minimumObstacles(vector<vector<int>>& grid) {
         int m = grid.size();
         int n = grid[0].size();
 
-        deque<pair<int, int>> dq;
-        dq.push_front({0,0});
+        priority_queue<pip, vector<pip>, greater<pip>> pq;
+        pq.push({0, {0,0}});
 
         vector<vector<int>> dist(m, vector<int>(n, INT_MAX));
         dist[0][0] = 0;
 
         vector<vector<int>> dirx = {{-1, 0}, {1, 0}, {0,-1}, {0,1}};
 
-        while(!dq.empty()){
-            int x = dq.front().first;
-            int y = dq.front().second;
-            dq.pop_front();
+        while(!pq.empty()){
+            int d = pq.top().first;
+            int x = pq.top().second.first;
+            int y = pq.top().second.second;
+            pq.pop();
 
-            int d = dist[x][y];
-
-            if(x == m-1 && y == n-1) return dist[x][y];  // or d
+            if(x == m-1 && y == n-1) return d; // or dist[x][y]
 
             for(auto& dir: dirx){
                 int nx = x + dir[0];
@@ -31,8 +31,7 @@ public:
 
                     if(d + wt < dist[nx][ny]){
                         dist[nx][ny] = d + wt;
-                        if(grid[nx][ny] == 0) dq.push_front({nx, ny});
-                        else dq.push_back({nx, ny});
+                        pq.push({d+wt, {nx, ny}});
                     }
                 }
             }
