@@ -1,35 +1,42 @@
 class Solution {
 public:
+    // 0-1 BFS
     int minimumObstacles(vector<vector<int>>& grid) {
-        //DIjkstra's
-        int n = grid.size();
-        int m = grid[0].size();
+        int m = grid.size();
+        int n = grid[0].size();
 
-        priority_queue<pair<int, pair<int, int>>, vector<pair<int, pair<int, int>>>, greater<pair<int, pair<int, int>>>> pq;
-        vector<vector<int>> vis(n, vector<int>(m, 0));
+        vector<vector<int>> dirx = {{0,1}, {0,-1}, {1,0}, {-1,0}};
 
-        pq.push({0,{0,0}});
-        vector<vector<int>> dir = {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
+        deque<pair<int, int>> dq{{0, 0}};        //starting at (0,0)
+        vector<vector<int>> dist(m, vector<int>(n, INT_MAX));
+        dist[0][0] = 0;
+        vector<int> dx = {-1, 0, 1, 0};
+        vector<int> dy = {0, 1, 0, -1};
 
-        while(!pq.empty()){
-            int d = pq.top().first;
-            int x = pq.top().second.first;
-            int y = pq.top().second.second;
-            pq.pop();
+        while(!dq.empty()){
+            int x = dq.front().first;
+            int y = dq.front().second;
+            dq.pop_front();
 
-            if(x == n-1 && y == m-1) return d;  //early stopping
+            int d = dist[x][y];
 
-            for(int i = 0; i < 4; i++){
-                int nx = x + dir[i][0];
-                int ny = y + dir[i][1];
+            if(x == m-1 && y == n-1) return dist[x][y];
 
-                if(nx >= 0 && ny >= 0 && nx < n && ny < m && !vis[nx][ny]){
-                    pq.push({d + grid[nx][ny], {nx, ny}});
-                    vis[nx][ny] = 1;
+            for(int k = 0; k < 4; k++){
+                int newX = x + dx[k];
+                int newY = y + dy[k];
+
+                if(newX >= 0 && newY >= 0 && newX < m && newY < n){
+                    int wt = (grid[newX][newY] == 1) ? 1 : 0;  //agar new cell me jaha ja rhe ho, woh obstacle h, to usko remove krna padega, means edge weight 1
+
+                    if(d + wt < dist[newX][newY]){
+                        dist[newX][newY] = d + wt;
+                        grid[newX][newY] == 0 ? dq.push_front({newX, newY}) : dq.push_back({newX, newY});  //agar new cell me obstacle h to, usko push_back kro, qki ham har iteration me front se nodes lete h, to jisme fewer obstacle h usko process pahle krna priority h
+                    }
                 }
             }
         }
 
-        return -1;
+        return dist[m-1][n-1];
     }
 };
