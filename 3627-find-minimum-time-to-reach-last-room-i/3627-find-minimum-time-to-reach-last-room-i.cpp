@@ -1,34 +1,45 @@
 class Solution {
 public:
-    int minTimeToReach(vector<vector<int>>& moveTime) {
-        int n = moveTime.size();
-        int m = moveTime[0].size();
-        // always choose the cell to which we can reach in minimum time
-        priority_queue<pair<int, pair<int, int>>, vector<pair<int, pair<int, int>>>, greater<pair<int, pair<int, int>>>> pq;
+    #define pip pair<int, pair<int, int>>
+    vector<vector<int>> dirx = {{-1,0}, {1, 0}, {0,-1}, {0,1}};
+    int minTimeToReach(vector<vector<int>>& grid) {
+        //Dijkstra's
+        int m = grid.size();
+        int n = grid[0].size();
+
+        priority_queue<pip, vector<pip>, greater<pip>> pq;
         pq.push({0, {0, 0}});
-        vector<vector<int>> time(n, vector<int>(m, INT_MAX));
-        int dir[] = {-1,0,1,0,-1};
+        vector<vector<int>> dist(m ,vector<int>(n, INT_MAX));
+        dist[0][0] = 0;
+
+        vector<vector<bool>> vis(m ,vector<bool>(n, 0));
+
         while(!pq.empty()){
-            int currTime = pq.top().first;
-            int r = pq.top().second.first;
-            int c = pq.top().second.second;
+            int x = pq.top().second.first;
+            int y = pq.top().second.second;
+            int t = pq.top().first;
             pq.pop();
 
-            if(r == n-1 && c == m-1) return currTime;
+            int stepTime = ((x+y) % 2 == 0) ? 1 : 2;  //cost
 
-            for(int i=0; i<4; i++){
-                int rNew = r+dir[i];
-                int cNew = c+dir[i+1];
-                if(rNew < n && cNew < m && rNew >= 0 && cNew >= 0){
-                    int newTime = 1 + max(moveTime[rNew][cNew], currTime);
+            if(x == m-1 && y == n-1) return t;
 
-                    if(newTime < time[rNew][cNew]){
-                        pq.push({newTime, {rNew,cNew}});
-                        time[rNew][cNew] = newTime;
+            if(vis[x][y] == true) continue;
+            vis[x][y] = true;
+
+            for(auto& dir: dirx){
+                int nx = x + dir[0];
+                int ny = y + dir[1];
+
+                if(nx >= 0 && nx < m && ny >= 0 && ny < n){
+                    if(dist[nx][ny] > 1 + max(t, grid[nx][ny])){
+                        dist[nx][ny] = 1 + max(t, grid[nx][ny]);
+                        pq.push({dist[nx][ny], {nx, ny}});
                     }
                 }
             }
         }
-        return -1;
+
+        return dist[m-1][n-1];
     }
 };
