@@ -30,7 +30,7 @@ public:
                 int ny = y + dir[1];
 
                 if(nx >= 0 && nx < m && ny >= 0 && ny < n){
-                    if(t >= grid[nx][ny]){  //can only move at the moment when the time is equal or greater than 
+                    if(t+1 > grid[nx][ny]){  //can only move at the moment when the time is equal or greater than 
                         dist[nx][ny] = t+1;  //takes 1 step to move
                         pq.push({t+1, {nx, ny}});
                     }
