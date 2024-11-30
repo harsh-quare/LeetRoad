@@ -48,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/harsh-quare/LeetRoad/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1484-linked-list-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1484-linked-list-in-binary-tree) |
+| [1753-path-with-minimum-effort](https://github.com/harsh-quare/LeetRoad/tree/master/1753-path-with-minimum-effort) |
 | [2201-valid-arrangement-of-pairs](https://github.com/harsh-quare/LeetRoad/tree/master/2201-valid-arrangement-of-pairs) |
 | [2439-longest-cycle-in-a-graph](https://github.com/harsh-quare/LeetRoad/tree/master/2439-longest-cycle-in-a-graph) |
 | [2493-reverse-odd-levels-of-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/2493-reverse-odd-levels-of-binary-tree) |
@@ -62,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1484-linked-list-in-binary-tree) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+| [1753-path-with-minimum-effort](https://github.com/harsh-quare/LeetRoad/tree/master/1753-path-with-minimum-effort) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/harsh-quare/LeetRoad/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [2493-reverse-odd-levels-of-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/2493-reverse-odd-levels-of-binary-tree) |
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/harsh-quare/LeetRoad/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
@@ -161,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/harsh-quare/LeetRoad/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/harsh-quare/LeetRoad/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
 | [1694-make-sum-divisible-by-p](https://github.com/harsh-quare/LeetRoad/tree/master/1694-make-sum-divisible-by-p) |
+| [1753-path-with-minimum-effort](https://github.com/harsh-quare/LeetRoad/tree/master/1753-path-with-minimum-effort) |
 | [1755-defuse-the-bomb](https://github.com/harsh-quare/LeetRoad/tree/master/1755-defuse-the-bomb) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/harsh-quare/LeetRoad/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -210,6 +213,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/0215-kth-largest-element-in-an-array) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/harsh-quare/LeetRoad/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+| [1753-path-with-minimum-effort](https://github.com/harsh-quare/LeetRoad/tree/master/1753-path-with-minimum-effort) |
 | [2012-process-tasks-using-servers](https://github.com/harsh-quare/LeetRoad/tree/master/2012-process-tasks-using-servers) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/harsh-quare/LeetRoad/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/harsh-quare/LeetRoad/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
@@ -230,6 +234,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0971-shortest-bridge](https://github.com/harsh-quare/LeetRoad/tree/master/0971-shortest-bridge) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/harsh-quare/LeetRoad/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+| [1753-path-with-minimum-effort](https://github.com/harsh-quare/LeetRoad/tree/master/1753-path-with-minimum-effort) |
 | [1972-rotating-the-box](https://github.com/harsh-quare/LeetRoad/tree/master/1972-rotating-the-box) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/harsh-quare/LeetRoad/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/harsh-quare/LeetRoad/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
@@ -416,6 +421,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0731-my-calendar-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0731-my-calendar-ii) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/harsh-quare/LeetRoad/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/harsh-quare/LeetRoad/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
+| [1753-path-with-minimum-effort](https://github.com/harsh-quare/LeetRoad/tree/master/1753-path-with-minimum-effort) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/harsh-quare/LeetRoad/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/harsh-quare/LeetRoad/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2188-minimized-maximum-of-products-distributed-to-any-store](https://github.com/harsh-quare/LeetRoad/tree/master/2188-minimized-maximum-of-products-distributed-to-any-store) |
@@ -474,6 +480,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Union Find
 |  |
 | ------- |
+| [1753-path-with-minimum-effort](https://github.com/harsh-quare/LeetRoad/tree/master/1753-path-with-minimum-effort) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
 ## Monotonic Stack
 |  |
