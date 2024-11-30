@@ -40,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0211-design-add-and-search-words-data-structure](https://github.com/harsh-quare/LeetRoad/tree/master/0211-design-add-and-search-words-data-structure) |
+| [0332-reconstruct-itinerary](https://github.com/harsh-quare/LeetRoad/tree/master/0332-reconstruct-itinerary) |
 | [0386-lexicographical-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/0386-lexicographical-numbers) |
 | [0971-shortest-bridge](https://github.com/harsh-quare/LeetRoad/tree/master/0971-shortest-bridge) |
 | [0988-flip-equivalent-binary-trees](https://github.com/harsh-quare/LeetRoad/tree/master/0988-flip-equivalent-binary-trees) |
@@ -354,6 +355,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Graph
 |  |
 | ------- |
+| [0332-reconstruct-itinerary](https://github.com/harsh-quare/LeetRoad/tree/master/0332-reconstruct-itinerary) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [2201-valid-arrangement-of-pairs](https://github.com/harsh-quare/LeetRoad/tree/master/2201-valid-arrangement-of-pairs) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/harsh-quare/LeetRoad/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
@@ -507,5 +509,6 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Eulerian Circuit
 |  |
 | ------- |
+| [0332-reconstruct-itinerary](https://github.com/harsh-quare/LeetRoad/tree/master/0332-reconstruct-itinerary) |
 | [2201-valid-arrangement-of-pairs](https://github.com/harsh-quare/LeetRoad/tree/master/2201-valid-arrangement-of-pairs) |
 <!---LeetCode Topics End-->
