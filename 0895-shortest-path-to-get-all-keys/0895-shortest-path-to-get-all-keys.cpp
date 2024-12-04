@@ -1,87 +1,87 @@
 class Solution {
 public:
-    //BFS
     #define pip pair<int, pair<int, int>>
-    vector<vector<int>> dirx = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+    vector<vector<int>> dirx = {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
     int shortestPathAllKeys(vector<string>& grid) {
-        int m = grid.size();
-        int n = grid[0].size();
+        int n = grid.size();
+        int m = grid[0].size();
 
-        int x = -1, y = -1;
-        int locks = 0;  //locks ka count hoga max lock('a', 'b', 'c', 'd'...) jo milega max, utne hi locks honge
-        for(int i = 0; i < m; i++){
-            for(int j = 0; j < n; j++){
-                if(grid[i][j] == '@'){
-                    x = i;
-                    y = j;
+        int x = -1, y = -1;  //starting point
+        int locks = 0;
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                char ch = grid[i][j];
+                if(ch == '@'){
+                    x = i, y = j;
                 }
-                if(grid[i][j] >= 'a' && grid[i][j] <= 'f') locks = max(locks, grid[i][j] - 'a' + 1);
+
+                if(ch >= 'a' && ch <= 'f'){
+                    locks = max(locks, ch - 'a' + 1);
+                }
             }
         }
 
-        // cout << locks << endl;
-
         queue<pip> q;
-        q.push({0, {x, y}});  //using bitmask for tracking which keys have been received till now
-        // 000000: means no lock is there,  000111: means three locks of type-a,b,c are there
+        q.push({0, {x, y}});
 
-        //visited not only depends on x,y but also on the number of keys because we need to move to the same cells if we havan't found the key for a lock
-        //so, whenever we found any key, we can traverse entire matrix with that.
-        //means there would be three variables for visited {{x,y}, keys}
-        //after every key we find, our ability to traverse in the matrix renews itself
-        unordered_set<string> vis;
-        vis.insert(to_string(0) + " " + to_string(x) + " " + to_string(y));
+        
+
+        //there will be three states in the visited, bcz whenever we get a key, we renew our ability to traverse the entire matrix
+        vector<vector<vector<int>>> vis(n, vector<vector<int>>(m, vector<int>((1 << locks) + 1, false)));
+        vis[x][y][0] = true;
+
+        // cout << (1 << locks) << endl;
 
         int steps = 0;
         while(!q.empty()){
             int sz = q.size();
             // cout << steps << endl;
             while(sz--){
-                auto p = q.front();
+                int keys = q.front().first;
+                int i = q.front().second.first;
+                int j = q.front().second.second;
                 q.pop();
-
-                int keys = p.first;
-                int i = p.second.first;
-                int j = p.second.second;
 
                 // cout << keys << " " << i << " " << j << endl;
 
-                if(keys == (1 << locks) - 1){  //agar saari keys mil gyi, means saari bits set h
+                if(keys == ((1 << locks) - 1)){  //all bits set??
                     return steps;
                 }
 
                 for(auto& dir: dirx){
                     int ni = i + dir[0];
                     int nj = j + dir[1];
-                    int branchKeys = keys;  // keys in this branch of BFS
+                    int BFSbranchKeys = keys;
 
-                    if(ni >= 0 && ni < m && nj >= 0 && nj < n){
+                    if(ni >= 0 && ni < n && nj >= 0 && nj < m){
+                        
                         char ch = grid[ni][nj];
 
                         if(ch == '#') continue;
 
                         if(ch >= 'a' && ch <= 'f'){
-                            // Update keys for this branch of BFS
-                            branchKeys |= 1 << (ch - 'a');   // set the bit having this key
+                            //pick up the key, set the respective bit
+                            BFSbranchKeys |= (1 << (ch-'a'));
                         }
 
-                        if(ch >= 'A' && ch <= 'F' && ((keys >> (ch - 'A')) & 1) == 0){
-                            //agar lock pe aa gye and uske liye respective bit wali key set nhi h, to jao or pahle uski key dhundh ke lao
-                            //agar chabi nhi h, to skip kr do and pahle key dhundh ke laao or (1 << (ch-'A' )) ko set kro
-                            continue ;
+                        if(ch >= 'A' && ch <= 'F'){
+                            //if you don't have the key for this lock, just continue your journey and chabi dhundh ke lao, fir aake baat krna
+                            if(((keys >> (ch - 'A')) & 1) == 0){
+                                continue;
+                            }
                         }
-                        //agar current state visited nhi h, to visit kr lo
-                        if(!vis.count(to_string(branchKeys) + " " + to_string(ni) + " " + to_string(nj))){
-                            vis.insert(to_string(branchKeys) + " " + to_string(ni) + " " + to_string(nj));
-                            q.push({branchKeys, {ni, nj}});
+
+                        if(!vis[ni][nj][BFSbranchKeys]){
+                            vis[ni][nj][BFSbranchKeys] = true;
+                            q.push({BFSbranchKeys, {ni, nj}});
                         }
+                        
                     }
                 }
             }
             steps++;
             // cout << endl;
         }
-
         return -1;
     }
 };
