@@ -7,7 +7,7 @@ public:
 
         int i = 0, j = 0;
         while(i < n && j < m){
-            if(str1[i] == str2[j] || (str1[i]-'a' + 1) % 26 == str2[j]-'a'){
+            if(str1[i] == str2[j] || str1[i] + 1 == str2[j] || str1[i] - 25 == str2[j]){
                 i++;
                 j++;
             }
