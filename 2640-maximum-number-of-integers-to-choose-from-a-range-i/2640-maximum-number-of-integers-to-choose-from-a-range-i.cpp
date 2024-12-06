@@ -1,7 +1,10 @@
 class Solution {
 public:
     int maxCount(vector<int>& banned, int n, int maxSum) {
-        unordered_set<int> st(banned.begin(), banned.end());
+        unordered_set<int> st;
+        for(auto& x: banned){
+            if(x <= n) st.insert(x);
+        }
         int i = 1;
         long sum = 0;
         int cnt = 0;
