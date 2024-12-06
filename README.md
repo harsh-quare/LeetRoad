@@ -102,6 +102,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2179-most-beautiful-item-for-each-query](https://github.com/harsh-quare/LeetRoad/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2210-find-target-indices-after-sorting-array](https://github.com/harsh-quare/LeetRoad/tree/master/2210-find-target-indices-after-sorting-array) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/harsh-quare/LeetRoad/tree/master/2274-keep-multiplying-found-values-by-two) |
+| [2305-append-k-integers-with-minimal-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2305-append-k-integers-with-minimal-sum) |
 | [2554-minimum-total-distance-traveled](https://github.com/harsh-quare/LeetRoad/tree/master/2554-minimum-total-distance-traveled) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/harsh-quare/LeetRoad/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2586-longest-square-streak-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/2586-longest-square-streak-in-an-array) |
@@ -128,6 +129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [0795-k-th-symbol-in-grammar](https://github.com/harsh-quare/LeetRoad/tree/master/0795-k-th-symbol-in-grammar) |
 | [2050-count-good-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/2050-count-good-numbers) |
+| [2305-append-k-integers-with-minimal-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2305-append-k-integers-with-minimal-sum) |
 | [2546-number-of-subarrays-with-gcd-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/2546-number-of-subarrays-with-gcd-equal-to-k) |
 | [2713-find-the-divisibility-array-of-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2713-find-the-divisibility-array-of-a-string) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/harsh-quare/LeetRoad/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
@@ -197,6 +199,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2232-adding-spaces-to-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2232-adding-spaces-to-a-string) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/harsh-quare/LeetRoad/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/harsh-quare/LeetRoad/tree/master/2292-counting-words-with-a-given-prefix) |
+| [2305-append-k-integers-with-minimal-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2305-append-k-integers-with-minimal-sum) |
 | [2341-count-prefixes-of-a-given-string](https://github.com/harsh-quare/LeetRoad/tree/master/2341-count-prefixes-of-a-given-string) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/harsh-quare/LeetRoad/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/harsh-quare/LeetRoad/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
@@ -334,6 +337,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1648-minimum-insertions-to-balance-a-parentheses-string](https://github.com/harsh-quare/LeetRoad/tree/master/1648-minimum-insertions-to-balance-a-parentheses-string) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/harsh-quare/LeetRoad/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/harsh-quare/LeetRoad/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
+| [2305-append-k-integers-with-minimal-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2305-append-k-integers-with-minimal-sum) |
 | [2640-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/harsh-quare/LeetRoad/tree/master/2640-maximum-number-of-integers-to-choose-from-a-range-i) |
 | [3387-minimum-operations-to-make-median-of-array-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/3387-minimum-operations-to-make-median-of-array-equal-to-k) |
 ## String
