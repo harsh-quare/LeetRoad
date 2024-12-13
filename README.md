@@ -210,6 +210,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2274-keep-multiplying-found-values-by-two](https://github.com/harsh-quare/LeetRoad/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/harsh-quare/LeetRoad/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2305-append-k-integers-with-minimal-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2305-append-k-integers-with-minimal-sum) |
+| [2310-minimum-operations-to-halve-array-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2310-minimum-operations-to-halve-array-sum) |
 | [2341-count-prefixes-of-a-given-string](https://github.com/harsh-quare/LeetRoad/tree/master/2341-count-prefixes-of-a-given-string) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/harsh-quare/LeetRoad/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/harsh-quare/LeetRoad/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
@@ -261,6 +262,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/harsh-quare/LeetRoad/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/harsh-quare/LeetRoad/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2164-two-best-non-overlapping-events](https://github.com/harsh-quare/LeetRoad/tree/master/2164-two-best-non-overlapping-events) |
+| [2310-minimum-operations-to-halve-array-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2310-minimum-operations-to-halve-array-sum) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/harsh-quare/LeetRoad/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/harsh-quare/LeetRoad/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/harsh-quare/LeetRoad/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
@@ -364,6 +366,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2094-remove-stones-to-minimize-the-total](https://github.com/harsh-quare/LeetRoad/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/harsh-quare/LeetRoad/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2305-append-k-integers-with-minimal-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2305-append-k-integers-with-minimal-sum) |
+| [2310-minimum-operations-to-halve-array-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2310-minimum-operations-to-halve-array-sum) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/harsh-quare/LeetRoad/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2640-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/harsh-quare/LeetRoad/tree/master/2640-maximum-number-of-integers-to-choose-from-a-range-i) |
 | [3387-minimum-operations-to-make-median-of-array-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/3387-minimum-operations-to-make-median-of-array-equal-to-k) |
