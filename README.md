@@ -236,6 +236,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2713-find-the-divisibility-array-of-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2713-find-the-divisibility-array-of-a-string) |
 | [2755-extra-characters-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2755-extra-characters-in-a-string) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/2794-maximum-number-of-moves-in-a-grid) |
+| [2868-continuous-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2868-continuous-subarrays) |
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/harsh-quare/LeetRoad/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
@@ -269,6 +270,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2692-take-gifts-from-the-richest-pile](https://github.com/harsh-quare/LeetRoad/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/harsh-quare/LeetRoad/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2711-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/2711-minimum-time-to-visit-a-cell-in-a-grid) |
+| [2868-continuous-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2868-continuous-subarrays) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/harsh-quare/LeetRoad/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 ## Quickselect
@@ -524,6 +526,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0729-my-calendar-i](https://github.com/harsh-quare/LeetRoad/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0731-my-calendar-ii) |
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/harsh-quare/LeetRoad/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
+| [2868-continuous-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2868-continuous-subarrays) |
 ## Queue
 |  |
 | ------- |
@@ -531,6 +534,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0859-design-circular-deque](https://github.com/harsh-quare/LeetRoad/tree/master/0859-design-circular-deque) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/harsh-quare/LeetRoad/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/harsh-quare/LeetRoad/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
+| [2868-continuous-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2868-continuous-subarrays) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -573,6 +577,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/harsh-quare/LeetRoad/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
 | [1755-defuse-the-bomb](https://github.com/harsh-quare/LeetRoad/tree/master/1755-defuse-the-bomb) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/harsh-quare/LeetRoad/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
+| [2868-continuous-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2868-continuous-subarrays) |
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/harsh-quare/LeetRoad/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3522-find-the-power-of-k-size-subarrays-i](https://github.com/harsh-quare/LeetRoad/tree/master/3522-find-the-power-of-k-size-subarrays-i) |
@@ -605,6 +610,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0239-sliding-window-maximum](https://github.com/harsh-quare/LeetRoad/tree/master/0239-sliding-window-maximum) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/harsh-quare/LeetRoad/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/harsh-quare/LeetRoad/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
+| [2868-continuous-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2868-continuous-subarrays) |
 ## Database
 |  |
 | ------- |
