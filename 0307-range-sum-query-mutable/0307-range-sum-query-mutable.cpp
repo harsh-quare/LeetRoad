@@ -69,7 +69,7 @@ public:
 
     void updateRange(int start, int end, int val, int i, int l, int r){
         if(lazy[i] != 0){
-            st[i] += (r-l+1)*val;
+            st[i] += (r-l+1) * lazy[i];
             if(l != r){
                 lazy[2*i+1] += lazy[i];
                 lazy[2*i+2] += lazy[i];
