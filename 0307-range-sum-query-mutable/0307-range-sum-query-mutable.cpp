@@ -1,80 +1,102 @@
 class NumArray {
-private:
-    int n;
-    vector<int> nums;
-    vector<int> segTree;
 public:
+    int n;
+    vector<int> st;
+    vector<int> lazy;
+
+    void buildSt(int i, int l, int r, vector<int>& nums){
+        //base case
+        if(l == r){
+            st[i] = nums[l];
+            return ;
+        }
+
+        int mid = (r+l)/2;
+
+        buildSt(2*i + 1, l, mid, nums);
+        buildSt(2*i + 2, mid+1, r, nums);
+
+        st[i] = st[2*i+1] + st[2*i+2];
+    }
+
+    void updateQuery(int id, int val, int i, int l, int r){
+        if(l == r){
+            st[i] = val;
+            return ;
+        }
+
+        int mid = (r+l)/2;
+
+        if(id <= mid){
+            updateQuery(id, val, 2*i+1, l, mid);
+        }
+        else{
+            updateQuery(id, val, 2*i+2, mid+1, r);
+        }
+
+        st[i] = st[2*i+1] + st[2*i+2];
+    }
+
+    int rangeSum(int start, int end, int i, int l, int r){
+        //entirely out of bound
+        if(l > end || r < start){
+            return 0;
+        }
+
+        if(l >= start && r <= end){
+            return st[i];
+        }
+
+        int mid = (r+l)/2;
+
+        return rangeSum(start, end, 2*i+1, l, mid) + rangeSum(start, end, 2*i+2, mid+1, r);
+    }
+
     NumArray(vector<int>& nums) {
-        //build segment tree
-        this->nums = nums;
         n = nums.size();
-        segTree.resize(4*n);
-        buildTree(0, 0, n-1, this->nums);
+        st.resize(4*n);
+        lazy.resize(4*n, 0);
+        buildSt(0, 0, n-1, nums);
     }
     
     void update(int index, int val) {
-        updateQuery(index, val, 0, 0, n-1, this->nums);
+        updateQuery(index, val, 0, 0, n-1);
     }
     
     int sumRange(int left, int right) {
         return rangeSum(left, right, 0, 0, n-1);
     }
 
+    void updateRange(int start, int end, int val, int i, int l, int r){
+        if(lazy[i] != 0){
+            st[i] += (r-l+1)*val;
+            if(l != r){
+                lazy[2*i+1] += lazy[i];
+                lazy[2*i+2] += lazy[i];
+            }
+            lazy[i] = 0;
+        }
 
-
-
-    //for segment tree
-    void buildTree(int i, int l, int r, vector<int>& nums){
-        //base case
-        if(l == r){
-            segTree[i] = nums[l];
+        if(l > end || r < start || l > r){
             return ;
         }
 
-        int mid = (l + r) / 2;
+        if(l >= start && r <= end){
+            st[i] += (r-l+1)*val;
+            if(l != r){
+                lazy[2*i + 1] += val;
+                lazy[2*i + 2] += val;
+            }
 
-        buildTree(2*i + 1, l, mid, nums);
-        buildTree(2*i + 2, mid + 1, r, nums);
-
-        segTree[i] = segTree[2*i+1] + segTree[2*i+2];
-    }
-
-
-    void updateQuery(int idx, int val, int i, int l, int r, vector<int>& nums){
-        if(l == r){
-            segTree[i] = val;
-            return;
-        }
-        
-        int mid = (l + r) / 2;
-
-        if(idx <= mid){
-            updateQuery(idx, val, 2*i+1, l, mid, nums);
-        }
-        else{
-            updateQuery(idx, val, 2*i+2, mid + 1, r, nums);
+            return ;
         }
 
-        //update node values after query updation and coming back
-        segTree[i] = segTree[2*i+1] + segTree[2*i+2];
-    }
+        int mid = (l + r)/2;
 
-    int rangeSum(int left, int right, int i, int l, int r){
-        
-        //entirely out of bound query
-        if(l > right || r < left){
-            return 0;
-        }
+        updateRange(start, end, val, 2*i+1, l, mid);
+        updateRange(start, end, val, 2*i+2, mid+1, r);
 
-        //entirely inside bounds
-        if(l >= left && r <= right){
-            return segTree[i];
-        }
-
-        int mid = (l+r)/2;
-
-        //else: overlapping
-        return rangeSum(left, right, 2*i+1, l, mid) + rangeSum(left, right, 2*i+2, mid+1, r);
+        st[i] = st[2*i+1] + st[2*i+2];
     }
 };
 
