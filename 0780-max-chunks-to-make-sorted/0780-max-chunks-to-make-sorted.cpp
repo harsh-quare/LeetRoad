@@ -1,32 +1,21 @@
 class Solution {
 public:
     int maxChunksToSorted(vector<int>& arr) {
-        //For every index, we are checking that if we make a pertition at that index, will it be valid chunk or not??
-        //SO, we need a condition to check the validity. 
-        //The condition if we observe the proble carefully will be:
-        //The maxVal from prefix(0...i) and the minVal from suffix(i+1,...n-1) 
-        // (maxPrefVal < minSufVal) => valid partition, increase chunk count
+        //The info that is provided in the problem statement, that all the numbers are between 0 to n-1, its very imp
+        //because if are trying to divide the array into some chunks so that after sorting them individually and combinint them, it will result in a sorted array
+        //and we already know how the sorted array looks. 0,1,2,3,4,...n-1
+        //so we already know the positions and their respective number that should be there
+        //now we can simply compare the cummulative sums till each index, if that becomes equal, i.e. that chunk is valid
 
         int chunks = 0;
-        int n = arr.size();
+        int cumSum = 0;
+        int orgSum = 0;
+        for(int i = 0; i < arr.size(); i++){
+            cumSum += arr[i];
+            orgSum += i;
 
-        vector<int> prefMax(n);
-        prefMax[0] = arr[0];
-        vector<int> sufMin(n);
-        sufMin[n-1] = arr[n-1];
-
-        for(int i = 0; i < n; i++){
-            if(i != 0){
-                prefMax[i] = max(prefMax[i-1], arr[i]);
-                sufMin[n-i-1] = min(sufMin[n-i], arr[n-i-1]);
-            }
-        }
-
-        for(int i = 0; i < n; i++){
-            int pahleKaMax = (i > 0) ? prefMax[i-1] : -1;
-            int aageKaMin = sufMin[i];
-
-            if(pahleKaMax < aageKaMin){
+            if(cumSum == orgSum){
+                //mtlb iss index tk arr ki values same h desired array jesi hi, but unsorted ho skti h. But qki cumSUm h, to ham iss part ka sum le rhe h to woh equal aa rha h
                 chunks++;
             }
         }
