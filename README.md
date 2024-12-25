@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Tree
 |  |
 | ------- |
+| [0515-find-largest-value-in-each-tree-row](https://github.com/harsh-quare/LeetRoad/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0988-flip-equivalent-binary-trees](https://github.com/harsh-quare/LeetRoad/tree/master/0988-flip-equivalent-binary-trees) |
 | [1035-cousins-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1035-cousins-in-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
@@ -52,6 +53,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0211-design-add-and-search-words-data-structure](https://github.com/harsh-quare/LeetRoad/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0332-reconstruct-itinerary](https://github.com/harsh-quare/LeetRoad/tree/master/0332-reconstruct-itinerary) |
 | [0386-lexicographical-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/0386-lexicographical-numbers) |
+| [0515-find-largest-value-in-each-tree-row](https://github.com/harsh-quare/LeetRoad/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0794-swim-in-rising-water](https://github.com/harsh-quare/LeetRoad/tree/master/0794-swim-in-rising-water) |
 | [0971-shortest-bridge](https://github.com/harsh-quare/LeetRoad/tree/master/0971-shortest-bridge) |
 | [0988-flip-equivalent-binary-trees](https://github.com/harsh-quare/LeetRoad/tree/master/0988-flip-equivalent-binary-trees) |
@@ -70,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Breadth-First Search
 |  |
 | ------- |
+| [0515-find-largest-value-in-each-tree-row](https://github.com/harsh-quare/LeetRoad/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0787-sliding-puzzle](https://github.com/harsh-quare/LeetRoad/tree/master/0787-sliding-puzzle) |
 | [0794-swim-in-rising-water](https://github.com/harsh-quare/LeetRoad/tree/master/0794-swim-in-rising-water) |
 | [0895-shortest-path-to-get-all-keys](https://github.com/harsh-quare/LeetRoad/tree/master/0895-shortest-path-to-get-all-keys) |
@@ -92,6 +95,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Tree
 |  |
 | ------- |
+| [0515-find-largest-value-in-each-tree-row](https://github.com/harsh-quare/LeetRoad/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0988-flip-equivalent-binary-trees](https://github.com/harsh-quare/LeetRoad/tree/master/0988-flip-equivalent-binary-trees) |
 | [1035-cousins-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1035-cousins-in-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
