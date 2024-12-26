@@ -185,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/harsh-quare/LeetRoad/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/harsh-quare/LeetRoad/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
+| [0494-target-sum](https://github.com/harsh-quare/LeetRoad/tree/master/0494-target-sum) |
 | [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/harsh-quare/LeetRoad/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0729-my-calendar-i](https://github.com/harsh-quare/LeetRoad/tree/master/0729-my-calendar-i) |
@@ -383,6 +384,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/harsh-quare/LeetRoad/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/harsh-quare/LeetRoad/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
+| [0494-target-sum](https://github.com/harsh-quare/LeetRoad/tree/master/0494-target-sum) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/harsh-quare/LeetRoad/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/harsh-quare/LeetRoad/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2164-two-best-non-overlapping-events](https://github.com/harsh-quare/LeetRoad/tree/master/2164-two-best-non-overlapping-events) |
@@ -655,6 +657,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Backtracking
 |  |
 | ------- |
+| [0494-target-sum](https://github.com/harsh-quare/LeetRoad/tree/master/0494-target-sum) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/harsh-quare/LeetRoad/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 ## Enumeration
 |  |
