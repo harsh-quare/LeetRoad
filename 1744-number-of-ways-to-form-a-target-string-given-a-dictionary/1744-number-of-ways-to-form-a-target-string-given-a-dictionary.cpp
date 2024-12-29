@@ -27,32 +27,30 @@ public:
             }
         }
 
-        vector<vector<long long>> dp(m+1, vector<long long>(n+1, 0));
-        
-        //Base case-1: if(tar_id == m) return 1;
-        for(int dict_id = 0; dict_id <= n; dict_id++){
-            dp[m][dict_id] = 1;
-        }
+        vector<long long> cur(m, 0), next(m + 1, 0);
 
-        //Bottom-up: loops opposite
-        for(int dict_id = n-1; dict_id >= 0; dict_id--){
-            for(int tar_id = m-1; tar_id >= 0; tar_id--){
-                int not_take = dp[tar_id][dict_id + 1] % mod;
+        for (int dict_id = n; dict_id >= 0; dict_id--) {
+            for (int tar_id = m; tar_id >= 0; tar_id--) {
+                if(tar_id == m) {
+                    next[m] = 1;
+                    continue;
+                }
+                if(dict_id == n) continue;
 
-                char ch = target[tar_id];
-                int take = freq[dict_id][ch - 'a'] * dp[tar_id + 1][dict_id + 1] % mod;
+                int not_take = next[tar_id];
 
-                dp[tar_id][dict_id] = (take + not_take) % mod;
+                int take = 0;
+                if(freq[dict_id][target[tar_id] - 'a'] != 0){
+                    int cur_freq = freq[dict_id][target[tar_id]-'a'];
+                    take = (cur_freq * (long long)next[tar_id + 1]) % mod;
+                }
+
+                cur[tar_id] = (take + not_take) % mod;
             }
+
+            next = cur;
         }
 
-        // for(int j = 0; j <= m; j++){
-        //     for(int i = 0; i <= n; i++){
-        //         cout << dp[j][i] << " ";
-        //     }
-        //     cout << endl;
-        // }
-
-        return dp[0][0];
+        return next[0];
     }
 };
