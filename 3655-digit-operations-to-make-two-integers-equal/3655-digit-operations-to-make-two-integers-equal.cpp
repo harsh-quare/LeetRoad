@@ -17,13 +17,14 @@ public:
     }
 
     vector<int> neighbors(int n){
+        // basically, we need all the digits individually and we can 
         vector<int> res;
-        for(int base = 1; base <= n; base *= 10){
-            int d = (n / base) % 10;
-            if((d > 0)){
+        for(int base = 1; base <= n; base *= 10){ // 1, 10, 100, 1000...
+            int dig = (n / base) % 10;
+            if((dig > 0)){
                 res.push_back(n - base);
             }
-            if((d < 9)){
+            if((dig < 9)){
                 res.push_back(n + base);
             }
         }
