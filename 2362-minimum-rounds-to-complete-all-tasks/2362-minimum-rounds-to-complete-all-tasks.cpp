@@ -6,9 +6,9 @@ public:
             mp[x]++;
         }
 
-        for(auto it: mp){
-            cout << it.first << " " << it.second << endl;
-        }
+        // for(auto it: mp){
+        //     cout << it.first << " " << it.second << endl;
+        // }
 
         int cnt = 0;
         for(auto& it: mp){
@@ -24,7 +24,7 @@ public:
                     cnt += (ops-1) + 2;  //ops-1 number of operations with '3' and 2 opn with '2'
                 }
             }
-            cout << cnt << endl;
+            // cout << cnt << endl;
         }
 
         return cnt;
