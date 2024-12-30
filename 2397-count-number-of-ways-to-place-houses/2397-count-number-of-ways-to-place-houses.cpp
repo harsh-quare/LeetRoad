@@ -1,19 +1,19 @@
 class Solution {
 public:
-    const int mod= 1e9 + 7;
+    const int mod = 1e9 + 7;
+    int solve(int n, vector<long long>& dp){
+        if(n <= 0) return 0;
+
+        if(dp[n] != -1) return dp[n];
+
+        int take= 1 + solve(n-2, dp) % mod;
+        int not_take = solve(n-1, dp) % mod;
+
+        return dp[n] = (take + not_take) % mod;
+    }
     int countHousePlacements(int n) {
-        if(n == 1) return 4;
-        vector<int> dp(n, 0);
-        dp[0] = 2;
-        dp[1] = 3;
-
-        for(int i = 2; i < n; i++){
-            dp[i] = (dp[i-1] + dp[i-2]) % mod;
-        }
-
-        long long ans = dp[n-1];
-        ans = ans*ans % mod;
-
-        return ans;
+        vector<long long> dp(n+1, -1);
+        int ans = 1 + solve(n, dp);
+        return ((long long)ans*ans) % mod;
     }
 };
