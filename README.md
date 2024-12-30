@@ -154,6 +154,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0795-k-th-symbol-in-grammar](https://github.com/harsh-quare/LeetRoad/tree/master/0795-k-th-symbol-in-grammar) |
 | [2050-count-good-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/2050-count-good-numbers) |
 | [2305-append-k-integers-with-minimal-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2305-append-k-integers-with-minimal-sum) |
+| [2477-number-of-ways-to-reach-a-position-after-exactly-k-steps](https://github.com/harsh-quare/LeetRoad/tree/master/2477-number-of-ways-to-reach-a-position-after-exactly-k-steps) |
 | [2546-number-of-subarrays-with-gcd-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/2546-number-of-subarrays-with-gcd-equal-to-k) |
 | [2713-find-the-divisibility-array-of-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2713-find-the-divisibility-array-of-a-string) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/harsh-quare/LeetRoad/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
@@ -404,6 +405,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/harsh-quare/LeetRoad/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2164-two-best-non-overlapping-events](https://github.com/harsh-quare/LeetRoad/tree/master/2164-two-best-non-overlapping-events) |
 | [2397-count-number-of-ways-to-place-houses](https://github.com/harsh-quare/LeetRoad/tree/master/2397-count-number-of-ways-to-place-houses) |
+| [2477-number-of-ways-to-reach-a-position-after-exactly-k-steps](https://github.com/harsh-quare/LeetRoad/tree/master/2477-number-of-ways-to-reach-a-position-after-exactly-k-steps) |
 | [2554-minimum-total-distance-traveled](https://github.com/harsh-quare/LeetRoad/tree/master/2554-minimum-total-distance-traveled) |
 | [2562-count-ways-to-build-good-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2562-count-ways-to-build-good-strings) |
 | [2586-longest-square-streak-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/2586-longest-square-streak-in-an-array) |
@@ -719,4 +721,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3681-maximum-area-rectangle-with-point-constraints-i](https://github.com/harsh-quare/LeetRoad/tree/master/3681-maximum-area-rectangle-with-point-constraints-i) |
+## Combinatorics
+|  |
+| ------- |
+| [2477-number-of-ways-to-reach-a-position-after-exactly-k-steps](https://github.com/harsh-quare/LeetRoad/tree/master/2477-number-of-ways-to-reach-a-position-after-exactly-k-steps) |
 <!---LeetCode Topics End-->
