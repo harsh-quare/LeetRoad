@@ -6,7 +6,7 @@ public:
 
         if(dp[len] != -1) return dp[len];
 
-        long long cnt = (len >= low) ? 1 : 0;
+        long long cnt = (len >= low) ? 1 : 0;  //already checked for len <= high
 
         cnt = (cnt + solve(zero, one, low, high, len + zero, dp)) % mod;
         cnt = (cnt + solve(zero, one, low, high, len + one, dp)) % mod;
