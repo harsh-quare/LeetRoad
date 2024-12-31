@@ -1,34 +1,19 @@
 class Solution {
 public:
     string reverseWords(string s) {
-        stack<string> st;
-        int n = s.size();
-        int i = 0, j= 0;
+        stringstream ss(s);
+        string word;
+        vector<string> words;
 
-        while(j < n){
-            while(j < n && s[j] == ' '){
-                j++;
-            }
-            
-            if(j >= n) break;
-
-            i = j; //new word start ho rha h, i pointer ko start pe betha de
-            while(j < n && s[j] != ' '){
-                j++;
-            }
-
-            st.push(s.substr(i, j-i));
+        while(ss >> word){
+            words.push_back(word);
         }
 
-        string ans = "";
-        while(!st.empty()){
-            ans = ans + st.top();
-            st.pop();
-            ans = ans + " ";
+        string res;
+        for(int i = words.size()-1; i >= 0; i--){
+            res += words[i];
+            if(i != 0) res += " ";
         }
-
-        ans.pop_back();
-
-        return ans;
+        return res;
     }
 };
