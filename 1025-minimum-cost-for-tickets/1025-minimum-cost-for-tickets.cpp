@@ -1,23 +1,29 @@
 class Solution {
 public:
-    int solve(vector<int>& days, vector<int>& cs, int id, vector<int>& dp){
-        if(id >= days.size()) return 0;
+    int tabu(vector<int>& days, vector<int>& cs){
+        vector<int> dp(days.size() + 1, 0);
 
-        if(dp[id] != -1) return dp[id];
+        for(int i = days.size()-1; i >= 0; i--){
+            int op1 = cs[0] + dp[i+1];
 
-        int next_idx = lower_bound(days.begin(), days.end(), days[id] + 1) - days.begin();
-        int one_day = cs[0] + solve(days, cs, next_idx, dp);
+            int op2 = 0;
+            int day_after_7 = days[i] + 6;
+            int new_id = upper_bound(days.begin(), days.end(), day_after_7) - days.begin();
+            op2 = cs[1] + dp[new_id];
 
-        next_idx = lower_bound(days.begin(), days.end(), days[id] + 7) - days.begin();
-        int seven_day = cs[1] + solve(days, cs, next_idx, dp);
+            int op3 = 0;
+            int day_after_30 = days[i] + 29;
+            int new_id2 = upper_bound(days.begin(), days.end(), day_after_30) - days.begin();
+            op3 = cs[2] + dp[new_id2];
 
-        next_idx = lower_bound(days.begin(), days.end(), days[id] + 30) - days.begin();
-        int thirty_day = cs[2] + solve(days, cs, next_idx, dp);
+            dp[i] = min(op1, min(op2, op3));
+        }
 
-        return dp[id] = min(one_day, min(seven_day, thirty_day));
+        return dp[0];
     }
+
     int mincostTickets(vector<int>& days, vector<int>& costs) {
-        vector<int> dp(days.size() + 1, -1);
-        return solve(days, costs, 0, dp);
+        int ans = tabu(days, costs);
+        return ans;
     }
 };
