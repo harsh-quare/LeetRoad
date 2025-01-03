@@ -249,6 +249,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2341-count-prefixes-of-a-given-string](https://github.com/harsh-quare/LeetRoad/tree/master/2341-count-prefixes-of-a-given-string) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/harsh-quare/LeetRoad/tree/master/2343-count-unguarded-cells-in-the-grid) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/harsh-quare/LeetRoad/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
+| [2358-number-of-ways-to-split-array](https://github.com/harsh-quare/LeetRoad/tree/master/2358-number-of-ways-to-split-array) |
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/harsh-quare/LeetRoad/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/harsh-quare/LeetRoad/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/harsh-quare/LeetRoad/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
@@ -502,6 +503,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1537-maximum-score-after-splitting-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/1537-maximum-score-after-splitting-a-string) |
 | [1694-make-sum-divisible-by-p](https://github.com/harsh-quare/LeetRoad/tree/master/1694-make-sum-divisible-by-p) |
 | [1940-maximum-xor-for-each-query](https://github.com/harsh-quare/LeetRoad/tree/master/1940-maximum-xor-for-each-query) |
+| [2358-number-of-ways-to-split-array](https://github.com/harsh-quare/LeetRoad/tree/master/2358-number-of-ways-to-split-array) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/harsh-quare/LeetRoad/tree/master/2691-count-vowel-strings-in-ranges) |
 | [3427-special-array-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3427-special-array-ii) |
 | [3653-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/harsh-quare/LeetRoad/tree/master/3653-maximum-subarray-sum-with-length-divisible-by-k) |
