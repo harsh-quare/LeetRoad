@@ -4,31 +4,27 @@ public:
         // Instead of checking all the combinations of first and third character to be same, we just check the characters's left most and right most occurence. All characters in between those indices can form a palindrome.
         int n = s.size();
         int ans = 0;
-        
-        unordered_set<char> chars;
-        for(auto& ch: s){
-            chars.insert(ch);
+
+        vector<pair<int, int>> vp(26, {-1, -1});
+        for(int i = 0; i < n; i++){
+            int id = s[i] - 'a';
+
+            if(vp[id].first == -1) vp[id].first = i;
+            vp[id].second = i;
         }
 
-        for(auto& ch: chars){
-            int left_id = -1;
-            int right_id = -1;
+        for(int i = 0; i < 26; i++){
+            int left_id = vp[i].first;
+            int right_id = vp[i].second;
 
-            for(int i = 0; i < n; i++){
-                if(s[i] == ch){
-                    if(left_id == -1) left_id = i;
-                    right_id = i;
-                }
+            if(left_id == -1) continue;
+
+            unordered_set<char> uniq;
+            for(int j = left_id + 1; j < right_id; j++){
+                uniq.insert(s[j]);
             }
 
-            // Now, we got the first and last occ of current character
-            // count unique chars between that part
-            unordered_set<char> uniq_bw_both;
-            for(int i = left_id + 1; i < right_id; i++){
-                uniq_bw_both.insert(s[i]);
-            }
-
-            ans += uniq_bw_both.size();
+            ans += uniq.size();
         }
 
         return ans;
