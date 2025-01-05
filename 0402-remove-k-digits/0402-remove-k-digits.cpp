@@ -7,35 +7,35 @@ public:
         int n = num.size();
         if(k == n) return "0";
 
-        stack<char> st;
+        stack<int> st;
         for(int i = 0; i < n; i++){
             int dig = num[i] - '0';
-            while(k > 0 && !st.empty() && (st.top()-'0') > dig){
+            while(k > 0 && !st.empty() && st.top() > dig){
                 st.pop();
                 k--;
             }
 
-            st.push(num[i]);
+            st.push(dig);
         }
 
         // agar kisi bhi digit ko remove kiya hi nhi, qki already monotonically increasing me h, to usme se last ke k chars remove krdo
-        while(k > 0 && !st.empty()){
-            st.pop();
-            k--;
+        if(k > 0){
+            while(k--){
+                st.pop();
+            }
         }
-
-        if(st.empty()) return "0";
+        
 
         string ans = "";
         while(!st.empty()){
-            ans += st.top();
+            ans += (char)(st.top() + '0');
             st.pop();
         }
 
-        cout << ans << endl;
-
         //remove trailing zeros, because we now have the revered string due to stack
-        while(ans.size() != 0 && ans.back() == '0'){
+        int i = ans.size()-1;
+        while(i >= 0 && ans[i] == '0'){
+            i--;
             ans.pop_back();
         }
 
