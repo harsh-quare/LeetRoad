@@ -61,3 +61,33 @@ public:
 // --> 2*mid <= total - left
 // --> mid <= (total - left) / 2
 // So we try to find the first guy 
+
+
+
+// Key Difference:
+// pref.begin() + n - 1:
+
+// Points to the last element in the array.
+// It is a valid iterator pointing to the actual data in the array.
+// pref.end():
+
+// Points one past the last element in the array.
+// It is an invalid iterator for accessing array elements (dereferencing it will cause undefined behavior).
+// Explanation with an Example:
+// Let’s assume pref = [10, 20, 30, 40] and n = 4.
+
+// pref.begin(): Points to the first element (10).
+// pref.end(): Points one past the last element, i.e., after 40.
+// Now:
+
+// pref.begin() + n - 1:
+
+// pref.begin() + (4 - 1) → Points to the last element, 40.
+// pref.end():
+
+// Points beyond the last element, where no valid data exists.
+// Why This Difference Matters:
+// Use in upper_bound:
+// When using upper_bound, the function expects the range [start, end) (i.e., it stops before end).
+// If you pass pref.end(), the entire range from start to the end is considered.
+// If you pass pref.begin() + n - 1, it excludes the last element, as the range is [start, pref.begin() + n - 1).
