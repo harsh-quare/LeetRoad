@@ -1,53 +1,40 @@
 class Solution {
 public:
-    int solve(vector<pair<int, int>>& src, vector<pair<int, int>>& dest, int idx){
-        int n = dest.size();
-        if(idx == n){
-            return 0; //all destinations are processed
-        }
+    int solve(vector<pair<int, int>>& o, vector<pair<int, int>>& z, int idx){
+        int n = z.size();
+        if(idx >= n) return 0;
 
-        int ans = 1e8;
+        int ans = 1e6;
+        //try all srcs for current zero cell
+        for(int i = 0; i < o.size(); i++){
+            if(o[i].first == -1 && o[i].second == -1) continue;  //skip if mark unused
 
-        //try all sources for the current destination
-        for(int i = 0; i < src.size(); i++){
-            if(src[i].first == -1 && src[i].second == -1){
-                continue; // Skip already used sources
-            }
+            int curDist = abs(o[i].first - z[idx].first) + abs(o[i].second - z[idx].second);
 
-            int curDistance = abs(dest[idx].first - src[i].first) + abs(dest[idx].second - src[i].second);
+            auto it = o[i];
+            o[i] = {-1, -1};
 
-            //temporarily mark this source as used
-            auto temp = src[i];
-            src[i] = {-1, -1};
+            ans = min(ans, curDist + solve(o, z, idx+1)); //solved for current zero cell, go and calculate for other zero cells
 
-            //recurse for the next destination
-            ans = min(ans, curDistance + solve(src, dest, idx + 1));
-
-            //restore the source for backtracking
-            src[i] = temp;
+            o[i] = it;
         }
 
         return ans;
     }
-
     int minimumMoves(vector<vector<int>>& grid) {
-        vector<pair<int, int>> sources, dest;
-
-        //extract sources and destinations from the grid
+        vector<pair<int, int>> o, z;
         for(int i = 0; i < 3; i++){
             for(int j = 0; j < 3; j++){
-                if(grid[i][j] == 0){
-                    dest.push_back({i, j}); //deficit cells
-                } 
+                if(grid[i][j] == 0) z.push_back({i, j});
                 else if(grid[i][j] > 1){
                     int extra = grid[i][j] - 1;
-                    while (extra--){
-                        sources.push_back({i, j}); //surplus cells
+                    while(extra--){
+                        o.push_back({i, j});
                     }
                 }
             }
         }
 
-        return solve(sources, dest, 0);
+        return solve(o, z, 0);
     }
 };
