@@ -161,6 +161,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [0556-next-greater-element-iii](https://github.com/harsh-quare/LeetRoad/tree/master/0556-next-greater-element-iii) |
 | [0795-k-th-symbol-in-grammar](https://github.com/harsh-quare/LeetRoad/tree/master/0795-k-th-symbol-in-grammar) |
+| [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/harsh-quare/LeetRoad/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [2050-count-good-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/2050-count-good-numbers) |
 | [2305-append-k-integers-with-minimal-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2305-append-k-integers-with-minimal-sum) |
 | [2477-number-of-ways-to-reach-a-position-after-exactly-k-steps](https://github.com/harsh-quare/LeetRoad/tree/master/2477-number-of-ways-to-reach-a-position-after-exactly-k-steps) |
@@ -220,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1063-best-sightseeing-pair](https://github.com/harsh-quare/LeetRoad/tree/master/1063-best-sightseeing-pair) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/harsh-quare/LeetRoad/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1256-rank-transform-of-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/1256-rank-transform-of-an-array) |
+| [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/harsh-quare/LeetRoad/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/harsh-quare/LeetRoad/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1414-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/harsh-quare/LeetRoad/tree/master/1414-shortest-path-in-a-grid-with-obstacles-elimination) |
 | [1435-xor-queries-of-a-subarray](https://github.com/harsh-quare/LeetRoad/tree/master/1435-xor-queries-of-a-subarray) |
@@ -445,6 +447,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/harsh-quare/LeetRoad/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0780-max-chunks-to-make-sorted](https://github.com/harsh-quare/LeetRoad/tree/master/0780-max-chunks-to-make-sorted) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/harsh-quare/LeetRoad/tree/master/0957-minimum-add-to-make-parentheses-valid) |
+| [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/harsh-quare/LeetRoad/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [1648-minimum-insertions-to-balance-a-parentheses-string](https://github.com/harsh-quare/LeetRoad/tree/master/1648-minimum-insertions-to-balance-a-parentheses-string) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/harsh-quare/LeetRoad/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1917-maximum-average-pass-ratio](https://github.com/harsh-quare/LeetRoad/tree/master/1917-maximum-average-pass-ratio) |
