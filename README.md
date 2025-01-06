@@ -163,6 +163,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0795-k-th-symbol-in-grammar](https://github.com/harsh-quare/LeetRoad/tree/master/0795-k-th-symbol-in-grammar) |
 | [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/harsh-quare/LeetRoad/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [2050-count-good-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/2050-count-good-numbers) |
+| [2251-number-of-ways-to-divide-a-long-corridor](https://github.com/harsh-quare/LeetRoad/tree/master/2251-number-of-ways-to-divide-a-long-corridor) |
 | [2305-append-k-integers-with-minimal-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2305-append-k-integers-with-minimal-sum) |
 | [2477-number-of-ways-to-reach-a-position-after-exactly-k-steps](https://github.com/harsh-quare/LeetRoad/tree/master/2477-number-of-ways-to-reach-a-position-after-exactly-k-steps) |
 | [2546-number-of-subarrays-with-gcd-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/2546-number-of-subarrays-with-gcd-equal-to-k) |
@@ -428,6 +429,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/harsh-quare/LeetRoad/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/harsh-quare/LeetRoad/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2164-two-best-non-overlapping-events](https://github.com/harsh-quare/LeetRoad/tree/master/2164-two-best-non-overlapping-events) |
+| [2251-number-of-ways-to-divide-a-long-corridor](https://github.com/harsh-quare/LeetRoad/tree/master/2251-number-of-ways-to-divide-a-long-corridor) |
 | [2397-count-number-of-ways-to-place-houses](https://github.com/harsh-quare/LeetRoad/tree/master/2397-count-number-of-ways-to-place-houses) |
 | [2477-number-of-ways-to-reach-a-position-after-exactly-k-steps](https://github.com/harsh-quare/LeetRoad/tree/master/2477-number-of-ways-to-reach-a-position-after-exactly-k-steps) |
 | [2554-minimum-total-distance-traveled](https://github.com/harsh-quare/LeetRoad/tree/master/2554-minimum-total-distance-traveled) |
@@ -495,6 +497,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/harsh-quare/LeetRoad/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/harsh-quare/LeetRoad/tree/master/2190-count-common-words-with-one-occurrence) |
 | [2232-adding-spaces-to-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2232-adding-spaces-to-a-string) |
+| [2251-number-of-ways-to-divide-a-long-corridor](https://github.com/harsh-quare/LeetRoad/tree/master/2251-number-of-ways-to-divide-a-long-corridor) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/harsh-quare/LeetRoad/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2300-construct-string-with-repeat-limit](https://github.com/harsh-quare/LeetRoad/tree/master/2300-construct-string-with-repeat-limit) |
 | [2341-count-prefixes-of-a-given-string](https://github.com/harsh-quare/LeetRoad/tree/master/2341-count-prefixes-of-a-given-string) |
