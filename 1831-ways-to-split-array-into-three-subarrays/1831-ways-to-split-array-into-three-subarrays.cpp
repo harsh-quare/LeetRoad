@@ -1,93 +1,43 @@
 class Solution {
 public:
-    const int mod= 1e9+7;
-    // pref[i] <= pref[j] - pref[i] <= pref[n-1] - pref[j]
-
-    // pref[j] >= 2*pref[i]
-    // pref[j] <= (pref[n-1] + pref[i]) / 2
-
-    // we have an lower and upper bound for 'j', mid subarray
-    // use binary search to find left and right boundary of 'j'
+    const int mod = 1e9+7;
     int waysToSplit(vector<int>& nums) {
-        int n=nums.size();
-        int ans = 0;
-        // every time, I need sum of all the partitions subarray
-        // to calculate the sum of a range, we use prefix sum.
+        int n = nums.size(); // Length of the input array
+        int ans = 0; // Initialize the count of valid splits to 0
 
-        vector<int> pref(n, 0);
+        // Step 1: Compute the prefix sum array
+        vector<int> pref(n, 0); // Prefix sum array
         pref[0] = nums[0];
-        for(int i = 1; i < n; i++){    
-            pref[i] = pref[i-1] + nums[i];
+        for (int i = 1; i < n; i++) {    
+            pref[i] = pref[i - 1] + nums[i];
         }
 
-        // for each first_partition_idx, we try to look for the next index possible in the array which will have a mid sum and right sum > left sum
+        // Step 2: Iterate through all possible positions for the left partition
+        for (int l = 0; l < n - 2; l++) {
+            // Calculate the sum of the left partition
+            int left_sum = pref[l];
 
-        for(int l = 0; l < n-2; l++){
-            int left_sum = pref[l] - 0;
-            
-            if(left_sum * 3 > pref[n-1]) break;
+            // If the left partition sum is already too large to allow a valid split,
+            // we can stop further iterations
+            if (left_sum * 3 > pref[n - 1]) break;
 
-            // Find the first index where the sum of mid subarray will be valid, 
-            // means at least equal to left_sum, that's why 
-            // we write left_sum(bcz of prefix property) and + left_sum(min valid sum of this subarray)
-            // ensures: mid_sum ≥ left_sum
-            // The first valid starting position of the mid subarray, ensuring mid_sum >= left_sum.
-            // low_id (First Valid Mid Partition):
-            // start from next index of 'l' => l + 1
-            int low_id = lower_bound(pref.begin() + l + 1, pref.end(), left_sum + left_sum) - pref.begin();
+            // Step 3: Find the range of valid mid partitions
 
-            // Now we need to find the largest index up_id such that the mid partition leaves enough sum for the right partition
-            // This ensures: mid_sum ≤ (total_sum − left_sum) / 2
-            // The upper_bound step ensures that the mid subarray does not exceed half of the remaining total sum after accounting for the left subarray. This guarantees a valid split where: mid_sum ≤ right_sum
-            // The exclusive upper bound for the mid subarray, ensuring mid_sum <= (total_sum - left_sum) / 2.
-            // It represents the end of the valid range for the mid subarray.
-            // The first index where the prefix sum exceeds the condition for the mid subarray, ensuring enough sum is left for the right subarray.
-            // up_id (First Invalid Mid Partition):
-            int up_id = upper_bound(pref.begin() + l + 1, pref.begin() + n - 1, left_sum + ((pref[n-1] - left_sum) / 2)) - pref.begin();
-            
-            ans += (max(0, (up_id - low_id))) % mod; 
-            //calculate the number of valid mid partitions for the current left partition (up_id - low_id).
-            ans = ans % mod;
+            // Lower bound for the mid partition:
+            // Find the first index where the mid partition sum >= left_sum
+            int low_id = lower_bound(pref.begin() + l + 1, pref.end(), left_sum * 2) - pref.begin();
+
+            // Upper bound for the mid partition:
+            // Find the first index where the mid partition sum > (remaining total sum) / 2
+            int up_id = upper_bound(pref.begin() + l + 1, pref.begin() + n - 1, 
+                                    left_sum + (pref[n - 1] - left_sum) / 2) - pref.begin();
+
+            // Step 4: Add the count of valid mid partitions for this left partition
+            ans += max(0, up_id - low_id); // Add the range size of valid mid partitions
+            ans %= mod; // Take modulo to avoid overflow
         }
 
+        // Step 5: Return the total count of valid splits
         return ans;
     }
 };
-
-// we know, total_sum = left + mid + right
-// right = total - left - mid
-// if we want to ensure mid <= right
-// --> mid <= total - mid - left
-// --> 2*mid <= total - left
-// --> mid <= (total - left) / 2
-// So we try to find the first guy 
-
-
-
-// Key Difference:
-// pref.begin() + n - 1:
-
-// Points to the last element in the array.
-// It is a valid iterator pointing to the actual data in the array.
-// pref.end():
-
-// Points one past the last element in the array.
-// It is an invalid iterator for accessing array elements (dereferencing it will cause undefined behavior).
-// Explanation with an Example:
-// Let’s assume pref = [10, 20, 30, 40] and n = 4.
-
-// pref.begin(): Points to the first element (10).
-// pref.end(): Points one past the last element, i.e., after 40.
-// Now:
-
-// pref.begin() + n - 1:
-
-// pref.begin() + (4 - 1) → Points to the last element, 40.
-// pref.end():
-
-// Points beyond the last element, where no valid data exists.
-// Why This Difference Matters:
-// Use in upper_bound:
-// When using upper_bound, the function expects the range [start, end) (i.e., it stops before end).
-// If you pass pref.end(), the entire range from start to the end is considered.
-// If you pass pref.begin() + n - 1, it excludes the last element, as the range is [start, pref.begin() + n - 1).
