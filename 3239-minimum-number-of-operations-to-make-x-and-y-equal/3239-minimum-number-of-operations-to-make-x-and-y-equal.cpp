@@ -8,38 +8,44 @@ public:
         if(y >= x) return y-x;
 
         unordered_set<int> vis;
-        queue<pair<int, int>> q;  //{number, steps}
-        q.push({x, 0});
+        queue<int> q;
+        q.push(x);
         vis.insert(x);
+        int ops = 0;
 
         while(!q.empty()){
-            auto cur = q.front();
-            int num = cur.first;
-            int steps = cur.second;
-            q.pop();
+            int sz = q.size();
+            while(sz--){
+                int num = q.front();
+                q.pop();
 
-            if(num == y) return steps;
+                if(num == y) return ops;
 
-            // path-1: divide by 11, if possible
-            if(num % 11 == 0 && vis.find(num / 11) == vis.end()){
-                q.push({num/11, steps + 1});
-                vis.insert(num / 11);
+                // path-1: divide by 11, if possible
+                if(num % 11 == 0 && vis.find(num / 11) == vis.end()){
+                    q.push(num / 11);
+                    vis.insert(num / 11);
+                }
+
+                // path-2: divide by 5, if possible
+                if(num % 5 == 0 && vis.find(num / 5) == vis.end()){
+                    q.push(num / 5);
+                    vis.insert(num / 5);
+                }
+
+                // decrement by 1, if inside bounds
+                if(num - 1 >= 0 && vis.find(num - 1) == vis.end()){
+                    q.push(num - 1);
+                    vis.insert(num - 1);
+                }
+
+                // increment by 1
+                if(vis.find(num + 1) == vis.end()){
+                    q.push(num + 1);
+                    vis.insert(num + 1);
+                }
             }
-
-            if(num % 5 == 0 && vis.find(num / 5 ) == vis.end()){
-                q.push({num / 5, steps + 1});
-                vis.insert(num / 5);
-            }
-
-            if(num - 1 >= 0 && vis.find(num - 1) == vis.end()){
-                q.push({num - 1, steps + 1});
-                vis.insert(num - 1);
-            }
-
-            if(vis.find(num + 1) == vis.end()){
-                q.push({num + 1, steps + 1});
-                vis.insert(num + 1);
-            }
+            ops++;
         }
 
         return -1;
