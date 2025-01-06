@@ -96,6 +96,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2677-cousins-in-binary-tree-ii](https://github.com/harsh-quare/LeetSole/tree/master/2677-cousins-in-binary-tree-ii) |
 | [2711-minimum-time-to-visit-a-cell-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/2711-minimum-time-to-visit-a-cell-in-a-grid) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/harsh-quare/LeetRoad/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
+| [3239-minimum-number-of-operations-to-make-x-and-y-equal](https://github.com/harsh-quare/LeetRoad/tree/master/3239-minimum-number-of-operations-to-make-x-and-y-equal) |
 | [3439-find-minimum-diameter-after-merging-two-trees](https://github.com/harsh-quare/LeetRoad/tree/master/3439-find-minimum-diameter-after-merging-two-trees) |
 | [3517-shortest-distance-after-road-addition-queries-i](https://github.com/harsh-quare/LeetRoad/tree/master/3517-shortest-distance-after-road-addition-queries-i) |
 ## Binary Tree
@@ -431,6 +432,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2755-extra-characters-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2755-extra-characters-in-a-string) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/harsh-quare/LeetRoad/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
+| [3239-minimum-number-of-operations-to-make-x-and-y-equal](https://github.com/harsh-quare/LeetRoad/tree/master/3239-minimum-number-of-operations-to-make-x-and-y-equal) |
 ## Greedy
 |  |
 | ------- |
@@ -567,6 +569,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
+| [3239-minimum-number-of-operations-to-make-x-and-y-equal](https://github.com/harsh-quare/LeetRoad/tree/master/3239-minimum-number-of-operations-to-make-x-and-y-equal) |
 ## Rolling Hash
 |  |
 | ------- |
