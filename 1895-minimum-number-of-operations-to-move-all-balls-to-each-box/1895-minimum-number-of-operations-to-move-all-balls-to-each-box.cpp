@@ -3,24 +3,32 @@ public:
     vector<int> minOperations(string boxes) {
         int n = boxes.size();
         vector<int> ans;
-        // vector<int> p1(n, 0), p2(n, 0);
+        vector<int> pref(n, 0), suf(n, 0);
+
+        int cnt = 0;
+        int temp = 0;
 
         for(int i = 0; i < n; i++){
-            int left = 0;
-            for(int j = 0; j < i; j++){
-                if(boxes[j] == '1'){
-                    left += (i-j);
-                }
-            }
+            temp += cnt;
+            pref[i] = temp;
+            cnt += (boxes[i] - '0');
 
-            int right = 0;
-            for(int j = i+1; j < n; j++){
-                if(boxes[j] == '1'){
-                    right += (j-i);
-                }
-            }
+            // cout << cnt << " " << temp << " " << pref[i] << endl;
+        }
 
-            ans.push_back(left + right);
+        cnt = 0, temp = 0;
+        for(int i = n-1; i >= 0; i--){
+            temp += cnt;
+            suf[i] = temp;
+            cnt += (boxes[i] - '0');
+        }
+
+        for(int i = 0; i < n; i++){
+            if(i == 0) ans.push_back(suf[i]);
+            else if(i == n-1) ans.push_back(pref[i]);
+            else{
+                ans.push_back(pref[i] + suf[i]);
+            }
         }
 
         return ans;
