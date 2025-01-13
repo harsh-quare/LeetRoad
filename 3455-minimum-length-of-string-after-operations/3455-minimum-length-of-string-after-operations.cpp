@@ -1,9 +1,6 @@
 class Solution {
 public:
     int minimumLength(string s) {
-        // agar kisi bhi character ki freq 3, ya 3 se jyada h to woh to 100% delete ho skte h, and hame mtlb nhi h ki kese hoga, hame just length se matlab h, to bs len-3 ho jayega
-        // Just check ki kitne chars h jinki freq >= 3 h
-
         vector<int> freq(26, 0);
         for(auto& ch: s){
             freq[ch-'a']++;
@@ -21,6 +18,3 @@ public:
         return len;
     }
 };
-
-// 3, 4 ke liye len-=2 => (3+1)/2 = 2, (4+1)/2 = 2
-// 5, 6 ke liye len-=3 => (5+1)/2 = 3, (6+1)/2 = 3
