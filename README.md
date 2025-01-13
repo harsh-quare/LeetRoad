@@ -36,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/harsh-quare/LeetRoad/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2700-substring-xor-queries](https://github.com/harsh-quare/LeetRoad/tree/master/2700-substring-xor-queries) |
 | [2755-extra-characters-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2755-extra-characters-in-a-string) |
+| [3455-minimum-length-of-string-after-operations](https://github.com/harsh-quare/LeetRoad/tree/master/3455-minimum-length-of-string-after-operations) |
 | [3653-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/harsh-quare/LeetRoad/tree/master/3653-maximum-subarray-sum-with-length-divisible-by-k) |
 ## Tree
 |  |
@@ -528,6 +529,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3018-make-string-a-subsequence-using-cyclic-increments](https://github.com/harsh-quare/LeetRoad/tree/master/3018-make-string-a-subsequence-using-cyclic-increments) |
 | [3174-minimum-number-of-changes-to-make-binary-string-beautiful](https://github.com/harsh-quare/LeetRoad/tree/master/3174-minimum-number-of-changes-to-make-binary-string-beautiful) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/harsh-quare/LeetRoad/tree/master/3309-count-prefix-and-suffix-pairs-i) |
+| [3455-minimum-length-of-string-after-operations](https://github.com/harsh-quare/LeetRoad/tree/master/3455-minimum-length-of-string-after-operations) |
 ## Counting
 |  |
 | ------- |
@@ -541,6 +543,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/harsh-quare/LeetRoad/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2594-count-pairs-of-similar-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2594-count-pairs-of-similar-strings) |
+| [3455-minimum-length-of-string-after-operations](https://github.com/harsh-quare/LeetRoad/tree/master/3455-minimum-length-of-string-after-operations) |
 ## Prefix Sum
 |  |
 | ------- |
