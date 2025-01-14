@@ -5,14 +5,17 @@ public:
         vector<int> ans(n, 0);
 
         vector<int> f(n+1, 0);
+        int cnt = 0;
         for(int i = 0; i < n; i++){
             f[A[i]]++;
             f[B[i]]++;
-            if(i == 0) ans[i] = A[i]==B[i] ? 1 : 0;
-            if(i > 0){
+            if(i == 0){
+                ans[i] = A[i] == B[i];
+            }
+            else{
                 ans[i] += ans[i-1];
                 if(A[i] == B[i]) ans[i]++;
-                else {
+                else{
                     if(f[A[i]] == 2) ans[i]++;
                     if(f[B[i]] == 2) ans[i]++;
                 }
