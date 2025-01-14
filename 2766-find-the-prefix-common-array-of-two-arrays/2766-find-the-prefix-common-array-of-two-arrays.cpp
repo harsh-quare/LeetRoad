@@ -8,18 +8,11 @@ public:
         int cnt = 0;
         for(int i = 0; i < n; i++){
             f[A[i]]++;
+            if(f[A[i]] == 2) cnt++;
             f[B[i]]++;
-            if(i == 0){
-                ans[i] = A[i] == B[i];
-            }
-            else{
-                ans[i] += ans[i-1];
-                if(A[i] == B[i]) ans[i]++;
-                else{
-                    if(f[A[i]] == 2) ans[i]++;
-                    if(f[B[i]] == 2) ans[i]++;
-                }
-            }
+            if(f[B[i]] == 2) cnt++;
+            
+            ans[i] = cnt;
         }
         return ans;
     }
