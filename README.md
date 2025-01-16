@@ -7,6 +7,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0380-insert-delete-getrandom-o1](https://github.com/harsh-quare/LeetRoad/tree/master/0380-insert-delete-getrandom-o1) |
+| [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/harsh-quare/LeetRoad/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
 | [0432-all-oone-data-structure](https://github.com/harsh-quare/LeetRoad/tree/master/0432-all-oone-data-structure) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0567-permutation-in-string](https://github.com/harsh-quare/LeetRoad/tree/master/0567-permutation-in-string) |
@@ -163,6 +164,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
 | [0380-insert-delete-getrandom-o1](https://github.com/harsh-quare/LeetRoad/tree/master/0380-insert-delete-getrandom-o1) |
+| [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/harsh-quare/LeetRoad/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/harsh-quare/LeetRoad/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
@@ -208,6 +210,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/harsh-quare/LeetRoad/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0324-wiggle-sort-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0324-wiggle-sort-ii) |
 | [0380-insert-delete-getrandom-o1](https://github.com/harsh-quare/LeetRoad/tree/master/0380-insert-delete-getrandom-o1) |
+| [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/harsh-quare/LeetRoad/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/harsh-quare/LeetRoad/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0494-target-sum](https://github.com/harsh-quare/LeetRoad/tree/master/0494-target-sum) |
@@ -650,6 +653,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0304-range-sum-query-2d-immutable](https://github.com/harsh-quare/LeetRoad/tree/master/0304-range-sum-query-2d-immutable) |
 | [0307-range-sum-query-mutable](https://github.com/harsh-quare/LeetRoad/tree/master/0307-range-sum-query-mutable) |
 | [0380-insert-delete-getrandom-o1](https://github.com/harsh-quare/LeetRoad/tree/master/0380-insert-delete-getrandom-o1) |
+| [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/harsh-quare/LeetRoad/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
 | [0432-all-oone-data-structure](https://github.com/harsh-quare/LeetRoad/tree/master/0432-all-oone-data-structure) |
 | [0729-my-calendar-i](https://github.com/harsh-quare/LeetRoad/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0731-my-calendar-ii) |
@@ -830,4 +834,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0380-insert-delete-getrandom-o1](https://github.com/harsh-quare/LeetRoad/tree/master/0380-insert-delete-getrandom-o1) |
+| [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/harsh-quare/LeetRoad/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
 <!---LeetCode Topics End-->
