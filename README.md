@@ -239,6 +239,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1524-string-matching-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/1524-string-matching-in-an-array) |
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/harsh-quare/LeetRoad/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/harsh-quare/LeetRoad/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
+| [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/harsh-quare/LeetRoad/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/harsh-quare/LeetRoad/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/harsh-quare/LeetRoad/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
 | [1694-make-sum-divisible-by-p](https://github.com/harsh-quare/LeetRoad/tree/master/1694-make-sum-divisible-by-p) |
@@ -443,6 +444,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0836-race-car](https://github.com/harsh-quare/LeetRoad/tree/master/0836-race-car) |
 | [1025-minimum-cost-for-tickets](https://github.com/harsh-quare/LeetRoad/tree/master/1025-minimum-cost-for-tickets) |
 | [1063-best-sightseeing-pair](https://github.com/harsh-quare/LeetRoad/tree/master/1063-best-sightseeing-pair) |
+| [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/harsh-quare/LeetRoad/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/harsh-quare/LeetRoad/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/harsh-quare/LeetRoad/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [2164-two-best-non-overlapping-events](https://github.com/harsh-quare/LeetRoad/tree/master/2164-two-best-non-overlapping-events) |
@@ -744,6 +746,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/harsh-quare/LeetRoad/tree/master/0567-permutation-in-string) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/harsh-quare/LeetRoad/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/harsh-quare/LeetRoad/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
+| [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/harsh-quare/LeetRoad/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1755-defuse-the-bomb](https://github.com/harsh-quare/LeetRoad/tree/master/1755-defuse-the-bomb) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/harsh-quare/LeetRoad/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2868-continuous-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2868-continuous-subarrays) |
