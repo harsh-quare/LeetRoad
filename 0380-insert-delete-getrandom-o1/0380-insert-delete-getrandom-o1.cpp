@@ -32,10 +32,6 @@ public:
                 arr[id] = last;
                 mp[last] = id;
             }
-            // if(arr.size() == 0){
-            //     arr[id] = last;
-            //     mp[last] = id;
-            // }
             return true;
         }
     }
