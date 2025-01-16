@@ -16,22 +16,16 @@ public:
     }
     
     bool remove(int val) {
-        if(arr.size() == 0 || mp.find(val) == mp.end()){
+        if(mp.find(val) == mp.end()){
             return false;
         }
         else{
-            if(mp[val] == arr.size()-1 || arr.size() == 1){
-                arr.pop_back();
-                mp.erase(val);
-            }
-            else{
-                int id = mp[val];
-                int last = arr.back();
-                arr.pop_back();
-                mp.erase(val);
-                arr[id] = last;
-                mp[last] = id;
-            }
+            int id = mp[val];
+            int last = arr.back();
+            arr[id] = last;
+            mp[last] = id;
+            arr.pop_back();
+            mp.erase(val);
             return true;
         }
     }
