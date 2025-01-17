@@ -307,6 +307,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2713-find-the-divisibility-array-of-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2713-find-the-divisibility-array-of-a-string) |
 | [2755-extra-characters-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2755-extra-characters-in-a-string) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/harsh-quare/LeetRoad/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
+| [2792-neighboring-bitwise-xor](https://github.com/harsh-quare/LeetRoad/tree/master/2792-neighboring-bitwise-xor) |
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 | [2868-continuous-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2868-continuous-subarrays) |
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/harsh-quare/LeetRoad/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
@@ -428,6 +429,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2594-count-pairs-of-similar-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2594-count-pairs-of-similar-strings) |
 | [2700-substring-xor-queries](https://github.com/harsh-quare/LeetRoad/tree/master/2700-substring-xor-queries) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/harsh-quare/LeetRoad/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
+| [2792-neighboring-bitwise-xor](https://github.com/harsh-quare/LeetRoad/tree/master/2792-neighboring-bitwise-xor) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3394-minimum-array-end](https://github.com/harsh-quare/LeetRoad/tree/master/3394-minimum-array-end) |
