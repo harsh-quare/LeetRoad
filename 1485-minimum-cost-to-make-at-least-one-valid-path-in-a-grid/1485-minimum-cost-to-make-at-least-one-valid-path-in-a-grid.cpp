@@ -1,59 +1,48 @@
 class Solution {
 public:
-    bool sameDir(int x, int y, int nx, int ny, vector<vector<int>>& grid, int n, int m){
-        int dir = grid[x][y];
-        int dx = nx-x;
-        int dy = ny-y;
-        
-        int move = -1;
-        if(dx == 0 && dy == 1) move = 1;
-        else if(dx == 0 && dy == -1) move = 2;
-        else if(dx == 1 && dy == 0) move = 3;
-        else if(dx == -1 && dy == 0) move = 4;
-
-        if(dir == move) return true;
+    bool sameDirx(int x, int y, int nx, int ny, vector<vector<int>>& grid){
+        if( (grid[x][y] == 1 && (x == nx && ny == y+1)) || 
+            (grid[x][y] == 2 && (x == nx && ny == y-1)) ||
+            (grid[x][y] == 3 && (x+1 == nx && ny == y)) ||
+            (grid[x][y] == 4 && (x-1 == nx && ny == y)) 
+           ) return true;
+           
         return false;
     }
+    vector<vector<int>> dirx = {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
     int minCost(vector<vector<int>>& grid) {
-        //DIjkstra's
+        // BFS from (0, 0)
         int n = grid.size();
         int m = grid[0].size();
-
-        priority_queue<pair<int,pair<int, int>>, vector<pair<int,pair<int, int>>>, greater<pair<int,pair<int, int>>> >pq;
-        vector<vector<int>> dist(n, vector<int>(m, 1e4));
-        pq.push({0, {0, 0}}); //{d, {i,j}}
+        priority_queue<pair<int, pair<int, int>>, vector<pair<int, pair<int, int>>>, greater<pair<int, pair<int, int>>>> pq;
+        pq.push({0, {0, 0}});
+        vector<vector<int>> dist(n, vector<int>(m, INT_MAX));
         dist[0][0] = 0;
 
-        int dirx[4] = {-1, 0, 1, 0};
-        int diry[4] = {0, 1, 0, -1};
-
         while(!pq.empty()){
-            int d = pq.top().first;
-            int x = pq.top().second.first;
-            int y = pq.top().second.second;
+            auto node = pq.top();
             pq.pop();
+            int cost = node.first;
+            int x = node.second.first;
+            int y = node.second.second;
+
+            if(x == n-1 && y == m-1) return cost;
 
             for(int i = 0; i < 4; i++){
-                int nx = x + dirx[i];
-                int ny = y + diry[i];
+                int nx = x + dirx[i][0];
+                int ny = y + dirx[i][1];
 
-                if(nx >= 0 && ny >= 0 && nx < n && ny < m){
-                    if(sameDir(x, y, nx, ny, grid, n, m)){
-                        if(dist[nx][ny] > d){
-                            dist[nx][ny] = d;
-                            pq.push({dist[nx][ny], {nx, ny}});
-                        }
-                    }
-                    else{
-                        if(dist[nx][ny] > 1 + d){
-                            dist[nx][ny] = 1 + d;
-                            pq.push({dist[nx][ny], {nx, ny}});
-                        }
+                if(nx >= 0 && nx < n && ny >= 0 && ny < m){
+                    int newCost = cost + (sameDirx(x, y, nx, ny, grid) == true ? 0 : 1);
+                    
+                    if(newCost < dist[nx][ny]){
+                        dist[nx][ny] = newCost;
+                        pq.push({newCost, {nx, ny}});
                     }
                 }
             }
         }
 
-        return dist[n-1][m-1];
+        return -1;
     }
 };
