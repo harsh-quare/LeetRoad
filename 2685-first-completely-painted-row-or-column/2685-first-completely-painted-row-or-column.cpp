@@ -7,20 +7,20 @@ public:
         vector<int> rowP(n, 0);
         vector<int> colP(m, 0);
 
-        unordered_map<int, pair<int, int>> mp;
+        vector<pair<int, int>> vp(m*n+1); // values are between [1,m*n], so we use 1-based indexing
 
         for(int i = 0; i < n; i++){
             for(int j = 0; j < m; j++){
                 int val = mat[i][j];
-                mp[val] = {i, j};
+                vp[val] = {i, j};
             }
         }
 
         for(int k = 0; k < arr.size(); k++){
             int val = arr[k];
 
-            int x = mp[val].first;
-            int y = mp[val].second;
+            int x = vp[val].first;
+            int y = vp[val].second;
 
             rowP[x]++;
             colP[y]++;
