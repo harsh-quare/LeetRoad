@@ -6,8 +6,8 @@ public:
         // get the distance of each cell
         int n = isWater.size();
         int m = isWater[0].size();
-        vector<vector<int>> dist(n, vector<int>(m, INT_MAX));
-        vector<vector<int>> vis(n, vector<int>(m, 0));
+        vector<vector<int>> dist(n, vector<int>(m, -1));
+        // vector<vector<int>> vis(n, vector<int>(m, 0));
         
         queue<pair<int, int>> q;
         for(int i = 0; i < n; i++){
@@ -15,7 +15,7 @@ public:
                 if(isWater[i][j] == 1){
                     q.push({i, j});
                     dist[i][j] = 0;
-                    vis[i][j] = 1;
+                    // vis[i][j] = 1;
                 }
             }
         }
@@ -30,11 +30,9 @@ public:
                 int nx = x + dirx[i][0];
                 int ny = y + dirx[i][1];
 
-                if(nx >= 0 && nx < n && ny >= 0 && ny < m && !vis[nx][ny]){
-                    if(dist[nx][ny] > dist[x][y] + 1){
-                        dist[nx][ny] = dist[x][y] + 1;
-                        q.push({nx, ny});
-                    }
+                if(nx >= 0 && nx < n && ny >= 0 && ny < m && dist[nx][ny] == -1){
+                    dist[nx][ny] = dist[x][y] + 1;
+                    q.push({nx, ny});
                 }
             }
         }
