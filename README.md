@@ -72,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1035-cousins-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1035-cousins-in-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/harsh-quare/LeetRoad/tree/master/1350-remove-sub-folders-from-the-filesystem) |
+| [1396-count-servers-that-communicate](https://github.com/harsh-quare/LeetRoad/tree/master/1396-count-servers-that-communicate) |
 | [1484-linked-list-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1484-linked-list-in-binary-tree) |
 | [1753-path-with-minimum-effort](https://github.com/harsh-quare/LeetRoad/tree/master/1753-path-with-minimum-effort) |
 | [2201-valid-arrangement-of-pairs](https://github.com/harsh-quare/LeetRoad/tree/master/2201-valid-arrangement-of-pairs) |
@@ -93,6 +94,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0971-shortest-bridge](https://github.com/harsh-quare/LeetRoad/tree/master/0971-shortest-bridge) |
 | [1035-cousins-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1035-cousins-in-binary-tree) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
+| [1396-count-servers-that-communicate](https://github.com/harsh-quare/LeetRoad/tree/master/1396-count-servers-that-communicate) |
 | [1414-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/harsh-quare/LeetRoad/tree/master/1414-shortest-path-in-a-grid-with-obstacles-elimination) |
 | [1484-linked-list-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1484-linked-list-in-binary-tree) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
@@ -241,6 +243,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1256-rank-transform-of-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/1256-rank-transform-of-an-array) |
 | [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/harsh-quare/LeetRoad/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/harsh-quare/LeetRoad/tree/master/1350-remove-sub-folders-from-the-filesystem) |
+| [1396-count-servers-that-communicate](https://github.com/harsh-quare/LeetRoad/tree/master/1396-count-servers-that-communicate) |
 | [1414-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/harsh-quare/LeetRoad/tree/master/1414-shortest-path-in-a-grid-with-obstacles-elimination) |
 | [1435-xor-queries-of-a-subarray](https://github.com/harsh-quare/LeetRoad/tree/master/1435-xor-queries-of-a-subarray) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/harsh-quare/LeetRoad/tree/master/1468-check-if-n-and-its-double-exist) |
@@ -384,6 +387,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0921-spiral-matrix-iii](https://github.com/harsh-quare/LeetRoad/tree/master/0921-spiral-matrix-iii) |
 | [0971-shortest-bridge](https://github.com/harsh-quare/LeetRoad/tree/master/0971-shortest-bridge) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/harsh-quare/LeetRoad/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
+| [1396-count-servers-that-communicate](https://github.com/harsh-quare/LeetRoad/tree/master/1396-count-servers-that-communicate) |
 | [1414-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/harsh-quare/LeetRoad/tree/master/1414-shortest-path-in-a-grid-with-obstacles-elimination) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1753-path-with-minimum-effort](https://github.com/harsh-quare/LeetRoad/tree/master/1753-path-with-minimum-effort) |
@@ -563,6 +567,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0920-uncommon-words-from-two-sentences](https://github.com/harsh-quare/LeetRoad/tree/master/0920-uncommon-words-from-two-sentences) |
+| [1396-count-servers-that-communicate](https://github.com/harsh-quare/LeetRoad/tree/master/1396-count-servers-that-communicate) |
 | [1502-construct-k-palindrome-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1502-construct-k-palindrome-strings) |
 | [1620-check-if-array-pairs-are-divisible-by-k](https://github.com/harsh-quare/LeetRoad/tree/master/1620-check-if-array-pairs-are-divisible-by-k) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1786-count-the-number-of-consistent-strings) |
@@ -780,6 +785,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0794-swim-in-rising-water](https://github.com/harsh-quare/LeetRoad/tree/master/0794-swim-in-rising-water) |
+| [1396-count-servers-that-communicate](https://github.com/harsh-quare/LeetRoad/tree/master/1396-count-servers-that-communicate) |
 | [1753-path-with-minimum-effort](https://github.com/harsh-quare/LeetRoad/tree/master/1753-path-with-minimum-effort) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
 ## Monotonic Stack
