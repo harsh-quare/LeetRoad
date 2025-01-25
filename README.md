@@ -153,6 +153,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/harsh-quare/LeetRoad/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
 | [2699-count-the-number-of-fair-pairs](https://github.com/harsh-quare/LeetRoad/tree/master/2699-count-the-number-of-fair-pairs) |
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/harsh-quare/LeetRoad/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
+| [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/harsh-quare/LeetRoad/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3387-minimum-operations-to-make-median-of-array-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/3387-minimum-operations-to-make-median-of-array-equal-to-k) |
 | [3681-maximum-area-rectangle-with-point-constraints-i](https://github.com/harsh-quare/LeetRoad/tree/master/3681-maximum-area-rectangle-with-point-constraints-i) |
 ## Linked List
@@ -325,6 +326,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/harsh-quare/LeetRoad/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/harsh-quare/LeetRoad/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/harsh-quare/LeetRoad/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
+| [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/harsh-quare/LeetRoad/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3309-count-prefix-and-suffix-pairs-i](https://github.com/harsh-quare/LeetRoad/tree/master/3309-count-prefix-and-suffix-pairs-i) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
@@ -790,6 +792,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0794-swim-in-rising-water](https://github.com/harsh-quare/LeetRoad/tree/master/0794-swim-in-rising-water) |
 | [1396-count-servers-that-communicate](https://github.com/harsh-quare/LeetRoad/tree/master/1396-count-servers-that-communicate) |
 | [1753-path-with-minimum-effort](https://github.com/harsh-quare/LeetRoad/tree/master/1753-path-with-minimum-effort) |
+| [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/harsh-quare/LeetRoad/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
 ## Monotonic Stack
 |  |
