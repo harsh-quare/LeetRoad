@@ -66,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0386-lexicographical-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/0386-lexicographical-numbers) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/harsh-quare/LeetRoad/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0662-maximum-width-of-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/0662-maximum-width-of-binary-tree) |
+| [0695-max-area-of-island](https://github.com/harsh-quare/LeetRoad/tree/master/0695-max-area-of-island) |
 | [0794-swim-in-rising-water](https://github.com/harsh-quare/LeetRoad/tree/master/0794-swim-in-rising-water) |
 | [0820-find-eventual-safe-states](https://github.com/harsh-quare/LeetRoad/tree/master/0820-find-eventual-safe-states) |
 | [0971-shortest-bridge](https://github.com/harsh-quare/LeetRoad/tree/master/0971-shortest-bridge) |
@@ -92,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0407-trapping-rain-water-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0407-trapping-rain-water-ii) |
 | [0515-find-largest-value-in-each-tree-row](https://github.com/harsh-quare/LeetRoad/tree/master/0515-find-largest-value-in-each-tree-row) |
 | [0662-maximum-width-of-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/0662-maximum-width-of-binary-tree) |
+| [0695-max-area-of-island](https://github.com/harsh-quare/LeetRoad/tree/master/0695-max-area-of-island) |
 | [0787-sliding-puzzle](https://github.com/harsh-quare/LeetRoad/tree/master/0787-sliding-puzzle) |
 | [0794-swim-in-rising-water](https://github.com/harsh-quare/LeetRoad/tree/master/0794-swim-in-rising-water) |
 | [0820-find-eventual-safe-states](https://github.com/harsh-quare/LeetRoad/tree/master/0820-find-eventual-safe-states) |
@@ -230,6 +232,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0494-target-sum](https://github.com/harsh-quare/LeetRoad/tree/master/0494-target-sum) |
 | [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
+| [0695-max-area-of-island](https://github.com/harsh-quare/LeetRoad/tree/master/0695-max-area-of-island) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/harsh-quare/LeetRoad/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0729-my-calendar-i](https://github.com/harsh-quare/LeetRoad/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0731-my-calendar-ii) |
@@ -391,6 +394,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0059-spiral-matrix-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0059-spiral-matrix-ii) |
 | [0304-range-sum-query-2d-immutable](https://github.com/harsh-quare/LeetRoad/tree/master/0304-range-sum-query-2d-immutable) |
 | [0407-trapping-rain-water-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0407-trapping-rain-water-ii) |
+| [0695-max-area-of-island](https://github.com/harsh-quare/LeetRoad/tree/master/0695-max-area-of-island) |
 | [0787-sliding-puzzle](https://github.com/harsh-quare/LeetRoad/tree/master/0787-sliding-puzzle) |
 | [0794-swim-in-rising-water](https://github.com/harsh-quare/LeetRoad/tree/master/0794-swim-in-rising-water) |
 | [0895-shortest-path-to-get-all-keys](https://github.com/harsh-quare/LeetRoad/tree/master/0895-shortest-path-to-get-all-keys) |
@@ -798,6 +802,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Union Find
 |  |
 | ------- |
+| [0695-max-area-of-island](https://github.com/harsh-quare/LeetRoad/tree/master/0695-max-area-of-island) |
 | [0794-swim-in-rising-water](https://github.com/harsh-quare/LeetRoad/tree/master/0794-swim-in-rising-water) |
 | [1396-count-servers-that-communicate](https://github.com/harsh-quare/LeetRoad/tree/master/1396-count-servers-that-communicate) |
 | [1753-path-with-minimum-effort](https://github.com/harsh-quare/LeetRoad/tree/master/1753-path-with-minimum-effort) |
