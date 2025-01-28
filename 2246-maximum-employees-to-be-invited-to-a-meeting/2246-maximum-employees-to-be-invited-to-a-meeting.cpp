@@ -1,130 +1,59 @@
 class Solution {
-    vector<vector<int>> graph;
-    stack<int> st;
-    vector<bool> isMemberOfStack;
-    vector<int> time;
-    vector<int> low;
-    int curr_time = 1;
-    int ans;
-    bool isThereACycleOfLength2;
-    vector<vector<int>> cyclesOfLength2;
 public:
-    
-    void dfs(int u, int parent){
-        time[u] = curr_time;
-        low[u] = curr_time;
-        curr_time += 1;
-        st.push(u);
-        isMemberOfStack[u] = 1;
+    int maximumInvitations(vector<int>& favorite) {
+        int n = favorite.size();
+        vector<int> inDegree(n, 0);
+        vector<vector<int>> graph(n);
         
-        for(int adj : graph[u]){
-            if(time[adj] == 0){  // node is not visited
-                dfs(adj, u);
-                low[u] = min(low[u], low[adj]);
-            }
-            if(isMemberOfStack[adj] == 1){
-                low[u] = min(low[u], time[adj]);
-            }
+        // Build the graph and calculate in-degrees
+        for (int i = 0; i < n; ++i) {
+            graph[i].push_back(favorite[i]);
+            inDegree[favorite[i]]++;
         }
-         
-        if(time[u] == low[u]){
-            int count = 0;
-            while(st.top() != u){
-                int v = st.top();
-                st.pop();
-                isMemberOfStack[v] = 0;
-                count += 1;
-                // cout<<v<<" ";
-            }
-            st.pop();
-            isMemberOfStack[u] = 0;
-            count += 1;
-            // cout<<u<<endl;
-            
-            ans = max(ans , count);
-            
-            if(count == 2){
-                isThereACycleOfLength2 = true;
-                vector<int> temp(2,0);
-                temp[0] = u;
-                temp[1] = graph[u][0];
-              
-                cyclesOfLength2.push_back(temp);
-            }
-        }
-    }
-    
-    
-    void prepareMaximumLengthsWithoutCycles(vector<int> &maxLen, vector<int> indegree){
+        
+        // Topological sort to find the longest chain
         queue<int> q;
-        int n = maxLen.size();
-        
-        for(int i = 0 ; i < n ; i++){
-            if(indegree[i] == 0){
+        for (int i = 0; i < n; ++i) {
+            if (inDegree[i] == 0) {
                 q.push(i);
             }
         }
         
-        while(q.empty() == false){
+        vector<int> depth(n, 1);
+        while (!q.empty()) {
             int u = q.front();
             q.pop();
-            
-            for(int v : graph[u]){
-                maxLen[v] = max(maxLen[v], 1+ maxLen[u]);
-                indegree[v] -= 1;
-                if(indegree[v] == 0){
+            for (int v : graph[u]) {
+                depth[v] = max(depth[v], depth[u] + 1);
+                if (--inDegree[v] == 0) {
                     q.push(v);
                 }
             }
         }
         
-    
-    }
-    
-
-    int maximumInvitations(vector<int>& edges) {
-        int n = edges.size();
-        graph.resize(n);
-        time.resize(n);
-        low.resize(n);
-        isMemberOfStack.resize(n);
-        isThereACycleOfLength2 = false;
-        vector<int> indegree(n , 0);
-
-        for(int i = 0 ; i < n ; i++){
-            graph[i].push_back(edges[i]);
-            isMemberOfStack[i] = 0;
-            time[i] = 0;
-            low[i] = 0;
-            indegree[edges[i]] += 1;
-        }
-        
-        for(int i = 0 ; i < n ; i++){
-            if(time[i] == 0){
-                dfs(i, -1);
+        // Find the maximum cycle length
+        int maxCycle = 0;
+        for (int i = 0; i < n; ++i) {
+            if (inDegree[i] != 0) {
+                int cycleLength = 0;
+                int j = i;
+                while (inDegree[j] != 0) {
+                    inDegree[j] = 0;
+                    j = favorite[j];
+                    cycleLength++;
+                }
+                maxCycle = max(maxCycle, cycleLength);
             }
         }
         
-        if(ans == 1){
-            return -1;
+        // Calculate the sum of the longest chains for mutual pairs
+        int sumChains = 0;
+        for (int i = 0; i < n; ++i) {
+            if (favorite[favorite[i]] == i && i < favorite[i]) {
+                sumChains += depth[i] + depth[favorite[i]];
+            }
         }
         
-        // if we don't have a cycle of length 2
-        if(isThereACycleOfLength2 == false){
-            return ans;
-        }
-        
-        // if we have cycles of length 2
-        
-        vector<int> maxLen(n, 1);
-        prepareMaximumLengthsWithoutCycles(maxLen, indegree);        
-        
-        int twonodecyclegraphsanswers = 0;
-        for(vector<int> p : cyclesOfLength2 ){
-            twonodecyclegraphsanswers += maxLen[p[0]] + maxLen[p[1]] ; 
-            ans = max(ans,twonodecyclegraphsanswers );
-        }
-        
-        return ans;
+        return max(maxCycle, sumChains);
     }
 };
