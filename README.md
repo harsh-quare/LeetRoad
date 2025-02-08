@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/harsh-quare/LeetRoad/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/harsh-quare/LeetRoad/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2388-replace-elements-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/2388-replace-elements-in-an-array) |
+| [2429-design-a-food-rating-system](https://github.com/harsh-quare/LeetRoad/tree/master/2429-design-a-food-rating-system) |
 | [2434-design-a-number-container-system](https://github.com/harsh-quare/LeetRoad/tree/master/2434-design-a-number-container-system) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/harsh-quare/LeetRoad/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/harsh-quare/LeetRoad/tree/master/2581-divide-players-into-teams-of-equal-skill) |
@@ -399,6 +400,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2300-construct-string-with-repeat-limit](https://github.com/harsh-quare/LeetRoad/tree/master/2300-construct-string-with-repeat-limit) |
 | [2310-minimum-operations-to-halve-array-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2310-minimum-operations-to-halve-array-sum) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/harsh-quare/LeetRoad/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
+| [2429-design-a-food-rating-system](https://github.com/harsh-quare/LeetRoad/tree/master/2429-design-a-food-rating-system) |
 | [2434-design-a-number-container-system](https://github.com/harsh-quare/LeetRoad/tree/master/2434-design-a-number-container-system) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/harsh-quare/LeetRoad/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/harsh-quare/LeetRoad/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
@@ -739,6 +741,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0859-design-circular-deque](https://github.com/harsh-quare/LeetRoad/tree/master/0859-design-circular-deque) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/harsh-quare/LeetRoad/tree/master/1497-design-a-stack-with-increment-operation) |
 | [1767-design-front-middle-back-queue](https://github.com/harsh-quare/LeetRoad/tree/master/1767-design-front-middle-back-queue) |
+| [2429-design-a-food-rating-system](https://github.com/harsh-quare/LeetRoad/tree/master/2429-design-a-food-rating-system) |
 | [2434-design-a-number-container-system](https://github.com/harsh-quare/LeetRoad/tree/master/2434-design-a-number-container-system) |
 ## Binary Search
 |  |
@@ -778,6 +781,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0729-my-calendar-i](https://github.com/harsh-quare/LeetRoad/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0731-my-calendar-ii) |
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/harsh-quare/LeetRoad/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
+| [2429-design-a-food-rating-system](https://github.com/harsh-quare/LeetRoad/tree/master/2429-design-a-food-rating-system) |
 | [2434-design-a-number-container-system](https://github.com/harsh-quare/LeetRoad/tree/master/2434-design-a-number-container-system) |
 | [2868-continuous-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2868-continuous-subarrays) |
 ## Queue
