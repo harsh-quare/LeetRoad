@@ -35,6 +35,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2388-replace-elements-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/2388-replace-elements-in-an-array) |
 | [2429-design-a-food-rating-system](https://github.com/harsh-quare/LeetRoad/tree/master/2429-design-a-food-rating-system) |
 | [2434-design-a-number-container-system](https://github.com/harsh-quare/LeetRoad/tree/master/2434-design-a-number-container-system) |
+| [2448-count-number-of-bad-pairs](https://github.com/harsh-quare/LeetRoad/tree/master/2448-count-number-of-bad-pairs) |
 | [2552-maximum-sum-of-distinct-subarrays-with-length-k](https://github.com/harsh-quare/LeetRoad/tree/master/2552-maximum-sum-of-distinct-subarrays-with-length-k) |
 | [2581-divide-players-into-teams-of-equal-skill](https://github.com/harsh-quare/LeetRoad/tree/master/2581-divide-players-into-teams-of-equal-skill) |
 | [2586-longest-square-streak-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/2586-longest-square-streak-in-an-array) |
@@ -204,6 +205,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2050-count-good-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/2050-count-good-numbers) |
 | [2251-number-of-ways-to-divide-a-long-corridor](https://github.com/harsh-quare/LeetRoad/tree/master/2251-number-of-ways-to-divide-a-long-corridor) |
 | [2305-append-k-integers-with-minimal-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2305-append-k-integers-with-minimal-sum) |
+| [2448-count-number-of-bad-pairs](https://github.com/harsh-quare/LeetRoad/tree/master/2448-count-number-of-bad-pairs) |
 | [2477-number-of-ways-to-reach-a-position-after-exactly-k-steps](https://github.com/harsh-quare/LeetRoad/tree/master/2477-number-of-ways-to-reach-a-position-after-exactly-k-steps) |
 | [2546-number-of-subarrays-with-gcd-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/2546-number-of-subarrays-with-gcd-equal-to-k) |
 | [2713-find-the-divisibility-array-of-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2713-find-the-divisibility-array-of-a-string) |
@@ -330,6 +332,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/harsh-quare/LeetRoad/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [2388-replace-elements-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/2388-replace-elements-in-an-array) |
 | [2411-spiral-matrix-iv](https://github.com/harsh-quare/LeetRoad/tree/master/2411-spiral-matrix-iv) |
+| [2448-count-number-of-bad-pairs](https://github.com/harsh-quare/LeetRoad/tree/master/2448-count-number-of-bad-pairs) |
 | [2465-shifting-letters-ii](https://github.com/harsh-quare/LeetRoad/tree/master/2465-shifting-letters-ii) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/harsh-quare/LeetRoad/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
@@ -628,6 +631,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2300-construct-string-with-repeat-limit](https://github.com/harsh-quare/LeetRoad/tree/master/2300-construct-string-with-repeat-limit) |
 | [2356-largest-combination-with-bitwise-and-greater-than-zero](https://github.com/harsh-quare/LeetRoad/tree/master/2356-largest-combination-with-bitwise-and-greater-than-zero) |
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/harsh-quare/LeetRoad/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
+| [2448-count-number-of-bad-pairs](https://github.com/harsh-quare/LeetRoad/tree/master/2448-count-number-of-bad-pairs) |
 | [2494-sum-of-prefix-scores-of-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2494-sum-of-prefix-scores-of-strings) |
 | [2594-count-pairs-of-similar-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2594-count-pairs-of-similar-strings) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/harsh-quare/LeetRoad/tree/master/3455-minimum-length-of-string-after-operations) |
