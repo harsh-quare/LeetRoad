@@ -16,9 +16,9 @@ public:
 
         for(auto& it: freq){
             int f = it.second;
-            if(f > 1){  // if the freq of such nums[k]-k, is greater than 1, means there multiple such guys
-                long long totalSuchPairs = (long long)f*(f-1)/2;   // total number of pairs that can be made
-                totalPairs -= totalSuchPairs;  // remove the good pairs
+            if(f > 1){
+                long long totalSuchPairs = (long long)f*(f-1)/2;
+                totalPairs -= totalSuchPairs;
             }
         }
 
