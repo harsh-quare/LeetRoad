@@ -3,7 +3,7 @@ public:
     int maximumSum(vector<int>& nums) {
         int n = nums.size();
         int ans = -1;
-        unordered_map<int, int> mp;  // sum of digits -> maximum guy having that sum
+        vector<int> mp(82, 0);  // sum of digits -> maximum guy having that sum ; 82, bcz max can be 999999999 => 81 sum
 
         for(int i = 0; i < n; i++){
             int val = nums[i];
@@ -13,7 +13,7 @@ public:
                 val /= 10;
             }
 
-            if(mp.find(sumDig) == mp.end()){
+            if(mp[sumDig] == 0){
                 mp[sumDig] = nums[i];
             }
             else{
