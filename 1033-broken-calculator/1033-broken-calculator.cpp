@@ -6,23 +6,17 @@ public:
 
         // Now the valid operations are: val /= 2 and val += 1
 
-        int ans = 0;
-        while(target > startValue){
-            if(target % 2 == 1){
-                target += 1;
-                ans++;
-            }
-            while(target % 2 == 0 && target > startValue){
-                target /= 2;
-                ans++;
-            }
+        int ops = 0;
 
-            if(target == startValue) return ans;
+        while(target > startValue){
+            if(target % 2 != 0){
+                target += 1;
+                ops++;
+            }
+            target /= 2;
+            ops++;
         }
 
-        // Now target <= startValue
-        ans += (startValue - target);
-
-        return ans;
+        return ops + (startValue - target);
     }
 };
