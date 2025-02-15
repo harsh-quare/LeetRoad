@@ -1,24 +1,34 @@
 class Solution {
 public:
+    bool isValid(string x, int num, int i, int curSum){
+        if(i == x.length()){
+            return curSum == num;
+        }
+
+        if(curSum > num) return false;
+
+        bool possible = false;
+
+        for(int j = i; j < x.size(); j++){
+            string sub = x.substr(i, j-i+1);
+            int val = stoi(sub);
+
+            possible = possible || isValid(x, num, j+1, curSum + val);
+
+            if(possible == true) return true;
+        }
+
+        return possible;
+    }
     int punishmentNumber(int n) {
-        int sum = 0;
-        for (int i = 1; i <= n; i++) {
-            if (canPartition(to_string(i * i), 0, i)) {
-                sum += (i * i);
+        int ans = 0;
+        for(int i = 1; i <= n; i++){
+            string x = to_string(i*i);
+            if(isValid(x, i, 0, 0)){
+                ans += i*i;
             }
         }
-        return sum;
-    }
 
-    bool canPartition(string num, int index, int target) {
-        if (index == num.length()) return target == 0;
-
-        int sum = 0;
-        for (int i = index; i < num.length(); i++) {
-            sum = sum * 10 + (num[i] - '0');
-            if (sum > target) break;
-            if (canPartition(num, i + 1, target - sum)) return true;
-        }
-        return false;
+        return ans;
     }
 };
