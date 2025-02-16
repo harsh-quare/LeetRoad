@@ -301,6 +301,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1767-design-front-middle-back-queue](https://github.com/harsh-quare/LeetRoad/tree/master/1767-design-front-middle-back-queue) |
 | [1776-minimum-operations-to-reduce-x-to-zero](https://github.com/harsh-quare/LeetRoad/tree/master/1776-minimum-operations-to-reduce-x-to-zero) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1786-count-the-number-of-consistent-strings) |
+| [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/harsh-quare/LeetRoad/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1831-ways-to-split-array-into-three-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/1831-ways-to-split-array-into-three-subarrays) |
 | [1876-map-of-highest-peak](https://github.com/harsh-quare/LeetRoad/tree/master/1876-map-of-highest-peak) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/harsh-quare/LeetRoad/tree/master/1878-check-if-array-is-sorted-and-rotated) |
@@ -908,6 +909,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0212-word-search-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0212-word-search-ii) |
 | [0494-target-sum](https://github.com/harsh-quare/LeetRoad/tree/master/0494-target-sum) |
+| [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/harsh-quare/LeetRoad/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/harsh-quare/LeetRoad/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/harsh-quare/LeetRoad/tree/master/2802-find-the-punishment-number-of-an-integer) |
 ## Enumeration
