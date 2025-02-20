@@ -1,21 +1,14 @@
 class Solution {
 public:
     string findDifferentBinaryString(vector<string>& nums) {
-        // converting into decimal and then checking one by one
-        int n= nums.size();
-        unordered_set<int> st;
-        for(string& num: nums){
-            st.insert(stoi(num, 0, 2));  // stoi(string, position, int base)
+        int n = nums.size();
+        // I will go to every binary string available, and will try to make my string along the way by, differentiating one bit from each string
+        string ans = "";
+        for(int i = 0; i < n; i++){
+            char cur = nums[i][i];  // 0th char of 0th string, 1st char of 1st string, 2nd char of 2nd string, and so on..
+            ans += (cur == '0' ? '1' : '0');
         }
 
-        for(int num = 0; num <= n; num++){  //instead of checking every number from 0 to 2^n - 1, we can check from 0 to n, means a total of n+1 numbers. Because the array size is n, hence we are checking one more number, guranteed one number out of them will be missing.
-            if(st.find(num)==st.end()){
-                // convert int to binary string
-                string temp = bitset<16>(num).to_string();
-                return temp.substr(16-n, n);
-            }
-        }
-
-        return "";
+        return ans;
     }
 };
