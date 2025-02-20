@@ -1,14 +1,21 @@
 class Solution {
 public:
-    string findDifferentBinaryString(vector<string>& nums) {
-        int n = nums.size();
-        // I will go to every binary string available, and will try to make my string along the way by, differentiating one bit from each string
-        string ans = "";
-        for(int i = 0; i < n; i++){
-            char cur = nums[i][i];  // 0th char of 0th string, 1st char of 1st string, 2nd char of 2nd string, and so on..
-            ans += (cur == '0' ? '1' : '0');
+    string generate(int n, unordered_set<string>& st, string cur){
+        if(cur.size() == n){
+            return st.count(cur) > 0 ? "" : cur;
         }
 
-        return ans;
+        for(char c: {'0', '1'}){
+            string bin = generate(n, st, cur+c);
+            if(!bin.empty()) return bin;
+        }
+
+        return "";
+    }
+    string findDifferentBinaryString(vector<string>& nums) {
+        // generating all n-bit binary strings
+        int n = nums.size();
+        unordered_set<string> st(nums.begin(), nums.end());
+        return generate(n, st, "");
     }
 };
