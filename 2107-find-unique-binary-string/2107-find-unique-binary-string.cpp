@@ -4,15 +4,8 @@ public:
         // converting into decimal and then checking one by one
         int n= nums.size();
         unordered_set<int> st;
-        for(int i = 0; i < n; i++){
-            string bin = nums[i];
-            int m = bin.size();
-            int dec = 0;
-            for(int j = m-1; j >= 0; j--){
-                dec += (bin[j] - '0')*(1 << (m-1-j));
-            }
-
-            st.insert(dec);
+        for(string& num: nums){
+            st.insert(stoi(num, 0, 2));  // stoi(string, position, int base)
         }
 
         for(int num = 0; num <= (1 << (n-1)); num++){
