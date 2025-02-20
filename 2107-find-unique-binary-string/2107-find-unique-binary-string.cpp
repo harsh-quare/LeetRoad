@@ -5,17 +5,18 @@ public:
             return st.count(cur) > 0 ? "" : cur;
         }
 
-        for(char c: {'0', '1'}){
-            string bin = generate(n, st, cur+c);
-            if(!bin.empty()) return bin;
+        string addZero = generate(n, st, cur + "0");
+        if(addZero != ""){
+            return addZero;
         }
 
-        return "";
+        return generate(n, st, cur + "1");
     }
     string findDifferentBinaryString(vector<string>& nums) {
         // generating all n-bit binary strings
         int n = nums.size();
         unordered_set<string> st(nums.begin(), nums.end());
+        // string cur = "";
         return generate(n, st, "");
     }
 };
