@@ -61,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/0662-maximum-width-of-binary-tree) |
 | [0988-flip-equivalent-binary-trees](https://github.com/harsh-quare/LeetRoad/tree/master/0988-flip-equivalent-binary-trees) |
 | [1035-cousins-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1035-cousins-in-binary-tree) |
+| [1093-recover-a-tree-from-preorder-traversal](https://github.com/harsh-quare/LeetRoad/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1484-linked-list-in-binary-tree) |
@@ -87,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0971-shortest-bridge](https://github.com/harsh-quare/LeetRoad/tree/master/0971-shortest-bridge) |
 | [0988-flip-equivalent-binary-trees](https://github.com/harsh-quare/LeetRoad/tree/master/0988-flip-equivalent-binary-trees) |
 | [1035-cousins-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1035-cousins-in-binary-tree) |
+| [1093-recover-a-tree-from-preorder-traversal](https://github.com/harsh-quare/LeetRoad/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/harsh-quare/LeetRoad/tree/master/1350-remove-sub-folders-from-the-filesystem) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
@@ -148,6 +150,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/0662-maximum-width-of-binary-tree) |
 | [0988-flip-equivalent-binary-trees](https://github.com/harsh-quare/LeetRoad/tree/master/0988-flip-equivalent-binary-trees) |
 | [1035-cousins-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1035-cousins-in-binary-tree) |
+| [1093-recover-a-tree-from-preorder-traversal](https://github.com/harsh-quare/LeetRoad/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1116-maximum-level-sum-of-a-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1116-maximum-level-sum-of-a-binary-tree) |
 | [1387-find-elements-in-a-contaminated-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1387-find-elements-in-a-contaminated-binary-tree) |
 | [1484-linked-list-in-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/1484-linked-list-in-binary-tree) |
@@ -604,6 +607,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0920-uncommon-words-from-two-sentences](https://github.com/harsh-quare/LeetRoad/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0952-word-subsets](https://github.com/harsh-quare/LeetRoad/tree/master/0952-word-subsets) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/harsh-quare/LeetRoad/tree/master/0957-minimum-add-to-make-parentheses-valid) |
+| [1093-recover-a-tree-from-preorder-traversal](https://github.com/harsh-quare/LeetRoad/tree/master/1093-recover-a-tree-from-preorder-traversal) |
 | [1160-letter-tile-possibilities](https://github.com/harsh-quare/LeetRoad/tree/master/1160-letter-tile-possibilities) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/harsh-quare/LeetRoad/tree/master/1302-delete-characters-to-make-fancy-string) |
 | [1350-remove-sub-folders-from-the-filesystem](https://github.com/harsh-quare/LeetRoad/tree/master/1350-remove-sub-folders-from-the-filesystem) |
