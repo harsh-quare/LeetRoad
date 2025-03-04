@@ -213,6 +213,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0007-reverse-integer](https://github.com/harsh-quare/LeetRoad/tree/master/0007-reverse-integer) |
 | [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
+| [0326-power-of-three](https://github.com/harsh-quare/LeetRoad/tree/master/0326-power-of-three) |
 | [0380-insert-delete-getrandom-o1](https://github.com/harsh-quare/LeetRoad/tree/master/0380-insert-delete-getrandom-o1) |
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/harsh-quare/LeetRoad/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/harsh-quare/LeetRoad/tree/master/0453-minimum-moves-to-equal-array-elements) |
@@ -241,6 +242,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
+| [0326-power-of-three](https://github.com/harsh-quare/LeetRoad/tree/master/0326-power-of-three) |
 | [0795-k-th-symbol-in-grammar](https://github.com/harsh-quare/LeetRoad/tree/master/0795-k-th-symbol-in-grammar) |
 | [2050-count-good-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/2050-count-good-numbers) |
 | [3601-find-the-k-th-character-in-string-game-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3601-find-the-k-th-character-in-string-game-ii) |
