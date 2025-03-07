@@ -234,6 +234,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2491-smallest-even-multiple](https://github.com/harsh-quare/LeetRoad/tree/master/2491-smallest-even-multiple) |
 | [2546-number-of-subarrays-with-gcd-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/2546-number-of-subarrays-with-gcd-equal-to-k) |
 | [2575-minimum-cuts-to-divide-a-circle](https://github.com/harsh-quare/LeetRoad/tree/master/2575-minimum-cuts-to-divide-a-circle) |
+| [2610-closest-prime-numbers-in-range](https://github.com/harsh-quare/LeetRoad/tree/master/2610-closest-prime-numbers-in-range) |
 | [2649-count-total-number-of-colored-cells](https://github.com/harsh-quare/LeetRoad/tree/master/2649-count-total-number-of-colored-cells) |
 | [2713-find-the-divisibility-array-of-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2713-find-the-divisibility-array-of-a-string) |
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/harsh-quare/LeetRoad/tree/master/2802-find-the-punishment-number-of-an-integer) |
@@ -522,6 +523,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [2491-smallest-even-multiple](https://github.com/harsh-quare/LeetRoad/tree/master/2491-smallest-even-multiple) |
 | [2546-number-of-subarrays-with-gcd-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/2546-number-of-subarrays-with-gcd-equal-to-k) |
+| [2610-closest-prime-numbers-in-range](https://github.com/harsh-quare/LeetRoad/tree/master/2610-closest-prime-numbers-in-range) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/harsh-quare/LeetRoad/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 | [3655-digit-operations-to-make-two-integers-equal](https://github.com/harsh-quare/LeetRoad/tree/master/3655-digit-operations-to-make-two-integers-equal) |
 ## Bit Manipulation
