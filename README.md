@@ -418,6 +418,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3555-final-array-state-after-k-multiplication-operations-i](https://github.com/harsh-quare/LeetRoad/tree/master/3555-final-array-state-after-k-multiplication-operations-i) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/harsh-quare/LeetRoad/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
+| [3643-zero-array-transformation-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3643-zero-array-transformation-ii) |
 | [3653-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/harsh-quare/LeetRoad/tree/master/3653-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3681-maximum-area-rectangle-with-point-constraints-i](https://github.com/harsh-quare/LeetRoad/tree/master/3681-maximum-area-rectangle-with-point-constraints-i) |
 ## Divide and Conquer
@@ -722,6 +723,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2465-shifting-letters-ii](https://github.com/harsh-quare/LeetRoad/tree/master/2465-shifting-letters-ii) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/harsh-quare/LeetRoad/tree/master/2691-count-vowel-strings-in-ranges) |
 | [3427-special-array-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3427-special-array-ii) |
+| [3643-zero-array-transformation-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3643-zero-array-transformation-ii) |
 | [3653-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/harsh-quare/LeetRoad/tree/master/3653-maximum-subarray-sum-with-length-divisible-by-k) |
 ## Brainteaser
 |  |
@@ -840,6 +842,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2891-maximum-beauty-of-an-array-after-applying-operation](https://github.com/harsh-quare/LeetRoad/tree/master/2891-maximum-beauty-of-an-array-after-applying-operation) |
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/harsh-quare/LeetRoad/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
 | [3427-special-array-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3427-special-array-ii) |
+| [3643-zero-array-transformation-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3643-zero-array-transformation-ii) |
 ## Segment Tree
 |  |
 | ------- |
