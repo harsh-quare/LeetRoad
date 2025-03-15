@@ -170,6 +170,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0016-3sum-closest](https://github.com/harsh-quare/LeetRoad/tree/master/0016-3sum-closest) |
 | [0179-largest-number](https://github.com/harsh-quare/LeetRoad/tree/master/0179-largest-number) |
 | [0215-kth-largest-element-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/0215-kth-largest-element-in-an-array) |
 | [0324-wiggle-sort-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0324-wiggle-sort-ii) |
@@ -256,6 +257,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0016-3sum-closest](https://github.com/harsh-quare/LeetRoad/tree/master/0016-3sum-closest) |
 | [0045-jump-game-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0045-jump-game-ii) |
 | [0054-spiral-matrix](https://github.com/harsh-quare/LeetRoad/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/harsh-quare/LeetRoad/tree/master/0055-jump-game) |
@@ -912,6 +914,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0016-3sum-closest](https://github.com/harsh-quare/LeetRoad/tree/master/0016-3sum-closest) |
 | [0151-reverse-words-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/0151-reverse-words-in-a-string) |
 | [0556-next-greater-element-iii](https://github.com/harsh-quare/LeetRoad/tree/master/0556-next-greater-element-iii) |
 | [0567-permutation-in-string](https://github.com/harsh-quare/LeetRoad/tree/master/0567-permutation-in-string) |
