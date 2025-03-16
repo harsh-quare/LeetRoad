@@ -36,3 +36,8 @@ public:
 // n = sqrt(time / rank)
 // 'time' is constant, rank changes for each mechanic, hence 'n' number of cars repaired by each mechanic gets calculated
 // Then it's valid
+
+// Binary search on "ANSWER"
+// Answer: whatever we need to maximize/minimize in the problem
+// Uspe binary search apply kro, yaha time h
+// to try to solve the canrep function in terms of "can you repair all the cars in 'mid' time"
