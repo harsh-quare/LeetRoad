@@ -1,52 +1,61 @@
 class Solution {
 public:
-    void dfs(int i, vector<vector<pair<int,int>>> &adj, vector<int> &vis, int &mn, int cnt){
-        vis[i] = cnt;
-        for(auto x: adj[i]){
-            if(vis[x.first] == -1){
-                // mn=mn & x.second;
-                dfs(x.first, adj, vis, mn, cnt);
+    void dfs(int nd, vector<int>& vis, vector<vector<pair<int,int>>> &adj, unordered_map<int, int>& nodeComp, int comp, int &cmpWt){
+        vis[nd] = 1;
+        nodeComp[nd] = comp;
+
+        for(auto [it, wt]: adj[nd]){
+            cmpWt &= wt;
+            if(!vis[it]){
+                dfs(it, vis, adj, nodeComp, comp, cmpWt);
             }
         }
-        
     }
 
     vector<int> minimumCost(int n, vector<vector<int>>& edges, vector<vector<int>>& query) {
-        //Basically, hame minimum cost krna h, and ham & operations kr rhe h, and ham kahi bhi ja skte h walk krte hue
-        //Basic principle is ham jitna & operations krte h, utni hi value kam hoti jati h, to ham try kr rhe h ki
-        //ham apne path me max means saari value le and unka & kr de jisse minimum cost milega
-        //and agar nodes different component me h, tb to no issue, -1 answer ho jayega
-
         vector<vector<pair<int,int>>> adj(n);
-        
-        for(auto e: edges){
-            adj[e[0]].push_back({e[1],e[2]});
-            adj[e[1]].push_back({e[0],e[2]});
+        for(auto it: edges){
+            int u = it[0];
+            int v = it[1];
+            int w = it[2];
+
+            adj[u].push_back({v, w});
+            adj[v].push_back({u, w});
         }
-        
-        vector<int> vis(n,-1);
-        int cnt=-1;
-        for(int i = 0; i<n; i++){
-            int mn = INT_MAX;
-            if(vis[i] == -1){
-                cnt++;
-                dfs(i, adj, vis, mn, cnt);
+
+        unordered_map<int, int> nodeComp;  // node -> its component number
+        unordered_map<int, int> compWt;  // component number and its weight
+
+        int comp = 0;
+        vector<int> vis(n, 0);
+        for(int i = 0; i < n; i++){
+            if(!vis[i]){
+                int cmpWt = INT_MAX;
+                dfs(i, vis, adj, nodeComp, comp, cmpWt);
+                compWt[comp] = cmpWt;
+                comp++;
             }
         }
 
-        vector<int> min_weight(cnt + 1, INT_MAX);
-        for(auto e: edges){
-            min_weight[vis[e[0]]]= min_weight[vis[e[0]]] & e[2]; 
-        }
         vector<int> ans;
-        for(auto q:query){            
-            if(vis[q[0]] != vis[q[1]])
+        for(auto q: query){
+            int s = q[0];
+            int e = q[1];
+
+            if(nodeComp[s] == nodeComp[e]){
+                ans.push_back(compWt[nodeComp[s]]);
+            }
+            else{
                 ans.push_back(-1);
-            else if(q[0] == q[1])
-                ans.push_back(0);
-            else ans.push_back(min_weight[vis[q[0]]]);
+            }
         }
-        
+
         return ans;
     }
 };
+
+// The thing to notice here is that, I need to minimize the cost of a path between two nodes.
+// And the cost is defined as the AND of all the weights in the path.
+// Acc to the property of AND, we always get the number smaller or equal after applying AND
+// Means, to minimize the cost of the path, we would try to take as many weights possible to increase the chances of reducing the nett cost of the path.
+// We would first check if the two nodes are reachable to each other or not, and if yes, then the answer would be the AND of that component's AND of all weights, else it will be -1
