@@ -1,23 +1,25 @@
 class Solution {
 public:
+    // This function tries to solve, "subset sum equals k" problem using DP
     bool canZero(int mid, vector<int>& nums, vector<vector<int>>& q, int n) {
-        //for each index, track possible decrements
+        // For each index, track possible decrements
         for(int i = 0; i < n; i++){
-            vector<bool> possible(nums[i] + 1, false); //can we achieve this decrement???
-            possible[0] = true; // Empty subset
+            int val = nums[i];
+            vector<bool> dp(val + 1, false); //can we achieve this decrement???
+            dp[0] = true; // Empty subset, 0 is achievable
             
             for(int j = 0; j < mid; j++){
                 int l = q[j][0], r = q[j][1], x = q[j][2];
                 if(i < l || i > r) continue; // i not in range
                 
                 //shift possible values by x
-                for(int val = nums[i]; val >= x; val--){
-                    if(possible[val - x]){
-                        possible[val] = true;
+                for(int num = nums[i]; num >= x; num--){
+                    if(dp[num - x] == true){
+                        dp[num] = true;
                     }
                 }
             }
-            if(!possible[nums[i]]) return false; //cannot make nums[i] exactly 0
+            if(dp[val] == false) return false; //cannot make nums[i] exactly 0
         }
         return true;
     }
