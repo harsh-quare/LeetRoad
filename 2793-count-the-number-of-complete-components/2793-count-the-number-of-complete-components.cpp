@@ -1,15 +1,17 @@
 class Solution {
 public:
-    void dfs(int nd, vector<bool>& vis, vector<vector<int>>& adj, int &sz){
+    void dfs(int nd, vector<bool>& vis, vector<vector<int>>& adj, int &nodes, int &egs){
+        nodes++;
+        egs += adj[nd].size();  // adding edges from current vertex
         vis[nd] = true;
 
         for(auto it: adj[nd]){
             if(!vis[it]){
-                sz++;
-                dfs(it, vis, adj, sz);
+                dfs(it, vis, adj, nodes, egs);
             }
         }
     }
+
     int countCompleteComponents(int n, vector<vector<int>>& edges) {
         vector<vector<int>> adj(n);
         for(auto it: edges){
@@ -17,32 +19,22 @@ public:
             adj[it[1]].push_back(it[0]);
         }
 
-        // First of all, we need the number of vertices in each connected component
+        // First of all, we need the number of vertices in each connected component, and the number of edges too
         vector<bool> vis(n, 0);
-        unordered_map<int, int> mp;
+        int cnt = 0;
         for(int i = 0; i < n; i++){
             if(!vis[i]){
-                int sz = 1;
-                dfs(i, vis, adj, sz);
-                mp[i] = sz;
-            }
-        }
+                int nodes = 0;
+                int egs = 0;
+                dfs(i, vis, adj, nodes, egs);
 
-        int cnt = 0;
-        // Now, we need to check if each node in a component is having the same degree as size-1
-        for(auto& [nd, sz]: mp){
-            // check every node
-            bool valid = true;
-            if(adj[nd].size() != sz-1) valid = false;
-            for(auto it: adj[nd]){
-                if(adj[it].size() != sz-1){
-                    valid = false;
-                    break;
+                cout << nodes << " " << egs << endl;
+
+                egs /= 2;  // all the edgee were counted twice, because the graph is undirected
+                
+                if(egs == nodes*(nodes-1)/2){
+                    cnt++;
                 }
-            }
-
-            if(valid == true){
-                cnt++;
             }
         }
 
