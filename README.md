@@ -58,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3434-find-the-number-of-distinct-colors-among-the-balls](https://github.com/harsh-quare/LeetRoad/tree/master/3434-find-the-number-of-distinct-colors-among-the-balls) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/harsh-quare/LeetRoad/tree/master/3455-minimum-length-of-string-after-operations) |
 | [3653-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/harsh-quare/LeetRoad/tree/master/3653-maximum-subarray-sum-with-length-divisible-by-k) |
+| [3809-properties-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3809-properties-graph) |
 ## Tree
 |  |
 | ------- |
@@ -114,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2793-count-the-number-of-complete-components](https://github.com/harsh-quare/LeetRoad/tree/master/2793-count-the-number-of-complete-components) |
 | [3058-maximum-number-of-k-divisible-components](https://github.com/harsh-quare/LeetRoad/tree/master/3058-maximum-number-of-k-divisible-components) |
 | [3439-find-minimum-diameter-after-merging-two-trees](https://github.com/harsh-quare/LeetRoad/tree/master/3439-find-minimum-diameter-after-merging-two-trees) |
+| [3809-properties-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3809-properties-graph) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -155,6 +157,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3239-minimum-number-of-operations-to-make-x-and-y-equal](https://github.com/harsh-quare/LeetRoad/tree/master/3239-minimum-number-of-operations-to-make-x-and-y-equal) |
 | [3439-find-minimum-diameter-after-merging-two-trees](https://github.com/harsh-quare/LeetRoad/tree/master/3439-find-minimum-diameter-after-merging-two-trees) |
 | [3517-shortest-distance-after-road-addition-queries-i](https://github.com/harsh-quare/LeetRoad/tree/master/3517-shortest-distance-after-road-addition-queries-i) |
+| [3809-properties-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3809-properties-graph) |
 ## Binary Tree
 |  |
 | ------- |
@@ -444,6 +447,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3653-maximum-subarray-sum-with-length-divisible-by-k](https://github.com/harsh-quare/LeetRoad/tree/master/3653-maximum-subarray-sum-with-length-divisible-by-k) |
 | [3681-maximum-area-rectangle-with-point-constraints-i](https://github.com/harsh-quare/LeetRoad/tree/master/3681-maximum-area-rectangle-with-point-constraints-i) |
 | [3795-zero-array-transformation-iv](https://github.com/harsh-quare/LeetRoad/tree/master/3795-zero-array-transformation-iv) |
+| [3809-properties-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3809-properties-graph) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -788,6 +792,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/harsh-quare/LeetRoad/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 | [3655-digit-operations-to-make-two-integers-equal](https://github.com/harsh-quare/LeetRoad/tree/master/3655-digit-operations-to-make-two-integers-equal) |
+| [3809-properties-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3809-properties-graph) |
 ## Shortest Path
 |  |
 | ------- |
@@ -991,6 +996,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2793-count-the-number-of-complete-components](https://github.com/harsh-quare/LeetRoad/tree/master/2793-count-the-number-of-complete-components) |
 | [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/harsh-quare/LeetRoad/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
+| [3809-properties-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3809-properties-graph) |
 ## Monotonic Stack
 |  |
 | ------- |
