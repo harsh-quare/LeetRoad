@@ -1,23 +1,21 @@
 class Solution {
 public:
-    void solve(vector<int>& nums, int i, int& total, int cur){
-        if(i >= nums.size()){
-            total += cur;
-            return ;
+    int subsetXORSum(vector<int>& nums) {
+        // using bitmask method
+        int n = nums.size();
+        int sum = 0;
+        if(n == 0) return 0;
+
+        for(int mask = 0; mask < (1 << n); mask++){
+            int xorTotal = 0;
+            for(int i = 0; i < n; i++){
+                if(mask & (1 << i)){
+                    xorTotal ^= nums[i];
+                }
+            }
+            sum += xorTotal;
         }
 
-        // take
-        solve(nums, i+1, total, cur^nums[i]);
-
-        // notTake
-        solve(nums, i+1, total, cur);
-
-        return ;
-    }
-    int subsetXORSum(vector<int>& nums) {
-        int total = 0;
-        solve(nums, 0, total, 0);
-
-        return total;
+        return sum;
     }
 };
