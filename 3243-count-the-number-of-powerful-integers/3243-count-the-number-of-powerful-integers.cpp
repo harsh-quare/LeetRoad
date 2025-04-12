@@ -1,83 +1,43 @@
-#define ll long long
-ll dp[17][2];
-
-ll find( string &num, int pos, int stat, string &suf, int limit){
-    if(pos == num.length())
-        return 1;
-
-    if(num.length() < suf.length())
-        return 0;
-
-    ll ans = 0;
-    int rem = num.length() -  pos;
-
-    if(dp[pos][stat]!=-1)
-        return dp[pos][stat]; 
-
-    if(rem <= suf.length()){
-        int currind = suf.length() - rem;
-        char curr = suf[currind];
-
-        if(stat == 1)
-            return 1;
-
-        else{
-            if(curr > num[pos])
-                return 0;
-
-            else if(curr == num[pos])
-                ans+=find(num, pos+1, 0, suf, limit);
-
-            else
-                ans+=find(num, pos+1, 1, suf, limit);
-        }
-    }
-
-    else{
-        int curr = (num[pos] - '0');
-
-        if(stat == 1){
-            for(int i=0; i<=limit ; ++i)
-                ans+=find(num, pos+1, 1, suf, limit);
-        }
-
-        else{
-
-            for(int i=0; i<=limit && i<=curr ; ++i){
-                if(i!=curr)
-                    ans+=find(num, pos+1, 1, suf, limit);
-
-                else
-                    ans+=find(num, pos+1, 0, suf, limit);
-            }
-        }
-    }
-
-    return dp[pos][stat] = ans;
-}
-
 class Solution {
 public:
-    long long numberOfPowerfulInt(long long l, long long r, int limit, string s) {
+    long long solve(string &tar, string inpSuf, int limit){   // it tells, how many smaller numbers 'tar' are there which has the suffix as 's' and each digit in it is at most limit
 
-        string ls = to_string(l-1);
-        string rs = to_string(r);
+        if(tar.length() < inpSuf.length()){
+            return 0;  // agar target integer ki value suffix se chhoti h
+        }
 
-        ll res1 = find(ls, 0, 0, s, limit);
-        memset(dp, -1, sizeof(dp));
+        long long cnt = 0;
+        string trailStr = tar.substr(tar.length() - inpSuf.length());
+        // "43210" => 5
+        // "12" => 2
+        // 5-2 = 3rd index => "10"
 
-        ll res2 = find(rs, 0, 0, s, limit);
-        memset(dp, -1, sizeof(dp));
+        int remLen = tar.length() - inpSuf.length();
 
-        return res2 - res1;
+        for(int i = 0; i < remLen; i++){
+            int dig = tar[i] - '0';
+
+            if(dig <= limit){
+                cnt += dig * pow(limit + 1, remLen - i - 1);
+                // current index ke liye digit number of ways(0,1,...,dig-1), and remaining places par sab pe (limit+1) number of ways => that makes it (lim+1)^(remaining number of places)
+            }
+            else{
+                // we can put limit+1 number of digits at all places
+                cnt += pow(limit + 1, remLen - i);
+                return cnt;  // early return, bcz complete answer has been calculated here
+            }
+        }
+
+        if(trailStr >= inpSuf){
+            cnt += 1;  // that one edge case, when we didn't consider the maximum possible digit, bcz we were scared to overflow the limit of overall integer, but the suff value is lesser, so we can actually use it, so +1
+        }
+
+        return cnt;
+    }
+    long long numberOfPowerfulInt(long long start, long long finish, int limit, string s) {
+        string fns = to_string(finish);
+        string str = to_string(start-1);
+
+        return solve(fns, s, limit) - solve(str, s, limit);
     }
 };
-
-
-
-
-
-
-
-
-
