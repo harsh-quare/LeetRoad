@@ -3,16 +3,19 @@ public:
     int countQuadruplets(vector<int>& nums) {
         int n = nums.size();
         int cnt = 0;
-        for(int i = 0; i < n; i++){
-            for(int j = i+1; j < n; j++){
-                for(int k = j+1; k < n; k++){
-                    for(int l = k+1; l < n; l++){
-                        if(nums[i] + nums[j] + nums[k] == nums[l]) cnt++;
+        unordered_map<int, int> mp;
+        mp[nums[n-1]]++;
+
+        for(int i = n-2; i >= 2; i--){
+            for(int j = i-1; j >= 1; j--){
+                for(int k = j-1; k >= 0; k--){
+                    if(mp.count(nums[i] + nums[j] + nums[k])){
+                        cnt += mp[nums[i] + nums[j] + nums[k]];
                     }
                 }
             }
+            mp[nums[i]]++;
         }
-
         return cnt;
     }
 };
