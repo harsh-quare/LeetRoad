@@ -4,17 +4,16 @@ public:
         int n = nums.size();
         int cnt = 0;
         unordered_map<int, int> mp;
-        mp[nums[n-1]]++;
+        mp[nums[n-1] - nums[n-2]]++;
 
-        for(int i = n-2; i >= 2; i--){
-            for(int j = i-1; j >= 1; j--){
-                for(int k = j-1; k >= 0; k--){
-                    if(mp.count(nums[i] + nums[j] + nums[k])){
-                        cnt += mp[nums[i] + nums[j] + nums[k]];
-                    }
-                }
+        for(int b = n-3; b >= 1; b--){
+            for(int a = b-1; a >= 0; a--){
+                cnt += mp[nums[a] + nums[b]];
             }
-            mp[nums[i]]++;
+
+            for(int x = n-1; x > b; x--){
+                mp[nums[x]-nums[b]]++;
+            }
         }
         return cnt;
     }
