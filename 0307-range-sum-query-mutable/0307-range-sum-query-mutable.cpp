@@ -39,6 +39,33 @@ class NumArray {
         int mid = l + (r - l) / 2;
         return findSum(left, right, 2*i+1, l, mid, segTree) + findSum(left, right, 2*i+2, mid+1, r, segTree);
     }
+    void updateQuery(int left, int right, int val, int i, int l, int r, vector<int>& segTree, vector<int>& lazy){
+        if(lazy[i] != 0){
+            segTree[i] += (r-l+1)*lazy[i];
+            if(l != r){
+                // not a leaf node
+                lazy[2*i+1] += lazy[i];
+                lazy[2*i+2] += lazy[i];
+            }
+            lazy[i] = 0;  // reset
+        }
+
+        if(l > right || r < left) return ;
+
+        if(l >= left && r <= right){
+            segTree[i] += (r-l+1)*val;
+            if(l != r){
+                lazy[2*i+1] += val;
+                lazy[2*i+2] += val;
+            }
+        }
+
+        int mid = l + (r - l) / 2;
+        updateQuery(left, right, val, 2*i+1, l, mid, segTree, lazy);
+        updateQuery(left, right, val, 2*i+2, mid + 1, r, segTree, lazy);
+
+        segTree[i] = segTree[2*i+1] + segTree[2*i+2];
+    }
 public:
     int n;
     vector<int> segTree;
