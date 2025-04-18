@@ -4,33 +4,28 @@ public:
         if(n == 1) return "1";
         string prev = "1";
         
-        string ans = "";
         for(int i = 2; i <= n; i++){
 
             string cur = "";
-            int j = 0, k = 0;
-            while(k < prev.size()){
-                if(prev[k] != prev[j]){
-                    int len = k - j;
-                    char ch = prev[j];
-
-                    cur = cur + to_string(len) + ch;
-
-                    j = k;
+            int cnt = 1;
+            char ele = prev[0];
+            for(int j = 1; j < prev.size(); j++){
+                if(prev[j] == ele){
+                    cnt++;
                 }
-                k++;
+                else{
+                    cur += to_string(cnt) + ele;
+                    ele = prev[j];
+                    cnt = 1;
+                }
             }
 
             // processing last sequence of the string
-            int len = k - j;
-            char ch = prev[j];
-
-            cur = cur + to_string(len) + ch;
+            cur += to_string(cnt) + ele;
 
             prev = cur;
-            ans = cur;
         }
 
-        return ans;
+        return prev;
     }
 };
