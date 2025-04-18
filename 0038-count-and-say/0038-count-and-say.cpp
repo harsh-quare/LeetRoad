@@ -1,35 +1,35 @@
 class Solution {
 public:
     string countAndSay(int n) {
-        if(n == 1){
-            return "1";
-        }
-
-        string prev = countAndSay(n-1);
-
-        // Now process this string to get the current one
+        if(n == 1) return "1";
+        string prev = "1";
+        
         string ans = "";
-        int i = 0, j = 0;
-        while(j < prev.size()){
-            if(prev[j] != prev[i]){
-                // different character encountered
-                //find out the length of latest consecutive stream of characters, & add in ans
-                int len = j - i;
-                char ch = prev[i];
+        for(int i = 2; i <= n; i++){
 
-                ans = ans + to_string(len) + ch;
+            string cur = "";
+            int j = 0, k = 0;
+            while(k < prev.size()){
+                if(prev[k] != prev[j]){
+                    int len = k - j;
+                    char ch = prev[j];
 
-                // move i pointer to the start of this new string
-                i = j;
+                    cur = cur + to_string(len) + ch;
+
+                    j = k;
+                }
+                k++;
             }
-            j++;
+
+            // processing last sequence of the string
+            int len = k - j;
+            char ch = prev[j];
+
+            cur = cur + to_string(len) + ch;
+
+            prev = cur;
+            ans = cur;
         }
-
-        // processing the last sequence
-        int len = j - i;
-        char ch = prev[i];
-
-        ans = ans + to_string(len) + ch;
 
         return ans;
     }
