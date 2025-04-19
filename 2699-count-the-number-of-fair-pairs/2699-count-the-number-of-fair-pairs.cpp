@@ -14,7 +14,6 @@ public:
         }
         return ans;
     }
-
     long long countFairPairs(vector<int>& nums, int lower, int upper) {
         sort(nums.begin(), nums.end());
         long long low = findLowerBound(nums, lower);
