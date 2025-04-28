@@ -7,16 +7,20 @@ public:
 
         int n = nums.size();
         int ans = 0;
+        int l = 0, r = 0;
+        int mask = 0;
 
-        for(int i = 0; i < n; i++){
-            int mask = 0;
+        while(r < n){
 
-            for(int j = i; j < n; j++){
-                if((mask & nums[j]) != 0) break;  // means we can't get anymore nice subarr with 'i' as starting point
-
-                mask |= nums[j];    // update mask with current element's 1's positions
-                ans = max(ans, j-i+1);
+            while((mask & nums[r]) != 0){
+                // keep shrinking
+                mask = mask ^ nums[l];  // to negate the contribution of 1's in mask of the 'l' element, we use xor. bcz a^a=0
+                l++;
             }
+
+            ans = max(ans, r-l+1);
+            mask |= nums[r];  // update mask
+            r++;
         }
 
         return ans;
