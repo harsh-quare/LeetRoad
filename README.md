@@ -49,6 +49,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2594-count-pairs-of-similar-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2594-count-pairs-of-similar-strings) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2640-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/harsh-quare/LeetRoad/tree/master/2640-maximum-number-of-integers-to-choose-from-a-range-i) |
+| [2656-count-the-number-of-beautiful-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2656-count-the-number-of-beautiful-subarrays) |
 | [2677-cousins-in-binary-tree-ii](https://github.com/harsh-quare/LeetSole/tree/master/2677-cousins-in-binary-tree-ii) |
 | [2685-first-completely-painted-row-or-column](https://github.com/harsh-quare/LeetRoad/tree/master/2685-first-completely-painted-row-or-column) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/harsh-quare/LeetRoad/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
@@ -428,6 +429,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/harsh-quare/LeetRoad/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2626-count-the-number-of-good-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2626-count-the-number-of-good-subarrays) |
 | [2640-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/harsh-quare/LeetRoad/tree/master/2640-maximum-number-of-integers-to-choose-from-a-range-i) |
+| [2656-count-the-number-of-beautiful-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2656-count-the-number-of-beautiful-subarrays) |
 | [2665-minimum-time-to-repair-cars](https://github.com/harsh-quare/LeetRoad/tree/master/2665-minimum-time-to-repair-cars) |
 | [2685-first-completely-painted-row-or-column](https://github.com/harsh-quare/LeetRoad/tree/master/2685-first-completely-painted-row-or-column) |
 | [2690-house-robber-iv](https://github.com/harsh-quare/LeetRoad/tree/master/2690-house-robber-iv) |
@@ -608,6 +610,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2509-minimize-xor](https://github.com/harsh-quare/LeetRoad/tree/master/2509-minimize-xor) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/harsh-quare/LeetRoad/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2594-count-pairs-of-similar-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2594-count-pairs-of-similar-strings) |
+| [2656-count-the-number-of-beautiful-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2656-count-the-number-of-beautiful-subarrays) |
 | [2700-substring-xor-queries](https://github.com/harsh-quare/LeetRoad/tree/master/2700-substring-xor-queries) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/harsh-quare/LeetRoad/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [2792-neighboring-bitwise-xor](https://github.com/harsh-quare/LeetRoad/tree/master/2792-neighboring-bitwise-xor) |
@@ -797,6 +800,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2358-number-of-ways-to-split-array](https://github.com/harsh-quare/LeetRoad/tree/master/2358-number-of-ways-to-split-array) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/harsh-quare/LeetRoad/tree/master/2394-count-subarrays-with-score-less-than-k) |
 | [2465-shifting-letters-ii](https://github.com/harsh-quare/LeetRoad/tree/master/2465-shifting-letters-ii) |
+| [2656-count-the-number-of-beautiful-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2656-count-the-number-of-beautiful-subarrays) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/harsh-quare/LeetRoad/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2915-count-of-interesting-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2915-count-of-interesting-subarrays) |
 | [3427-special-array-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3427-special-array-ii) |
