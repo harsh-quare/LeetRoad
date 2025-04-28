@@ -28,14 +28,12 @@ public:
 
     int kadaneMax(vector<int>& nums){
         int n = nums.size();
-        int maxi = INT_MIN;
-        int sum = 0;
+        int maxi = nums[0];
+        int cur = nums[0];
 
-        for(int i = 0; i < n; i++){
-            sum += nums[i];
-            maxi = max(maxi, sum);
-
-            if(sum < 0) sum = 0;
+        for(int i = 1; i < n; i++){
+            cur = max(cur + nums[i], nums[i]);
+            maxi = max(maxi, cur);
         }
 
         return maxi;
@@ -43,14 +41,12 @@ public:
 
     int kadaneMin(vector<int>& nums){
         int n = nums.size();
-        int mini = INT_MAX;
-        int sum = 0;
+        int mini = nums[0];
+        int cur = nums[0];
 
-        for(int i = 0; i < n; i++){
-            sum += nums[i];
-            mini = min(mini, sum);
-
-            if(sum > 0) sum = 0;
+        for(int i = 1; i < n; i++){
+            cur = min(cur + nums[i], nums[i]);
+            mini = min(mini, cur);
         }
 
         return mini;
