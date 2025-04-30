@@ -614,6 +614,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2533-bitwise-xor-of-all-pairings](https://github.com/harsh-quare/LeetRoad/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2594-count-pairs-of-similar-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2594-count-pairs-of-similar-strings) |
 | [2656-count-the-number-of-beautiful-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2656-count-the-number-of-beautiful-subarrays) |
+| [2659-number-of-even-and-odd-bits](https://github.com/harsh-quare/LeetRoad/tree/master/2659-number-of-even-and-odd-bits) |
 | [2700-substring-xor-queries](https://github.com/harsh-quare/LeetRoad/tree/master/2700-substring-xor-queries) |
 | [2766-find-the-prefix-common-array-of-two-arrays](https://github.com/harsh-quare/LeetRoad/tree/master/2766-find-the-prefix-common-array-of-two-arrays) |
 | [2792-neighboring-bitwise-xor](https://github.com/harsh-quare/LeetRoad/tree/master/2792-neighboring-bitwise-xor) |
