@@ -415,6 +415,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/harsh-quare/LeetRoad/tree/master/2394-count-subarrays-with-score-less-than-k) |
 | [2411-spiral-matrix-iv](https://github.com/harsh-quare/LeetRoad/tree/master/2411-spiral-matrix-iv) |
 | [2448-count-number-of-bad-pairs](https://github.com/harsh-quare/LeetRoad/tree/master/2448-count-number-of-bad-pairs) |
+| [2449-maximum-number-of-robots-within-budget](https://github.com/harsh-quare/LeetRoad/tree/master/2449-maximum-number-of-robots-within-budget) |
 | [2465-shifting-letters-ii](https://github.com/harsh-quare/LeetRoad/tree/master/2465-shifting-letters-ii) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/harsh-quare/LeetRoad/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2478-longest-nice-subarray](https://github.com/harsh-quare/LeetRoad/tree/master/2478-longest-nice-subarray) |
@@ -516,6 +517,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/harsh-quare/LeetRoad/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
 | [2429-design-a-food-rating-system](https://github.com/harsh-quare/LeetRoad/tree/master/2429-design-a-food-rating-system) |
 | [2434-design-a-number-container-system](https://github.com/harsh-quare/LeetRoad/tree/master/2434-design-a-number-container-system) |
+| [2449-maximum-number-of-robots-within-budget](https://github.com/harsh-quare/LeetRoad/tree/master/2449-maximum-number-of-robots-within-budget) |
 | [2473-max-sum-of-a-pair-with-equal-sum-of-digits](https://github.com/harsh-quare/LeetRoad/tree/master/2473-max-sum-of-a-pair-with-equal-sum-of-digits) |
 | [2692-take-gifts-from-the-richest-pile](https://github.com/harsh-quare/LeetRoad/tree/master/2692-take-gifts-from-the-richest-pile) |
 | [2695-find-score-of-an-array-after-marking-all-elements](https://github.com/harsh-quare/LeetRoad/tree/master/2695-find-score-of-an-array-after-marking-all-elements) |
@@ -806,6 +808,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2290-removing-minimum-number-of-magic-beans](https://github.com/harsh-quare/LeetRoad/tree/master/2290-removing-minimum-number-of-magic-beans) |
 | [2358-number-of-ways-to-split-array](https://github.com/harsh-quare/LeetRoad/tree/master/2358-number-of-ways-to-split-array) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/harsh-quare/LeetRoad/tree/master/2394-count-subarrays-with-score-less-than-k) |
+| [2449-maximum-number-of-robots-within-budget](https://github.com/harsh-quare/LeetRoad/tree/master/2449-maximum-number-of-robots-within-budget) |
 | [2465-shifting-letters-ii](https://github.com/harsh-quare/LeetRoad/tree/master/2465-shifting-letters-ii) |
 | [2656-count-the-number-of-beautiful-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2656-count-the-number-of-beautiful-subarrays) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/harsh-quare/LeetRoad/tree/master/2691-count-vowel-strings-in-ranges) |
@@ -940,6 +943,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2280-count-good-triplets-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/2280-count-good-triplets-in-an-array) |
 | [2294-minimum-time-to-complete-trips](https://github.com/harsh-quare/LeetRoad/tree/master/2294-minimum-time-to-complete-trips) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/harsh-quare/LeetRoad/tree/master/2394-count-subarrays-with-score-less-than-k) |
+| [2449-maximum-number-of-robots-within-budget](https://github.com/harsh-quare/LeetRoad/tree/master/2449-maximum-number-of-robots-within-budget) |
 | [2586-longest-square-streak-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/2586-longest-square-streak-in-an-array) |
 | [2614-maximum-count-of-positive-integer-and-negative-integer](https://github.com/harsh-quare/LeetRoad/tree/master/2614-maximum-count-of-positive-integer-and-negative-integer) |
 | [2640-maximum-number-of-integers-to-choose-from-a-range-i](https://github.com/harsh-quare/LeetRoad/tree/master/2640-maximum-number-of-integers-to-choose-from-a-range-i) |
@@ -979,6 +983,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/harsh-quare/LeetRoad/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
 | [1767-design-front-middle-back-queue](https://github.com/harsh-quare/LeetRoad/tree/master/1767-design-front-middle-back-queue) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/harsh-quare/LeetRoad/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+| [2449-maximum-number-of-robots-within-budget](https://github.com/harsh-quare/LeetRoad/tree/master/2449-maximum-number-of-robots-within-budget) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/harsh-quare/LeetRoad/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2868-continuous-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2868-continuous-subarrays) |
 | [3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i](https://github.com/harsh-quare/LeetRoad/tree/master/3475-minimum-operations-to-make-binary-array-elements-equal-to-one-i) |
@@ -1040,6 +1045,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1755-defuse-the-bomb](https://github.com/harsh-quare/LeetRoad/tree/master/1755-defuse-the-bomb) |
 | [1776-minimum-operations-to-reduce-x-to-zero](https://github.com/harsh-quare/LeetRoad/tree/master/1776-minimum-operations-to-reduce-x-to-zero) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/harsh-quare/LeetRoad/tree/master/2394-count-subarrays-with-score-less-than-k) |
+| [2449-maximum-number-of-robots-within-budget](https://github.com/harsh-quare/LeetRoad/tree/master/2449-maximum-number-of-robots-within-budget) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/harsh-quare/LeetRoad/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2478-longest-nice-subarray](https://github.com/harsh-quare/LeetRoad/tree/master/2478-longest-nice-subarray) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/harsh-quare/LeetRoad/tree/master/2527-count-subarrays-with-fixed-bounds) |
@@ -1116,6 +1122,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0954-maximum-sum-circular-subarray](https://github.com/harsh-quare/LeetRoad/tree/master/0954-maximum-sum-circular-subarray) |
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/harsh-quare/LeetRoad/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/harsh-quare/LeetRoad/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
+| [2449-maximum-number-of-robots-within-budget](https://github.com/harsh-quare/LeetRoad/tree/master/2449-maximum-number-of-robots-within-budget) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/harsh-quare/LeetRoad/tree/master/2527-count-subarrays-with-fixed-bounds) |
 | [2868-continuous-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2868-continuous-subarrays) |
 ## Database
