@@ -1,33 +1,45 @@
 class Solution {
 public:
     string pushDominoes(string d) {
-        d = 'L' + d + 'R';  // to tackle the ending dots, as adding these will not trigger their movement
-        string ans;
+        int n = d.size();
 
-        int i = 0;
-        for(int j = 1; j < d.size(); j++){
-            if(d[j] == '.'){
-                continue;
-            }
+        vector<int> leftClosestR(n), rightClosestL(n);
 
-            int dots = j - i - 1;
-            if(i > 0){
-                ans += d[i];  // j character add kr diya, ye check lagaya qki i = 0 ka matlab extra add kiya hua 'L'
-            }
+        // left to right for leftClosestR
+        for(int i = 0; i < n; i++){
+            if(d[i] == 'R') leftClosestR[i] = i;
+            else if(d[i] == '.') leftClosestR[i] = i > 0 ? leftClosestR[i-1] : -1;
+            else leftClosestR[i] = -1;  // i == 0
+        }
 
-            if(d[i] == d[j]){  // both are "L", or 'R'
-                ans += string(dots, d[i]);  // L...L => LLLLL and R...R => RRRRR
-            }
-            else if(d[i] == 'L' && d[j] == 'R'){  // 'L...R'  => 'L...R'
-                ans += string(dots, '.');
-            }
-            else{  // 'R...L'  =>  'RR.LL'
-                ans += string(dots/2, 'R') + string(dots % 2, '.') + string(dots/2, 'L');
-            }
+        // right to left for rightClosestL
+        for(int i = n-1; i >= 0; i--){
+            if(d[i] == 'L') rightClosestL[i] = i;
+            else if(d[i] == '.') rightClosestL[i] = i < n-1 ? rightClosestL[i+1] : -1;
+            else rightClosestL[i] = -1; // i == n-1
+        }
 
-            i = j;
+        string ans(n, ' ');
+        for(int i = 0; i < n; i++){
+            if(leftClosestR[i] == -1 && rightClosestL[i] == -1) ans[i] = '.';
+            else if(leftClosestR[i] == -1){
+                ans[i] = 'L';
+            }
+            else if(rightClosestL[i] == -1){
+                ans[i] = 'R';
+            }
+            else{
+                int dist1 = abs(i - leftClosestR[i]);
+                int dist2 = abs(i - rightClosestL[i]);
+
+                if(dist1 == dist2) ans[i] = '.';
+                else if(dist1 < dist2) ans[i] = 'R';
+                else ans[i] = 'L';
+            }
         }
 
         return ans;
     }
 };
+
+// har point pe closest towards right wle 'L' se and closest towards right wale 'R' se impact pad skta h, and nett uska hoga jiska force jyada h, ya fir jiski distance uss point se kam h
