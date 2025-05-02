@@ -644,6 +644,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/harsh-quare/LeetRoad/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0836-race-car](https://github.com/harsh-quare/LeetRoad/tree/master/0836-race-car) |
+| [0868-push-dominoes](https://github.com/harsh-quare/LeetRoad/tree/master/0868-push-dominoes) |
 | [0954-maximum-sum-circular-subarray](https://github.com/harsh-quare/LeetRoad/tree/master/0954-maximum-sum-circular-subarray) |
 | [1025-minimum-cost-for-tickets](https://github.com/harsh-quare/LeetRoad/tree/master/1025-minimum-cost-for-tickets) |
 | [1063-best-sightseeing-pair](https://github.com/harsh-quare/LeetRoad/tree/master/1063-best-sightseeing-pair) |
@@ -712,6 +713,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0567-permutation-in-string](https://github.com/harsh-quare/LeetRoad/tree/master/0567-permutation-in-string) |
 | [0793-swap-adjacent-in-lr-string](https://github.com/harsh-quare/LeetRoad/tree/master/0793-swap-adjacent-in-lr-string) |
 | [0812-rotate-string](https://github.com/harsh-quare/LeetRoad/tree/master/0812-rotate-string) |
+| [0868-push-dominoes](https://github.com/harsh-quare/LeetRoad/tree/master/0868-push-dominoes) |
 | [0878-shifting-letters](https://github.com/harsh-quare/LeetRoad/tree/master/0878-shifting-letters) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/harsh-quare/LeetRoad/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0952-word-subsets](https://github.com/harsh-quare/LeetRoad/tree/master/0952-word-subsets) |
@@ -1016,6 +1018,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0556-next-greater-element-iii](https://github.com/harsh-quare/LeetRoad/tree/master/0556-next-greater-element-iii) |
 | [0567-permutation-in-string](https://github.com/harsh-quare/LeetRoad/tree/master/0567-permutation-in-string) |
 | [0793-swap-adjacent-in-lr-string](https://github.com/harsh-quare/LeetRoad/tree/master/0793-swap-adjacent-in-lr-string) |
+| [0868-push-dominoes](https://github.com/harsh-quare/LeetRoad/tree/master/0868-push-dominoes) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/harsh-quare/LeetRoad/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/harsh-quare/LeetRoad/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/harsh-quare/LeetRoad/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
