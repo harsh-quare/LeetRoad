@@ -1,21 +1,26 @@
 class Solution {
 public:
     int maximumRobots(vector<int>& chargeTimes, vector<int>& runningCosts, long long budget) {
-        long long i = 0, sum = 0, n = chargeTimes.size();
+        int i = 0, j = 0;
         multiset<int> st;
+        int ans = 0;
+        int n = runningCosts.size();
+        long long curSum = 0;
 
-        for(int j = 0; j < n; j++){
-            sum += runningCosts[j];
+        while(i < n && j < n){
             st.insert(chargeTimes[j]);
-            
-            if(*rbegin(st) + (j-i+1)*sum > budget){
-                // try smaller
-                sum -= runningCosts[i];
-                st.erase(st.find(chargeTimes[i]));  // the way to delet only one instance of an element from multiset in case of duplicates
+            curSum += runningCosts[j];
+            long long cost = *st.rbegin() + (j-i+1)*curSum;
+
+            if(cost <= budget) ans = max(ans, j-i+1);
+            else{
+                curSum -= runningCosts[i];
+                st.erase(st.find(chargeTimes[i]));
                 i++;
             }
+            j++;
         }
 
-        return n-i;
+        return ans;
     }
 };
