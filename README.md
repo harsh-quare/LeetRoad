@@ -310,6 +310,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0380-insert-delete-getrandom-o1](https://github.com/harsh-quare/LeetRoad/tree/master/0380-insert-delete-getrandom-o1) |
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/harsh-quare/LeetRoad/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
 | [0407-trapping-rain-water-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0407-trapping-rain-water-ii) |
+| [0413-arithmetic-slices](https://github.com/harsh-quare/LeetRoad/tree/master/0413-arithmetic-slices) |
 | [0416-partition-equal-subset-sum](https://github.com/harsh-quare/LeetRoad/tree/master/0416-partition-equal-subset-sum) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/harsh-quare/LeetRoad/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
@@ -653,6 +654,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/harsh-quare/LeetRoad/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/harsh-quare/LeetRoad/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
+| [0413-arithmetic-slices](https://github.com/harsh-quare/LeetRoad/tree/master/0413-arithmetic-slices) |
 | [0416-partition-equal-subset-sum](https://github.com/harsh-quare/LeetRoad/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/harsh-quare/LeetRoad/tree/master/0494-target-sum) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/0673-number-of-longest-increasing-subsequence) |
@@ -1064,6 +1066,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0187-repeated-dna-sequences](https://github.com/harsh-quare/LeetRoad/tree/master/0187-repeated-dna-sequences) |
 | [0219-contains-duplicate-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0219-contains-duplicate-ii) |
 | [0239-sliding-window-maximum](https://github.com/harsh-quare/LeetRoad/tree/master/0239-sliding-window-maximum) |
+| [0413-arithmetic-slices](https://github.com/harsh-quare/LeetRoad/tree/master/0413-arithmetic-slices) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0567-permutation-in-string](https://github.com/harsh-quare/LeetRoad/tree/master/0567-permutation-in-string) |
 | [0713-subarray-product-less-than-k](https://github.com/harsh-quare/LeetRoad/tree/master/0713-subarray-product-less-than-k) |
