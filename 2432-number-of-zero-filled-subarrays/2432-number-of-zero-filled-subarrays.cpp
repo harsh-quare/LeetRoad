@@ -4,17 +4,13 @@ public:
         long long ans = 0;
         int n = nums.size();
 
-        int i = 0, j = 0;
-        while(j < n){
-            if(nums[j] != 0){
-                i++;
-                j++;
+        int cnt = 0;
+        for(int i = 0; i < n; i++){
+            if(nums[i] == 0){
+                cnt++;
+                ans += cnt;
             }
-            while(j < n && nums[j] == 0){
-                ans += (j-i+1);
-                j++;
-            }
-            i = j;
+            else cnt = 0;
         }
 
         return ans;
