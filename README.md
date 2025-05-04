@@ -315,6 +315,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0494-target-sum](https://github.com/harsh-quare/LeetRoad/tree/master/0494-target-sum) |
 | [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [0560-subarray-sum-equals-k](https://github.com/harsh-quare/LeetRoad/tree/master/0560-subarray-sum-equals-k) |
+| [0665-non-decreasing-array](https://github.com/harsh-quare/LeetRoad/tree/master/0665-non-decreasing-array) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [0689-maximum-sum-of-3-non-overlapping-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/0689-maximum-sum-of-3-non-overlapping-subarrays) |
 | [0695-max-area-of-island](https://github.com/harsh-quare/LeetRoad/tree/master/0695-max-area-of-island) |
