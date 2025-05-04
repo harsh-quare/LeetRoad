@@ -2,18 +2,21 @@ class Solution {
 public:
     int partitionString(string s) {
         int n = s.size();
-        int cnt = 1;  // original string as a single substring is always gonna be the answer in best case
-        unordered_set<char> st;
+        if(n <= 1) return n;
+
+        vector<int> charMp(26, 0);
+        int ans = 1;
 
         for(int i = 0; i < n; i++){
-            char c = s[i];
-            if(st.find(c) != st.end()){
-                cnt++;
-                st.clear();
+            if(charMp[s[i]-'a'] != 0){
+                // not the first encounter, repetition mil gya, to new string start kr do
+                ans++;
+                for(int j = 0; j < 26; j++){
+                    charMp[j] = 0; // reset entire map, bcz new string starts
+                }
             }
-            st.insert(c);
+            charMp[s[i]-'a'] = 1;  // first encounter in current string
         }
-
-        return cnt;
+        return ans;
     }
 };
