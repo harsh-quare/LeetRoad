@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0219-contains-duplicate-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0219-contains-duplicate-ii) |
 | [0380-insert-delete-getrandom-o1](https://github.com/harsh-quare/LeetRoad/tree/master/0380-insert-delete-getrandom-o1) |
 | [0381-insert-delete-getrandom-o1-duplicates-allowed](https://github.com/harsh-quare/LeetRoad/tree/master/0381-insert-delete-getrandom-o1-duplicates-allowed) |
 | [0432-all-oone-data-structure](https://github.com/harsh-quare/LeetRoad/tree/master/0432-all-oone-data-structure) |
@@ -296,6 +297,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/harsh-quare/LeetRoad/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0212-word-search-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0212-word-search-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/0215-kth-largest-element-in-an-array) |
+| [0219-contains-duplicate-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0219-contains-duplicate-ii) |
 | [0239-sliding-window-maximum](https://github.com/harsh-quare/LeetRoad/tree/master/0239-sliding-window-maximum) |
 | [0303-range-sum-query-immutable](https://github.com/harsh-quare/LeetRoad/tree/master/0303-range-sum-query-immutable) |
 | [0304-range-sum-query-2d-immutable](https://github.com/harsh-quare/LeetRoad/tree/master/0304-range-sum-query-2d-immutable) |
@@ -1043,6 +1045,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sliding Window
 |  |
 | ------- |
+| [0219-contains-duplicate-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0219-contains-duplicate-ii) |
 | [0239-sliding-window-maximum](https://github.com/harsh-quare/LeetRoad/tree/master/0239-sliding-window-maximum) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0567-permutation-in-string](https://github.com/harsh-quare/LeetRoad/tree/master/0567-permutation-in-string) |
