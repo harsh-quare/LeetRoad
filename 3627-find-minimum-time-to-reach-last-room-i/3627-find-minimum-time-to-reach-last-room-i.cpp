@@ -1,22 +1,22 @@
 class Solution {
 public:
     vector<vector<int>> dirx = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}};
+    #define pip pair<int, pair<int, int>> 
     int minTimeToReach(vector<vector<int>>& moveTime) {
         int n = moveTime.size();
         int m = moveTime[0].size();
 
-        priority_queue<pair<int, pair<int, int>>, vector<pair<int, pair<int, int>>>, greater<pair<int, pair<int, int>>>> pq;
+        priority_queue<pip, vector<pip>, greater<pip>> pq;
+        pq.push({0, {0, 0}});  // start at time = 0, and posn (0, 0)
+
         vector<vector<int>> vis(n, vector<int>(m, 0));
         vis[0][0] = 1;
-        pq.push({0, {0, 0}});
 
         while(!pq.empty()){
             int t = pq.top().first;
             int i = pq.top().second.first;
             int j = pq.top().second.second;
             pq.pop();
-
-            cout << i << " " << j << endl;
 
             if(i == n-1 && j == m-1) return t;
 
