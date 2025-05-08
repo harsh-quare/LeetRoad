@@ -1,45 +1,45 @@
 class Solution {
-public:
+public: 
     #define pip pair<int, pair<int, int>>
-    vector<vector<int>> dirx = {{-1,0}, {1, 0}, {0,-1}, {0,1}};
-    int minTimeToReach(vector<vector<int>>& grid) {
-        //Dijkstra's
-        int m = grid.size();
-        int n = grid[0].size();
+    vector<vector<int>> dirx = {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
+    int minTimeToReach(vector<vector<int>>& moveTime) {
+        int n = moveTime.size();
+        int m = moveTime[0].size();
 
         priority_queue<pip, vector<pip>, greater<pip>> pq;
-        pq.push({0, {0, 0}});
-        vector<vector<int>> dist(m ,vector<int>(n, INT_MAX));
-        dist[0][0] = 0;
+        pq.push({0, {0,0}});
 
-        vector<vector<bool>> vis(m ,vector<bool>(n, 0));
+        vector<vector<int>> vis(n, vector<int>(m, 0));
+        vis[0][0] = 1;
 
         while(!pq.empty()){
+            int time = pq.top().first;
             int x = pq.top().second.first;
             int y = pq.top().second.second;
-            int t = pq.top().first;
             pq.pop();
 
-            int stepTime = ((x+y) % 2 == 0) ? 1 : 2;  //cost
-
-            if(x == m-1 && y == n-1) return t;
-
-            if(vis[x][y] == true) continue;
-            vis[x][y] = true;
+            if(x == n-1 && y == m-1) return time;
 
             for(auto& dir: dirx){
                 int nx = x + dir[0];
                 int ny = y + dir[1];
 
-                if(nx >= 0 && nx < m && ny >= 0 && ny < n){
-                    if(dist[nx][ny] > stepTime + max(t, grid[nx][ny])){
-                        dist[nx][ny] = stepTime + max(t, grid[nx][ny]);
-                        pq.push({dist[nx][ny], {nx, ny}});
+                if(nx >= 0 && nx < n && ny >= 0 && ny < m && !vis[nx][ny]){
+                    int newTime = max(time, moveTime[nx][ny]);
+                    if(newTime >= moveTime[nx][ny]){
+                        if((nx + ny) % 2 != 0){
+                            pq.push({newTime + 1, {nx, ny}});
+                            vis[nx][ny] = 1;
+                        }
+                        else{
+                            pq.push({newTime + 2, {nx, ny}});
+                            vis[nx][ny] = 1;
+                        }
                     }
                 }
             }
         }
-
-        return dist[m-1][n-1];
+        
+        return -1;
     }
 };
