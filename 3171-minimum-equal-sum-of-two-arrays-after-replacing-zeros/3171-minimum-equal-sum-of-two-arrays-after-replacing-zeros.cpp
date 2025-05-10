@@ -9,24 +9,14 @@ public:
             s1 += nums1[i];
             z1 += (nums1[i] == 0);
         }
-        cout << s1 << ", " << z1 << endl;
         for(int i = 0; i < n2; i++){
             s2 += nums2[i];
             z2 += (nums2[i] == 0);
         }
-        cout << s2 << ", " << z2 << endl;
 
-        if(z1 > 0 && z2 > 0){
-            return max(s1 + z1, s2 + z2);
-        }
-        else if(z1 == 0 && z2 == 0){
-            if(s1 == s2) return s1;
-            else return -1;
-        }
+        if(z1 == 0 && s1 < s2+z2) return -1;
+        if(z2 == 0 && s2 < s1+z1) return -1;
 
-        if(z1 == 0 && s1 >= s2+z2) return s1;
-        if(z2 == 0 && s2 >= s1+z1) return s2;
-
-        return -1;
+        return max(s1+z1, s2+z2);
     }
 };
