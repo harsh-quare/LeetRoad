@@ -3,9 +3,9 @@ public:
     const int mod = 1e9 + 7;
     vector<vector<int>> getTransformationMatrix(const vector<int>& nums){
         vector<vector<int>> T(26, vector<int>(26, 0));
-        for(int i = 0; i < nums.size(); i++){
-            for(int step = 1; step <= nums[i]; step++){
-                T[i][(i + step) % 26]++;
+        for(int i = 0; i < 26; i++){
+            for(int j = 1; j <= nums[i]; j++){
+                T[i][(i + j) % 26]++;
             }
         }
 
