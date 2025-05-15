@@ -1,20 +1,10 @@
 class Solution {
 public:
-    const int mod = 1e9 + 7;
-    vector<vector<int>> getTransformationMatrix(const vector<int>& nums){
-        vector<vector<int>> T(26, vector<int>(26, 0));
-        for(int i = 0; i < 26; i++){
-            for(int j = 1; j <= nums[i]; j++){
-                T[i][(i + j) % 26]++;
-            }
-        }
+    typedef vector<vector<int>> Mat;
+    const int mod = 1e9+7;
 
-        return T;
-    }
-
-    vector<vector<int>> matrixMult(vector<vector<int>>& A, vector<vector<int>>& B){
-        int sz = A.size();
-        vector<vector<int>> C(26, vector<int>(26, 0));
+    Mat matrixMult(Mat& A, Mat& B){
+        Mat C(26, vector<int>(26, 0));
         for(int i = 0; i < 26; i++){
             for(int j = 0; j < 26; j++){
                 for(int k = 0; k < 26; k++){
@@ -26,42 +16,63 @@ public:
         return C;
     }
 
-    vector<vector<int>> matrixExponentiation(vector<vector<int>>& M, int t){
-        vector<vector<int>> I(26, vector<int>(26, 0));  // Identity matrix of size 26
+    Mat matrixExponentiation(Mat& T, int t){
+        Mat I(26, vector<int>(26, 0));
         for(int i = 0; i < 26; i++){
             I[i][i] = 1;
         }
+        if(t == 0){
+            return I;
+        }
 
-        vector<vector<int>> res = I;
-        while(t){
-            if(t % 2 == 1){
-                res = matrixMult(M, res);
-            }
-            M = matrixMult(M, M);
-            t /= 2;
+        Mat half = matrixExponentiation(T, t/2);
+        Mat res = matrixMult(half, half);
+
+        if(t % 2 == 1){
+            res = matrixMult(res, T);
         }
 
         return res;
+
+        // Iteratively
+        // Mat res = I;
+        // while(t){
+        //     if(t%2 == 1) res = matrixMult(T, res);
+        //     T = matrixMult(T, T);
+        //     t /= 2;
+        // }
+
+        // return res;
     }
     int lengthAfterTransformations(string s, int t, vector<int>& nums) {
-        vector<vector<int>> trans_matrix = getTransformationMatrix(nums);
-        vector<vector<int>> powered_trans_matrix = matrixExponentiation(trans_matrix, t);  // M^t => t is the degree of recurrence relation
-        vector<int> inpt(26, 0);
-        vector<int> opt(26, 0);
+        // Formula:     final_freq_state = T^t * initial_freq_state
 
-        for(char c: s){
-            inpt[c-'a']++;
+        vector<int> init_freq(26, 0);
+        for(char& ch: s){
+            init_freq[ch-'a']++;
         }
 
+        // Now form the T matrix
+        Mat T(26, vector<int>(26, 0));  // degree of recurrence is 26, bcz any character can be achieved using 26 characters in worst case acc to the nums condition given. SO, size of T becomes 26*26
         for(int i = 0; i < 26; i++){
-            for(int j = 0; j < 26; j++){
-                opt[j] = (opt[j] + 1LL*inpt[i]*powered_trans_matrix[i][j] % mod) % mod;
+            for(int add = 1; add <= nums[i]; add++){
+                T[(i+add) % 26][i]++;  // 'a' can result in characters upto 'a' + add;  %26 is to wrap around
             }
         }
 
+        // Finding T^t
+        Mat trx = matrixExponentiation(T, t);
+
+        vector<int> final_freq(26, 0);
+        for(int i = 0; i < 26; i++){
+            for(int j = 0; j < 26; j++){
+                final_freq[i] = (final_freq[i] + (1LL*trx[i][j]*init_freq[j] % mod)) % mod;  // matrix multiplication()
+            }
+        } 
+
         int ans = 0;
-        for(int x: opt){
-            ans = (ans + x) % mod;
+        for(int i = 0; i < 26; i++){
+            ans = (ans + final_freq[i]) % mod;
         }
 
         return ans;
