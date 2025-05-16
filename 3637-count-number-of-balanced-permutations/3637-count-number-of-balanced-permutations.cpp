@@ -1,78 +1,76 @@
-#define ll long long 
-ll mod = 1000000007;
-
-vector<ll> fact; 
-void calFact() {
-    fact.push_back(1);
-    fact.push_back(1);
-    for(ll i = 2; i <= 99; i++) {
-        ll v = ((fact[i-1]%mod)*(i%mod))%mod; 
-        fact.push_back(v); 
-    }
-}
 class Solution {
 public:
+    int n;
+    int totalDigSum;
+    const int mod = 1e9 + 7;
+    long long totalPermPossible;
 
-    ll powe(ll a, ll b) {
-        ll res = 1; 
-        while(b) {
-            if(b%2) {
-                res = ((res%mod)*(a%mod))%mod; 
-            }
-            b/=2;
-            a = ((a%mod)*(a%mod))%mod;
+    int findPower(long long a, long long b){  // using binary exponentiation
+        if(b == 0) return 1;
+
+        long long half = findPower(a, b/2);
+        long long res = (half * half) % mod;
+        if(b % 2 == 1){
+            res = (res * a) % mod;
         }
 
         return res;
     }
-    ll dp[81][9*41][41];
 
-    ll helper(ll i, string &s, ll sum, ll cnt, unordered_map<int, int> &mp) {
-        int n = s.size();
-        if(sum == 0 && cnt == 0) {
-            return 1;
+    int solve(int digit, int evenIdxDigCnt, int curSum, vector<int>& freq, vector<long long>& fermatFact){
+        if(digit == 10){
+            if(curSum == totalDigSum/2 && evenIdxDigCnt == (n+1)/2){
+                return totalPermPossible;
+            } 
+            return 0;
         }
-        if(sum < 0 || cnt < 0 || i >= n) return 0;
-        if(dp[i][sum][cnt] != -1) return dp[i][sum][cnt]; 
-        ll res = helper(i+1, s, sum, cnt, mp)%mod; 
-        
-        int num = (s[i] - '0');
-        if(sum >= num && cnt > 0) {
-            mp[num]++; 
-            res = (res%mod + helper(i+1, s, sum - num, cnt-1, mp)%mod)%mod; 
-            if(mp[num] == 1) {
-                mp.erase(num);
-            } else {
-                mp[num]--; 
-            }
-        } 
-        return dp[i][sum][cnt] = res; 
+
+        long long ways = 0;
+        for(int cnt = 0; cnt <= min(freq[digit], (n+1)/2 - evenIdxDigCnt); cnt++){
+            int evenPosCnt = cnt;
+            int oddPosCnt = freq[digit] - evenPosCnt;
+
+            // long long div = 1/evenPosCnt! * 1/oddPosCnt! % mod
+            long long div = (fermatFact[evenPosCnt] * fermatFact[oddPosCnt]) % mod; // 1/f1! * 1/f2!
+
+            long long val = solve(digit + 1, evenIdxDigCnt + evenPosCnt, curSum + digit*cnt, freq, fermatFact);
+
+            ways = (ways + (val * div) % mod) % mod;
+        }
+
+        return ways;
     }
-
     int countBalancedPermutations(string num) {
-        if(fact.size() == 0) calFact();
-        memset(dp, -1, sizeof dp);
-        int totSum = 0; 
-        ll n = num.size(); 
-        vector<int> digs(10, 0); 
-        for(int i = 0; i < n; i++) {
-            totSum += (num[i]-'0');
-            digs[num[i]-'0']++;
-        }
-        if(totSum%2) return 0; 
-        unordered_map<int, int> mp;
-        ll res = helper(0, num, totSum/2, n/2, mp);
-    
-        ll temp = ((fact[n/2]%mod)*(fact[n-(n/2)]%mod))%mod;
-        res = ((res%mod)*(temp%mod))%mod;
-        ll t2 = 1; 
-        for(int i: digs) {
-            if(i == 0) continue; 
-            ll val = fact[i]; 
-            t2 = ((t2%mod)*(val%mod))%mod;
+        n = num.size();
+        totalDigSum = 0;
+        vector<int> freq(10, 0);
+
+        for(int i = 0; i < n; i++){
+            totalDigSum += (num[i] - '0');
+            freq[num[i]-'0']++;
         }
 
-        temp = powe(t2, mod-2)%mod;
-        return ((res%mod)*(temp%mod))%mod;
+        if(totalDigSum % 2 != 0) return 0;
+
+        //Precompute factorials
+        vector<long long> fac(n+1, 1);  // we are computing factorials, bcz they will be divided while calculating ways, n!/f!, means we will need to divide by the frequency of the digits, that's why we are precomputing them
+        fac[0] = 1;
+        fac[1] = 1;
+        for(int i = 2; i <= n; i++){
+            fac[i] = (fac[i-1] * i) % mod;
+        }
+
+        //Precompute inverse factorials => Fermet Factorials => ((1/x)%M)
+        vector<long long> fermatFact(n+1, 1);
+        for(int i = 0; i <= n; i++){
+            fermatFact[i] = findPower(fac[i], mod-2) % mod;
+        }
+
+        totalPermPossible = (1LL * fac[(n+1)/2] * fac[n/2]) % mod;
+
+        int digit = 0;
+        int evenIdxDigCnt = 0;
+        int curSum = 0;
+        return solve(digit, evenIdxDigCnt, curSum, freq, fermatFact);
     }
 };
