@@ -2,40 +2,39 @@ class Solution {
 public:
     int maxRemoval(vector<int>& nums, vector<vector<int>>& queries) {
         int n = nums.size();
-        sort(queries.begin(), queries.end());  //sort queries by starting indices
-        priority_queue<int> available;  //max heap for taking the max/furthest guys for each index: end of queries
-        priority_queue<int, vector<int>, greater<int>> active;  //min heap for active queries' end indices
-        int cnt = 0;   //count of queries successfully used
+        int q = queries.size();
 
-        int j = 0;  //tracks current query being processed 
-        //process each position in nums
+        sort(queries.begin(), queries.end());
+
+        priority_queue<int> mh; // stroing the furthest point we can reach from each index
+        priority_queue<int, vector<int>, greater<int>> pastQs;  // to keep track of past used queries, and min heap bcz we need to know which smallest ones are there, to compare it with current and then remove smaller ones
+
+        int j = 0;  // points to queries
+        int usedQs = 0;
+
         for(int i = 0; i < n; i++){
-            // all the queries who are starting from current index, put their ending index in available queue
-            while(j < queries.size() && queries[j][0] == i){
-                available.push(queries[j][1]);
+            while(j < q && queries[j][0] == i){  // same starting point
+                mh.push(queries[j][1]);  // store their ending points, furthest will be on top
                 j++;
             }
 
-            //adjust the current number by subtracting the count of currently active queries
-            nums[i] -= active.size();  //we need to reduce nums[i] by nums[i] times to reduce it to 0
-            //so in this step, we reduce it to the active elements count
+            nums[i] -= pastQs.size();  // first checking if we can impact current i with any past query used
 
-            //Use candidate queries to fulfill the current position's requirements
-            while(nums[i] > 0 && !available.empty() && available.top() >= i){
-                cnt++;
-                active.push(available.top());
-                available.pop();
-                nums[i]--;
+            while(nums[i] > 0 && !mh.empty() && mh.top() >= i){  // this query can impact current index
+                int end = mh.top();
+                mh.pop();  // use it
+                pastQs.push(end);  // send it to past used
+                usedQs++;
+                nums[i] -= 1;  // reduce by 1, as it's > 0 currently
             }
 
-            if(nums[i] > 0) return -1;  //if the current position can't be zeroed out, return -1
+            if(nums[i] > 0) return -1;  // if it is still not zero, it can't be done
 
-            //remove expired queries from the active/chosen queue
-            while(!active.empty() && active.top() == i){
-                active.pop();
+            while(!pastQs.empty() && pastQs.top() <= i){
+                pastQs.pop();
             }
         }
 
-        return queries.size() - cnt;
+        return q - usedQs;
     }
 };
