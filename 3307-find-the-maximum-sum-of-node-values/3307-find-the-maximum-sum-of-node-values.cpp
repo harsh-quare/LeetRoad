@@ -18,12 +18,14 @@ public:
             if((num ^ k) > num){
                 cnt++;
                 ans += (num ^ k);
+                minNuksan = min(minNuksan, (num^k) - num);
             }
             else{
                 ans += num;
+                minNuksan = min(minNuksan, num - (num^k));
             }
 
-            minNuksan = min(minNuksan, abs((num^k) - num));
+            // minNuksan = min(minNuksan, abs((num^k) - num));
         }
 
         if(cnt % 2 == 0) return ans;
