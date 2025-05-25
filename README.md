@@ -258,6 +258,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [0556-next-greater-element-iii](https://github.com/harsh-quare/LeetRoad/tree/master/0556-next-greater-element-iii) |
+| [0767-prime-number-of-set-bits-in-binary-representation](https://github.com/harsh-quare/LeetRoad/tree/master/0767-prime-number-of-set-bits-in-binary-representation) |
 | [0795-k-th-symbol-in-grammar](https://github.com/harsh-quare/LeetRoad/tree/master/0795-k-th-symbol-in-grammar) |
 | [1033-broken-calculator](https://github.com/harsh-quare/LeetRoad/tree/master/1033-broken-calculator) |
 | [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/harsh-quare/LeetRoad/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
@@ -644,6 +645,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0187-repeated-dna-sequences](https://github.com/harsh-quare/LeetRoad/tree/master/0187-repeated-dna-sequences) |
 | [0191-number-of-1-bits](https://github.com/harsh-quare/LeetRoad/tree/master/0191-number-of-1-bits) |
+| [0767-prime-number-of-set-bits-in-binary-representation](https://github.com/harsh-quare/LeetRoad/tree/master/0767-prime-number-of-set-bits-in-binary-representation) |
 | [0795-k-th-symbol-in-grammar](https://github.com/harsh-quare/LeetRoad/tree/master/0795-k-th-symbol-in-grammar) |
 | [0895-shortest-path-to-get-all-keys](https://github.com/harsh-quare/LeetRoad/tree/master/0895-shortest-path-to-get-all-keys) |
 | [1435-xor-queries-of-a-subarray](https://github.com/harsh-quare/LeetRoad/tree/master/1435-xor-queries-of-a-subarray) |
