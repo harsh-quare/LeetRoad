@@ -35,7 +35,7 @@ public:
             q.pop();
 
             cntNodes++;
-            ans = max(ans, t[u][colors[u] - 'a']);
+            ans = max(ans, *max_element(t[u].begin(), t[u].end()));  // what is the max color value at current node
 
             for(auto& v: adj[u]){
                 // t[v][a], t[v][b],...
