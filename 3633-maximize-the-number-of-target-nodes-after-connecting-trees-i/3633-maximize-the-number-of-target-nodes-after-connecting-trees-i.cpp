@@ -1,44 +1,61 @@
 class Solution {
 public:
-    int dfs(int node, int par, vector<vector<int>>& adj, int k){
-        // number of nodes in subtree of u, that are at distance at max k from u
-        if(k < 0) return 0;
+    void dfs(int nd, vector<vector<int>>& adj, int cap, int& cnt, vector<int>& vis){
+        if(cap <= 0){
+            return ;
+        }
 
-        int res = 1;
-        for(int nbr: adj[node]){
-            if(nbr != par){
-                int new_parent = node;
-                res += dfs(nbr, new_parent, adj, k-1);
+        vis[nd] = 1;
+
+        for(auto& nbr: adj[nd]){
+            if(!vis[nbr]){
+                cnt++;
+                dfs(nbr, adj, cap-1, cnt, vis);
             }
         }
-        return res;
     }
     vector<int> maxTargetNodes(vector<vector<int>>& edges1, vector<vector<int>>& edges2, int k) {
+        // I need to know number of nodes I can reach from each node in tree2 with power of k-1 => using bfs?
+        // I need to know number of nodes I can reach from each node in tree1 with power of k => using bfs?
+
         int n = edges1.size() + 1;
         int m = edges2.size() + 1;
 
         vector<vector<int>> adj1(n);
         vector<vector<int>> adj2(m);
 
-        for(int i = 0; i < n-1; i++){
-            adj1[edges1[i][0]].push_back(edges1[i][1]);
-            adj1[edges1[i][1]].push_back(edges1[i][0]);
+        for(auto& it: edges1){
+            adj1[it[0]].push_back(it[1]);
+            adj1[it[1]].push_back(it[0]);
         }
 
-        for(int i = 0; i < m-1; i++){
-            adj2[edges2[i][0]].push_back(edges2[i][1]);
-            adj2[edges2[i][1]].push_back(edges2[i][0]);
+        for(auto& it: edges2){
+            adj2[it[0]].push_back(it[1]);
+            adj2[it[1]].push_back(it[0]);
         }
 
-        int max_target_tree2 = 0;  //tree2 me se jo k-1 distance wale maximum number of guys leke betha h, vahi hame chahiye
+        int maxiFromT2 = 1;
         for(int i = 0; i < m; i++){
-            max_target_tree2 = max(max_target_tree2, dfs(i, -1, adj2, k-1));
+            
+            if(k == 0){
+                maxiFromT2 = 0;
+                break;
+            } 
+
+            int cnt = 1;
+            vector<int> vis(m, 0);
+            dfs(i, adj2, k-1, cnt, vis);
+            maxiFromT2 = max(maxiFromT2, cnt);
         }
+
+        // cout << maxiFromT2 << endl;
 
         vector<int> ans(n);
         for(int i = 0; i < n; i++){
-            //calculate number of nodes at dist at max k in tree1 and add this to the node in tree2 which is having most number of nodes having dist at max k
-            ans[i] = dfs(i, -1, adj1, k) + max_target_tree2;
+            int cnt = 1;
+            vector<int> vis(n, 0);
+            dfs(i, adj1, k, cnt, vis);
+            ans[i] = cnt + maxiFromT2;
         }
 
         return ans;
