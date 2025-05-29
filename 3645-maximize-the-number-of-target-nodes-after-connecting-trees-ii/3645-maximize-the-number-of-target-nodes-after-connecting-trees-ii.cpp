@@ -1,57 +1,62 @@
 class Solution {
 public:
-    void dfs(int node, int par, vector<vector<int>>& adj, vector<int>& parity){
-        for(auto& nbr: adj[node]){
-            if(nbr != par){
-                parity[nbr] = 1 - parity[node];
-                int new_parent = node;
-                dfs(nbr, new_parent, adj, parity);
+    void dfs(vector<vector<int>>& adj, unordered_set<int>& evens, int node, bool isOdd, vector<bool>& vis){
+        vis[node] = 1;
+
+        if(isOdd == false){
+            evens.insert(node);
+        }
+
+        for(auto nbr: adj[node]){
+            if(!vis[nbr]){
+                dfs(adj, evens, nbr, !isOdd, vis);
             }
         }
     }
     vector<int> maxTargetNodes(vector<vector<int>>& edges1, vector<vector<int>>& edges2) {
+        // Its fu*king easy man.
+        // We just need to know about which nodes are at even position and which are at odd position
+        // I will take a starting point, start my dfs from there, and store all nodes at even distance in even set, and odd ones in odd set. It will help me get the set of each node and then I can tell by the sixe of the set, how many nodes in tree1 are reachable at even distance
+        // Now if I have to connect one node from t1 to any node in t2.
+        // So, we will try to get the maximum of (odd.size(), evens.size()) from t2, and take that to add in my t1's ans
+
         int n = edges1.size() + 1;
         int m = edges2.size() + 1;
 
         vector<vector<int>> adj1(n);
         vector<vector<int>> adj2(m);
 
-        for(auto& e: edges1){
-            adj1[e[0]].push_back(e[1]);
-            adj1[e[1]].push_back(e[0]);
+        for(auto& it: edges1){
+            adj1[it[0]].push_back(it[1]);
+            adj1[it[1]].push_back(it[0]);
         }
 
-        for(auto& e: edges2){
-            adj2[e[0]].push_back(e[1]);
-            adj2[e[1]].push_back(e[0]);
+        for(auto& it: edges2){
+            adj2[it[0]].push_back(it[1]);
+            adj2[it[1]].push_back(it[0]);
         }
 
-        // whenever there's a talk about odd, even, means we can use the concept of parity
-        // all the guys at even parity are at even distance from each other
-        // all the guys at odd parity are also at even distance from each other
-        // and if we want the maximum from tree2, we have 2 options, either we can take the guy having same parity as our current node, which will result in count of other parity in tree2
-        // or we can take the guy with opposite parity, which will result in count of parity of tree1 node in tree2
-        // means we just need any guy having most count of same parity, max(count_par2[0], count_par2[1])
+        unordered_set<int> evensT1;
+        vector<bool> vis1(n, 0);
+        dfs(adj1, evensT1, 0, 0, vis1);  // first 0 is starting node, second 0 is the flag which indicates even distance or odd distance
 
-        vector<int> parity1(n), parity2(m);
+        unordered_set<int> evensT2;
+        vector<bool> vis2(m, 0);
+        dfs(adj2, evensT2, 0, 0, vis2);
 
-        dfs(0, -1, adj1, parity1);
-        dfs(0, -1, adj2, parity2);
-
-        int max_target_tree2 = max(count(parity2.begin(), parity2.end(), 0), count(parity2.begin(), parity2.end(), 1));
-        int cnt0 = count(parity1.begin(), parity1.end(), 0);
-        int cnt1 = count(parity1.begin(), parity1.end(), 1);
+        int bestFromT2 = max(evensT2.size(), m - evensT2.size());
 
         vector<int> ans(n);
         for(int i = 0; i < n; i++){
-            if(parity1[i] == 0){
-                ans[i] = max_target_tree2 + cnt0;  //all the guys having zero parity in tree1 and maximum from tree2
+            if(evensT1.find(i) != evensT1.end()){
+                ans[i] = evensT1.size() + bestFromT2;
             }
             else{
-                ans[i] = max_target_tree2 + cnt1;
+                ans[i] = (n - evensT1.size()) + bestFromT2;
             }
         }
 
         return ans;
+
     }
 };
