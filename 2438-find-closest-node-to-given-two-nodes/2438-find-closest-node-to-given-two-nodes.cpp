@@ -1,6 +1,6 @@
 class Solution {
 public:
-    vector<int> bfs(int stNode, vector<int>& edges, vector<int>& dist){
+    void bfs(int stNode, vector<int>& edges, vector<int>& dist){
         queue<int> q;
         int n = edges.size();
 
@@ -20,8 +20,6 @@ public:
                 dist[nbr] = dist[nd] + 1;
             }
         }
-
-        return dist;
     }
     int closestMeetingNode(vector<int>& edges, int node1, int node2) {
         int n = edges.size();
