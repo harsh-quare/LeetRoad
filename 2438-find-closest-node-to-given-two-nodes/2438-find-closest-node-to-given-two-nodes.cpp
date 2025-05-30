@@ -6,14 +6,17 @@ public:
 
         q.push(stNode);
         dist[stNode] = 0;
+        vector<bool> vis(n, 0);
+        vis[stNode] = 1;
 
         while(!q.empty()){
             int nd = q.front();
             q.pop();
 
             int nbr = edges[nd];
-            if(nbr != -1 && dist[nbr] == INT_MAX){
+            if(nbr != -1 && !vis[nbr]){
                 q.push(nbr);
+                vis[nbr] = 1;
                 dist[nbr] = dist[nd] + 1;
             }
         }
