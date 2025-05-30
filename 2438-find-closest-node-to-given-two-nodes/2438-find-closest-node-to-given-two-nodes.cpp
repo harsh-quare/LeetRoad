@@ -1,25 +1,20 @@
 class Solution {
 public:
-    vector<int> bfs(int stNode, vector<vector<int>>& adj){
+    vector<int> bfs(int stNode, vector<int>& edges, vector<int>& dist){
         queue<int> q;
-        int n = adj.size();
-        vector<int> dist(n, INT_MAX);
-        vector<bool> vis(n, 0);
+        int n = edges.size();
 
         q.push(stNode);
         dist[stNode] = 0;
-        vis[stNode] = 1;
 
         while(!q.empty()){
             int nd = q.front();
             q.pop();
 
-            for(auto& nbr: adj[nd]){
-                if(!vis[nbr]){
-                    vis[nbr] = 1;
-                    q.push(nbr);
-                }
-                dist[nbr] = min(dist[nbr], dist[nd] + 1);
+            int nbr = edges[nd];
+            if(nbr != -1 && dist[nbr] == INT_MAX){
+                q.push(nbr);
+                dist[nbr] = dist[nd] + 1;
             }
         }
 
@@ -27,14 +22,11 @@ public:
     }
     int closestMeetingNode(vector<int>& edges, int node1, int node2) {
         int n = edges.size();
-        vector<vector<int>> adj(n);
+        vector<int> dist1(n, INT_MAX);
+        vector<int> dist2(n, INT_MAX);
 
-        for(int i = 0; i < n; i++){
-            if(edges[i] != -1) adj[i].push_back(edges[i]);
-        }
-        
-        vector<int> dist1 = bfs(node1, adj);
-        vector<int> dist2 = bfs(node2, adj);
+        bfs(node1, edges, dist1);
+        bfs(node2, edges, dist2);
 
         // for(int i = 0; i < n; i++){
         //     cout << dist1[i] << ", " << dist2[i] << endl;
