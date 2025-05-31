@@ -8,11 +8,12 @@ public:
             if(s[i] >= '0' && s[i] <= '9'){
                 int curr = s[i] - '0';
 
-                if(curr > secondMaxi && curr < maxi) secondMaxi = curr;
                 if(curr > maxi){
                     secondMaxi = maxi;
                     maxi = curr;
                 }
+                else if(curr > secondMaxi && curr < maxi) 
+                    secondMaxi = curr;
             }
         }
 
