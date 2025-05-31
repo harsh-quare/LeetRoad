@@ -32,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1694-make-sum-divisible-by-p](https://github.com/harsh-quare/LeetRoad/tree/master/1694-make-sum-divisible-by-p) |
 | [1776-minimum-operations-to-reduce-x-to-zero](https://github.com/harsh-quare/LeetRoad/tree/master/1776-minimum-operations-to-reduce-x-to-zero) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1786-count-the-number-of-consistent-strings) |
+| [1904-second-largest-digit-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/1904-second-largest-digit-in-a-string) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/harsh-quare/LeetRoad/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/harsh-quare/LeetRoad/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/harsh-quare/LeetRoad/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
@@ -815,6 +816,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1786-count-the-number-of-consistent-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1885-count-number-of-homogenous-substrings](https://github.com/harsh-quare/LeetRoad/tree/master/1885-count-number-of-homogenous-substrings) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/harsh-quare/LeetRoad/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
+| [1904-second-largest-digit-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/1904-second-largest-digit-in-a-string) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/harsh-quare/LeetRoad/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [1923-sentence-similarity-iii](https://github.com/harsh-quare/LeetRoad/tree/master/1923-sentence-similarity-iii) |
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/harsh-quare/LeetRoad/tree/master/2021-remove-all-occurrences-of-a-substring) |
