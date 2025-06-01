@@ -1,17 +1,21 @@
 class Solution {
 public:
-    int distributeCandies(int n, int limit) {
+    int solve(int n, int lim, int child){
+        if(n < 0) return 0;  // no more candies left
+
+        if(child == 1){  // last child left
+            if(n <= lim) return 1;  // and remaining candies are under limit, one way
+            else return 0;
+        }
+
         int cnt = 0;
-        for(int i = 0; i <= limit; i++){
-            for(int j = 0; j <= limit; j++){
-                int k = n - i - j;
-                if(k <= limit && k >= 0) {
-                    // cout << i << " " << j << " " << k << endl;
-                    cnt++;
-                }
-            }
+        for(int i = 0; i <= lim; i++){
+            cnt += solve(n - i, lim, child-1);
         }
 
         return cnt;
+    }
+    int distributeCandies(int n, int limit) {
+        return solve(n, limit, 3);
     }
 };
