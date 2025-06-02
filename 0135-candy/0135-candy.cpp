@@ -1,31 +1,34 @@
 class Solution {
 public:
     int candy(vector<int>& ratings) {
-        // double sweep is making sense to me
         int n = ratings.size();
-        vector<int> help(n, 1);  // given at least 1 to all
+        int ans = n; // given 1 candy to all
+        int i = 1;
 
-        // left to right
-        for(int i = 1; i <= n-1; i++){
-            // increment rating only if it's greater than previous one
-            if(ratings[i] > ratings[i-1]){
-                help[i] = max(help[i], help[i-1] + 1);
+        while(i < n){
+
+            if(ratings[i] == ratings[i-1]){
+                i++;
+                continue;
             }
-            // else the rating will remain the same, as we are not breaking the conditions considering only left nbr
-        }
 
-        // right to left
-        for(int i = n-2; i >= 0; i--){
-            // increment rating only if it's greater than previous one
-            if(ratings[i] > ratings[i+1]){
-                help[i] = max(help[i], help[i+1] + 1);
+            int peak = 0;
+            while(ratings[i] > ratings[i-1]){
+                peak++;
+                ans += peak;
+                i++;
+
+                if(i == n) return ans;
             }
-            // else the rating will remain the same, as we are not breaking the conditions considering only right nbr
-        }
 
-        int ans = 0;
-        for(int i = 0; i < n; i++){
-            ans += help[i];
+            int dip = 0;
+            while(i < n && ratings[i] < ratings[i-1]){
+                dip++;
+                ans += dip;
+                i++;
+            }
+
+            ans -= min(peak, dip);  // remove min of both after one mountain ends (peak + dip), bcz we added both, and we want to keep the bigger one. 
         }
 
         return ans;
