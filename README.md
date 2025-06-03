@@ -526,6 +526,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3372-longest-strictly-increasing-or-strictly-decreasing-subarray](https://github.com/harsh-quare/LeetRoad/tree/master/3372-longest-strictly-increasing-or-strictly-decreasing-subarray) |
 | [3380-shortest-subarray-with-or-at-least-k-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3380-shortest-subarray-with-or-at-least-k-ii) |
 | [3387-minimum-operations-to-make-median-of-array-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/3387-minimum-operations-to-make-median-of-array-equal-to-k) |
+| [3404-minimum-number-of-operations-to-satisfy-conditions](https://github.com/harsh-quare/LeetRoad/tree/master/3404-minimum-number-of-operations-to-satisfy-conditions) |
 | [3427-special-array-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3427-special-array-ii) |
 | [3429-special-array-i](https://github.com/harsh-quare/LeetRoad/tree/master/3429-special-array-i) |
 | [3430-count-days-without-meetings](https://github.com/harsh-quare/LeetRoad/tree/master/3430-count-days-without-meetings) |
@@ -630,6 +631,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2794-maximum-number-of-moves-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/2794-maximum-number-of-moves-in-a-grid) |
 | [3092-minimum-moves-to-spread-stones-over-grid](https://github.com/harsh-quare/LeetRoad/tree/master/3092-minimum-moves-to-spread-stones-over-grid) |
 | [3227-find-missing-and-repeated-values](https://github.com/harsh-quare/LeetRoad/tree/master/3227-find-missing-and-repeated-values) |
+| [3404-minimum-number-of-operations-to-satisfy-conditions](https://github.com/harsh-quare/LeetRoad/tree/master/3404-minimum-number-of-operations-to-satisfy-conditions) |
 | [3627-find-minimum-time-to-reach-last-room-i](https://github.com/harsh-quare/LeetRoad/tree/master/3627-find-minimum-time-to-reach-last-room-i) |
 | [3628-find-minimum-time-to-reach-last-room-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3628-find-minimum-time-to-reach-last-room-ii) |
 ## Simulation
@@ -740,6 +742,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3239-minimum-number-of-operations-to-make-x-and-y-equal](https://github.com/harsh-quare/LeetRoad/tree/master/3239-minimum-number-of-operations-to-make-x-and-y-equal) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/harsh-quare/LeetRoad/tree/master/3243-count-the-number-of-powerful-integers) |
 | [3307-find-the-maximum-sum-of-node-values](https://github.com/harsh-quare/LeetRoad/tree/master/3307-find-the-maximum-sum-of-node-values) |
+| [3404-minimum-number-of-operations-to-satisfy-conditions](https://github.com/harsh-quare/LeetRoad/tree/master/3404-minimum-number-of-operations-to-satisfy-conditions) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/harsh-quare/LeetRoad/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3630-total-characters-in-string-after-transformations-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 | [3637-count-number-of-balanced-permutations](https://github.com/harsh-quare/LeetRoad/tree/master/3637-count-number-of-balanced-permutations) |
