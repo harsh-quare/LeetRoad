@@ -14,16 +14,17 @@ public:
         // ab hame lexicographically largest chahiye to, check kr lo har index pe jaake, itni length ki substr bana ke, jaha bhi lexicographically largest mil jaye vahi answer h
 
         if(numFriends == 1) return word;
+        int n = word.size();
 
-        int ansLen = word.size() - (numFriends - 1);
+        int ansLen = n - (numFriends - 1);
         string ans = "";
 
-        for(int i = 0; i < word.size(); i++){
-            string temp = word.substr(i, ansLen);
+        for(int i = 0; i < n; i++){
+            // string temp = word.substr(i, ansLen);
             // if(ans.empty()) ans = temp;
             // else ans = solve(ans, temp);
 
-            ans = max(ans, temp);
+            ans = max(ans, word.substr(i, min(ansLen, n-i)));
         }
 
         return ans;
