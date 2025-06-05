@@ -1,32 +1,38 @@
 class Solution {
 public:
-    // string solve(string &s1, string &s2){
-    //     int n = s1.size();
-    //     for(int i = 0; i < n; i++){
-    //         if(s1[i] == s2[i]) continue;
-    //         else if(s1[i] > s2[i]) return s1;
-    //         else return s2;
-    //     }
-    //     return s1;  // agar continue krte krte yaha pahuch gye, mtlb dono strings same h, return any of them
-    // }
-    string answerString(string word, int numFriends) {
-        // num-1 friends ko ham single single character de denge, ek jo hoga uski length ho jayegi word.length()-(num-1), and vahi longest string hame mil skti h
-        // ab hame lexicographically largest chahiye to, check kr lo har index pe jaake, itni length ki substr bana ke, jaha bhi lexicographically largest mil jaye vahi answer h
+    int bestStartingPoint(int n, string& word){
+        int i = 0; // best starting point
+        int j = 1; // keep moving to find the best starting point
 
-        if(numFriends == 1) return word;
-        int n = word.size();
+        while(j < n){
+            int k = 0;
 
-        int ansLen = n - (numFriends - 1);
-        string ans = "";
+            // skipping equal characters
+            while(j+k < n && word[i+k] == word[j+k]){
+                k++;
+            }
 
-        for(int i = 0; i < n; i++){
-            // string temp = word.substr(i, ansLen);
-            // if(ans.empty()) ans = temp;
-            // else ans = solve(ans, temp);
-
-            ans = max(ans, word.substr(i, min(ansLen, n-i)));
+            if(j+k < n && word[j+k] > word[i+k]){
+                i = j;   // updating best starting point
+                j = j+1;
+            }
+            else{
+                j = j + k + 1;  // skipping already checked characters
+            } 
         }
 
-        return ans;
+        return i;
+    }
+    string answerString(string word, int numFriends) {
+        int n = word.size();
+
+        if(numFriends == 1) return word;
+
+        int i = bestStartingPoint(n, word);
+
+        int ansLen = n - (numFriends - 1);
+        int canTakePossible = min(ansLen, n-i);
+
+        return word.substr(i, canTakePossible);
     }
 };
