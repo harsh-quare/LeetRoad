@@ -1,32 +1,37 @@
 class Solution {
 public:
-    int find(vector<int>& parent, int v){
-        if(parent[v] == -1) return v;
-        else return parent[v] = find(parent, parent[v]);
-    }
-    string smallestEquivalentString(string s1, string s2, string baseStr) {
-        vector<int> parent(26, -1);  // build disjoint equivalent sets, -1 means he is own parent. Keep smallest in each set as absolute parent
+    char dfsFindMinChar(unordered_map<char, vector<char>>& adj, char ch, vector<int>& vis){
+        vis[ch-'a'] = 1;
 
-        for(int i = 0; i < s1.length(); i++){
-            char c1 = s1[i];
-            char c2 = s2[i];
-
-            if(c1 == c2) continue;
-
-            int par_x = find(parent, c1-'a');
-            int par_y = find(parent, c2-'a');
-
-            if(par_x == par_y) continue; // already in same set
-            
-            // union by smallest char as ultimate parent
-            if(par_x > par_y) parent[par_x] = par_y;  // bade ko chhote se connect
-            else parent[par_y] = par_x;
+        char minChar = ch;
+        for(auto& it: adj[ch]){
+            if(!vis[it-'a']){
+                minChar = min(minChar, dfsFindMinChar(adj, it, vis));
+            }
         }
 
-        string ans = "";
-        for(char c: baseStr){
-            int par = find(parent, c-'a');
-            ans.push_back(char(par+97));
+        return minChar;
+    }
+    string smallestEquivalentString(string s1, string s2, string baseStr) {
+        int n = s1.size();
+
+        unordered_map<char, vector<char>> adj;
+        for(int i = 0; i < n; i++){
+            char u = s1[i];
+            char v = s2[i];
+
+            adj[u].push_back(v);
+            adj[v].push_back(u);
+        }
+
+        string ans;
+        for(int i = 0; i < baseStr.size(); i++){
+            char ch = baseStr[i];
+
+            vector<int> vis(26, 0);
+            char minChar = dfsFindMinChar(adj, ch, vis);
+
+            ans.push_back(minChar);
         }
 
         return ans;
