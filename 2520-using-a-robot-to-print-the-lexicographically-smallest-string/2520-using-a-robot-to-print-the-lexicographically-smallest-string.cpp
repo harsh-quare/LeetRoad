@@ -23,22 +23,14 @@ public:
         int i = 0;
 
         while(i < n){
-            t.push(s[i]);   // apply op-1
-
-            char minChar;
-            if(i+1 < n){
-                minChar = rightSmallestChar[i+1];  // bcz rightSmallestChar[i] is smallest in right including 'i' itself, but we only want smallest from right excluding itself, that's why i+1
+            if(t.empty() || rightSmallestChar[i] < t.top()){  // op-1: if either the stack is empty or there is some smaller character to the right
+                t.push(s[i]);
+                i++;
             }
-            else minChar = rightSmallestChar[i];  // last index=> nobody smaller to the right
-
-            
-            // Now apply operation-2 until the top of the 't' is having nobody on the right as smaller, means top is the smallest there is
-            while(!t.empty() && t.top() <= minChar){
-                ans += t.top();
+            else{  // op-2
+                ans.push_back(t.top());
                 t.pop();
             }
-
-            i++;
         }
 
         // bache hue characters ko daal do
