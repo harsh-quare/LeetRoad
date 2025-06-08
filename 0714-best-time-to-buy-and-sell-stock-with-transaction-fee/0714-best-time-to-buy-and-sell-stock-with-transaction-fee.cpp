@@ -1,57 +1,31 @@
 class Solution {
 public:
-    // int solve(int id, bool buy, int fee, vector<int>& arr, int n, vector<vector<int>>& dp){
-    //     if(id >= n) return 0;
+    vector<vector<int>> dp;
+    int solve(int i, bool buy, vector<int>& prices, int n, int fee){
+        if(i >= n) return 0;
 
-    //     if(dp[id][buy] != -1) return dp[id][buy];
+        if(dp[i][buy] != -1) return dp[i][buy];
 
-    //     int profit = 0;
+        int ans = 0;
+        
+        if(buy == 0){
+            //skip
+            ans = max(ans, solve(i+1, buy, prices, n, fee));
+            //buy
+            ans = max(ans, -(fee+prices[i]) + solve(i+1, 1, prices, n, fee));  // fee charge krlo,buy krte time hi
+        }
+        else{
+            //skip
+            ans = max(ans, solve(i+1, buy, prices, n, fee));
+            //sell => remember the cooldown
+            ans = max(ans, prices[i] + solve(i+1, 0, prices, n, fee));
+        }
 
-    //     //at the point of selling, the net profit would be (sell_price - buy_price - fee)
-
-    //     if(buy == 1){
-    //         int buy_ans = -arr[id] + solve(id + 1, !buy, fee, arr, n, dp);
-    //         int skip_ans = 0 + solve(id+1, buy, fee, arr, n, dp);
-
-    //         profit = max(buy_ans, skip_ans);
-    //     }
-
-    //     if(buy == 0){
-    //         int sell_ans = arr[id] - fee + solve(id+1, !buy, fee, arr, n, dp);
-    //         int skip_ans = 0 + solve(id+1, buy, fee, arr, n, dp);
-
-    //         profit = max(sell_ans, skip_ans);
-    //     }
-
-    //     return dp[id][buy] = profit;
-    // }
-
+        return dp[i][buy] = ans;
+    }
     int maxProfit(vector<int>& prices, int fee) {
         int n = prices.size();
-        // kisi bhi ek moment pe fee charge krni h, either sell krte time or buy krte time
-
-        vector<int> next(2, 0), cur(2, 0);
-
-        for(int id = n-1; id >= 0; id--){
-            for(int buy = 0; buy <= 1; buy++){
-
-                int profit = 0;
-                
-                if(buy == 1){
-                    //buy
-                    profit = max(-prices[id] + next[!buy], 0 + next[buy]);
-                }
-
-                if(buy == 0){
-                    //sell, and fee charge kr lena
-                    profit = max(prices[id] - fee + next[!buy], 0 + next[buy]);
-                }
-
-                cur[buy] = profit;
-            }
-            next = cur;
-        }
-        
-        return cur[1];
+        dp.assign(n+1, vector<int>(2, -1));
+        return solve(0, 0, prices, n, fee);  // 0 => free, 1 => bought, active tx
     }
 };
