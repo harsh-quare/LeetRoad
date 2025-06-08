@@ -17,7 +17,7 @@ public:
             ans = max(ans, solve(i+1, buy, prices, n));
 
             //op-2: buy kr lo
-            ans = max(ans, -prices[i] + solve(i, 1, prices, n));
+            ans = max(ans, -prices[i] + solve(i+1, 1, prices, n));
         }
         else if(buy == 1){
             // ham ya to skip kr skte h ya fir sell kr skte h
