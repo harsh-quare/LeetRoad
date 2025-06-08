@@ -2,7 +2,7 @@ class Solution {
 public:
     long long maxGCDScore(vector<int>& nums, int k) {
         int n = nums.size();
-        // my requirements are: 1. knowing the power of 2 element for each candidate 2. getting gcd 3. checking opn req
+        // my requirements are: 1. knowing the power of 2 element for each candidate 2. getting gcd 3. freq of power of 2's to know about the (minimum power of 2)Pmin ki freq in each subarray
         vector<int> powOf2(n, 0);
         for(int i = 0; i < n; i++){
             int val = nums[i];
