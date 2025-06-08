@@ -17,7 +17,7 @@ public:
         else{
             //skip
             ans = max(ans, solve(i+1, buy, prices, n, fee));
-            //sell => remember the cooldown
+            //sell
             ans = max(ans, prices[i] + solve(i+1, 0, prices, n, fee));
         }
 
