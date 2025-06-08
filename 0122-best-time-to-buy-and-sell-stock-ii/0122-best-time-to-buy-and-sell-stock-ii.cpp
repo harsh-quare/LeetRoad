@@ -3,13 +3,12 @@ public:
     vector<vector<int>> dp;
     int solve(int i, bool buy, vector<int>& prices, int n){
         if(i >= n){
-            if(buy == 0) return 0;
-            else return INT_MIN/2;  // hamne ek stock buy kr liya, but sell nhi kiya and array finish ho gya
+            return 0;
         }
 
-        if(dp[i][buy] != INT_MIN) return dp[i][buy];
+        if(dp[i][buy] != -1) return dp[i][buy];
 
-        int ans = INT_MIN;
+        int ans = 0;
 
         if(buy == 0){
             // free h, ham buy kr skte h, ya skip kr skte h
@@ -34,7 +33,7 @@ public:
     int maxProfit(vector<int>& prices) {
         int n = prices.size();
         // 2 states: 0 => free, 1 => buy kiya h
-        dp.assign(n+1, vector<int>(2, INT_MIN));
+        dp.assign(n+1, vector<int>(2, -1));
         return solve(0, 0, prices, n);
     }
 };
