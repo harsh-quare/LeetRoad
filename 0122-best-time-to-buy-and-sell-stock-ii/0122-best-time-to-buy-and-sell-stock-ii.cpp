@@ -1,56 +1,40 @@
 class Solution {
 public:
-    // int solve(int id, bool buy, int n, vector<int>& nums, vector<vector<int>>& dp){
-    //     if(id >= n) return 0;
+    vector<vector<int>> dp;
+    int solve(int i, bool buy, vector<int>& prices, int n){
+        if(i >= n){
+            if(buy == 0) return 0;
+            else return INT_MIN/2;  // hamne ek stock buy kr liya, but sell nhi kiya and array finish ho gya
+        }
 
-    //     if(dp[id][buy] != -1) return dp[id][buy];
+        if(dp[i][buy] != INT_MIN) return dp[i][buy];
 
-    //     int profit = 0;
-        
-    //     if(buy == 1){
-    //         //you can buy
-    //         int buy_ans = solve(id + 1, !buy, n, nums, dp) - nums[id];
-    //         int skip_ans = solve(id + 1, buy, n, nums, dp);
+        int ans = INT_MIN;
 
-    //         profit = max(skip_ans, buy_ans);
-    //     }
+        if(buy == 0){
+            // free h, ham buy kr skte h, ya skip kr skte h
+            
+            // op-1: skip
+            ans = max(ans, solve(i+1, buy, prices, n));
 
-    //     else{
-    //         //you need to sell
-    //         int sell_ans = solve(id + 1, !buy, n, nums, dp) + nums[id]; //after selling, you are again allowd to buy
-    //         int skip_ans = solve(id + 1, buy, n, nums, dp);
+            //op-2: buy kr lo
+            ans = max(ans, -prices[i] + solve(i, 1, prices, n));
+        }
+        else if(buy == 1){
+            // ham ya to skip kr skte h ya fir sell kr skte h
+            // op-1: skip
+            ans = max(ans, solve(i+1, buy, prices, n));
 
-    //         profit = max(sell_ans, skip_ans);
-    //     }
+            //op-2: sell kr do
+            ans = max(ans, prices[i] + solve(i+1, 0, prices, n));
+        }
 
-    //     return dp[id][buy] = profit;
-    // }
+        return dp[i][buy] = ans;
+    }
     int maxProfit(vector<int>& prices) {
         int n = prices.size();
-        vector<vector<int>> dp(n+1, vector<int>(2, 0));
-
-        for(int id = n-1; id >= 0; id--){
-            int profit = 0;
-            for(int buy = 0; buy < 2; buy++){
-                if(buy == 1){
-                    //you can buy
-                    int buy_ans = dp[id+1][!buy] - prices[id];
-                    int skip_ans = dp[id+1][buy];
-
-                    profit = max(skip_ans, buy_ans);
-                }
-                
-                if(buy == 0){
-                    //you need to sell
-                    int sell_ans = dp[id+1][!buy] + prices[id]; //after selling, you are again allowd to buy
-                    int skip_ans = dp[id+1][buy];
-
-                    profit = max(sell_ans, skip_ans);
-                }
-
-                dp[id][buy] = profit;
-            }
-        }
-        return dp[0][1];
+        // 2 states: 0 => free, 1 => buy kiya h
+        dp.assign(n+1, vector<int>(2, INT_MIN));
+        return solve(0, 0, prices, n);
     }
 };
