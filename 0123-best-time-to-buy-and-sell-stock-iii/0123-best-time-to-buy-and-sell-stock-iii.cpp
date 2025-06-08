@@ -2,9 +2,8 @@ class Solution {
 public:
     vector<vector<vector<int>>> dp;
     int solve(int i, bool buy, int cap, vector<int>& prices, int n){
-        if(i == n){
-            if(buy == 0) return 0;
-            else return INT_MIN/2;
+        if(i == n || cap <= 0){
+            return 0;
         }
 
         if(dp[i][buy][cap] != -1) return dp[i][buy][cap];
