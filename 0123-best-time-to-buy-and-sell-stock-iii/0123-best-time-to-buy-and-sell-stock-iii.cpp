@@ -1,31 +1,37 @@
 class Solution {
 public:
-    int solve(int id, bool buy,int cap, vector<int>& a, int n, vector<vector<vector<int>>> &dp){
-        if(id >= n || cap <= 0) return 0;
-
-        if(dp[id][buy][cap] != -1) return dp[id][buy][cap];
-
-        int profit = 0;
-
-        if(buy == 1){
-            int buy_ans = -a[id] + solve(id+1, !buy, cap, a, n, dp);
-            int skip_ans = 0 + solve(id+1, buy, cap, a, n, dp);
-
-            profit = max(buy_ans, skip_ans);
+    vector<vector<vector<int>>> dp;
+    int solve(int i, bool buy, int cap, vector<int>& prices, int n){
+        if(i == n){
+            if(buy == 0) return 0;
+            else return INT_MIN/2;
         }
 
-        if(buy == 0){
-            int sell_ans = a[id] + solve(id+1, !buy, cap-1, a, n, dp);
-            int skip_ans = 0 + solve(id+1, buy, cap, a, n, dp);
+        if(dp[i][buy][cap] != -1) return dp[i][buy][cap];
 
-            profit = max(sell_ans, skip_ans);
+        int ans = 0;
+
+        if(buy == 0){  // you are free to skip or buy a stock
+            // op-1: skip
+            ans = max(ans, solve(i+1, buy, cap, prices, n));
+
+            // op-2: buy the stock
+            ans = max(ans, -prices[i] + solve(i+1, 1, cap, prices, n));
+        }
+        else{
+            // already bought a stock, can either skip or sell
+            // op-1: skip
+            ans = max(ans, solve(i+1, buy, cap, prices, n));
+
+            // op-2: sell the stock => 1 transaction completed
+            if(cap > 0) ans = max(ans, prices[i] + solve(i+1, 0, cap-1, prices, n));
         }
 
-        return dp[id][buy][cap] = profit;
+        return dp[i][buy][cap] = ans;
     }
     int maxProfit(vector<int>& prices) {
         int n = prices.size();
-        vector<vector<vector<int>>> dp(n, vector<vector<int>> (2, vector<int>(3, -1)));
-        return solve(0, 1, 2, prices, n, dp);
+        dp.assign(n+1, vector<vector<int>> (2, vector<int>(3, -1)));
+        return solve(0, 0, 2, prices, n);  // i, buy, capacity
     }
 };
