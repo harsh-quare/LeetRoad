@@ -6,16 +6,15 @@ public:
             freq[c-'a']++;
         }
 
-        int maxOdd = 0;
-        int minEven = s.size();
+        int maxOdd = -1;
+        int minEven = INT_MAX;
         for(int i = 0; i < 26; i++){
-            if(freq[i] % 2 == 0 && freq[i] != 0){
-                minEven = min(minEven, freq[i]);
-            }
-            else{
+            if(freq[i] % 2 != 0){
                 maxOdd = max(maxOdd, freq[i]);
             }
-            cout << freq[i] << ", ";
+            else if(freq[i] > 0){  // odd hota to if me chale jata, yaha aaya mtlb even to 100% h
+                minEven = min(minEven, freq[i]);
+            }
         }
 
         return maxOdd - minEven;
