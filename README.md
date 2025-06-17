@@ -318,6 +318,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3637-count-number-of-balanced-permutations](https://github.com/harsh-quare/LeetRoad/tree/master/3637-count-number-of-balanced-permutations) |
 | [3655-digit-operations-to-make-two-integers-equal](https://github.com/harsh-quare/LeetRoad/tree/master/3655-digit-operations-to-make-two-integers-equal) |
 | [3681-maximum-area-rectangle-with-point-constraints-i](https://github.com/harsh-quare/LeetRoad/tree/master/3681-maximum-area-rectangle-with-point-constraints-i) |
+| [3682-count-the-number-of-arrays-with-k-matching-adjacent-elements](https://github.com/harsh-quare/LeetRoad/tree/master/3682-count-the-number-of-arrays-with-k-matching-adjacent-elements) |
 | [3817-maximum-containers-on-a-ship](https://github.com/harsh-quare/LeetRoad/tree/master/3817-maximum-containers-on-a-ship) |
 ## Recursion
 |  |
@@ -1339,6 +1340,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3201-distribute-candies-among-children-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3201-distribute-candies-among-children-ii) |
 | [3548-find-the-count-of-good-integers](https://github.com/harsh-quare/LeetRoad/tree/master/3548-find-the-count-of-good-integers) |
 | [3637-count-number-of-balanced-permutations](https://github.com/harsh-quare/LeetRoad/tree/master/3637-count-number-of-balanced-permutations) |
+| [3682-count-the-number-of-arrays-with-k-matching-adjacent-elements](https://github.com/harsh-quare/LeetRoad/tree/master/3682-count-the-number-of-arrays-with-k-matching-adjacent-elements) |
 ## Data Stream
 |  |
 | ------- |
