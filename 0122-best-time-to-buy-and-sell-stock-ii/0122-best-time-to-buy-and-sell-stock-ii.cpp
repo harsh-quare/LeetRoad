@@ -27,7 +27,30 @@ public:
     }
     int maxProfit(vector<int>& nums) {
         int n = nums.size();
-        vector<vector<int>> dp(n+1, vector<int>(2, -1));
-        return solve(0, 0, nums, n, dp);
+        vector<vector<int>> dp(n+1, vector<int>(2, 0));
+        
+        for(int i = n-1; i >= 0; i--){
+            for(int holding = 0; holding <= 1; holding++){
+                int ans = 0;
+
+                // if not holding currently
+                if(!holding){
+                    // op1: skip
+                    ans = max(ans, dp[i+1][holding]);
+                    // op2: buy
+                    ans = max(ans, -nums[i] + dp[i+1][!holding]);
+                }
+                else{
+                    // op1: skip
+                    ans = max(ans, dp[i+1][holding]);
+                    // op2: buy
+                    ans = max(ans, nums[i] + dp[i+1][!holding]);
+                }
+
+                dp[i][holding] = ans;
+            }
+        }
+
+        return dp[0][0];
     }
 };
