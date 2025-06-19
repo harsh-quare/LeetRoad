@@ -1,19 +1,35 @@
 class Solution {
 public:
-    int maxProfit(vector<int>& prices) {
-        int trade1BuyPrice = INT_MAX;
-        int trade2BuyPrice = INT_MAX;
-        int trade1Profit = 0;
-        int trade2Profit = 0;
-
-        for(auto price : prices){
-            trade1BuyPrice = min(trade1BuyPrice, price);
-            trade1Profit = max(trade1Profit, price - trade1BuyPrice);
-
-            trade2BuyPrice = min(trade2BuyPrice, price - trade1Profit);
-            trade2Profit = max(trade2Profit, price - trade2BuyPrice);
+    int solve(int i, bool holding, int txCnt, vector<int>& nums, int n, vector<vector<vector<int>>>& dp){
+        if(i >= n) return 0;
+        if(txCnt >= 2){
+            // this path should no longer be in consideration, as no more further stock transaction can be performed, already reached limit, so no more profit can come from this path
+            return 0;
         }
 
-        return trade2Profit;
+        if(dp[i][holding][txCnt] != -1) return dp[i][holding][txCnt];
+
+        int ans = 0;
+
+        // not holding currrently
+        if(!holding){
+            // op1: skip
+            ans = max(ans, solve(i+1, holding, txCnt, nums, n, dp));
+            //op2: buy
+            ans = max(ans, -nums[i] + solve(i+1, !holding, txCnt, nums, n, dp));
+        }
+        else{
+            // op1: skip
+            ans = max(ans, solve(i+1, holding, txCnt, nums, n, dp));
+            //op2: sell
+            ans = max(ans, nums[i] + solve(i+1, !holding, txCnt + 1, nums, n, dp));  // increment the txCnt, when stock transaction finished
+        }
+
+        return dp[i][holding][txCnt] = ans;
+    }
+    int maxProfit(vector<int>& nums) {
+        int n = nums.size();
+        vector<vector<vector<int>>> dp(n+1, vector<vector<int>>(2, vector<int>(3, -1)));
+        return solve(0, 0, 0, nums, n, dp);
     }
 };
