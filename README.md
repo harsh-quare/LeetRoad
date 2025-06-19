@@ -824,6 +824,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0038-count-and-say](https://github.com/harsh-quare/LeetRoad/tree/master/0038-count-and-say) |
+| [0071-simplify-path](https://github.com/harsh-quare/LeetRoad/tree/master/0071-simplify-path) |
 | [0125-valid-palindrome](https://github.com/harsh-quare/LeetRoad/tree/master/0125-valid-palindrome) |
 | [0151-reverse-words-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/0151-reverse-words-in-a-string) |
 | [0179-largest-number](https://github.com/harsh-quare/LeetRoad/tree/master/0179-largest-number) |
@@ -1157,6 +1158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0071-simplify-path](https://github.com/harsh-quare/LeetRoad/tree/master/0071-simplify-path) |
 | [0155-min-stack](https://github.com/harsh-quare/LeetRoad/tree/master/0155-min-stack) |
 | [0402-remove-k-digits](https://github.com/harsh-quare/LeetRoad/tree/master/0402-remove-k-digits) |
 | [0780-max-chunks-to-make-sorted](https://github.com/harsh-quare/LeetRoad/tree/master/0780-max-chunks-to-make-sorted) |
