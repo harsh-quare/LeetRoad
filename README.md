@@ -272,6 +272,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0007-reverse-integer](https://github.com/harsh-quare/LeetRoad/tree/master/0007-reverse-integer) |
 | [0009-palindrome-number](https://github.com/harsh-quare/LeetRoad/tree/master/0009-palindrome-number) |
+| [0029-divide-two-integers](https://github.com/harsh-quare/LeetRoad/tree/master/0029-divide-two-integers) |
 | [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
 | [0326-power-of-three](https://github.com/harsh-quare/LeetRoad/tree/master/0326-power-of-three) |
 | [0380-insert-delete-getrandom-o1](https://github.com/harsh-quare/LeetRoad/tree/master/0380-insert-delete-getrandom-o1) |
@@ -689,6 +690,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0029-divide-two-integers](https://github.com/harsh-quare/LeetRoad/tree/master/0029-divide-two-integers) |
 | [0187-repeated-dna-sequences](https://github.com/harsh-quare/LeetRoad/tree/master/0187-repeated-dna-sequences) |
 | [0191-number-of-1-bits](https://github.com/harsh-quare/LeetRoad/tree/master/0191-number-of-1-bits) |
 | [0767-prime-number-of-set-bits-in-binary-representation](https://github.com/harsh-quare/LeetRoad/tree/master/0767-prime-number-of-set-bits-in-binary-representation) |
