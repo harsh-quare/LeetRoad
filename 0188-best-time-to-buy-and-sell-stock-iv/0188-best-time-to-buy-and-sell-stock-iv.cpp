@@ -26,7 +26,7 @@ public:
     // }
     int maxProfit(int k, vector<int>& nums) {
         int n = nums.size();
-        vector<vector<vector<int>>> dp(n+1, vector<vector<int>>(2, vector<int>(k+1, 0)));
+        vector<vector<int>> cur(2, vector<int>(k+1, 0)), nxt(2, vector<int>(k+1, 0));
         // return solve(0, 0, 0, nums, n, k, dp);
 
         for(int i = n-1; i >= 0; i--){
@@ -36,22 +36,23 @@ public:
 
                     if(!holding){
                         // op1: skip
-                        ans = max(ans, dp[i+1][holding][txs]);
+                        ans = max(ans, nxt[holding][txs]);
                         // op2: buy
-                        ans = max(ans, -nums[i] + dp[i+1][!holding][txs]);
+                        ans = max(ans, -nums[i] + nxt[!holding][txs]);
                     }
                     else{
                         // op1: skip
-                        ans = max(ans, dp[i+1][holding][txs]);
+                        ans = max(ans, nxt[holding][txs]);
                         // op2: buy
-                        ans = max(ans, nums[i] + dp[i+1][!holding][txs+1]);
+                        ans = max(ans, nums[i] + nxt[!holding][txs+1]);
                     }
 
-                    dp[i][holding][txs] = ans;
+                    cur[holding][txs] = ans;
                 }
             }
+            nxt = cur;
         }
 
-        return dp[0][0][0];
+        return cur[0][0];
     }
 };
