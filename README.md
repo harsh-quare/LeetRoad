@@ -570,6 +570,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3747-maximum-difference-between-adjacent-elements-in-a-circular-array](https://github.com/harsh-quare/LeetRoad/tree/master/3747-maximum-difference-between-adjacent-elements-in-a-circular-array) |
 | [3795-zero-array-transformation-iv](https://github.com/harsh-quare/LeetRoad/tree/master/3795-zero-array-transformation-iv) |
 | [3809-properties-graph](https://github.com/harsh-quare/LeetRoad/tree/master/3809-properties-graph) |
+| [3892-best-time-to-buy-and-sell-stock-v](https://github.com/harsh-quare/LeetRoad/tree/master/3892-best-time-to-buy-and-sell-stock-v) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -772,6 +773,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3630-total-characters-in-string-after-transformations-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 | [3637-count-number-of-balanced-permutations](https://github.com/harsh-quare/LeetRoad/tree/master/3637-count-number-of-balanced-permutations) |
 | [3795-zero-array-transformation-iv](https://github.com/harsh-quare/LeetRoad/tree/master/3795-zero-array-transformation-iv) |
+| [3892-best-time-to-buy-and-sell-stock-v](https://github.com/harsh-quare/LeetRoad/tree/master/3892-best-time-to-buy-and-sell-stock-v) |
 ## Greedy
 |  |
 | ------- |
