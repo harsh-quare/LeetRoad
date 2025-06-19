@@ -353,6 +353,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/0215-kth-largest-element-in-an-array) |
 | [0219-contains-duplicate-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0219-contains-duplicate-ii) |
 | [0239-sliding-window-maximum](https://github.com/harsh-quare/LeetRoad/tree/master/0239-sliding-window-maximum) |
+| [0283-move-zeroes](https://github.com/harsh-quare/LeetRoad/tree/master/0283-move-zeroes) |
 | [0303-range-sum-query-immutable](https://github.com/harsh-quare/LeetRoad/tree/master/0303-range-sum-query-immutable) |
 | [0304-range-sum-query-2d-immutable](https://github.com/harsh-quare/LeetRoad/tree/master/0304-range-sum-query-2d-immutable) |
 | [0307-range-sum-query-mutable](https://github.com/harsh-quare/LeetRoad/tree/master/0307-range-sum-query-mutable) |
@@ -1177,6 +1178,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0125-valid-palindrome](https://github.com/harsh-quare/LeetRoad/tree/master/0125-valid-palindrome) |
 | [0148-sort-list](https://github.com/harsh-quare/LeetRoad/tree/master/0148-sort-list) |
 | [0151-reverse-words-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/0151-reverse-words-in-a-string) |
+| [0283-move-zeroes](https://github.com/harsh-quare/LeetRoad/tree/master/0283-move-zeroes) |
 | [0556-next-greater-element-iii](https://github.com/harsh-quare/LeetRoad/tree/master/0556-next-greater-element-iii) |
 | [0567-permutation-in-string](https://github.com/harsh-quare/LeetRoad/tree/master/0567-permutation-in-string) |
 | [0793-swap-adjacent-in-lr-string](https://github.com/harsh-quare/LeetRoad/tree/master/0793-swap-adjacent-in-lr-string) |
