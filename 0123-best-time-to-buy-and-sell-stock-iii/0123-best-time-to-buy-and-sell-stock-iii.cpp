@@ -29,7 +29,7 @@ public:
     // }
     int maxProfit(vector<int>& nums) {
         int n = nums.size();
-        vector<vector<vector<int>>> dp(n+1, vector<vector<int>>(2, vector<int>(3, 0)));
+        vector<vector<int>> cur(2, vector<int>(3, 0)), nxt(2, vector<int>(3, 0));
 
         for(int i = n-1; i >= 0; i--){
             for(int holding = 0; holding <= 1; holding++){
@@ -39,22 +39,23 @@ public:
                     // not holding currrently
                     if(!holding){
                         // op1: skip
-                        ans = max(ans, dp[i+1][holding][txCnt]);
+                        ans = max(ans, nxt[holding][txCnt]);
                         //op2: buy
-                        ans = max(ans, -nums[i] + dp[i+1][!holding][txCnt]);
+                        ans = max(ans, -nums[i] + nxt[!holding][txCnt]);
                     }
                     else{
                         // op1: skip
-                        ans = max(ans, dp[i+1][holding][txCnt]);
+                        ans = max(ans, nxt[holding][txCnt]);
                         //op2: sell
-                        if(txCnt + 1 <= 2) ans = max(ans, nums[i] + dp[i+1][!holding][txCnt + 1]);
+                        if(txCnt + 1 <= 2) ans = max(ans, nums[i] + nxt[!holding][txCnt + 1]);
                     }
 
-                    dp[i][holding][txCnt] = ans;
+                    cur[holding][txCnt] = ans;
                 }
             }
+            nxt = cur;
         }
 
-        return dp[0][0][0];
+        return cur[0][0];
     }
 };
