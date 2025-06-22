@@ -672,6 +672,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2021-remove-all-occurrences-of-a-substring](https://github.com/harsh-quare/LeetRoad/tree/master/2021-remove-all-occurrences-of-a-substring) |
 | [2048-build-array-from-permutation](https://github.com/harsh-quare/LeetRoad/tree/master/2048-build-array-from-permutation) |
 | [2232-adding-spaces-to-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2232-adding-spaces-to-a-string) |
+| [2260-divide-a-string-into-groups-of-size-k](https://github.com/harsh-quare/LeetRoad/tree/master/2260-divide-a-string-into-groups-of-size-k) |
 | [2265-partition-array-according-to-given-pivot](https://github.com/harsh-quare/LeetRoad/tree/master/2265-partition-array-according-to-given-pivot) |
 | [2274-keep-multiplying-found-values-by-two](https://github.com/harsh-quare/LeetRoad/tree/master/2274-keep-multiplying-found-values-by-two) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/harsh-quare/LeetRoad/tree/master/2343-count-unguarded-cells-in-the-grid) |
@@ -881,6 +882,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2232-adding-spaces-to-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2232-adding-spaces-to-a-string) |
 | [2237-longest-palindrome-by-concatenating-two-letter-words](https://github.com/harsh-quare/LeetRoad/tree/master/2237-longest-palindrome-by-concatenating-two-letter-words) |
 | [2251-number-of-ways-to-divide-a-long-corridor](https://github.com/harsh-quare/LeetRoad/tree/master/2251-number-of-ways-to-divide-a-long-corridor) |
+| [2260-divide-a-string-into-groups-of-size-k](https://github.com/harsh-quare/LeetRoad/tree/master/2260-divide-a-string-into-groups-of-size-k) |
 | [2292-counting-words-with-a-given-prefix](https://github.com/harsh-quare/LeetRoad/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2300-construct-string-with-repeat-limit](https://github.com/harsh-quare/LeetRoad/tree/master/2300-construct-string-with-repeat-limit) |
 | [2341-count-prefixes-of-a-given-string](https://github.com/harsh-quare/LeetRoad/tree/master/2341-count-prefixes-of-a-given-string) |
