@@ -1,16 +1,32 @@
 class Solution {
 public:
     vector<int> findKDistantIndices(vector<int>& nums, int key, int k) {
-        vector<int> index;
+        // Line sweep
         int n = nums.size();
-        for(int i = 0; i < n; ++i){
-            for(int j = 0; j < n; ++j){
-                if(nums[j] == key && abs(i - j) <= k){
-                    index.push_back(i);
-                    break;
-                }
+        vector<int> ans;
+        vector<int> help(n, false);
+        int left_id = -1;
+        for(int i = 0; i < n; i++){
+            if(nums[i] == key){
+                left_id = i;
             }
+
+            if(left_id != -1 && i - left_id <= k) help[i] = true;
         }
-        return index;
+
+        int right_id = n;
+        for(int i = n-1; i >= 0; i--){
+            if(nums[i] == key){
+                right_id = i;
+            }
+
+            if(right_id != n && right_id - i <= k) help[i] = true;
+        }
+
+        for(int i = 0; i < n; i++){
+            if(help[i] == true) ans.push_back(i);
+        }
+
+        return ans;
     }
 };
