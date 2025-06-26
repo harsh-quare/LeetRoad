@@ -763,6 +763,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/harsh-quare/LeetRoad/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2164-two-best-non-overlapping-events](https://github.com/harsh-quare/LeetRoad/tree/master/2164-two-best-non-overlapping-events) |
 | [2251-number-of-ways-to-divide-a-long-corridor](https://github.com/harsh-quare/LeetRoad/tree/master/2251-number-of-ways-to-divide-a-long-corridor) |
+| [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
 | [2397-count-number-of-ways-to-place-houses](https://github.com/harsh-quare/LeetRoad/tree/master/2397-count-number-of-ways-to-place-houses) |
 | [2477-number-of-ways-to-reach-a-position-after-exactly-k-steps](https://github.com/harsh-quare/LeetRoad/tree/master/2477-number-of-ways-to-reach-a-position-after-exactly-k-steps) |
 | [2554-minimum-total-distance-traveled](https://github.com/harsh-quare/LeetRoad/tree/master/2554-minimum-total-distance-traveled) |
@@ -815,6 +816,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2310-minimum-operations-to-halve-array-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2310-minimum-operations-to-halve-array-sum) |
 | [2362-minimum-rounds-to-complete-all-tasks](https://github.com/harsh-quare/LeetRoad/tree/master/2362-minimum-rounds-to-complete-all-tasks) |
 | [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/harsh-quare/LeetRoad/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
+| [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
 | [2487-optimal-partition-of-string](https://github.com/harsh-quare/LeetRoad/tree/master/2487-optimal-partition-of-string) |
 | [2509-minimize-xor](https://github.com/harsh-quare/LeetRoad/tree/master/2509-minimize-xor) |
 | [2520-using-a-robot-to-print-the-lexicographically-smallest-string](https://github.com/harsh-quare/LeetRoad/tree/master/2520-using-a-robot-to-print-the-lexicographically-smallest-string) |
@@ -889,6 +891,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2292-counting-words-with-a-given-prefix](https://github.com/harsh-quare/LeetRoad/tree/master/2292-counting-words-with-a-given-prefix) |
 | [2300-construct-string-with-repeat-limit](https://github.com/harsh-quare/LeetRoad/tree/master/2300-construct-string-with-repeat-limit) |
 | [2341-count-prefixes-of-a-given-string](https://github.com/harsh-quare/LeetRoad/tree/master/2341-count-prefixes-of-a-given-string) |
+| [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
 | [2414-move-pieces-to-obtain-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/2414-move-pieces-to-obtain-a-string) |
 | [2463-minimum-recolors-to-get-k-consecutive-black-blocks](https://github.com/harsh-quare/LeetRoad/tree/master/2463-minimum-recolors-to-get-k-consecutive-black-blocks) |
 | [2465-shifting-letters-ii](https://github.com/harsh-quare/LeetRoad/tree/master/2465-shifting-letters-ii) |
@@ -1038,6 +1041,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
 | [1013-fibonacci-number](https://github.com/harsh-quare/LeetRoad/tree/master/1013-fibonacci-number) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/harsh-quare/LeetRoad/tree/master/1986-largest-color-value-in-a-directed-graph) |
+| [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
 | [3239-minimum-number-of-operations-to-make-x-and-y-equal](https://github.com/harsh-quare/LeetRoad/tree/master/3239-minimum-number-of-operations-to-make-x-and-y-equal) |
 ## Rolling Hash
 |  |
