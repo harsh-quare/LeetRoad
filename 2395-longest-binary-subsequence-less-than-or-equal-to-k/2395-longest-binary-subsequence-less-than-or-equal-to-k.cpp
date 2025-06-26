@@ -1,23 +1,3 @@
-// class Solution {
-// public:
-//     int longestSubsequence(string s, int k) {
-//         int n = s.size();
-//         
-
-//         int len = 0;
-//         for(int i = 0; k >= 0 && i < n; i++){
-//             int cur =  ((s[i] - '0') << (n-1-i));   //x * (1 << y) == (x << y)
-//             if(k >= cur){
-//                 len++;
-//                 // cout << i << endl;
-//                 k -= cur;
-//             }
-//         }
-
-//         return len;
-//     }
-// };
-
 class Solution {
 public:
     int longestSubsequence(string s, int k) {
