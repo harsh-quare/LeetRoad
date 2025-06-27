@@ -16,8 +16,18 @@ public:
         return j == str.size();
     }
     string longestSubsequenceRepeatedK(string s, int k) {
-        // Brute force
+        // Better
         int n = s.size();
+
+        vector<int> freq(26, 0);
+        for(char c: s) freq[c-'a']++;
+
+        // preprocess, consider only the ones, which has enough freq present
+        for(int i = 0; i < 26; i++){
+            if(freq[i] < k) freq[i] = 0;
+            else freq[i] = freq[i] / k;
+        }
+
         queue<string> q;
         q.push("");  //initial string
         string ans;
@@ -27,6 +37,8 @@ public:
             q.pop();
 
             for(char c = 'z'; c >= 'a'; c--){  // reverse order me string generate krne se lexicographically larger hi milegi
+                if(freq[c-'a'] == 0) continue;  // don't take the guys who can't contribute
+                
                 string temp = cur + c;
                 
                 if(existsKtimes(temp, s, k)){
