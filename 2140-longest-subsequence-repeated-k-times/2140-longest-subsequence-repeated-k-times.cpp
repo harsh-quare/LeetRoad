@@ -26,13 +26,13 @@ public:
             string cur = q.front();
             q.pop();
 
-            for(char c = 'a'; c <= 'z'; c++){
+            for(char c = 'z'; c >= 'a'; c--){  // reverse order me string generate krne se lexicographically larger hi milegi
                 string temp = cur + c;
                 
                 if(existsKtimes(temp, s, k)){
                     q.push(temp); // try to append more characters to find a longer valid string
-                    
-                    if(temp.size() > ans.size() || temp > ans){  // found longer string or a lexicographically larger one, then update ans
+
+                    if(temp.size() > ans.size()){  // found longer string then update ans
                         ans = temp;
                     }
                 }
