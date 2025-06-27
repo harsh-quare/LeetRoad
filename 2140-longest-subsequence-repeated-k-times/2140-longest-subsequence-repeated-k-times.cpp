@@ -36,9 +36,15 @@ public:
             string cur = q.front();
             q.pop();
 
+            vector<int> updatedFreq = freq;
+            // remove the characters which were already taken previously
+            for(char c: cur){
+                updatedFreq[c-'a']--;
+            }
+
             for(char c = 'z'; c >= 'a'; c--){  // reverse order me string generate krne se lexicographically larger hi milegi
-                if(freq[c-'a'] == 0) continue;  // don't take the guys who can't contribute
-                
+                if(updatedFreq[c-'a'] == 0) continue;  // don't take the guys who can't contribute
+
                 string temp = cur + c;
                 
                 if(existsKtimes(temp, s, k)){
