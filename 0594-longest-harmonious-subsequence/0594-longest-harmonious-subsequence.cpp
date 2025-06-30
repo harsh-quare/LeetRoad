@@ -3,18 +3,18 @@ public:
     int findLHS(vector<int>& nums) {
         sort(nums.begin(), nums.end());
         int n = nums.size();
-        // for(int i = 0; i < n; i++){
-        //     cout << nums[i] << ", ";
-        // }
 
         int ans = 0;
-        for(int i = 0; i < n; i++){
-            int mx = nums[i] + 1;
-            int mxid = upper_bound(nums.begin() + i, nums.end(), mx) - nums.begin();
-            if(nums[mxid-1] != mx) continue; //invalid, skip kro
-
-            int curAns = mxid - i;
-            ans = max(ans, curAns);
+        int i = 0;
+        for(int j = 0; j < n; j++){
+            if(nums[j] - nums[i] == 1){   // agar diff = 1 h, to bs length update krte rho har baar, bs j bdhta rahega
+                ans = max(ans, j-i+1);
+            }
+            // else agar diff > 1 h, to tb tk i ko bdhate rho jb tk ye diff<=1 na ho jaye
+            while(nums[j] - nums[i] > 1){
+                i++;
+            }
+            // else diff < 1 h to obv j pointer bdhta rahega only 
         }
 
         return ans;
