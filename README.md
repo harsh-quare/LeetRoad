@@ -37,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1904-second-largest-digit-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/1904-second-largest-digit-in-a-string) |
 | [1915-check-if-one-string-swap-can-make-strings-equal](https://github.com/harsh-quare/LeetRoad/tree/master/1915-check-if-one-string-swap-can-make-strings-equal) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/harsh-quare/LeetRoad/tree/master/1986-largest-color-value-in-a-directed-graph) |
+| [1995-finding-pairs-with-a-certain-sum](https://github.com/harsh-quare/LeetRoad/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/harsh-quare/LeetRoad/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/harsh-quare/LeetRoad/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2107-find-unique-binary-string](https://github.com/harsh-quare/LeetRoad/tree/master/2107-find-unique-binary-string) |
@@ -460,6 +461,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1940-maximum-xor-for-each-query](https://github.com/harsh-quare/LeetRoad/tree/master/1940-maximum-xor-for-each-query) |
 | [1972-rotating-the-box](https://github.com/harsh-quare/LeetRoad/tree/master/1972-rotating-the-box) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/harsh-quare/LeetRoad/tree/master/1993-sum-of-all-subset-xor-totals) |
+| [1995-finding-pairs-with-a-certain-sum](https://github.com/harsh-quare/LeetRoad/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2000-minimum-speed-to-arrive-on-time](https://github.com/harsh-quare/LeetRoad/tree/master/2000-minimum-speed-to-arrive-on-time) |
 | [2012-process-tasks-using-servers](https://github.com/harsh-quare/LeetRoad/tree/master/2012-process-tasks-using-servers) |
 | [2027-maximum-number-of-removable-characters](https://github.com/harsh-quare/LeetRoad/tree/master/2027-maximum-number-of-removable-characters) |
@@ -1118,6 +1120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1497-design-a-stack-with-increment-operation](https://github.com/harsh-quare/LeetRoad/tree/master/1497-design-a-stack-with-increment-operation) |
 | [1767-design-front-middle-back-queue](https://github.com/harsh-quare/LeetRoad/tree/master/1767-design-front-middle-back-queue) |
 | [1955-seat-reservation-manager](https://github.com/harsh-quare/LeetRoad/tree/master/1955-seat-reservation-manager) |
+| [1995-finding-pairs-with-a-certain-sum](https://github.com/harsh-quare/LeetRoad/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2429-design-a-food-rating-system](https://github.com/harsh-quare/LeetRoad/tree/master/2429-design-a-food-rating-system) |
 | [2434-design-a-number-container-system](https://github.com/harsh-quare/LeetRoad/tree/master/2434-design-a-number-container-system) |
 ## Binary Search
