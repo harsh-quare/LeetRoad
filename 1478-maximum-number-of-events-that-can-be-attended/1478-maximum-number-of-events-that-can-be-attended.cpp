@@ -11,6 +11,8 @@ public:
 
         while(!pq.empty() || i < n){  // either I have elements in pq or the iterator hasn't reached the end of array, I will keep looping
 
+            if(pq.empty()) day = events[i][0];  // agar koi valid event nhi h hamare paas, to directly next event wale day pe move kr jao
+
             // put everyone inside pq, who is starting at current day
             while(i < n && events[i][0] == day){
                 pq.push(events[i][1]);  // we only need endDay for processing
