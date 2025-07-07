@@ -234,6 +234,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1256-rank-transform-of-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/1256-rank-transform-of-an-array) |
 | [1306-minimum-absolute-difference](https://github.com/harsh-quare/LeetRoad/tree/master/1306-minimum-absolute-difference) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/harsh-quare/LeetRoad/tree/master/1468-check-if-n-and-its-double-exist) |
+| [1478-maximum-number-of-events-that-can-be-attended](https://github.com/harsh-quare/LeetRoad/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/harsh-quare/LeetRoad/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [2164-two-best-non-overlapping-events](https://github.com/harsh-quare/LeetRoad/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/harsh-quare/LeetRoad/tree/master/2179-most-beautiful-item-for-each-query) |
@@ -430,6 +431,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/harsh-quare/LeetRoad/tree/master/1445-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/harsh-quare/LeetRoad/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1477-product-of-the-last-k-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/1477-product-of-the-last-k-numbers) |
+| [1478-maximum-number-of-events-that-can-be-attended](https://github.com/harsh-quare/LeetRoad/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/harsh-quare/LeetRoad/tree/master/1497-design-a-stack-with-increment-operation) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/1510-find-lucky-integer-in-an-array) |
@@ -610,6 +612,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0407-trapping-rain-water-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0407-trapping-rain-water-ii) |
 | [0794-swim-in-rising-water](https://github.com/harsh-quare/LeetRoad/tree/master/0794-swim-in-rising-water) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/harsh-quare/LeetRoad/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
+| [1478-maximum-number-of-events-that-can-be-attended](https://github.com/harsh-quare/LeetRoad/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/harsh-quare/LeetRoad/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
 | [1753-path-with-minimum-effort](https://github.com/harsh-quare/LeetRoad/tree/master/1753-path-with-minimum-effort) |
@@ -818,6 +821,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1033-broken-calculator](https://github.com/harsh-quare/LeetRoad/tree/master/1033-broken-calculator) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/harsh-quare/LeetRoad/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/harsh-quare/LeetRoad/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
+| [1478-maximum-number-of-events-that-can-be-attended](https://github.com/harsh-quare/LeetRoad/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1502-construct-k-palindrome-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1502-construct-k-palindrome-strings) |
 | [1529-max-difference-you-can-get-from-changing-an-integer](https://github.com/harsh-quare/LeetRoad/tree/master/1529-max-difference-you-can-get-from-changing-an-integer) |
 | [1648-minimum-insertions-to-balance-a-parentheses-string](https://github.com/harsh-quare/LeetRoad/tree/master/1648-minimum-insertions-to-balance-a-parentheses-string) |
