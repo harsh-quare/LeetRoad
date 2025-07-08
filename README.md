@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/harsh-quare/LeetRoad/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/harsh-quare/LeetRoad/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2107-find-unique-binary-string](https://github.com/harsh-quare/LeetRoad/tree/master/2107-find-unique-binary-string) |
+| [2118-maximum-earnings-from-taxi](https://github.com/harsh-quare/LeetRoad/tree/master/2118-maximum-earnings-from-taxi) |
 | [2122-count-special-quadruplets](https://github.com/harsh-quare/LeetRoad/tree/master/2122-count-special-quadruplets) |
 | [2190-count-common-words-with-one-occurrence](https://github.com/harsh-quare/LeetRoad/tree/master/2190-count-common-words-with-one-occurrence) |
 | [2204-find-subsequence-of-length-k-with-the-largest-sum](https://github.com/harsh-quare/LeetRoad/tree/master/2204-find-subsequence-of-length-k-with-the-largest-sum) |
@@ -238,6 +239,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/harsh-quare/LeetRoad/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/harsh-quare/LeetRoad/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/harsh-quare/LeetRoad/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
+| [2118-maximum-earnings-from-taxi](https://github.com/harsh-quare/LeetRoad/tree/master/2118-maximum-earnings-from-taxi) |
 | [2164-two-best-non-overlapping-events](https://github.com/harsh-quare/LeetRoad/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/harsh-quare/LeetRoad/tree/master/2179-most-beautiful-item-for-each-query) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/harsh-quare/LeetRoad/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
@@ -476,6 +478,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2093-check-if-string-is-a-prefix-of-array](https://github.com/harsh-quare/LeetRoad/tree/master/2093-check-if-string-is-a-prefix-of-array) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/harsh-quare/LeetRoad/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2107-find-unique-binary-string](https://github.com/harsh-quare/LeetRoad/tree/master/2107-find-unique-binary-string) |
+| [2118-maximum-earnings-from-taxi](https://github.com/harsh-quare/LeetRoad/tree/master/2118-maximum-earnings-from-taxi) |
 | [2122-count-special-quadruplets](https://github.com/harsh-quare/LeetRoad/tree/master/2122-count-special-quadruplets) |
 | [2144-maximum-difference-between-increasing-elements](https://github.com/harsh-quare/LeetRoad/tree/master/2144-maximum-difference-between-increasing-elements) |
 | [2145-grid-game](https://github.com/harsh-quare/LeetRoad/tree/master/2145-grid-game) |
@@ -787,6 +790,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/harsh-quare/LeetRoad/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/harsh-quare/LeetRoad/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/harsh-quare/LeetRoad/tree/master/2090-number-of-ways-to-arrive-at-destination) |
+| [2118-maximum-earnings-from-taxi](https://github.com/harsh-quare/LeetRoad/tree/master/2118-maximum-earnings-from-taxi) |
 | [2164-two-best-non-overlapping-events](https://github.com/harsh-quare/LeetRoad/tree/master/2164-two-best-non-overlapping-events) |
 | [2251-number-of-ways-to-divide-a-long-corridor](https://github.com/harsh-quare/LeetRoad/tree/master/2251-number-of-ways-to-divide-a-long-corridor) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
@@ -1154,6 +1158,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/harsh-quare/LeetRoad/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
 | [2000-minimum-speed-to-arrive-on-time](https://github.com/harsh-quare/LeetRoad/tree/master/2000-minimum-speed-to-arrive-on-time) |
 | [2027-maximum-number-of-removable-characters](https://github.com/harsh-quare/LeetRoad/tree/master/2027-maximum-number-of-removable-characters) |
+| [2118-maximum-earnings-from-taxi](https://github.com/harsh-quare/LeetRoad/tree/master/2118-maximum-earnings-from-taxi) |
 | [2150-kth-smallest-product-of-two-sorted-arrays](https://github.com/harsh-quare/LeetRoad/tree/master/2150-kth-smallest-product-of-two-sorted-arrays) |
 | [2164-two-best-non-overlapping-events](https://github.com/harsh-quare/LeetRoad/tree/master/2164-two-best-non-overlapping-events) |
 | [2179-most-beautiful-item-for-each-query](https://github.com/harsh-quare/LeetRoad/tree/master/2179-most-beautiful-item-for-each-query) |
