@@ -18,31 +18,46 @@ public:
 
         return ans;
     }
-    int solve(int i, int k, vector<vector<int>>& events, int n, vector<vector<int>>& dp){
-        if(i >= n || k <= 0){
-            return 0;
-        }
+    // int solve(int i, int k, vector<vector<int>>& events, int n, vector<vector<int>>& dp){
+    //     if(i >= n || k <= 0){
+    //         return 0;
+    //     }
 
-        if(dp[i][k] != -1) return dp[i][k];
+    //     if(dp[i][k] != -1) return dp[i][k];
 
-        int ans = 0;
+    //     int ans = 0;
 
-        // skip current event
-        ans = max(ans, solve(i + 1, k, events, n, dp));
+    //     // skip current event
+    //     ans = max(ans, solve(i + 1, k, events, n, dp));
 
-        // attend current event
-        int nextValidDay = findNext(events, events[i][1], n);
-        ans = max(ans, events[i][2] + solve(nextValidDay, k-1, events, n, dp));
+    //     // attend current event
+    //     int nextValidDay = findNext(events, events[i][1], n);
+    //     ans = max(ans, events[i][2] + solve(nextValidDay, k-1, events, n, dp));
 
-        return dp[i][k] = ans;
-    }
+    //     return dp[i][k] = ans;
+    // }
     int maxValue(vector<vector<int>>& events, int k) {
         int n = events.size();
         sort(events.begin(), events.end());
 
-        vector<vector<int>> dp(n+1, vector<int>(k+1, -1));
+        vector<vector<int>> dp(n+1, vector<int>(k+1, 0));
+
+        for(int i = n-1; i >= 0; i--){
+            for(int cap = 1; cap <= k; cap++){
+                int ans = 0;
+
+                // skip current event
+                ans = max(ans, dp[i+1][cap]);
+
+                // attend current event
+                int nextValidDay = findNext(events, events[i][1], n);
+                ans = max(ans, events[i][2] + dp[nextValidDay][cap-1]);
+
+                dp[i][cap] = ans;
+            }
+        }
         
-        return solve(0, k, events, n, dp);
+        return dp[0][k];
     }
 };
 // sort krne se hame har din ye pta krna easy rahega ki kitne events aaj chalu ho rhe h, and kisko attend krna best rahega
