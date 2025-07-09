@@ -35,4 +35,4 @@ public:
 };
 
 // we can always get at max (k+1) breaks together
-// so we just calculate all the breaks length and find out the max length of (k+1) window size
+// so we just calculate all the breaks length and find out the max length in (k+1) window size of the breaks array
