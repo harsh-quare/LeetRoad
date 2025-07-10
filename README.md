@@ -597,6 +597,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/harsh-quare/LeetRoad/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
 | [3681-maximum-area-rectangle-with-point-constraints-i](https://github.com/harsh-quare/LeetRoad/tree/master/3681-maximum-area-rectangle-with-point-constraints-i) |
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/harsh-quare/LeetRoad/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
+| [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
 | [3743-reschedule-meetings-for-maximum-free-time-i](https://github.com/harsh-quare/LeetRoad/tree/master/3743-reschedule-meetings-for-maximum-free-time-i) |
 | [3747-maximum-difference-between-adjacent-elements-in-a-circular-array](https://github.com/harsh-quare/LeetRoad/tree/master/3747-maximum-difference-between-adjacent-elements-in-a-circular-array) |
 | [3795-zero-array-transformation-iv](https://github.com/harsh-quare/LeetRoad/tree/master/3795-zero-array-transformation-iv) |
@@ -865,6 +866,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3387-minimum-operations-to-make-median-of-array-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/3387-minimum-operations-to-make-median-of-array-equal-to-k) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/harsh-quare/LeetRoad/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 | [3647-zero-array-transformation-iii](https://github.com/harsh-quare/LeetRoad/tree/master/3647-zero-array-transformation-iii) |
+| [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
 | [3743-reschedule-meetings-for-maximum-free-time-i](https://github.com/harsh-quare/LeetRoad/tree/master/3743-reschedule-meetings-for-maximum-free-time-i) |
 ## String
 |  |
@@ -1375,6 +1377,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3548-find-the-count-of-good-integers](https://github.com/harsh-quare/LeetRoad/tree/master/3548-find-the-count-of-good-integers) |
 | [3681-maximum-area-rectangle-with-point-constraints-i](https://github.com/harsh-quare/LeetRoad/tree/master/3681-maximum-area-rectangle-with-point-constraints-i) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/harsh-quare/LeetRoad/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
+| [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
 | [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
 ## Monotonic Queue
 |  |
