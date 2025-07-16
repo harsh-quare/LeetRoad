@@ -1,33 +1,26 @@
 class Solution {
 public:
-    // int solve(int i, int prevId, vector<int>& nums, vector<vector<int>> &dp){
-    //     if(i == nums.size()) return 0;
-    //     if(dp[i][prevId + 1] != -1) return dp[i][prevId + 1];
-
-    //     int notTake = solve(i+1, prevId, nums, dp);
-    //     int take = 0;
-    //     if(prevId == -1 || nums[i] > nums[prevId]){
-    //         take = 1 + solve(i+1, i, nums, dp);
-    //     }
-
-    //     return dp[i][prevId + 1] = max(take, notTake);
-    // }
     int lengthOfLIS(vector<int>& nums) {
+        // Using Binary Search
         int n = nums.size();
-        vector<vector<int>> dp(n+1, vector<int>(n+1, 0));
 
-        for(int i = n-1; i >= 0; i--){
-            for(int prevId = i-1; prevId >= -1; prevId--){
-                int notTake = dp[i+1][prevId+1];
-                int take = 0;
-                if(prevId == -1 || nums[i] > nums[prevId]){
-                    take = 1 + dp[i+1][i+1];
-                }
+        vector<int> lis_arr;
+        lis_arr.push_back(nums[0]);
 
-                dp[i][prevId+1] = max(take, notTake);
+        for(int i = 1; i<n; i++){
+            //Add the value into ans array when a larger value is encountered
+            if(lis_arr.back() < nums[i]){
+                lis_arr.push_back(nums[i]);
+            }
+            else{
+                //Update the ans vector, when a smaller value is encountered
+                //How?-> Using lower_bound iterator to get the value that is just greater than or equal to the current value of nums
+                //to get the index of that point, subtract the address of beginning of ans array, and then update the value at that index
+                int idx = lower_bound(lis_arr.begin(), lis_arr.end(), nums[i]) - lis_arr.begin();
+                lis_arr[idx] = nums[i];
             }
         }
 
-        return dp[0][0];
+        return lis_arr.size();
     }
 };
