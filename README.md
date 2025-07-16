@@ -377,6 +377,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0219-contains-duplicate-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0219-contains-duplicate-ii) |
 | [0239-sliding-window-maximum](https://github.com/harsh-quare/LeetRoad/tree/master/0239-sliding-window-maximum) |
 | [0283-move-zeroes](https://github.com/harsh-quare/LeetRoad/tree/master/0283-move-zeroes) |
+| [0300-longest-increasing-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/0300-longest-increasing-subsequence) |
 | [0303-range-sum-query-immutable](https://github.com/harsh-quare/LeetRoad/tree/master/0303-range-sum-query-immutable) |
 | [0304-range-sum-query-2d-immutable](https://github.com/harsh-quare/LeetRoad/tree/master/0304-range-sum-query-2d-immutable) |
 | [0307-range-sum-query-mutable](https://github.com/harsh-quare/LeetRoad/tree/master/0307-range-sum-query-mutable) |
@@ -776,6 +777,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0152-maximum-product-subarray](https://github.com/harsh-quare/LeetRoad/tree/master/0152-maximum-product-subarray) |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/harsh-quare/LeetRoad/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
 | [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
+| [0300-longest-increasing-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/0300-longest-increasing-subsequence) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/harsh-quare/LeetRoad/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0413-arithmetic-slices](https://github.com/harsh-quare/LeetRoad/tree/master/0413-arithmetic-slices) |
 | [0416-partition-equal-subset-sum](https://github.com/harsh-quare/LeetRoad/tree/master/0416-partition-equal-subset-sum) |
@@ -1152,6 +1154,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search
 |  |
 | ------- |
+| [0300-longest-increasing-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/0300-longest-increasing-subsequence) |
 | [0713-subarray-product-less-than-k](https://github.com/harsh-quare/LeetRoad/tree/master/0713-subarray-product-less-than-k) |
 | [0729-my-calendar-i](https://github.com/harsh-quare/LeetRoad/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0731-my-calendar-ii) |
