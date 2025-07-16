@@ -3,7 +3,7 @@ public:
     int solve(int i, int remTarget, vector<int>& nums, vector<vector<int>>& dp){
         if(remTarget == 0) return 0;  // when target is zero that means we found set of elements that sum up to target
         if(i >= nums.size() || remTarget < 0){ // if target is less then 0 or i is greater than nums size then its invalid case and just return with very small number     
-            return -1001;
+            return INT_MIN;
         }
 
         if(dp[i][remTarget] != -1) return dp[i][remTarget];
