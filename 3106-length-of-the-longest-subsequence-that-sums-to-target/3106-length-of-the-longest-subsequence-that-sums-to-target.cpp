@@ -19,7 +19,7 @@ public:
     int lengthOfLongestSubsequence(vector<int>& nums, int target) {
         int n = nums.size();
         vector<vector<int>> dp(1001, vector<int>(1001, -1));
-        int ans = solve(0, target, nums, dp); //curId, curLenSubSeq, remainingTarget, nums
+        int ans = solve(0, target, nums, dp); //curId, remainingTarget, nums
         return (ans > 0) ? ans : -1;
     }
 };
