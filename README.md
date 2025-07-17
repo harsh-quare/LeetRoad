@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/harsh-quare/LeetRoad/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0940-fruit-into-baskets](https://github.com/harsh-quare/LeetRoad/tree/master/0940-fruit-into-baskets) |
 | [0952-word-subsets](https://github.com/harsh-quare/LeetRoad/tree/master/0952-word-subsets) |
+| [1087-longest-arithmetic-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/1087-longest-arithmetic-subsequence) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/harsh-quare/LeetRoad/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1160-letter-tile-possibilities](https://github.com/harsh-quare/LeetRoad/tree/master/1160-letter-tile-possibilities) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/harsh-quare/LeetRoad/tree/master/1227-number-of-equivalent-domino-pairs) |
@@ -422,6 +423,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1025-minimum-cost-for-tickets](https://github.com/harsh-quare/LeetRoad/tree/master/1025-minimum-cost-for-tickets) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/harsh-quare/LeetRoad/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1063-best-sightseeing-pair](https://github.com/harsh-quare/LeetRoad/tree/master/1063-best-sightseeing-pair) |
+| [1087-longest-arithmetic-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/1087-longest-arithmetic-subsequence) |
 | [1147-flip-columns-for-maximum-number-of-equal-rows](https://github.com/harsh-quare/LeetRoad/tree/master/1147-flip-columns-for-maximum-number-of-equal-rows) |
 | [1206-corporate-flight-bookings](https://github.com/harsh-quare/LeetRoad/tree/master/1206-corporate-flight-bookings) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/harsh-quare/LeetRoad/tree/master/1227-number-of-equivalent-domino-pairs) |
@@ -793,6 +795,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1013-fibonacci-number](https://github.com/harsh-quare/LeetRoad/tree/master/1013-fibonacci-number) |
 | [1025-minimum-cost-for-tickets](https://github.com/harsh-quare/LeetRoad/tree/master/1025-minimum-cost-for-tickets) |
 | [1063-best-sightseeing-pair](https://github.com/harsh-quare/LeetRoad/tree/master/1063-best-sightseeing-pair) |
+| [1087-longest-arithmetic-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/1087-longest-arithmetic-subsequence) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/harsh-quare/LeetRoad/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/harsh-quare/LeetRoad/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/harsh-quare/LeetRoad/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
@@ -1162,6 +1165,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0731-my-calendar-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0731-my-calendar-ii) |
 | [0794-swim-in-rising-water](https://github.com/harsh-quare/LeetRoad/tree/master/0794-swim-in-rising-water) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/harsh-quare/LeetRoad/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
+| [1087-longest-arithmetic-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/1087-longest-arithmetic-subsequence) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/harsh-quare/LeetRoad/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/harsh-quare/LeetRoad/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/harsh-quare/LeetRoad/tree/master/1468-check-if-n-and-its-double-exist) |
