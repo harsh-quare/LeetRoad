@@ -1,34 +1,20 @@
 class Solution {
 public:
-    bool isSubFolder(string& curFolder, string& subFolder){
-        // first verify if the subFolder matches till the length of curFolder
-        if(curFolder.length() > subFolder.length()) return false;
-        for(int i = 0; i < curFolder.size(); i++){
-            if(curFolder[i] != subFolder[i]) return false;
-        }
-
-        // now, if both of them matches till the length of curFolder, means the subFolder can actually be the sub-folder of curFolder
-        // But as a last step, ensure that, the next character in subFolder is '/', bcz if it's not, then it cannot be the sub-folder => ex. "/a/b/c","/a/b/ca"
-        if(subFolder[curFolder.length()] != '/') return false;
-        
-        return true;
-    }
     vector<string> removeSubfolders(vector<string>& folder) {
         int n = folder.size();
-        vector<string> ans;
-
         sort(folder.begin(), folder.end());
-        int i = 0;
-        while(i < n){
-            int j = i+1;
-            string curFolder = folder[i];
-            ans.push_back(curFolder);
-            while(j < n && isSubFolder(curFolder, folder[j])){
-                j++;
+        vector<string> ans = {folder[0]};
+
+        string prev = folder[0];
+        for(int i = 1; i < n; i++){
+            string cur = folder[i];
+
+            //If s starts(means, at index-0) with prev + '/', it means that s is a subfolder of prev, so we skip adding s to ans. And if it's not at index-0, means this is not a subfolder of 'prev', so add this new folder to the answer string
+            if(cur.find(prev + '/') != 0){
+                ans.push_back(cur);
+                prev = cur;
             }
-            i = j;
         }
-        
         return ans;
     }
 };
