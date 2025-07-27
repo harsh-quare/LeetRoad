@@ -1,36 +1,21 @@
 class Solution {
 public:
     int countHillValley(vector<int>& nums) {
-        int n = nums.size();
-        int cnt = 0;
-        for(int i = 1; i < n-1; i++){
-            if(nums[i] == nums[i-1]) continue;  // same valley or hill
+        vector<int> arr;
+        arr.push_back(nums[0]);
 
-            int right_neq = n;
-            for(int j = i+1; j < n; j++){
-                if(nums[j] != nums[i]){
-                    right_neq = j;
-                    break;
-                }
-            }
-
-            int left_neq = -1;
-            for(int j = i-1; j >= 0; j--){
-                if(nums[i] != nums[j]){
-                    left_neq = j;
-                    break;
-                }
-            }
-
-            if(right_neq != n && left_neq != -1){
-                if( (nums[i] > nums[left_neq] && nums[i] > nums[right_neq]) || 
-                    (nums[i] < nums[left_neq] && nums[i] < nums[right_neq]) ) {
-                        cnt++;
-                        cout << i << endl;
-                }
+        for(int i = 1; i < nums.size(); i++){
+            if(arr.back() != nums[i]) {  // skip same values => part of same valley or hill
+                arr.push_back(nums[i]);
             }
         }
-
+        int cnt = 0;
+        for(int i = 1; i < arr.size()-1; i++){
+            if( (arr[i] < arr[i-1] && arr[i] < arr[i+1]) || 
+                (arr[i] > arr[i-1] && arr[i] > arr[i+1])){
+                cnt++;
+            }
+        }
         return cnt;
     }
 };
