@@ -1,22 +1,23 @@
 class Solution {
 public:
-    int solve(int id, vector<int>& nums, int curOr, int maxOr){
-        if(id >= nums.size()){ 
-            return (curOr == maxOr ? 1 : 0);
+    int solve(int i, int curOr, int maxOr, int n, vector<int>& nums){
+        if(i >= n){
+            return (curOr == maxOr);
         }
 
-        //Not include
-        int notPick = solve(id+1, nums, curOr, maxOr);
+        int skip = solve(i+1, curOr, maxOr, n, nums);
 
-        //include current element
-        int pick = solve(id+1, nums, curOr | nums[id], maxOr);
+        int take = solve(i+1, curOr | nums[i], maxOr, n, nums);
 
-        return pick + notPick;
+        return (take + skip);
     }
-    
     int countMaxOrSubsets(vector<int>& nums) {
-        int maxi = 0;
-        for(auto x: nums) maxi = maxi | x;
-        return solve(0, nums, 0, maxi);
+        int n = nums.size();
+        int maxOr = nums[0];
+        for(int& x: nums){
+            maxOr |= x;
+        }
+
+        return solve(0, 0, maxOr, n, nums);
     }
 };
