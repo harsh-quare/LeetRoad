@@ -9,9 +9,10 @@ public:
         //     cout << nums[i] << endl;
         // }
 
-        int elementsFromBeginning = n/3;
-        for(int i = n-2; i >= elementsFromBeginning; i-=2){
+        int cnt = 0;
+        for(int i = n-2; cnt < n/3 ; i-=2){
             ans += nums[i];
+            cnt++;
         }
 
         return ans;
