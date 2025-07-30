@@ -1,44 +1,15 @@
 class Solution {
 public:
     bool winnerOfGame(string colors) {
-        int n = colors.size();
-        int cntA = 0;
-        int cntB = 0;
+        int n = colors.length();
+        int A = 0;
+        int B = 0;
 
-        int lenA = 0, lenB = 0;
-        for(int i = 0; i < n; i++){
-            if(colors[i] == 'A'){
-                // B khatam ho gya, cntB update kr do
-                if(lenB > 2) {
-                    cntB += (lenB - 2);
-                }
-                lenB = 0;  // reset B len
-
-                lenA++;
-            }
-            else{
-                // A khatam ho gya, cntA update kr do
-                if(lenA > 2){
-                    cntA += (lenA - 2);
-                }
-                lenA = 0;  // reset A len
-
-                lenB++;
-            }
+        for(int i = 1; i < n-1; i++){
+            if(colors[i]=='A' && colors[i-1]=='A' && colors[i+1]=='A') A++;
+            if(colors[i]=='B' && colors[i-1]=='B' && colors[i+1]=='B') B++;
         }
 
-        // Last continuous string
-        if(lenB > 2){
-            cntB += (lenB - 2);
-        }
-        if(lenA > 2){
-            cntA += (lenA - 2);
-        }
-
-        cout << cntA << ", " << cntB << endl;
-
-        if(cntA > cntB) return true;
-        else return false;  //  if(cntA <= cntB) 
-        
+        return (A > B);
     }
 };
