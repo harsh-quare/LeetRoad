@@ -13,15 +13,13 @@ public:
                 // digits ki train khatam ho gyi => complete integer mil gya
                 // agar isme leading zeros h, to hata do
                 while(word[i] == '0') i++;
-                if(j-i == 0) st.insert("0");
+                if(j-i == 0) st.insert("0");  // resulting string ki length agar 0 h, means ye string me only 0s the => integer = 0
                 else st.insert(word.substr(i, j-i));
             }
             else{
                 j++;
             }
         }
-
-        // ab jo strings aayi h, unme leading zeros hata do
 
         return st.size();
     }
