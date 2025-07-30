@@ -1,28 +1,25 @@
 class Solution {
 public:
     int longestSubarray(vector<int>& nums) {
-        int maxEle = nums[0];
-        int maxLen = 1;
-        int curLen = 1;
+        int n = nums.size();
 
-        for(int i = 1; i<nums.size(); i++){
-            if(nums[i] > maxEle){
-                //agar ek greater element mil gya, to purana wale ka contribution matter nhi krta isliye maxLen ko update nhi krenge, and 1 se start kr denge
-                curLen = 1;
-                maxLen = 1;
-                maxEle = nums[i];
-                // cout << "i" << endl;
-            }
-            else if(nums[i] == maxEle){
-                curLen++;
-                maxLen = max(maxLen, curLen);
-                // cout << "ei" << endl;
+        int maxAND = 0;
+        for(int i = 0; i < n; i++){
+            maxAND = max(maxAND, nums[i]);
+        }
+
+        int len = 0;
+        int ans = 0;
+        for(int i = 0; i < n; i++){
+            if(nums[i] == maxAND){
+                len++;
+                ans = max(ans, len);
             }
             else{
-                curLen = 0;
-                // cout << "e" << endl;
+                len = 0;
             }
         }
-        return maxLen;
+
+        return ans;
     }
 };
