@@ -421,6 +421,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0895-shortest-path-to-get-all-keys](https://github.com/harsh-quare/LeetRoad/tree/master/0895-shortest-path-to-get-all-keys) |
 | [0921-spiral-matrix-iii](https://github.com/harsh-quare/LeetRoad/tree/master/0921-spiral-matrix-iii) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/harsh-quare/LeetRoad/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
+| [0934-bitwise-ors-of-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/0934-bitwise-ors-of-subarrays) |
 | [0940-fruit-into-baskets](https://github.com/harsh-quare/LeetRoad/tree/master/0940-fruit-into-baskets) |
 | [0945-snakes-and-ladders](https://github.com/harsh-quare/LeetRoad/tree/master/0945-snakes-and-ladders) |
 | [0952-word-subsets](https://github.com/harsh-quare/LeetRoad/tree/master/0952-word-subsets) |
@@ -759,6 +760,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0767-prime-number-of-set-bits-in-binary-representation](https://github.com/harsh-quare/LeetRoad/tree/master/0767-prime-number-of-set-bits-in-binary-representation) |
 | [0795-k-th-symbol-in-grammar](https://github.com/harsh-quare/LeetRoad/tree/master/0795-k-th-symbol-in-grammar) |
 | [0895-shortest-path-to-get-all-keys](https://github.com/harsh-quare/LeetRoad/tree/master/0895-shortest-path-to-get-all-keys) |
+| [0934-bitwise-ors-of-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/0934-bitwise-ors-of-subarrays) |
 | [1435-xor-queries-of-a-subarray](https://github.com/harsh-quare/LeetRoad/tree/master/1435-xor-queries-of-a-subarray) |
 | [1441-minimum-flips-to-make-a-or-b-equal-to-c](https://github.com/harsh-quare/LeetRoad/tree/master/1441-minimum-flips-to-make-a-or-b-equal-to-c) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/harsh-quare/LeetRoad/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
@@ -810,6 +812,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0806-domino-and-tromino-tiling](https://github.com/harsh-quare/LeetRoad/tree/master/0806-domino-and-tromino-tiling) |
 | [0836-race-car](https://github.com/harsh-quare/LeetRoad/tree/master/0836-race-car) |
 | [0868-push-dominoes](https://github.com/harsh-quare/LeetRoad/tree/master/0868-push-dominoes) |
+| [0934-bitwise-ors-of-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/0934-bitwise-ors-of-subarrays) |
 | [0954-maximum-sum-circular-subarray](https://github.com/harsh-quare/LeetRoad/tree/master/0954-maximum-sum-circular-subarray) |
 | [1013-fibonacci-number](https://github.com/harsh-quare/LeetRoad/tree/master/1013-fibonacci-number) |
 | [1025-minimum-cost-for-tickets](https://github.com/harsh-quare/LeetRoad/tree/master/1025-minimum-cost-for-tickets) |
