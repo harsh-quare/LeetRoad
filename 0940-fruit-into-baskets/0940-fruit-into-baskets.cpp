@@ -1,26 +1,29 @@
 class Solution {
 public:
     int totalFruit(vector<int>& fruits) {
-        int n = fruits.size();
-        int maxLen = 0;
-        unordered_map<int, int> mp;  // fruit type -> freq
+        int ans = 0;
 
-        int i = 0, j = 0;
+        // expand window to right while adding fruits
+        // and shrink from left only if you get more than 2 type of fruits
 
-        while(j < n){
-            mp[fruits[j]]++;
+        unordered_map<int, int> curTypes;
+        int i = 0;
+        int j = 0;
+        while(j < fruits.size()){
 
-            while(i < n && mp.size() > 2){
-                // means more than 2 types at a time
-                mp[fruits[i]]--;
-                if(mp[fruits[i]] == 0) mp.erase(fruits[i]);
+            curTypes[fruits[j]]++;
+
+            while(curTypes.size() > 2){
+                // remove the left one
+                curTypes[fruits[i]]--;
+                if(curTypes[fruits[i]] == 0) curTypes.erase(fruits[i]);
                 i++;
             }
 
-            // now, the mp size is 2, update the answer
-            maxLen = max(maxLen, j-i+1);
+            ans = max(ans, j-i+1);
             j++;
         }
-        return maxLen;
+
+        return ans;
     }
 };
