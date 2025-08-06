@@ -14,9 +14,9 @@ public:
         seg[i] = max(seg[2*i+1], seg[2*i+2]);  // get the max values from child nodes
     }
 
-    bool isInRange(int f, vector<int>& seg, int lo, int hi, int i){
+    bool isInRange(int tar, vector<int>& seg, int lo, int hi, int i){
         if(lo == hi){
-            if(seg[i] >= f){
+            if(seg[i] >= tar){
                 // mark as used
                 seg[i] = 0;
                 return true;
@@ -24,13 +24,13 @@ public:
             else return false;
         }
 
-        if(seg[i] >= f){
+        if(seg[i] >= tar){
             // go deeper
             int mid = (lo + hi) / 2;
-            bool ans1 = isInRange(f, seg, lo, mid, 2*i+1);  // left subtree
-            if(ans1 == false) ans1 |= isInRange(f, seg, mid+1, hi, 2*i+2);  // right subtree
+            bool ans1 = isInRange(tar, seg, lo, mid, 2*i+1);  // left subtree
+            if(ans1 == false) ans1 |= isInRange(tar, seg, mid+1, hi, 2*i+2);  // right subtree
 
-            seg[i] = max(seg[2*i+1], seg[2*i+2]);
+            seg[i] = max(seg[2*i+1], seg[2*i+2]);   // update the current node value, bcz some nodes might get used, and there values were changed to 0, so there will be difference in parent nodes
             return ans1;
         }
         else return false;
