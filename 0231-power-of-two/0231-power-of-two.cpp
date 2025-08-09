@@ -1,8 +1,7 @@
 class Solution {
 public:
     bool isPowerOfTwo(int n) {
-        if(n <= 0) return false;
-        if(n == 1) return true;
-        return n%2 == 0 && isPowerOfTwo(n/2);
+        int x = pow(2, 30);  // biggest possible number which is power of 2. It must be divisible by any power of 2
+        return n > 0 && (x % n == 0);
     }
 };
