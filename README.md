@@ -299,6 +299,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0007-reverse-integer](https://github.com/harsh-quare/LeetRoad/tree/master/0007-reverse-integer) |
 | [0009-palindrome-number](https://github.com/harsh-quare/LeetRoad/tree/master/0009-palindrome-number) |
 | [0029-divide-two-integers](https://github.com/harsh-quare/LeetRoad/tree/master/0029-divide-two-integers) |
+| [0231-power-of-two](https://github.com/harsh-quare/LeetRoad/tree/master/0231-power-of-two) |
 | [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
 | [0326-power-of-three](https://github.com/harsh-quare/LeetRoad/tree/master/0326-power-of-three) |
 | [0380-insert-delete-getrandom-o1](https://github.com/harsh-quare/LeetRoad/tree/master/0380-insert-delete-getrandom-o1) |
@@ -357,6 +358,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Recursion
 |  |
 | ------- |
+| [0231-power-of-two](https://github.com/harsh-quare/LeetRoad/tree/master/0231-power-of-two) |
 | [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
 | [0326-power-of-three](https://github.com/harsh-quare/LeetRoad/tree/master/0326-power-of-three) |
 | [0795-k-th-symbol-in-grammar](https://github.com/harsh-quare/LeetRoad/tree/master/0795-k-th-symbol-in-grammar) |
@@ -768,6 +770,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0029-divide-two-integers](https://github.com/harsh-quare/LeetRoad/tree/master/0029-divide-two-integers) |
 | [0187-repeated-dna-sequences](https://github.com/harsh-quare/LeetRoad/tree/master/0187-repeated-dna-sequences) |
 | [0191-number-of-1-bits](https://github.com/harsh-quare/LeetRoad/tree/master/0191-number-of-1-bits) |
+| [0231-power-of-two](https://github.com/harsh-quare/LeetRoad/tree/master/0231-power-of-two) |
 | [0767-prime-number-of-set-bits-in-binary-representation](https://github.com/harsh-quare/LeetRoad/tree/master/0767-prime-number-of-set-bits-in-binary-representation) |
 | [0795-k-th-symbol-in-grammar](https://github.com/harsh-quare/LeetRoad/tree/master/0795-k-th-symbol-in-grammar) |
 | [0895-shortest-path-to-get-all-keys](https://github.com/harsh-quare/LeetRoad/tree/master/0895-shortest-path-to-get-all-keys) |
