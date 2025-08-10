@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0560-subarray-sum-equals-k](https://github.com/harsh-quare/LeetRoad/tree/master/0560-subarray-sum-equals-k) |
 | [0567-permutation-in-string](https://github.com/harsh-quare/LeetRoad/tree/master/0567-permutation-in-string) |
 | [0594-longest-harmonious-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/0594-longest-harmonious-subsequence) |
+| [0900-reordered-power-of-2](https://github.com/harsh-quare/LeetRoad/tree/master/0900-reordered-power-of-2) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/harsh-quare/LeetRoad/tree/master/0920-uncommon-words-from-two-sentences) |
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/harsh-quare/LeetRoad/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0940-fruit-into-baskets](https://github.com/harsh-quare/LeetRoad/tree/master/0940-fruit-into-baskets) |
@@ -240,6 +241,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0594-longest-harmonious-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/0594-longest-harmonious-subsequence) |
 | [0748-largest-number-at-least-twice-of-others](https://github.com/harsh-quare/LeetRoad/tree/master/0748-largest-number-at-least-twice-of-others) |
 | [0780-max-chunks-to-make-sorted](https://github.com/harsh-quare/LeetRoad/tree/master/0780-max-chunks-to-make-sorted) |
+| [0900-reordered-power-of-2](https://github.com/harsh-quare/LeetRoad/tree/master/0900-reordered-power-of-2) |
 | [1256-rank-transform-of-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/1256-rank-transform-of-an-array) |
 | [1306-minimum-absolute-difference](https://github.com/harsh-quare/LeetRoad/tree/master/1306-minimum-absolute-difference) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/harsh-quare/LeetRoad/tree/master/1352-maximum-profit-in-job-scheduling) |
@@ -312,6 +314,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0767-prime-number-of-set-bits-in-binary-representation](https://github.com/harsh-quare/LeetRoad/tree/master/0767-prime-number-of-set-bits-in-binary-representation) |
 | [0795-k-th-symbol-in-grammar](https://github.com/harsh-quare/LeetRoad/tree/master/0795-k-th-symbol-in-grammar) |
 | [0826-soup-servings](https://github.com/harsh-quare/LeetRoad/tree/master/0826-soup-servings) |
+| [0900-reordered-power-of-2](https://github.com/harsh-quare/LeetRoad/tree/master/0900-reordered-power-of-2) |
 | [1013-fibonacci-number](https://github.com/harsh-quare/LeetRoad/tree/master/1013-fibonacci-number) |
 | [1033-broken-calculator](https://github.com/harsh-quare/LeetRoad/tree/master/1033-broken-calculator) |
 | [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/harsh-quare/LeetRoad/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
@@ -1035,6 +1038,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0594-longest-harmonious-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/0594-longest-harmonious-subsequence) |
+| [0900-reordered-power-of-2](https://github.com/harsh-quare/LeetRoad/tree/master/0900-reordered-power-of-2) |
 | [0920-uncommon-words-from-two-sentences](https://github.com/harsh-quare/LeetRoad/tree/master/0920-uncommon-words-from-two-sentences) |
 | [1160-letter-tile-possibilities](https://github.com/harsh-quare/LeetRoad/tree/master/1160-letter-tile-possibilities) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/harsh-quare/LeetRoad/tree/master/1227-number-of-equivalent-domino-pairs) |
@@ -1451,6 +1455,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Enumeration
 |  |
 | ------- |
+| [0900-reordered-power-of-2](https://github.com/harsh-quare/LeetRoad/tree/master/0900-reordered-power-of-2) |
 | [1656-count-good-triplets](https://github.com/harsh-quare/LeetRoad/tree/master/1656-count-good-triplets) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/harsh-quare/LeetRoad/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2122-count-special-quadruplets](https://github.com/harsh-quare/LeetRoad/tree/master/2122-count-special-quadruplets) |
