@@ -1,20 +1,22 @@
 class Solution {
 public:
-    vector<int> getVectorCountFormat(int n){
-        vector<int> v(10, 0);  // 10 digits
+    int getNumberCountFormat(int x){
+        int num = 0;
 
-        while(n){
-            v[n%10]++;
-            n /= 10;
+        while(x){
+            int dig = x % 10;
+            num += pow(10, dig);
+
+            x /= 10;
         }
 
-        return v;
+        return num;
     }
     bool reorderedPowerOf2(int n) {
-        vector<int> cur = getVectorCountFormat(n);
+        int cur = getNumberCountFormat(n);
 
         for(int p = 0; p <= 30; p++){
-            if(cur == getVectorCountFormat(1 << p)){
+            if(cur == getNumberCountFormat(1 << p)){
                 return true;
             }
         }
