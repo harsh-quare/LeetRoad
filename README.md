@@ -559,6 +559,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2498-smallest-subarrays-with-maximum-bitwise-or](https://github.com/harsh-quare/LeetRoad/tree/master/2498-smallest-subarrays-with-maximum-bitwise-or) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/harsh-quare/LeetRoad/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/harsh-quare/LeetRoad/tree/master/2527-count-subarrays-with-fixed-bounds) |
+| [2529-range-product-queries-of-powers](https://github.com/harsh-quare/LeetRoad/tree/master/2529-range-product-queries-of-powers) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/harsh-quare/LeetRoad/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2545-height-of-binary-tree-after-subtree-removal-queries](https://github.com/harsh-quare/LeetRoad/tree/master/2545-height-of-binary-tree-after-subtree-removal-queries) |
 | [2546-number-of-subarrays-with-gcd-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/2546-number-of-subarrays-with-gcd-equal-to-k) |
@@ -796,6 +797,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2498-smallest-subarrays-with-maximum-bitwise-or](https://github.com/harsh-quare/LeetRoad/tree/master/2498-smallest-subarrays-with-maximum-bitwise-or) |
 | [2503-longest-subarray-with-maximum-bitwise-and](https://github.com/harsh-quare/LeetRoad/tree/master/2503-longest-subarray-with-maximum-bitwise-and) |
 | [2509-minimize-xor](https://github.com/harsh-quare/LeetRoad/tree/master/2509-minimize-xor) |
+| [2529-range-product-queries-of-powers](https://github.com/harsh-quare/LeetRoad/tree/master/2529-range-product-queries-of-powers) |
 | [2533-bitwise-xor-of-all-pairings](https://github.com/harsh-quare/LeetRoad/tree/master/2533-bitwise-xor-of-all-pairings) |
 | [2594-count-pairs-of-similar-strings](https://github.com/harsh-quare/LeetRoad/tree/master/2594-count-pairs-of-similar-strings) |
 | [2656-count-the-number-of-beautiful-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2656-count-the-number-of-beautiful-subarrays) |
@@ -1094,6 +1096,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/harsh-quare/LeetRoad/tree/master/2394-count-subarrays-with-score-less-than-k) |
 | [2449-maximum-number-of-robots-within-budget](https://github.com/harsh-quare/LeetRoad/tree/master/2449-maximum-number-of-robots-within-budget) |
 | [2465-shifting-letters-ii](https://github.com/harsh-quare/LeetRoad/tree/master/2465-shifting-letters-ii) |
+| [2529-range-product-queries-of-powers](https://github.com/harsh-quare/LeetRoad/tree/master/2529-range-product-queries-of-powers) |
 | [2656-count-the-number-of-beautiful-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2656-count-the-number-of-beautiful-subarrays) |
 | [2691-count-vowel-strings-in-ranges](https://github.com/harsh-quare/LeetRoad/tree/master/2691-count-vowel-strings-in-ranges) |
 | [2915-count-of-interesting-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/2915-count-of-interesting-subarrays) |
