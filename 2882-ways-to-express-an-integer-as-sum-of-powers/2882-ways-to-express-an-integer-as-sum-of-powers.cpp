@@ -1,22 +1,22 @@
 class Solution {
 public:
-    const int MOD = 1e9 + 7;
-    int solver(int n, int x, int start,vector<vector<int>>& dp) {
-        if (n == 0) return 1;
-        if (n < 0) return 0;
-        if (pow(start, x) > n) return 0;
+    const int mod = 1e9 + 7;
+    int solve(int num, int x, int cur, vector<vector<int>>& dp){
+        if(num == 0) return 1;  // only one way
+        if(num < 0) return 0;
 
-        if(dp[n][start]!=-1) return dp[n][start];
+        int val = pow(cur, x);
+        if(val > num) return 0;
 
-        int res = pow(start, x);
-        int take = solver(n - res, x, start + 1,dp)%MOD;
-        int skip = solver(n, x, start + 1,dp)%MOD;
+        if(dp[num][cur] != -1) return dp[num][cur];
 
-        return dp[n][start] = (take + skip)%MOD;
+        int take = solve(num - val, x, cur + 1, dp) % mod;
+        int skip = solve(num, x, cur + 1, dp) % mod;
+
+        return dp[num][cur] = (take + skip) % mod;
     }
-
     int numberOfWays(int n, int x) {
-        vector<vector<int>> dp(n+1,vector<int>(n+1,-1));
-        return solver(n, x, 1,dp);
+        vector<vector<int>> dp(n+1, vector<int>(n+1, -1));
+        return solve(n, x, 1, dp);
     }
 };
