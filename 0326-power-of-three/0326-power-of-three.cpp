@@ -1,13 +1,7 @@
 class Solution {
 public:
     bool isPowerOfThree(int n) {
-        if(n <= 0) return false;
-        while(n){
-            if(n == 1) return true;
-            if(n % 3 != 0) return false;
-            n /= 3;
-        }
-
-        return true;
+        int maxPow3 = 1162261467;  // largest power of 3 is: 3^19 < INT_MAX
+        return n > 0 && (maxPow3 % n == 0);
     }
 };
