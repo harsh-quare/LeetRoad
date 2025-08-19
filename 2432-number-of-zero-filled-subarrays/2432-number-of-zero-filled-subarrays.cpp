@@ -1,17 +1,21 @@
 class Solution {
 public:
     long long zeroFilledSubarray(vector<int>& nums) {
-        long long ans = 0;
         int n = nums.size();
+        long long ans = 0;
+        long long consZeros = 0;
 
-        int cnt = 0;
         for(int i = 0; i < n; i++){
-            if(nums[i] == 0){
-                cnt++;
-                ans += cnt;
+            if(nums[i] != 0){
+                ans += consZeros * (consZeros + 1) / 2;
+                consZeros = 0;  // reset 
             }
-            else cnt = 0;
+            else{
+                consZeros++;
+            }
         }
+
+        ans += consZeros * (consZeros + 1) / 2;  // last stretch
 
         return ans;
     }
