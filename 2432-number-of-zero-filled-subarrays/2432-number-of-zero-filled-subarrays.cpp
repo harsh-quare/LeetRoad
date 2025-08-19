@@ -3,19 +3,22 @@ public:
     long long zeroFilledSubarray(vector<int>& nums) {
         int n = nums.size();
         long long ans = 0;
-        long long consZeros = 0;
+        int i = 0, j = 0;
 
-        for(int i = 0; i < n; i++){
-            if(nums[i] != 0){
-                ans += consZeros * (consZeros + 1) / 2;
-                consZeros = 0;  // reset 
+        while(j < n){
+
+            while(i < n && nums[i] != 0){
+                j++;
+                i++;
             }
-            else{
-                consZeros++;
+
+            while(j < n && nums[j] == 0){
+                ans += (j - i + 1);
+                j++;
             }
+            
+            i = j;
         }
-
-        ans += consZeros * (consZeros + 1) / 2;  // last stretch
 
         return ans;
     }
