@@ -1,34 +1,29 @@
 class Solution {
 public:
+    // All 4 directions are written in adjacently 90 degrees clock wise to each other. for dirx[0], dirx[1] is the new dirx after clockwise 90 degree turn. for i => i+1 ===> i => (i+1) % 4 
     vector<pair<int, int>> dirx = {
+        {1,   1},  // bottom-right
+        {1,  -1}, // bottom-left
         {-1, -1}, // top-left
-        {-1, 1}, // top-right
-        {1, -1}, // bottom-left
-        {1, 1}  // bottom-right
+        {-1,  1}  // top-right
     };
 
-    vector<int> turnClockWiseDir = {1, 3, 0, 2};  // these are the new indexes of the dirx after making a turn from each dirx
-    int dfs(int x, int y, int curDir, bool turned, int seqIdx, vector<vector<int>>& grid, int n, int m){
-        int len = 1;
-        int nextVal = (seqIdx % 2 == 0) ? 2 : 0;
-
+    int dfs(int x, int y, int curDir, bool turned, int nextVal, vector<vector<int>>& grid, int n, int m){
         int nx = x + dirx[curDir].first;
         int ny = y + dirx[curDir].second;
 
-        // if valid next guy in same dirx, get the ans after including it
-        if(nx >= 0 && nx < n && ny >= 0 && ny < m && grid[nx][ny] == nextVal){
-            len = max(len, 1 + dfs(nx, ny, curDir, turned, seqIdx + 1, grid, n, m));
+        if(nx < 0 || nx >= n || ny < 0 || ny >= m || grid[nx][ny] != nextVal){
+            return 0;
         }
 
-        // if no turn has been made yet, try to make a clock wise turn and get the ans
-        if(!turned){
-            int new_dir = turnClockWiseDir[curDir];
-            int tx = x + dirx[new_dir].first;
-            int ty = y + dirx[new_dir].second;
+        int len = 0;
 
-            if(tx >= 0 && tx < n && ty >= 0 && ty < m && grid[tx][ty] == nextVal){
-                len = max(len, 1 + dfs(tx, ty, new_dir, !turned, seqIdx + 1, grid, n, m));
-            }
+        // keep moving in the same direction
+        len = max(len, 1 + dfs(nx, ny, curDir, turned, (nextVal == 2) ? 0 : 2, grid, n, m));
+
+        // make a turn if possible
+        if(!turned){
+            len = max(len, 1 + dfs(nx, ny, (curDir + 1) % 4, !turned, (nextVal == 2) ? 0 : 2, grid, n, m));
         }
 
         return len;
@@ -41,8 +36,8 @@ public:
         for(int i = 0; i < n; i++){
             for(int j = 0; j < m; j++){
                 if(grid[i][j] == 1){
-                    for(int dir = 0; dir < 4; dir++){
-                        ans = max(ans, dfs(i, j, dir, false, 0, grid, n, m));
+                    for(int d = 0; d <= 3; d++){
+                        ans = max(ans, 1 + dfs(i, j, d, false, 2, grid, n, m));
                     }
                 }
             }
