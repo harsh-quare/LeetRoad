@@ -5,11 +5,11 @@ public:
 
         // will store vector of each diagonal. we identify each diagonal by 
         // it's (i-j) value => for simplicity and avoiding runtime error in vectors => we use (i-j + n-1)
-        vector<vector<int>> helper(2*n);
+        map<int, vector<int>> helper;
 
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
-                int idx = i-j + n-1;
+                int idx = i-j;
                 helper[idx].push_back(grid[i][j]);
             }
         }
@@ -18,8 +18,8 @@ public:
         // But we don't want extra space in storing the pointers of each diagonal during updating the grid
         // so we sort both the triangle diagonals in opposite way
         // so that we can traverse from back of the array and pop elements on the go
-        for(int idx = 0; idx < 2*n; idx++){
-            if(idx >= n-1){  // bottom left diagonal => non-increasing
+        for(auto& [idx, vec]: helper){
+            if(idx >= 0){  // bottom left diagonal
                 sort(helper[idx].begin(), helper[idx].end());
             }
             else{
@@ -30,8 +30,7 @@ public:
         
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
-                int idx = i-j + n-1;
-
+                int idx = i-j;
                 grid[i][j] = helper[idx].back();
                 helper[idx].pop_back();
             }
