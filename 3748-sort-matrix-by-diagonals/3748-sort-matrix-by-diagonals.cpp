@@ -3,7 +3,9 @@ public:
     vector<vector<int>> sortMatrix(vector<vector<int>>& grid) {
         int n = grid.size();
 
-        vector<vector<int>> helper(2*n);  // will store vector of each diagonal. we identify each diagonal by it's (i-j) value => for simplicity and avoiding runtime error in vectors => we use (i-j + n-1)
+        // will store vector of each diagonal. we identify each diagonal by 
+        // it's (i-j) value => for simplicity and avoiding runtime error in vectors => we use (i-j + n-1)
+        vector<vector<int>> helper(2*n);
 
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
@@ -13,24 +15,25 @@ public:
         }
 
         // Sort values in each diagonal acc to the requirements of the problem
+        // But we don't want extra space in storing the pointers of each diagonal during updating the grid
+        // so we sort both the triangle diagonals in opposite way
+        // so that we can traverse from back of the array and pop elements on the go
         for(int idx = 0; idx < 2*n; idx++){
             if(idx >= n-1){  // bottom left diagonal => non-increasing
-                sort(helper[idx].begin(), helper[idx].end(), greater<int>());
+                sort(helper[idx].begin(), helper[idx].end());
             }
             else{
-                sort(helper[idx].begin(), helper[idx].end());
+                sort(helper[idx].begin(), helper[idx].end(), greater<int>());
             }
         }
 
-        // we need pointer for each diagonal => bcz we need to know which value to put if certain diagonal is met
-        vector<int> ptrs(2*n, 0);  // index is representing diagonal, value is representing the index of pointer in the diagonal array
+        
         for(int i = 0; i < n; i++){
             for(int j = 0; j < n; j++){
                 int idx = i-j + n-1;
-                int curPtr = ptrs[idx];
 
-                grid[i][j] = helper[idx][curPtr];
-                ptrs[idx] = curPtr + 1;
+                grid[i][j] = helper[idx].back();
+                helper[idx].pop_back();
             }
         }
 
