@@ -1,49 +1,39 @@
 class Solution {
 public:
-    #define pdi pair<double, int>
     double maxAverageRatio(vector<vector<int>>& classes, int extraStudents) {
         int n = classes.size();
-
-        priority_queue<pdi> pq;
+        priority_queue<pair<double, int>> pq;
+        double ans = 0.0;
+        
         for(int i = 0; i < n; i++){
-            int p = classes[i][0];
-            int t = classes[i][1];
+            int pass = classes[i][0];
+            int total = classes[i][1];
 
-            double cur = (double)p/t;
-            double nxt = (double)(p+1) / (t+1);
+            double curr = pass / (1.0 * total);
+            double next = (pass + 1) / (1.0 * (total + 1));
 
-            // maxDiff wale bnde chahiye
-            pq.push({abs(cur - nxt), i});
+            ans += curr;
+
+            double profit = next - curr;
+            pq.push({profit, i});
         }
 
         while(extraStudents--){
-            // cout << pq.top().first << " " << pq.top().second << endl;
-            int id = pq.top().second;
+            pair<double, int> p = pq.top();
             pq.pop();
+            double profit = p.first;
+            int idx = p.second;
 
-            int p = classes[id][0] + 1;
-            int t = classes[id][1] + 1;
-            classes[id][0] = p;
-            classes[id][1] = t;
+            ans += profit;
+            
+            classes[idx][0]++;
+            classes[idx][1]++;
+            double curr = classes[idx][0] / (1.0 * classes[idx][1]);
+            double next = (classes[idx][0] + 1) / (1.0 * (classes[idx][1] + 1));
 
-            double cur = (double)p/t;
-            double nxt = (double)(p+1) / (t+1);
-
-            // maxDiff wale bnde chahiye
-            pq.push({abs(cur - nxt), id});
+            pq.push({next - curr, idx});
         }
 
-        double ans = 0;
-        for(int i = 0; i < n; i++){
-            int p = classes[i][0];
-            int t = classes[i][1];
-
-            // cout << p << " " << t << endl;
-
-            double cur = (double)p/t;
-            ans += cur;
-        }
-
-        return ans / n;
+        return (double)ans / (1.0 * n);
     }
 };
