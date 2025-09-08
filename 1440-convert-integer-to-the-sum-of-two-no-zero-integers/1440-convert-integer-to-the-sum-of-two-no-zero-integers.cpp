@@ -1,23 +1,15 @@
 class Solution {
 public:
-    bool has_0(int x){
-        while(x){
-            if(x % 10 == 0){
-                return true;
-            }
-            x /= 10;
-        }
-        return false;
-    }
     vector<int> getNoZeroIntegers(int n) {
-        int a = 1;
-        int b = n-a;
+        for(int i = 1; i < n; i++){
+            string a = to_string(i), b=to_string(n-i);
 
-        while(has_0(a) || has_0(b)){
-            a++;
-            b--;
+            if(a.find('0') != string::npos || b.find('0') != string::npos){
+                continue;
+            }
+            
+            return {i, n-i};
         }
-
-        return {a,b};
+        return {};
     }
 };
