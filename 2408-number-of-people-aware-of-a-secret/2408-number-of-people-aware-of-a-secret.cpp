@@ -17,10 +17,6 @@ public:
 
         }
 
-        for(int i = 0; i <= n; i++){
-            cout << activeGuys[i] << ", ";
-        }
-
         int ans = 0;
         for(int i = n-forget+1; i <= n; i++){
             ans = (ans + activeGuys[i]) % MOD;
