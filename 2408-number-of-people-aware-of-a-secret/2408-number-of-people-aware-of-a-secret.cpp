@@ -1,25 +1,28 @@
 class Solution {
 public:
     const int MOD = 1e9 + 7;
-    int peopleAwareOfSecret(int n, int delay, int forget) {
-        // for each day, from 1 to n. I'll tell the secret to people from [curDay + delay --> curDay + forget - 1]. It will populate the array,
-        // and because we need the number of people who know the secret on day n, that will be equal to the number of people from [n-forget+1 --> n
+    int solve(int day, int forget, int delay, vector<int>& dp){  // total number of people who know secret on day "day"
+        if(day == 1) return 1;
 
-        vector<int> activeGuys(n+1, 0);
-        activeGuys[1] = 1;
+        if(dp[day] != -1) return dp[day];
 
-        for(int i = 1; i <= n; i++){
-
-            for(int j = i + delay; j <= min(n, i+forget-1); j++){
-
-                activeGuys[j] = (activeGuys[j] + activeGuys[i]) % MOD;
+        int res = 0;
+        for(int prev = day-forget+1; prev <= day-delay; prev++){
+            if(prev > 0){
+                res = (res + solve(prev, forget, delay, dp) % MOD) % MOD;
             }
-
         }
 
+        return dp[day] = res;
+    }
+    int peopleAwareOfSecret(int n, int delay, int forget) {
+        
         int ans = 0;
-        for(int i = n-forget+1; i <= n; i++){
-            ans = (ans + activeGuys[i]) % MOD;
+        vector<int> dp(n+1, -1);
+        for(int day = n-forget+1; day <= n; day++){
+            if(day > 0){
+                ans =(ans + solve(day, forget, delay, dp) % MOD) % MOD;
+            }
         }
 
         return ans;
