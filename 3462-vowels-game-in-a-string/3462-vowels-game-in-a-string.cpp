@@ -9,7 +9,6 @@ public:
             if(isVowel(c)) vowels++;
         }
 
-        if(vowels == 0) return false;
-        return true;
+        return vowels > 0;
     }
 };
