@@ -1,7 +1,8 @@
 struct comp {
     bool operator()(const pair<int, string>& a, const pair<int, string>& b) const{
-        if(a.first == b.first) return a.second < b.second;
-        else return a.first > b.first;
+        if(a.first > b.first) return true;
+        else if(a.first == b.first) return a.second < b.second;
+        else return false;
     }
 };
 class FoodRatings {
@@ -28,7 +29,7 @@ public:
     }
     
     string highestRated(string cuisine) {
-        return mpp[cuisine].begin()->second;
+        return (*mpp[cuisine].begin()).second;
     }
 };
 
