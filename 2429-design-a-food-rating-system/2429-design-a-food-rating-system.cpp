@@ -1,33 +1,34 @@
+struct comp {
+    bool operator()(const pair<int, string>& a, const pair<int, string>& b) const{
+        if(a.first == b.first) return a.second < b.second;
+        else return a.first > b.first;
+    }
+};
 class FoodRatings {
 public:
-
-    unordered_map<string, set<pair<int, string>>> cuisineRatings;  // cuisines -> set{-rating, food} => -rating, bcz we will need the max rating, and set stores in ascending order, so once negative, the max rating will be at beginning.
-    unordered_map<string, int> foodRating;
-    unordered_map<string, string> foodToCuisine;
-
+    map<string, pair<string, int>> mp;   // {ratings,cuisine} of each food
+    map<string, set<pair<int, string>, comp>> mpp;  // set of pair of food and its ratings against each cuisine
     FoodRatings(vector<string>& foods, vector<string>& cuisines, vector<int>& ratings) {
-        for(int i = 0; i < foods.size(); i++){
-            string f = foods[i];
-            int r = ratings[i];
-            string c = cuisines[i];
-
-            cuisineRatings[c].insert({-r, f});
-            foodRating[f] = r;
-            foodToCuisine[f] = c;
+        int n = foods.size();
+        for(int i = 0; i < n; i++){
+            mp[foods[i]] = {cuisines[i], ratings[i]};
+            mpp[cuisines[i]].insert({ratings[i], foods[i]});
         }
     }
     
     void changeRating(string food, int newRating) {
-        auto cuis = foodToCuisine[food];  //grab the cuisine for current food
-        int oldRating = foodRating[food];
-        cuisineRatings[cuis].erase({-oldRating, food});  //erase the old rating, food pair from that cuisine
-        
-        cuisineRatings[cuis].insert({-newRating, food});  //insert new rating, food pair
-        foodRating[food] = newRating;  // and also update that food rating
+        string cuis = mp[food].first;
+        int prevRating = mp[food].second;
+
+        mpp[cuis].erase({prevRating, food});
+        mpp[cuis].insert({newRating, food});
+
+        // update the latest rating in mp
+        mp[food].second = newRating;
     }
     
     string highestRated(string cuisine) {
-        return (*cuisineRatings[cuisine].begin()).second;
+        return mpp[cuisine].begin()->second;
     }
 };
 
