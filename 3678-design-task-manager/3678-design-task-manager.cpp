@@ -1,6 +1,6 @@
 class TaskManager {
     set <pair<int, pair<int, int>>> st;  // { priority, {taskId, userId}}
-    map<int, pair<int, int>> mp;  // taskId -> {priority,userId}
+    unordered_map<int, pair<int, int>> mp;  // taskId -> {priority,userId}
 public:
     TaskManager(vector<vector<int>>& tasks) {
         for(auto& v: tasks){
