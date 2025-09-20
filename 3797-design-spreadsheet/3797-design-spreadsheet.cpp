@@ -2,8 +2,8 @@ class Spreadsheet {
 private:
     map<pair<int, int>, int> mp;
     pair<int, int> findCoords(string cell){
-        int i = cell[0] - 'A';
-        int j = stoi(cell.substr(1));
+        int j = cell[0] - 'A';
+        int i = stoi(cell.substr(1));
 
         return {i, j};
     }
