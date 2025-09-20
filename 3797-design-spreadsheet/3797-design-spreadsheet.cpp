@@ -20,12 +20,12 @@ public:
     
     void setCell(string cell, int value) {
         pair<int, int> coords = findCoords(cell);
-        mp[{coords.first, coords.second}] = value;
+        mp[coords] = value;
     }
     
     void resetCell(string cell) {
         pair<int, int> coords = findCoords(cell);
-        mp[{coords.first, coords.second}] = 0;
+        mp[coords] = 0;
     }
     
     int getValue(string formula) {
@@ -63,13 +63,13 @@ public:
             return val1 + val2;
         }
         else if(isIntgr1 && !isIntgr2){
-            return val1 + mp[{coord2.first, coord2.second}];
+            return val1 + mp[coord2];
         }
         else if(!isIntgr1 && isIntgr2){
-            return val2 + mp[{coord1.first, coord1.second}];
+            return val2 + mp[coord1];
         }
         else{
-            return mp[{coord1.first, coord1.second}] + mp[{coord2.first, coord2.second}];
+            return mp[coord1] + mp[coord2];
         }
     }
 };
