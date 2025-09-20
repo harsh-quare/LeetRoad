@@ -1,9 +1,10 @@
 class Router {
 public:
-    queue<string> q;
-    unordered_map<string, vector<int>> mp;
-    unordered_map<int, vector<int>> destMap;
+    queue<string> q;  // keys
+    unordered_map<string, vector<int>> mp;     // key -> {src, dest, timestamp}
+    unordered_map<int, vector<int>> destMap;  // dest -> {t1, t2, t3, ...}
     int limit;
+
     Router(int memoryLimit) {
         limit = memoryLimit;
     }
