@@ -1,83 +1,35 @@
 class Spreadsheet {
 private:
-    map<pair<int, int>, int> mp;
-    pair<int, int> findCoords(string cell){
-        int j = cell[0] - 'A';
-        int i = stoi(cell.substr(1));
+    unordered_map<string, int> cells;
 
-        return {i, j};
+    bool isNumber(const string& s){
+        for(char c : s){
+            if(!isdigit(c)) return false;
+        }
+        return true;
     }
 
-
 public:
-    Spreadsheet(int rows) {
-        for(int i = 0; i < rows; i++){
-            for(int j = 0; j < 26; j++){
-                mp[{i,j}] = 0;
-            }
-        }
+    Spreadsheet(int rows){
     }
     
     void setCell(string cell, int value) {
-        pair<int, int> coords = findCoords(cell);
-        mp[coords] = value;
+        cells[cell] = value;
     }
     
     void resetCell(string cell) {
-        pair<int, int> coords = findCoords(cell);
-        mp[coords] = 0;
+        cells[cell] = 0;
     }
     
     int getValue(string formula) {
-        // first expression
-        int i = 1, j = 1;
-        bool isIntgr1 = isdigit(formula[i]);
-        while(j < formula.size() && formula[j] != '+'){
-            j++;
-        }
+        size_t plusPos = formula.find('+'); 
 
-        string eval1 = formula.substr(i, j-i);
-        int val1 = 0;
-        pair<int, int> coord1;
-        if(isIntgr1){
-            val1 = stoi(eval1);
-        }
-        else{
-            coord1 = findCoords(eval1);
-        }
+        string left = formula.substr(1, plusPos - 1); 
+        string right = formula.substr(plusPos + 1); 
+        
+        int leftValue = isNumber(left) ? stoi(left) : cells[left];
+        int rightValue = isNumber(right) ? stoi(right) : cells[right];
 
-        // second expression
-        i = j+1, j = i;
-        bool isIntgr2 = isdigit(formula[i]);
-        string eval2 = formula.substr(i);  // till end
-        int val2 = 0;
-        pair<int, int> coord2;
-        if(isIntgr2){
-            val2 = stoi(eval2);
-        }
-        else{
-            coord2 = findCoords(eval2);
-        }
-
-        if(isIntgr1 && isIntgr2){
-            return val1 + val2;
-        }
-        else if(isIntgr1 && !isIntgr2){
-            return val1 + mp[coord2];
-        }
-        else if(!isIntgr1 && isIntgr2){
-            return val2 + mp[coord1];
-        }
-        else{
-            return mp[coord1] + mp[coord2];
-        }
+        return leftValue + rightValue;
     }
 };
-
-/**
- * Your Spreadsheet object will be instantiated and called as such:
- * Spreadsheet* obj = new Spreadsheet(rows);
- * obj->setCell(cell,value);
- * obj->resetCell(cell);
- * int param_3 = obj->getValue(formula);
- */
