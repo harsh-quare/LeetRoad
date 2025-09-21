@@ -47,6 +47,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1933-number-of-different-integers-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/1933-number-of-different-integers-in-a-string) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/harsh-quare/LeetRoad/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/harsh-quare/LeetRoad/tree/master/1995-finding-pairs-with-a-certain-sum) |
+| [2023-design-movie-rental-system](https://github.com/harsh-quare/LeetRoad/tree/master/2023-design-movie-rental-system) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/harsh-quare/LeetRoad/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2059-unique-length-3-palindromic-subsequences](https://github.com/harsh-quare/LeetRoad/tree/master/2059-unique-length-3-palindromic-subsequences) |
 | [2079-delete-duplicate-folders-in-system](https://github.com/harsh-quare/LeetRoad/tree/master/2079-delete-duplicate-folders-in-system) |
@@ -531,6 +532,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/harsh-quare/LeetRoad/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2000-minimum-speed-to-arrive-on-time](https://github.com/harsh-quare/LeetRoad/tree/master/2000-minimum-speed-to-arrive-on-time) |
 | [2012-process-tasks-using-servers](https://github.com/harsh-quare/LeetRoad/tree/master/2012-process-tasks-using-servers) |
+| [2023-design-movie-rental-system](https://github.com/harsh-quare/LeetRoad/tree/master/2023-design-movie-rental-system) |
 | [2027-maximum-number-of-removable-characters](https://github.com/harsh-quare/LeetRoad/tree/master/2027-maximum-number-of-removable-characters) |
 | [2048-build-array-from-permutation](https://github.com/harsh-quare/LeetRoad/tree/master/2048-build-array-from-permutation) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/harsh-quare/LeetRoad/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
@@ -714,6 +716,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1917-maximum-average-pass-ratio](https://github.com/harsh-quare/LeetRoad/tree/master/1917-maximum-average-pass-ratio) |
 | [1955-seat-reservation-manager](https://github.com/harsh-quare/LeetRoad/tree/master/1955-seat-reservation-manager) |
 | [2012-process-tasks-using-servers](https://github.com/harsh-quare/LeetRoad/tree/master/2012-process-tasks-using-servers) |
+| [2023-design-movie-rental-system](https://github.com/harsh-quare/LeetRoad/tree/master/2023-design-movie-rental-system) |
 | [2054-the-number-of-the-smallest-unoccupied-chair](https://github.com/harsh-quare/LeetRoad/tree/master/2054-the-number-of-the-smallest-unoccupied-chair) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/harsh-quare/LeetRoad/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2164-two-best-non-overlapping-events](https://github.com/harsh-quare/LeetRoad/tree/master/2164-two-best-non-overlapping-events) |
@@ -1292,6 +1295,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1767-design-front-middle-back-queue](https://github.com/harsh-quare/LeetRoad/tree/master/1767-design-front-middle-back-queue) |
 | [1955-seat-reservation-manager](https://github.com/harsh-quare/LeetRoad/tree/master/1955-seat-reservation-manager) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/harsh-quare/LeetRoad/tree/master/1995-finding-pairs-with-a-certain-sum) |
+| [2023-design-movie-rental-system](https://github.com/harsh-quare/LeetRoad/tree/master/2023-design-movie-rental-system) |
 | [2429-design-a-food-rating-system](https://github.com/harsh-quare/LeetRoad/tree/master/2429-design-a-food-rating-system) |
 | [2434-design-a-number-container-system](https://github.com/harsh-quare/LeetRoad/tree/master/2434-design-a-number-container-system) |
 | [3678-design-task-manager](https://github.com/harsh-quare/LeetRoad/tree/master/3678-design-task-manager) |
@@ -1367,6 +1371,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0729-my-calendar-i](https://github.com/harsh-quare/LeetRoad/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0731-my-calendar-ii) |
 | [1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/harsh-quare/LeetRoad/tree/master/1549-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit) |
+| [2023-design-movie-rental-system](https://github.com/harsh-quare/LeetRoad/tree/master/2023-design-movie-rental-system) |
 | [2280-count-good-triplets-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/2280-count-good-triplets-in-an-array) |
 | [2429-design-a-food-rating-system](https://github.com/harsh-quare/LeetRoad/tree/master/2429-design-a-food-rating-system) |
 | [2434-design-a-number-container-system](https://github.com/harsh-quare/LeetRoad/tree/master/2434-design-a-number-container-system) |
