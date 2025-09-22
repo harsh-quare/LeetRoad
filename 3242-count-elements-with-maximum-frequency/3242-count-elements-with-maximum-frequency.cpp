@@ -3,16 +3,20 @@ public:
     int maxFrequencyElements(vector<int>& nums) {
         unordered_map<int, int> mp;
         int mxFreq = 0;
+        int totalFreq = 0;
         for(int x: nums){
             mp[x]++;
-            mxFreq = max(mxFreq, mp[x]);
+
+            int curFreq = mp[x];
+            if(curFreq > mxFreq){
+                mxFreq = curFreq;
+                totalFreq = curFreq;
+            }
+            else if(curFreq == mxFreq){
+                totalFreq += curFreq;
+            }
         }
 
-        int mxGuys = 0;
-        for(auto& [x, f]: mp){
-            if(f == mxFreq) mxGuys++;
-        }
-
-        return mxGuys * mxFreq;
+        return totalFreq;
     }
 };
