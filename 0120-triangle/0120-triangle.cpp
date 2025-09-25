@@ -16,22 +16,24 @@ public:
     int minimumTotal(vector<vector<int>>& triangle) {
         int n = triangle.size();
         
-        vector<vector<int>> dp(n+1, vector<int>(n+1, 0));
+        vector<int> prev(n+1, 0);
         for(int i = n-1; i >= 0; i--){
+            vector<int> cur(i+1, 0);
             for(int j = 0; j <= i; j++){
                 int res = triangle[i][j];
 
                 int op1 = 0, op2 = 0;
                 if(i < n-1) {
-                    op1 = dp[i+1][j];
-                    op2 = dp[i+1][j+1];
+                    op1 = prev[j];
+                    op2 = prev[j+1];
                 }
 
                 res += min(op1, op2);
 
-                dp[i][j] = res;
+                cur[j] = res;
             }
+            prev = cur;
         }
-        return dp[0][0];
+        return prev[0];
     }
 };
