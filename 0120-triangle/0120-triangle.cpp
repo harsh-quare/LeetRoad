@@ -31,11 +31,6 @@ public:
 
                 dp[i][j] = res;
             }
-
-            for(int j = 0; j <= i; j++){
-                cout << dp[i][j] << ", ";
-            }
-            cout << endl;
         }
         return dp[0][0];
     }
