@@ -7,15 +7,26 @@ public:
         sort(nums.begin(), nums.end());
 
         int ans = 0;
-        for(int i = 0; i < n; i++){
-            for(int j = i+1; j < n; j++){
-                int a = nums[i], b = nums[j];
-                int idx = lower_bound(nums.begin()+j+1, nums.end(), a+b) - nums.begin();    // check from j+1->n-1
+        for(int i = n-1; i >= 0; i--){
+            int l = 0, r = i-1;
 
-                ans += (idx - j - 1);  // from j to the 1st invalid index for this pair => everything is valid
+            while(l < r){
+                if(nums[l] + nums[r] > nums[i]){
+                    ans += (r - l);
+                    r--;
+                }
+                else{
+                    l++;
+                }
             }
         }
 
         return ans;
     }
 };
+
+//  Before sorting: Need to check 3 conditions
+//  a + b > c AND b + c > a AND a + c > b
+
+//  After sorting (a ≤ b ≤ c): Only need 1 condition!  
+//  a + b > c  (other two automatically satisfied!)
