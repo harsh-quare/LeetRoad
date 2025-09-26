@@ -251,6 +251,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [0594-longest-harmonious-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/0594-longest-harmonious-subsequence) |
+| [0611-valid-triangle-number](https://github.com/harsh-quare/LeetRoad/tree/master/0611-valid-triangle-number) |
 | [0748-largest-number-at-least-twice-of-others](https://github.com/harsh-quare/LeetRoad/tree/master/0748-largest-number-at-least-twice-of-others) |
 | [0780-max-chunks-to-make-sorted](https://github.com/harsh-quare/LeetRoad/tree/master/0780-max-chunks-to-make-sorted) |
 | [0900-reordered-power-of-2](https://github.com/harsh-quare/LeetRoad/tree/master/0900-reordered-power-of-2) |
@@ -446,6 +447,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [0560-subarray-sum-equals-k](https://github.com/harsh-quare/LeetRoad/tree/master/0560-subarray-sum-equals-k) |
 | [0594-longest-harmonious-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/0594-longest-harmonious-subsequence) |
+| [0611-valid-triangle-number](https://github.com/harsh-quare/LeetRoad/tree/master/0611-valid-triangle-number) |
 | [0665-non-decreasing-array](https://github.com/harsh-quare/LeetRoad/tree/master/0665-non-decreasing-array) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [0679-24-game](https://github.com/harsh-quare/LeetRoad/tree/master/0679-24-game) |
@@ -959,6 +961,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0179-largest-number](https://github.com/harsh-quare/LeetRoad/tree/master/0179-largest-number) |
 | [0324-wiggle-sort-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0324-wiggle-sort-ii) |
 | [0402-remove-k-digits](https://github.com/harsh-quare/LeetRoad/tree/master/0402-remove-k-digits) |
+| [0611-valid-triangle-number](https://github.com/harsh-quare/LeetRoad/tree/master/0611-valid-triangle-number) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/harsh-quare/LeetRoad/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0780-max-chunks-to-make-sorted](https://github.com/harsh-quare/LeetRoad/tree/master/0780-max-chunks-to-make-sorted) |
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/harsh-quare/LeetRoad/tree/master/0957-minimum-add-to-make-parentheses-valid) |
@@ -1314,6 +1317,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0300-longest-increasing-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/0300-longest-increasing-subsequence) |
+| [0611-valid-triangle-number](https://github.com/harsh-quare/LeetRoad/tree/master/0611-valid-triangle-number) |
 | [0713-subarray-product-less-than-k](https://github.com/harsh-quare/LeetRoad/tree/master/0713-subarray-product-less-than-k) |
 | [0729-my-calendar-i](https://github.com/harsh-quare/LeetRoad/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0731-my-calendar-ii) |
@@ -1444,6 +1448,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0283-move-zeroes](https://github.com/harsh-quare/LeetRoad/tree/master/0283-move-zeroes) |
 | [0556-next-greater-element-iii](https://github.com/harsh-quare/LeetRoad/tree/master/0556-next-greater-element-iii) |
 | [0567-permutation-in-string](https://github.com/harsh-quare/LeetRoad/tree/master/0567-permutation-in-string) |
+| [0611-valid-triangle-number](https://github.com/harsh-quare/LeetRoad/tree/master/0611-valid-triangle-number) |
 | [0793-swap-adjacent-in-lr-string](https://github.com/harsh-quare/LeetRoad/tree/master/0793-swap-adjacent-in-lr-string) |
 | [0868-push-dominoes](https://github.com/harsh-quare/LeetRoad/tree/master/0868-push-dominoes) |
 | [1468-check-if-n-and-its-double-exist](https://github.com/harsh-quare/LeetRoad/tree/master/1468-check-if-n-and-its-double-exist) |
