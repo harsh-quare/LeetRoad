@@ -2,32 +2,33 @@ class Solution {
 public:
     long long splitArray(vector<int>& nums) {
         int n = nums.size();
-        int l = 0, r = n-1;
-        long long left = 0, right = 0;
-
-        while(l < n-1 && nums[l] < nums[l+1]){
-            left += nums[l];
-            l++;
+        vector<long long> pre(n,0), suf(n,0);
+        pre[0] = nums[0];
+        suf[n-1] = nums[n-1];
+        
+        vector<bool> ii(n,0), dd(n,0);  // strictly incr, strictly decr.
+        ii[0] = 1;
+        dd[n-1] = 1;
+        
+        for(int i = 1; i < n; i++){
+            pre[i] = nums[i] + pre[i-1];
+            if(nums[i] > nums[i-1] && ii[i-1]){
+                ii[i] = 1;
+            }
+        }
+        for(int i = n-2; i >= 0; i--){
+            suf[i] = nums[i] + suf[i+1];
+            if(nums[i] > nums[i+1] && dd[i+1]){
+                dd[i] = 1;
+            }
         }
 
-        while(r > 0 && nums[r - 1] > nums[r]){
-            right += nums[r];
-            r--;
+        long long ans = LLONG_MAX;
+        for(int i = 0; i < n-1; i++){
+            if(ii[i] && dd[i+1]){
+                ans = min(ans, llabs(pre[i] - suf[i+1]));
+            }
         }
-
-        // if only single point of split possible => 2,3,4,3,1
-        if(l == r){
-            // option-1: take split point in left part
-            long long op1 = abs((left + nums[l]) - right);
-            long long op2 = abs(left - (right + nums[l]));
-
-            return min(op1, op2);
-        }
-        // flat peak => 3,4,5,5,4,3 => 2 equal middle elements => 3,4,5 and 5,4,3 => this is valid split
-        else if(r - l == 1 && nums[l] == nums[r]){
-            return abs(left - right);
-        }
-
-        return -1;  // invalid => a valley present in the array
+        return ans == LLONG_MAX? -1 : ans;
     }
 };
