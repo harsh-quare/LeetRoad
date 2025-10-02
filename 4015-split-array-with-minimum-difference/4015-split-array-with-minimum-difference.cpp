@@ -1,45 +1,33 @@
 class Solution {
 public:
     long long splitArray(vector<int>& nums) {
+        int n = nums.size();
+        int l = 0, r = n-1;
+        long long left = 0, right = 0;
 
-        // if there is a dip / valley shaped in the array, then it's not possible
-        for(int i = 1; i < nums.size()-1; i++){
-            if(nums[i] <= nums[i-1] && nums[i] <= nums[i+1]){
-                return -1;
-            }
+        while(l < n-1 && nums[l] < nums[l+1]){
+            left += nums[l];
+            l++;
         }
 
-        long long leftSum = nums[0];
-        long long total = accumulate(nums.begin(), nums.end(), 0LL);
-
-        int prev = nums[0];
-        long long minAns = LLONG_MAX;
-
-        for(int i = 1; i < nums.size()-1; i++){
-            // cout << minAns << endl;
-
-            if(nums[i] > nums[i-1] && nums[i] <= nums[i+1]){
-                leftSum += nums[i];
-                prev = nums[i];
-                continue;  // it can't be a split => increasing wala part chal rha h => first try to get to the valid split point
-            }
-            
-            if(minAns > labs((total-leftSum) - leftSum)){
-                minAns = labs((total - leftSum) - leftSum);
-            }
-            
-            if(nums[i] <= prev){
-                break;
-            }
-
-            leftSum += nums[i];
-            prev = nums[i];
+        while(r > 0 && nums[r - 1] > nums[r]){
+            right += nums[r];
+            r--;
         }
 
-        if(minAns > labs((total-leftSum) - leftSum)){
-            minAns = labs((total - leftSum) - leftSum);
+        // if only single point of split possible => 2,3,4,3,1
+        if(l == r){
+            // option-1: take split point in left part
+            long long op1 = abs((left + nums[l]) - right);
+            long long op2 = abs(left - (right + nums[l]));
+
+            return min(op1, op2);
+        }
+        // flat peak => 3,4,5,5,4,3 => 2 equal middle elements => 3,4,5 and 5,4,3 => this is valid split
+        else if(r - l == 1 && nums[l] == nums[r]){
+            return abs(left - right);
         }
 
-        return minAns;
+        return -1;  // invalid => a valley present in the array
     }
 };
