@@ -1,60 +1,43 @@
 class Solution {
-private:
-    bool isSafe(int i, int j, int m, int n){
-        return i >= 0 && i < m && j >= 0 && j < n;
-    }
-
+    using pii = pair<int, pair<int, int>>;
 public:
     int trapRainWater(vector<vector<int>>& heightMap) {
-        int m = heightMap.size();
-        int n = heightMap[0].size();
+        int n = heightMap.size();
+        int m = heightMap[0].size();
+        int ans = 0;
 
-        vector<vector<bool>> vis(m, vector<bool>(n, false));
+        priority_queue<pii, vector<pii>, greater<pii>> pq;
+        vector<vector<bool>> vis(n, vector<bool>(m, 0));
 
-        //priority queue (min-heap) to always process the cell with the minimum height
-        priority_queue<pair<int, pair<int, int>>, 
-                       vector<pair<int, pair<int, int>>>, 
-                       greater<pair<int, pair<int, int>>>> pq;
-
-        //add all the boundary cells to the priority queue and mark them as visited
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
-                //boundary cells (first row, last row, first column, last column)
-                if(i == 0 || j == 0 || i == m - 1 || j == n - 1){
+        // push all the edge cells with their heights
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < m; j++){
+                if(i == 0 || i == n-1 || j == 0 || j == m-1){
                     pq.push({heightMap[i][j], {i, j}});
-                    vis[i][j] = true;
+                    vis[i][j] = 1;
                 }
             }
-        }
+        } 
 
-        vector<vector<int>> dirx = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
-
-        int water = 0;  //to keep track of the total trapped water
-
+        vector<int> dirx = {-1, 0, 1, 0, -1};
         while(!pq.empty()){
-            auto p = pq.top(); 
+            int h = pq.top().first;
+            int x = pq.top().second.first;
+            int y = pq.top().second.second;
             pq.pop();
 
-            int height = p.first;  // Height of the current cell
-            int row = p.second.first;  // Row of the current cell
-            int col = p.second.second;  // Column of the current cell
+            for(int i = 0; i < 4; i++){
+                int new_x = x + dirx[i];
+                int new_y = y + dirx[i+1];
 
-            for(auto& dir : dirx){
-                int nextRow = row + dir[0];
-                int nextCol = col + dir[1];
-
-                // If the neighboring cell is within bounds and not visited
-                if(isSafe(nextRow, nextCol, m, n) && vis[nextRow][nextCol] == false){
-                    //calculate water trapped at this neighboring cell
-                    water += max(0, height - heightMap[nextRow][nextCol]);
-                    //push the next cell with the max of its own height or the current height
-                    pq.push({max(height, heightMap[nextRow][nextCol]), {nextRow, nextCol}});
-                    vis[nextRow][nextCol] = true;
+                if(new_x >= 0 && new_x < n && new_y >= 0 && new_y < m && !vis[new_x][new_y]){
+                    ans += max(0, h - heightMap[new_x][new_y]);
+                    vis[new_x][new_y] = true;
+                    pq.push({max(h, heightMap[new_x][new_y]), {new_x, new_y}});
                 }
             }
         }
 
-        //return the total trapped water
-        return water;
+        return ans;
     }
 };
