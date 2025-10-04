@@ -454,6 +454,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0539-minimum-time-difference](https://github.com/harsh-quare/LeetRoad/tree/master/0539-minimum-time-difference) |
 | [0560-subarray-sum-equals-k](https://github.com/harsh-quare/LeetRoad/tree/master/0560-subarray-sum-equals-k) |
 | [0594-longest-harmonious-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/0594-longest-harmonious-subsequence) |
+| [0605-can-place-flowers](https://github.com/harsh-quare/LeetRoad/tree/master/0605-can-place-flowers) |
 | [0611-valid-triangle-number](https://github.com/harsh-quare/LeetRoad/tree/master/0611-valid-triangle-number) |
 | [0665-non-decreasing-array](https://github.com/harsh-quare/LeetRoad/tree/master/0665-non-decreasing-array) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/0673-number-of-longest-increasing-subsequence) |
@@ -977,6 +978,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0179-largest-number](https://github.com/harsh-quare/LeetRoad/tree/master/0179-largest-number) |
 | [0324-wiggle-sort-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0324-wiggle-sort-ii) |
 | [0402-remove-k-digits](https://github.com/harsh-quare/LeetRoad/tree/master/0402-remove-k-digits) |
+| [0605-can-place-flowers](https://github.com/harsh-quare/LeetRoad/tree/master/0605-can-place-flowers) |
 | [0611-valid-triangle-number](https://github.com/harsh-quare/LeetRoad/tree/master/0611-valid-triangle-number) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/harsh-quare/LeetRoad/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0780-max-chunks-to-make-sorted](https://github.com/harsh-quare/LeetRoad/tree/master/0780-max-chunks-to-make-sorted) |
