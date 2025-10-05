@@ -143,6 +143,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/0662-maximum-width-of-binary-tree) |
 | [0684-redundant-connection](https://github.com/harsh-quare/LeetRoad/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/harsh-quare/LeetRoad/tree/master/0695-max-area-of-island) |
+| [0744-network-delay-time](https://github.com/harsh-quare/LeetRoad/tree/master/0744-network-delay-time) |
 | [0794-swim-in-rising-water](https://github.com/harsh-quare/LeetRoad/tree/master/0794-swim-in-rising-water) |
 | [0813-all-paths-from-source-to-target](https://github.com/harsh-quare/LeetRoad/tree/master/0813-all-paths-from-source-to-target) |
 | [0820-find-eventual-safe-states](https://github.com/harsh-quare/LeetRoad/tree/master/0820-find-eventual-safe-states) |
@@ -184,6 +185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0662-maximum-width-of-binary-tree](https://github.com/harsh-quare/LeetRoad/tree/master/0662-maximum-width-of-binary-tree) |
 | [0684-redundant-connection](https://github.com/harsh-quare/LeetRoad/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/harsh-quare/LeetRoad/tree/master/0695-max-area-of-island) |
+| [0744-network-delay-time](https://github.com/harsh-quare/LeetRoad/tree/master/0744-network-delay-time) |
 | [0787-sliding-puzzle](https://github.com/harsh-quare/LeetRoad/tree/master/0787-sliding-puzzle) |
 | [0794-swim-in-rising-water](https://github.com/harsh-quare/LeetRoad/tree/master/0794-swim-in-rising-water) |
 | [0813-all-paths-from-source-to-target](https://github.com/harsh-quare/LeetRoad/tree/master/0813-all-paths-from-source-to-target) |
@@ -731,6 +733,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/0215-kth-largest-element-in-an-array) |
 | [0239-sliding-window-maximum](https://github.com/harsh-quare/LeetRoad/tree/master/0239-sliding-window-maximum) |
 | [0407-trapping-rain-water-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0407-trapping-rain-water-ii) |
+| [0744-network-delay-time](https://github.com/harsh-quare/LeetRoad/tree/master/0744-network-delay-time) |
 | [0794-swim-in-rising-water](https://github.com/harsh-quare/LeetRoad/tree/master/0794-swim-in-rising-water) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/harsh-quare/LeetRoad/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/harsh-quare/LeetRoad/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
@@ -1234,6 +1237,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0332-reconstruct-itinerary](https://github.com/harsh-quare/LeetRoad/tree/master/0332-reconstruct-itinerary) |
 | [0684-redundant-connection](https://github.com/harsh-quare/LeetRoad/tree/master/0684-redundant-connection) |
+| [0744-network-delay-time](https://github.com/harsh-quare/LeetRoad/tree/master/0744-network-delay-time) |
 | [0813-all-paths-from-source-to-target](https://github.com/harsh-quare/LeetRoad/tree/master/0813-all-paths-from-source-to-target) |
 | [0820-find-eventual-safe-states](https://github.com/harsh-quare/LeetRoad/tree/master/0820-find-eventual-safe-states) |
 | [1424-maximum-candies-you-can-get-from-boxes](https://github.com/harsh-quare/LeetRoad/tree/master/1424-maximum-candies-you-can-get-from-boxes) |
@@ -1263,6 +1267,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Shortest Path
 |  |
 | ------- |
+| [0744-network-delay-time](https://github.com/harsh-quare/LeetRoad/tree/master/0744-network-delay-time) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/harsh-quare/LeetRoad/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2375-minimum-obstacle-removal-to-reach-corner](https://github.com/harsh-quare/LeetRoad/tree/master/2375-minimum-obstacle-removal-to-reach-corner) |
