@@ -12,14 +12,11 @@ public:
             adj[u].push_back({v, w});
         }
 
-        vector<int> vis(n+1, 0);
-
         vector<int> dist(n+1, INT_MAX);  // mark all the nodes as unreachable from given node 'k'.
         dist[k] = 0;
 
         priority_queue<pii, vector<pii>, greater<pii>> pq;
         pq.push({0, k});
-        vis[k] = 1;
 
         while(!pq.empty()){
             int curTime = pq.top().first;
@@ -30,7 +27,6 @@ public:
                 // only update if you got better distance for neighbor node 
                 if(dist[nbr] > curTime + time){
                     dist[nbr] = curTime + time;
-                    vis[nbr] = 1;
                     pq.push({dist[nbr], nbr});
                 }
             }
