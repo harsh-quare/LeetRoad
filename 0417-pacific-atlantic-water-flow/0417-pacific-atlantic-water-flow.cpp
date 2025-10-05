@@ -1,74 +1,64 @@
 class Solution {
 public:
+    vector<int> dirX = {-1, 0, 1, 0};
+    vector<int> dirY = {0, -1, 0, 1};
+
+    void bfs(int n, int m, vector<vector<int>>& heights, vector<vector<int>>& visited, queue<pair<int, int>>& q){
+        while(!q.empty()){
+            auto coords = q.front();
+            q.pop();
+
+            int r = coords.first;
+            int c = coords.second;
+
+            for(int i = 0; i < 4; i++){
+                int nr = r + dirX[i];
+                int nc = c + dirY[i];
+
+                if(nr >= 0 && nr < n && nc >= 0 && nc < m && !visited[nr][nc] && heights[nr][nc] >= heights[r][c]){
+                    visited[nr][nc] = 1;
+                    q.push({nr, nc});
+                }
+            }
+        }
+    }
+
     vector<vector<int>> pacificAtlantic(vector<vector<int>>& heights) {
         int n = heights.size();
         int m = heights[0].size();
 
-        vector<vector<int>> vis1(n, vector<int>(m, 0));
-        vector<vector<int>> vis2(n, vector<int>(m, 0));
+        vector<vector<int>> pacificVisited(n, vector<int>(m, 0));
+        vector<vector<int>> atlanticVisited(n, vector<int>(m, 0));
 
-        queue<pair<int, int>> q1;
-        queue<pair<int, int>> q2;
+        queue<pair<int, int>> pacificQueue;
+        queue<pair<int, int>> atlanticQueue;
 
         for(int i = 0; i < n; i++){
-            for(int j = 0; j < m; j++){
-                if(i == 0 || j == 0){
-                    vis1[i][j] = 1;
-                    q1.push({i, j});
-                }
-                if(i == n-1 || j == m-1){
-                    vis2[i][j] = 1;
-                    q2.push({i, j});
-                }
-            }
+            pacificVisited[i][0] = 1;
+            atlanticVisited[i][m - 1] = 1;
+            pacificQueue.push({i, 0});
+            atlanticQueue.push({i, m - 1});
         }
 
-        vector<int> dirx = {-1, 0, 1, 0, -1};
-        while(!q1.empty()){
-            auto coords = q1.front();
-            q1.pop();
-
-            int r = coords.first;
-            int c = coords.second;
-
-            for(int i = 0; i < 4; i++){
-                int nr = r + dirx[i];
-                int nc = c + dirx[i+1];
-
-                if(nr >= 0 && nr < n && nc >= 0 && nc < m && !vis1[nr][nc] && heights[nr][nc] >= heights[r][c]){
-                    vis1[nr][nc] = 1;
-                    q1.push({nr, nc});
-                }
-            }
+        for(int j = 0; j < m; j++){
+            pacificVisited[0][j] = 1;
+            atlanticVisited[n - 1][j] = 1;
+            pacificQueue.push({0, j});
+            atlanticQueue.push({n - 1, j});
         }
 
-        while(!q2.empty()){
-            auto coords = q2.front();
-            q2.pop();
+        bfs(n, m, heights, pacificVisited, pacificQueue);
+        bfs(n, m, heights, atlanticVisited, atlanticQueue);
 
-            int r = coords.first;
-            int c = coords.second;
-
-            for(int i = 0; i < 4; i++){
-                int nr = r + dirx[i];
-                int nc = c + dirx[i+1];
-
-                if(nr >= 0 && nr < n && nc >= 0 && nc < m && !vis2[nr][nc] && heights[nr][nc] >= heights[r][c]){
-                    vis2[nr][nc] = 1;
-                    q2.push({nr, nc});
-                }
-            }
-        }
-
-        vector<vector<int>> ans;
+        vector<vector<int>> result;
         for(int i = 0; i < n; i++){
             for(int j = 0; j < m; j++){
-                if(vis1[i][j] && vis2[i][j]){
-                    ans.push_back({i, j});
+                if(pacificVisited[i][j] && atlanticVisited[i][j]){
+                    result.push_back({i, j});
                 }
             }
         }
 
-        return ans;
+        return result;
     }
 };
