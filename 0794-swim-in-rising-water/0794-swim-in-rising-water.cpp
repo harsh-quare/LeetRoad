@@ -1,43 +1,36 @@
 class Solution {
+    using pii = pair<int, pair<int, int>>;
 public:
-    #define pip pair<int, pair<int, int>>
-    vector<vector<int>> dirx = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
     int swimInWater(vector<vector<int>>& grid) {
-        // minimum of all maximum elevetions in all paths
-        // muje apne path me se max value chahiye
-        // and woh max value saare paths me se minimum honi chahiye, vahi final answer h
+        // find min time in which yo can get to (n-1,n-1) cell starting from (0, 0)
         int n = grid.size();
+        vector<vector<int>> dist(n, vector<int>(n, INT_MAX));
+        dist[0][0] = grid[0][0];
 
-        priority_queue<pip, vector<pip>, greater<pip>> pq;
-        int cur_time = grid[0][0];  
-        pq.push({cur_time, {0, 0}});
+        priority_queue<pii, vector<pii>, greater<pii>> pq;
+        pq.push({dist[0][0], {0, 0}});
 
-        // vector<vector<int>> dist(n, vector<int>(n, INT_MAX));
-        // dist[0][0] = 0;
-
-        vector<vector<bool>>vis(n, vector<bool>(n, 0));
-        vis[0][0] = true;
-
+        vector<int> dirx = {-1, 0, 1, 0, -1};
         while(!pq.empty()){
-            int time = pq.top().first;
+            int curTime = pq.top().first;
             int x = pq.top().second.first;
             int y = pq.top().second.second;
             pq.pop();
 
-            if(x == n-1 && y == n-1) return time;
+            for(int i = 0; i < 4; i++){
+                int nx = x + dirx[i];
+                int ny = y + dirx[i+1];
 
-            for(auto& dir: dirx){
-                int nx = x + dir[0];
-                int ny = y + dir[1];
-
-                if(nx >= 0 && nx < n && ny >= 0 && ny < n && !vis[nx][ny]){
-                    int new_time = max(time, grid[nx][ny]);
-                    pq.push({new_time, {nx, ny}});
-                    vis[nx][ny] = true;
+                if(nx >= 0 && nx < n && ny >= 0 && ny < n){
+                    int minReqTime = max(curTime, grid[nx][ny]);
+                    if(minReqTime < dist[nx][ny]){
+                        dist[nx][ny] = minReqTime;
+                        pq.push({dist[nx][ny], {nx, ny}});
+                    }
                 }
             }
         }
 
-        return -1;
+        return dist[n-1][n-1];
     }
 };
