@@ -12,8 +12,20 @@ public:
 
         vector<int> ans(m);
         for(int i = 0; i < m; i++){
-            int size = upper_bound(nums.begin(), nums.end(), queries[i]) - nums.begin();
-            ans[i] = size;
+            int lo = 0;
+            int hi = n-1;
+
+            while(lo <= hi){
+                int mid = lo + (hi-lo) / 2;
+
+                if(nums[mid] > queries[i]){
+                    hi = mid-1;
+                }
+                else{
+                    lo = mid+1;
+                }
+            }
+            ans[i] = lo;
         }
 
         return ans;
