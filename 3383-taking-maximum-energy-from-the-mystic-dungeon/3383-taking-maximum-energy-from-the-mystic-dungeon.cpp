@@ -8,19 +8,12 @@ public:
         // start from behind => (n-1) -> 0. 
         
         int n = energy.size();
-        vector<int> final = energy;
-        int ans = INT_MIN;
         for(int i = n-1; i >= 0; i--){
-            if(i+k >= n){
-                ans = max(ans, final[i]);
-            }
-            else{
-                // take contribution from (i+k) guy
-                final[i] += final[i+k];
-                ans = max(ans, final[i]);
+            if(i+k < n){
+                energy[i] += energy[i+k];
             }
         }
 
-        return ans;
+        return *max_element(energy.begin(), energy.end());
     }
 };
