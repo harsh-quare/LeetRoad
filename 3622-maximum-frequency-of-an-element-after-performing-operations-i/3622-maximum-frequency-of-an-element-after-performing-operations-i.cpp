@@ -1,24 +1,62 @@
 class Solution {
 public:
     int maxFrequency(vector<int>& nums, int k, int numOperations) {
-        int maxVal = *max_element(nums.begin(), nums.end()) + k + 2;
-        int* count = new int[maxVal]();
+        sort(nums.begin(), nums.end());
 
-        for (int v : nums)
-            count[v]++;
+        int ans = 0;
+        unordered_map<int, int> numCount;
 
-        for (int i = 1; i < maxVal; i++)
-            count[i] += count[i - 1];
-
-        int res = 0;
-        for (int i = 0; i < maxVal; i++) {
-            int left = max(0, i - k);
-            int right = min(maxVal - 1, i + k);
-            int total = count[right] - (left ? count[left - 1] : 0);
-            int freq = count[i] - (i ? count[i - 1] : 0);
-            res = max(res, freq + min(numOperations, total - freq));
+        int lastNumIndex = 0;
+        for (int i = 0; i < nums.size(); ++i) {
+            if (nums[i] != nums[lastNumIndex]) {
+                numCount[nums[lastNumIndex]] = i - lastNumIndex;
+                ans = max(ans, i - lastNumIndex);
+                lastNumIndex = i;
+            }
         }
 
-        return res;
+        numCount[nums[lastNumIndex]] = nums.size() - lastNumIndex;
+        ans = max(ans, (int)nums.size() - lastNumIndex);
+
+        auto leftBound = [&](int value) {
+            int left = 0, right = nums.size() - 1;
+            while (left < right) {
+                int mid = (left + right) / 2;
+                if (nums[mid] < value) {
+                    left = mid + 1;
+                } else {
+                    right = mid;
+                }
+            }
+            return left;
+        };
+
+        auto rightBound = [&](int value) {
+            int left = 0, right = nums.size() - 1;
+            while (left < right) {
+                int mid = (left + right + 1) / 2;
+                if (nums[mid] > value) {
+                    right = mid - 1;
+                } else {
+                    left = mid;
+                }
+            }
+            return left;
+        };
+
+        for (int i = nums.front(); i <= nums.back(); i++) {
+            int l = leftBound(i - k);
+            int r = rightBound(i + k);
+
+            int tempAns;
+            if (numCount.count(i)) {
+                tempAns = min(r - l + 1, numCount[i] + numOperations);
+            } else {
+                tempAns = min(r - l + 1, numOperations);
+            }
+            ans = max(ans, tempAns);
+        }
+
+        return ans;
     }
 };
