@@ -1450,6 +1450,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3790-fruits-into-baskets-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3790-fruits-into-baskets-ii) |
 | [3791-fruits-into-baskets-iii](https://github.com/harsh-quare/LeetRoad/tree/master/3791-fruits-into-baskets-iii) |
 | [3827-implement-router](https://github.com/harsh-quare/LeetRoad/tree/master/3827-implement-router) |
+| [4073-lexicographically-smallest-string-after-reverse](https://github.com/harsh-quare/LeetRoad/tree/master/4073-lexicographically-smallest-string-after-reverse) |
 ## Segment Tree
 |  |
 | ------- |
@@ -1559,6 +1560,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3018-make-string-a-subsequence-using-cyclic-increments](https://github.com/harsh-quare/LeetRoad/tree/master/3018-make-string-a-subsequence-using-cyclic-increments) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/harsh-quare/LeetRoad/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/harsh-quare/LeetRoad/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
+| [4073-lexicographically-smallest-string-after-reverse](https://github.com/harsh-quare/LeetRoad/tree/master/4073-lexicographically-smallest-string-after-reverse) |
 ## Sliding Window
 |  |
 | ------- |
@@ -1674,6 +1676,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
 | [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
 | [3789-maximize-subarrays-after-removing-one-conflicting-pair](https://github.com/harsh-quare/LeetRoad/tree/master/3789-maximize-subarrays-after-removing-one-conflicting-pair) |
+| [4073-lexicographically-smallest-string-after-reverse](https://github.com/harsh-quare/LeetRoad/tree/master/4073-lexicographically-smallest-string-after-reverse) |
 ## Monotonic Queue
 |  |
 | ------- |
