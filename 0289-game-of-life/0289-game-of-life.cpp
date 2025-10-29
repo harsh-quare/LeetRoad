@@ -6,6 +6,7 @@ public:
 
         return (x >= 0 && x < n && y >= 0 && y < m); 
     }
+
     int dirx[3] = {-1, 0, 1};
     int getState(int x, int y, vector<vector<int>>& grid){
 
@@ -26,10 +27,10 @@ public:
         if(grid[x][y] == 1){
             if(active < 2) return 1;
             else if(active >= 2 && active <= 3) return -1;
-            else return 3;
+            else return 2;
         }
         else{
-            if(active == 3) return 4;
+            if(active == 3) return 3;
             else return -1;
         }
     }
@@ -41,11 +42,10 @@ public:
 
         for(int i = 0; i < n; i++){
             for(int j = 0; j < m; j++){
+                // -1 => 1. live => nbr = [2,3],     2. dead => nbr < 3 or nbr > 3 => no change 
                 // 1 => live => nbr < 2 => dies
-                // 2 => live => nbr = [2,3] => no change 
-                // 3 => live => nbr > 3 => dies
-                // 4 => dead => nbr == 3 => rebirth
-                // -1 => dead => nbr < 3 or nbr > 3 => no change
+                // 2 => live => nbr > 3 => dies
+                // 3 => dead => nbr == 3 => rebirth
                 int state = getState(i, j, board);
                 if(state != -1) flags.push_back({{i, j}, state});
             }
@@ -56,9 +56,8 @@ public:
             int y = flags[i].first.second;
             int state = flags[i].second;
 
-            if(state == 1 || state == 3) board[x][y] = 0;
-            else if(state == 2) continue;
-            else if(state == 4) board[x][y] = 1;
+            if(state == 1 || state == 2) board[x][y] = 0;
+            else if(state == 3) board[x][y] = 1;
         }
     }
 };
