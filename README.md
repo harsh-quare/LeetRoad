@@ -549,6 +549,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1656-count-good-triplets](https://github.com/harsh-quare/LeetRoad/tree/master/1656-count-good-triplets) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/harsh-quare/LeetRoad/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
 | [1694-make-sum-divisible-by-p](https://github.com/harsh-quare/LeetRoad/tree/master/1694-make-sum-divisible-by-p) |
+| [1700-minimum-time-to-make-rope-colorful](https://github.com/harsh-quare/LeetRoad/tree/master/1700-minimum-time-to-make-rope-colorful) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/harsh-quare/LeetRoad/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
 | [1753-path-with-minimum-effort](https://github.com/harsh-quare/LeetRoad/tree/master/1753-path-with-minimum-effort) |
 | [1755-defuse-the-bomb](https://github.com/harsh-quare/LeetRoad/tree/master/1755-defuse-the-bomb) |
@@ -980,6 +981,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1402-count-square-submatrices-with-all-ones](https://github.com/harsh-quare/LeetRoad/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/harsh-quare/LeetRoad/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/harsh-quare/LeetRoad/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
+| [1700-minimum-time-to-make-rope-colorful](https://github.com/harsh-quare/LeetRoad/tree/master/1700-minimum-time-to-make-rope-colorful) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/harsh-quare/LeetRoad/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/harsh-quare/LeetRoad/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/harsh-quare/LeetRoad/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
@@ -1046,6 +1048,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1612-avoid-flood-in-the-city](https://github.com/harsh-quare/LeetRoad/tree/master/1612-avoid-flood-in-the-city) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/harsh-quare/LeetRoad/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1648-minimum-insertions-to-balance-a-parentheses-string](https://github.com/harsh-quare/LeetRoad/tree/master/1648-minimum-insertions-to-balance-a-parentheses-string) |
+| [1700-minimum-time-to-make-rope-colorful](https://github.com/harsh-quare/LeetRoad/tree/master/1700-minimum-time-to-make-rope-colorful) |
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/harsh-quare/LeetRoad/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/harsh-quare/LeetRoad/tree/master/1818-maximum-score-from-removing-substrings) |
 | [1834-minimum-number-of-people-to-teach](https://github.com/harsh-quare/LeetRoad/tree/master/1834-minimum-number-of-people-to-teach) |
@@ -1130,6 +1133,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/harsh-quare/LeetRoad/tree/master/1566-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence) |
 | [1567-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/harsh-quare/LeetRoad/tree/master/1567-maximum-number-of-vowels-in-a-substring-of-given-length) |
 | [1648-minimum-insertions-to-balance-a-parentheses-string](https://github.com/harsh-quare/LeetRoad/tree/master/1648-minimum-insertions-to-balance-a-parentheses-string) |
+| [1700-minimum-time-to-make-rope-colorful](https://github.com/harsh-quare/LeetRoad/tree/master/1700-minimum-time-to-make-rope-colorful) |
 | [1744-number-of-ways-to-form-a-target-string-given-a-dictionary](https://github.com/harsh-quare/LeetRoad/tree/master/1744-number-of-ways-to-form-a-target-string-given-a-dictionary) |
 | [1786-count-the-number-of-consistent-strings](https://github.com/harsh-quare/LeetRoad/tree/master/1786-count-the-number-of-consistent-strings) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/harsh-quare/LeetRoad/tree/master/1818-maximum-score-from-removing-substrings) |
