@@ -492,6 +492,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0695-max-area-of-island](https://github.com/harsh-quare/LeetRoad/tree/master/0695-max-area-of-island) |
 | [0713-subarray-product-less-than-k](https://github.com/harsh-quare/LeetRoad/tree/master/0713-subarray-product-less-than-k) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/harsh-quare/LeetRoad/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
+| [0717-1-bit-and-2-bit-characters](https://github.com/harsh-quare/LeetRoad/tree/master/0717-1-bit-and-2-bit-characters) |
 | [0729-my-calendar-i](https://github.com/harsh-quare/LeetRoad/tree/master/0729-my-calendar-i) |
 | [0731-my-calendar-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0731-my-calendar-ii) |
 | [0748-largest-number-at-least-twice-of-others](https://github.com/harsh-quare/LeetRoad/tree/master/0748-largest-number-at-least-twice-of-others) |
