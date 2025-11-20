@@ -9,10 +9,6 @@ public:
             return a[1] < b[1];
         });
 
-        for(auto& it: intervals){
-            cout << it[0] << ", " << it[1] << endl;
-        }
-
         int n1 = intervals[0][1];
         int n2 = n1 - 1;
 
