@@ -15,14 +15,14 @@ public:
             int l = intervals[i][0];
             int r = intervals[i][1];
 
-            if(l <= n2) continue;
+            if(l <= n2) continue;  // both in range, skip
 
-            if(n1 < l){
+            if(n1 < l){  // both out of range, assign new
                 cnt += 2;
                 n1 = r;
                 n2 = r-1;
             }
-            else{
+            else{  // one in, one out => make smaller = bigger and bigger = new_bigger
                 cnt++;
                 n2 = n1;
                 n1 = r;
