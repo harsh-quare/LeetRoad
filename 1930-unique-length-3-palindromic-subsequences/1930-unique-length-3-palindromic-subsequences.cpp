@@ -7,11 +7,8 @@ public:
         vector<pair<int, int>> vp(26, {-1, -1});
         for(int i = 0; i < n; i++){
             pair<int, int> cur = vp[s[i] - 'a'];
-            if(cur.first != -1) cur.first = min(cur.first, i);
-            else cur.first = i;
-
-            if(cur.second != -1) cur.second = max(cur.second, i);
-            else cur.second = i;
+            if(cur.first == -1) cur.first = i;
+            cur.second = i;
 
             vp[s[i] - 'a'] = cur;
         }
