@@ -398,6 +398,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2802-find-the-punishment-number-of-an-integer](https://github.com/harsh-quare/LeetRoad/tree/master/2802-find-the-punishment-number-of-an-integer) |
 | [2903-insert-greatest-common-divisors-in-linked-list](https://github.com/harsh-quare/LeetRoad/tree/master/2903-insert-greatest-common-divisors-in-linked-list) |
 | [3172-divisible-and-non-divisible-sums-difference](https://github.com/harsh-quare/LeetRoad/tree/master/3172-divisible-and-non-divisible-sums-difference) |
+| [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/harsh-quare/LeetRoad/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3199-distribute-candies-among-children-i](https://github.com/harsh-quare/LeetRoad/tree/master/3199-distribute-candies-among-children-i) |
 | [3201-distribute-candies-among-children-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3201-distribute-candies-among-children-ii) |
 | [3227-find-missing-and-repeated-values](https://github.com/harsh-quare/LeetRoad/tree/master/3227-find-missing-and-repeated-values) |
@@ -703,6 +704,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3143-longest-unequal-adjacent-groups-subsequence-i](https://github.com/harsh-quare/LeetRoad/tree/master/3143-longest-unequal-adjacent-groups-subsequence-i) |
 | [3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros](https://github.com/harsh-quare/LeetRoad/tree/master/3171-minimum-equal-sum-of-two-arrays-after-replacing-zeros) |
 | [3181-find-building-where-alice-and-bob-can-meet](https://github.com/harsh-quare/LeetRoad/tree/master/3181-find-building-where-alice-and-bob-can-meet) |
+| [3190-find-minimum-operations-to-make-all-elements-divisible-by-three](https://github.com/harsh-quare/LeetRoad/tree/master/3190-find-minimum-operations-to-make-all-elements-divisible-by-three) |
 | [3194-find-words-containing-character](https://github.com/harsh-quare/LeetRoad/tree/master/3194-find-words-containing-character) |
 | [3213-count-subarrays-where-max-element-appears-at-least-k-times](https://github.com/harsh-quare/LeetRoad/tree/master/3213-count-subarrays-where-max-element-appears-at-least-k-times) |
 | [3219-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/harsh-quare/LeetRoad/tree/master/3219-make-lexicographically-smallest-array-by-swapping-elements) |
