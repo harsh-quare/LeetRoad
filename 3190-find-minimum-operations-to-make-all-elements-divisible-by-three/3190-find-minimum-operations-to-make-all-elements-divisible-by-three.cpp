@@ -3,10 +3,7 @@ public:
     int minimumOperations(vector<int>& nums) {
         int ans = 0;
         for(int x: nums){
-            int a = x % 3;
-            int b = 3 - a;
-
-            ans += min(a, b);
+            ans += (x % 3 == 0) ? 0 : 1;
         }
 
         return ans;
