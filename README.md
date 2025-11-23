@@ -274,6 +274,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0900-reordered-power-of-2](https://github.com/harsh-quare/LeetRoad/tree/master/0900-reordered-power-of-2) |
 | [1018-largest-perimeter-triangle](https://github.com/harsh-quare/LeetRoad/tree/master/1018-largest-perimeter-triangle) |
 | [1256-rank-transform-of-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/1256-rank-transform-of-an-array) |
+| [1262-greatest-sum-divisible-by-three](https://github.com/harsh-quare/LeetRoad/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1306-minimum-absolute-difference](https://github.com/harsh-quare/LeetRoad/tree/master/1306-minimum-absolute-difference) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/harsh-quare/LeetRoad/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1353-find-resultant-array-after-removing-anagrams](https://github.com/harsh-quare/LeetRoad/tree/master/1353-find-resultant-array-after-removing-anagrams) |
@@ -529,6 +530,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1206-corporate-flight-bookings](https://github.com/harsh-quare/LeetRoad/tree/master/1206-corporate-flight-bookings) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/harsh-quare/LeetRoad/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1256-rank-transform-of-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/1256-rank-transform-of-an-array) |
+| [1262-greatest-sum-divisible-by-three](https://github.com/harsh-quare/LeetRoad/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1306-minimum-absolute-difference](https://github.com/harsh-quare/LeetRoad/tree/master/1306-minimum-absolute-difference) |
 | [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/harsh-quare/LeetRoad/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/harsh-quare/LeetRoad/tree/master/1335-maximum-candies-allocated-to-k-children) |
@@ -1004,6 +1006,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1063-best-sightseeing-pair](https://github.com/harsh-quare/LeetRoad/tree/master/1063-best-sightseeing-pair) |
 | [1087-longest-arithmetic-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/1087-longest-arithmetic-subsequence) |
 | [1111-minimum-score-triangulation-of-polygon](https://github.com/harsh-quare/LeetRoad/tree/master/1111-minimum-score-triangulation-of-polygon) |
+| [1262-greatest-sum-divisible-by-three](https://github.com/harsh-quare/LeetRoad/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/harsh-quare/LeetRoad/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/harsh-quare/LeetRoad/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/harsh-quare/LeetRoad/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
@@ -1069,6 +1072,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1018-largest-perimeter-triangle](https://github.com/harsh-quare/LeetRoad/tree/master/1018-largest-perimeter-triangle) |
 | [1033-broken-calculator](https://github.com/harsh-quare/LeetRoad/tree/master/1033-broken-calculator) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/harsh-quare/LeetRoad/tree/master/1049-minimum-domino-rotations-for-equal-row) |
+| [1262-greatest-sum-divisible-by-three](https://github.com/harsh-quare/LeetRoad/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1329-minimum-cost-to-move-chips-to-the-same-position](https://github.com/harsh-quare/LeetRoad/tree/master/1329-minimum-cost-to-move-chips-to-the-same-position) |
 | [1448-maximum-69-number](https://github.com/harsh-quare/LeetRoad/tree/master/1448-maximum-69-number) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/harsh-quare/LeetRoad/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
