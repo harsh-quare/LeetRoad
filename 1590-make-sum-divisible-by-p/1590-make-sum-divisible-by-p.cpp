@@ -5,8 +5,6 @@ public:
         long long total = 0;
         for(int x: nums) total += x;
 
-        cout << total << endl;
-
         if(total % p == 0) return 0;
         if(total < p) return -1;
 
