@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0925-construct-binary-tree-from-preorder-and-postorder-traversal](https://github.com/harsh-quare/LeetRoad/tree/master/0925-construct-binary-tree-from-preorder-and-postorder-traversal) |
 | [0940-fruit-into-baskets](https://github.com/harsh-quare/LeetRoad/tree/master/0940-fruit-into-baskets) |
 | [0952-word-subsets](https://github.com/harsh-quare/LeetRoad/tree/master/0952-word-subsets) |
+| [0974-subarray-sums-divisible-by-k](https://github.com/harsh-quare/LeetRoad/tree/master/0974-subarray-sums-divisible-by-k) |
 | [1006-vowel-spellchecker](https://github.com/harsh-quare/LeetRoad/tree/master/1006-vowel-spellchecker) |
 | [1015-smallest-integer-divisible-by-k](https://github.com/harsh-quare/LeetRoad/tree/master/1015-smallest-integer-divisible-by-k) |
 | [1087-longest-arithmetic-subsequence](https://github.com/harsh-quare/LeetRoad/tree/master/1087-longest-arithmetic-subsequence) |
@@ -521,6 +522,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0952-word-subsets](https://github.com/harsh-quare/LeetRoad/tree/master/0952-word-subsets) |
 | [0954-maximum-sum-circular-subarray](https://github.com/harsh-quare/LeetRoad/tree/master/0954-maximum-sum-circular-subarray) |
 | [0971-shortest-bridge](https://github.com/harsh-quare/LeetRoad/tree/master/0971-shortest-bridge) |
+| [0974-subarray-sums-divisible-by-k](https://github.com/harsh-quare/LeetRoad/tree/master/0974-subarray-sums-divisible-by-k) |
 | [1002-maximum-width-ramp](https://github.com/harsh-quare/LeetRoad/tree/master/1002-maximum-width-ramp) |
 | [1006-vowel-spellchecker](https://github.com/harsh-quare/LeetRoad/tree/master/1006-vowel-spellchecker) |
 | [1018-largest-perimeter-triangle](https://github.com/harsh-quare/LeetRoad/tree/master/1018-largest-perimeter-triangle) |
@@ -1295,6 +1297,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0731-my-calendar-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0731-my-calendar-ii) |
 | [0878-shifting-letters](https://github.com/harsh-quare/LeetRoad/tree/master/0878-shifting-letters) |
 | [0892-shortest-subarray-with-sum-at-least-k](https://github.com/harsh-quare/LeetRoad/tree/master/0892-shortest-subarray-with-sum-at-least-k) |
+| [0974-subarray-sums-divisible-by-k](https://github.com/harsh-quare/LeetRoad/tree/master/0974-subarray-sums-divisible-by-k) |
 | [1206-corporate-flight-bookings](https://github.com/harsh-quare/LeetRoad/tree/master/1206-corporate-flight-bookings) |
 | [1435-xor-queries-of-a-subarray](https://github.com/harsh-quare/LeetRoad/tree/master/1435-xor-queries-of-a-subarray) |
 | [1473-find-the-longest-substring-containing-vowels-in-even-counts](https://github.com/harsh-quare/LeetRoad/tree/master/1473-find-the-longest-substring-containing-vowels-in-even-counts) |
