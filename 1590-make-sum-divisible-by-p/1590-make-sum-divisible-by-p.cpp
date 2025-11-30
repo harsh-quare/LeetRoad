@@ -8,7 +8,7 @@ public:
         cout << total << endl;
 
         if(total % p == 0) return 0;
-        // if(total < p) return -1;
+        if(total < p) return -1;
 
         int subArrSum = total % p;
 
