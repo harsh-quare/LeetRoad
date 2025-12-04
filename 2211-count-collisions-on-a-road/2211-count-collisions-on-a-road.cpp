@@ -7,19 +7,10 @@ public:
         stack<char> st;
         st.push(directions[0]);
         for(int i = 1; i < n; i++){
-            if(st.top() == 'R' && directions[i] == 'L'){
-                cols += 2;
-                directions[i] = 'S';  // collision done
-                st.pop();
-
-                while(!st.empty() && st.top() == 'R'){  // all the consecutive 'R's at top of stack now has an 'S' to collide to
-                    cols += 1;
-                    st.pop();
-                }
-            }
-            else if(st.top() == 'R' && directions[i] == 'S'){
+            if(st.top() == 'R' && (directions[i] == 'L' || directions[i] == 'S')){
                 cols += 1;
-                directions[i] = 'S';
+                cols += (directions[i] == 'L');
+                directions[i] = 'S';  // collision done
                 st.pop();
 
                 while(!st.empty() && st.top() == 'R'){  // all the consecutive 'R's at top of stack now has an 'S' to collide to
