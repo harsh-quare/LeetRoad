@@ -286,6 +286,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1468-check-if-n-and-its-double-exist](https://github.com/harsh-quare/LeetRoad/tree/master/1468-check-if-n-and-its-double-exist) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/harsh-quare/LeetRoad/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/harsh-quare/LeetRoad/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/harsh-quare/LeetRoad/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/harsh-quare/LeetRoad/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [2118-maximum-earnings-from-taxi](https://github.com/harsh-quare/LeetRoad/tree/master/2118-maximum-earnings-from-taxi) |
 | [2141-maximum-running-time-of-n-computers](https://github.com/harsh-quare/LeetRoad/tree/master/2141-maximum-running-time-of-n-computers) |
@@ -591,6 +592,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1819-construct-the-lexicographically-largest-valid-sequence](https://github.com/harsh-quare/LeetRoad/tree/master/1819-construct-the-lexicographically-largest-valid-sequence) |
 | [1831-ways-to-split-array-into-three-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/1831-ways-to-split-array-into-three-subarrays) |
 | [1834-minimum-number-of-people-to-teach](https://github.com/harsh-quare/LeetRoad/tree/master/1834-minimum-number-of-people-to-teach) |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/harsh-quare/LeetRoad/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/harsh-quare/LeetRoad/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1876-map-of-highest-peak](https://github.com/harsh-quare/LeetRoad/tree/master/1876-map-of-highest-peak) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/harsh-quare/LeetRoad/tree/master/1878-check-if-array-is-sorted-and-rotated) |
@@ -1113,6 +1115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/harsh-quare/LeetRoad/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/harsh-quare/LeetRoad/tree/master/1818-maximum-score-from-removing-substrings) |
 | [1834-minimum-number-of-people-to-teach](https://github.com/harsh-quare/LeetRoad/tree/master/1834-minimum-number-of-people-to-teach) |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/harsh-quare/LeetRoad/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1917-maximum-average-pass-ratio](https://github.com/harsh-quare/LeetRoad/tree/master/1917-maximum-average-pass-ratio) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/harsh-quare/LeetRoad/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/harsh-quare/LeetRoad/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
@@ -1326,6 +1329,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1694-make-sum-divisible-by-p](https://github.com/harsh-quare/LeetRoad/tree/master/1694-make-sum-divisible-by-p) |
 | [1776-minimum-operations-to-reduce-x-to-zero](https://github.com/harsh-quare/LeetRoad/tree/master/1776-minimum-operations-to-reduce-x-to-zero) |
 | [1831-ways-to-split-array-into-three-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/1831-ways-to-split-array-into-three-subarrays) |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/harsh-quare/LeetRoad/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1895-minimum-number-of-operations-to-move-all-balls-to-each-box](https://github.com/harsh-quare/LeetRoad/tree/master/1895-minimum-number-of-operations-to-move-all-balls-to-each-box) |
 | [1930-unique-length-3-palindromic-subsequences](https://github.com/harsh-quare/LeetRoad/tree/master/1930-unique-length-3-palindromic-subsequences) |
 | [1940-maximum-xor-for-each-query](https://github.com/harsh-quare/LeetRoad/tree/master/1940-maximum-xor-for-each-query) |
@@ -1502,6 +1506,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1766-minimum-number-of-removals-to-make-mountain-array](https://github.com/harsh-quare/LeetRoad/tree/master/1766-minimum-number-of-removals-to-make-mountain-array) |
 | [1776-minimum-operations-to-reduce-x-to-zero](https://github.com/harsh-quare/LeetRoad/tree/master/1776-minimum-operations-to-reduce-x-to-zero) |
 | [1831-ways-to-split-array-into-three-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/1831-ways-to-split-array-into-three-subarrays) |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/harsh-quare/LeetRoad/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/harsh-quare/LeetRoad/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1886-minimum-limit-of-balls-in-a-bag](https://github.com/harsh-quare/LeetRoad/tree/master/1886-minimum-limit-of-balls-in-a-bag) |
 | [2000-minimum-speed-to-arrive-on-time](https://github.com/harsh-quare/LeetRoad/tree/master/2000-minimum-speed-to-arrive-on-time) |
@@ -1680,6 +1685,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1755-defuse-the-bomb](https://github.com/harsh-quare/LeetRoad/tree/master/1755-defuse-the-bomb) |
 | [1776-minimum-operations-to-reduce-x-to-zero](https://github.com/harsh-quare/LeetRoad/tree/master/1776-minimum-operations-to-reduce-x-to-zero) |
 | [1813-maximum-erasure-value](https://github.com/harsh-quare/LeetRoad/tree/master/1813-maximum-erasure-value) |
+| [1838-frequency-of-the-most-frequent-element](https://github.com/harsh-quare/LeetRoad/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [2229-maximum-fruits-harvested-after-at-most-k-steps](https://github.com/harsh-quare/LeetRoad/tree/master/2229-maximum-fruits-harvested-after-at-most-k-steps) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/harsh-quare/LeetRoad/tree/master/2394-count-subarrays-with-score-less-than-k) |
 | [2449-maximum-number-of-robots-within-budget](https://github.com/harsh-quare/LeetRoad/tree/master/2449-maximum-number-of-robots-within-budget) |
