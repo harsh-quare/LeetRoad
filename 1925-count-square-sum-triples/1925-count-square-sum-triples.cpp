@@ -1,17 +1,25 @@
 class Solution {
 public:
     int countTriples(int n) {
-        // Method-2 => Better, O(n^2), Try all pairs and check if the sqr sum is <= n or not
+        // Method-3 => Optimal, O(nlogn), Try all possible c values and try to create pairs a,b using two pointers and binary search
 
         int cnt = 0;
-        for(int i = 1; i <= n; i++){
-            for(int j = 1; j <= n; j++){
-                int a = pow(i, 2);
-                int b = pow(j, 2);
+        for(int c = 1; c <= n; c++){
+            
+            int tar = c*c;
+            int left = 1, right = c-1;
 
-                double c = sqrt(a + b);
-
-                if(c <= n && (int)c*c == a + b) cnt++;
+            while(left < right){
+                int sum = left*left + right*right;
+                if(sum == tar){
+                    cnt += 2;  // a,b and b,a
+                    left++;
+                    right--;
+                }
+                else if(sum > tar){
+                    right--;
+                }
+                else left++;
             }
         }
 
