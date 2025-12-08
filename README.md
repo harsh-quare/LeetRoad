@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/harsh-quare/LeetRoad/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0036-valid-sudoku](https://github.com/harsh-quare/LeetRoad/tree/master/0036-valid-sudoku) |
 | [0037-sudoku-solver](https://github.com/harsh-quare/LeetRoad/tree/master/0037-sudoku-solver) |
 | [0073-set-matrix-zeroes](https://github.com/harsh-quare/LeetRoad/tree/master/0073-set-matrix-zeroes) |
@@ -1160,6 +1161,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/harsh-quare/LeetRoad/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0038-count-and-say](https://github.com/harsh-quare/LeetRoad/tree/master/0038-count-and-say) |
 | [0071-simplify-path](https://github.com/harsh-quare/LeetRoad/tree/master/0071-simplify-path) |
 | [0125-valid-palindrome](https://github.com/harsh-quare/LeetRoad/tree/master/0125-valid-palindrome) |
@@ -1668,6 +1670,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sliding Window
 |  |
 | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/harsh-quare/LeetRoad/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0187-repeated-dna-sequences](https://github.com/harsh-quare/LeetRoad/tree/master/0187-repeated-dna-sequences) |
 | [0219-contains-duplicate-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0219-contains-duplicate-ii) |
 | [0239-sliding-window-maximum](https://github.com/harsh-quare/LeetRoad/tree/master/0239-sliding-window-maximum) |
