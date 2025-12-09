@@ -10,32 +10,26 @@ public:
         
         // all 3 are in form of nums[j]. Iterate in the array, check for 'j'
 
+        // calculate frequency of each element in nums
+        // and while iterating, maintain another hash for frequency of elements till current index => left side elemen cnt
+        // and right = total - left
+
         int n = nums.size();
-        vector<int> dp1(n, 0);
-        unordered_map<int, int> mp1;
-        for(int j = 0; j < n; j++){
-            if(mp1.find(nums[j] * 2) != mp1.end()){
-                dp1[j] = (dp1[j] + mp1[nums[j] * 2]) % mod;
-            }
+        unordered_map<int, int> right;
+        unordered_map<int, int> left;
 
-            mp1[nums[j]]++;
-        } 
-
-        vector<int> dp2(n, 0);
-        unordered_map<int, int> mp2;
-        for(int j = n-1; j >= 0; j--){
-            if(mp2.find(nums[j] * 2) != mp2.end()){
-                dp2[j] = (dp2[j] + mp2[nums[j] * 2]) % mod;
-            }
-
-            mp2[nums[j]]++;
-        } 
+        for(int x: nums) right[x]++;
 
         long long ans = 0;
-        for(int j = 1; j < n-1; j++){
-            ans = (ans + 1LL * dp1[j] * dp2[j]) % mod;   // we need to find the combinations => left * right
-        } 
+        for(int x: nums){
+            right[x]--;   // should only contain rights, remove lefts from it
+            int leftCnt = left[2*x];
+            int rightCnt = right[2*x];
+            ans = (ans + 1LL * leftCnt * rightCnt) % mod;
 
-        return ans;
+            left[x]++;
+        }
+
+        return ans % mod;
     }
 };
