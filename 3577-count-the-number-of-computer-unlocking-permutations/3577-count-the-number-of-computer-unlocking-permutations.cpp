@@ -48,7 +48,9 @@ public:
 // 4th -> 4 -> 1
 
 
-// _, _, _, ..., _  => n places
+// _, _, _, ..., _  => n places n!
+// because 0th place is already taken by 0-label. Then only n-1 places are left to distribute among n-1 guys => (n-1)!
+// only one condition => when a guy is having complexity <= complexity[0] => it can't be decrypted and hence order can't be completed and ans will be zero.
 // we need to put n elements in n places
 // 0th -> 0 -> 1
 // 1st -> 1,2 -> 2
