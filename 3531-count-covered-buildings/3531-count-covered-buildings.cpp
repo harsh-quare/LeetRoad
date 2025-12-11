@@ -1,67 +1,35 @@
 class Solution {
 public:
     int countCoveredBuildings(int n, vector<vector<int>>& buildings) {
-        unordered_map<int, vector<int>> mpY;
-        unordered_map<int, vector<int>> mpX;
-        map<pair<int, int>, int> eligibles;
+        vector<pair<int, int>> vecY(n+1, {INT_MAX, INT_MIN});
+        vector<pair<int, int>> vecX(n+1, {INT_MAX, INT_MIN});
 
         for(auto& b: buildings){
             int x = b[0];
             int y = b[1];
-            mpY[y].push_back(x);
+            
+            vecY[y].first = min(x, vecY[y].first);
+            vecY[y].second = max(x, vecY[y].second);
 
-            mpX[x].push_back(y);
+            vecX[x].first = min(y, vecX[x].first);
+            vecX[x].second = max(y, vecX[x].second);
         }
-
-        for(auto& [y, vec]: mpY){
-            if(vec.size() > 2){
-                sort(vec.begin(), vec.end());
-                for(int i = 0; i < vec.size(); i++){
-                    if(i == 0 || i == vec.size() - 1){
-                        continue;
-                    }
-                    else{
-                        int x = vec[i];
-                        eligibles[{x, y}]++;
-                    }
-                }
-            }
-        }
-        for(auto& [x, vec]: mpX){
-            if(vec.size() > 2){
-                sort(vec.begin(), vec.end());
-                for(int i = 0; i < vec.size(); i++){
-                    if(i == 0 || i == vec.size() - 1){
-                        continue;
-                    }
-                    else{
-                        int y = vec[i];
-                        eligibles[{x, y}]++;
-                    }
-                }
-            }
-        }
-
 
         int cnt = 0;
-        for(auto& [p, freq]: eligibles){
-            if(freq == 2) cnt++;
+        for(auto b: buildings){
+            int x = b[0];
+            int y = b[1];
+
+            int miniY = vecX[x].first;
+            int maxiY = vecX[x].second;
+
+            int miniX = vecY[y].first;
+            int maxiX = vecY[y].second;
+
+            if(y > miniY && y < maxiY && x > miniX && x < maxiX) cnt++;
         }
 
         return cnt;
+
     }
 };
-
-
-// mp1 => for each 'y' => store all the points
-// mp2 => for each 'x' => store all the points
-
-// eligibles => {{x,y},...}
-
-
-// [[2,1],[2,3],[3,3],[2,2],[1,3]]
-
-// mpY => {1: {2}, 2: {2}, 3: {1,2,3}} 
-// mpX => {1: {3}, 2: {1,2,3}, 3: {3}}
-
-// eligibles => {{2,3}: 1, {2,2}: 1}
