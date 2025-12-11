@@ -1,8 +1,8 @@
 class Solution {
 public:
     int countCoveredBuildings(int n, vector<vector<int>>& buildings) {
-        map<int, vector<int>> mpY;
-        map<int, vector<int>> mpX;
+        unordered_map<int, vector<int>> mpY;
+        unordered_map<int, vector<int>> mpX;
         map<pair<int, int>, int> eligibles;
 
         for(auto& b: buildings){
