@@ -1,42 +1,41 @@
 class Solution {
 public:
     int countCoveredBuildings(int n, vector<vector<int>>& buildings) {
-        map<int, set<int>> mpY;
-        map<int, set<int>> mpX;
+        map<int, vector<int>> mpY;
+        map<int, vector<int>> mpX;
+        map<pair<int, int>, int> eligibles;
 
         for(auto& b: buildings){
             int x = b[0];
             int y = b[1];
-            mpY[y].insert(x);
+            mpY[y].push_back(x);
 
-            mpX[x].insert(y);
+            mpX[x].push_back(y);
         }
 
-        map<pair<int, int>, int> eligibles;
-
-        for(auto& [y, st]: mpY){
-            if(st.size() > 2){
-                for(auto it = st.begin(); it != st.end(); it++){
-                    if(it == st.begin() || it == prev(st.end())){
+        for(auto& [y, vec]: mpY){
+            if(vec.size() > 2){
+                sort(vec.begin(), vec.end());
+                for(int i = 0; i < vec.size(); i++){
+                    if(i == 0 || i == vec.size() - 1){
                         continue;
                     }
                     else{
-                        int x = *it;
+                        int x = vec[i];
                         eligibles[{x, y}]++;
                     }
                 }
             }
         }
-    
-        for(auto& [x, st]: mpX){
-           
-            if(st.size() > 2){
-                for(auto it = st.begin(); it != st.end(); it++){
-                    if(it == st.begin() || it == prev(st.end())){
+        for(auto& [x, vec]: mpX){
+            if(vec.size() > 2){
+                sort(vec.begin(), vec.end());
+                for(int i = 0; i < vec.size(); i++){
+                    if(i == 0 || i == vec.size() - 1){
                         continue;
                     }
                     else{
-                        int y = *it;
+                        int y = vec[i];
                         eligibles[{x, y}]++;
                     }
                 }
