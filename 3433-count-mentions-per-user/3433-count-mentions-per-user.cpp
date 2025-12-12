@@ -28,10 +28,10 @@ public:
             string ids = event[2];
 
             if(evName == 'M'){
-                if(ids == "ALL"){
+                if(ids[0] == 'A'){
                     all++;
                 }
-                else if(ids == "HERE"){
+                else if(ids[0] == 'H'){
                     // Only online ids should be mentioned
                     // but before mentioning onlines, check if any previously offline gets active or not?
                     while(!offlineIdsTime.empty() && offlineIdsTime.top().first <= timestamp){
@@ -73,7 +73,6 @@ public:
                             id = stoi(v[i].substr(2,2));
                         }
                         
-                        cout << id << endl;
                         mentionsCnt[id]++;
                     }
                 }
