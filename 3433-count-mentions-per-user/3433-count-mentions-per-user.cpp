@@ -3,14 +3,14 @@ public:
     vector<int> countMentions(int numberOfUsers, vector<vector<string>>& events) {
 
         sort(events.begin(), events.end(), [](vector<string>& a, vector<string>& b){
-            string evNameA = a[0];
+            char evNameA = a[0][0];
             int timestampA = stoi(a[1]);
 
-            string evNameB = b[0];
+            char evNameB = b[0][0];
             int timestampB = stoi(b[1]);
 
             if(timestampA == timestampB){
-                return (evNameA == "OFFLINE");
+                return (evNameA == 'O');
             }
             else return (timestampA < timestampB);
         });
@@ -23,11 +23,11 @@ public:
         vector<int> mentionsCnt(numberOfUsers, 0);
 
         for(auto& event: events){
-            string evName = event[0];
+            char evName = event[0][0];
             int timestamp = stoi(event[1]);
             string ids = event[2];
 
-            if(evName == "MESSAGE"){
+            if(evName == 'M'){
                 if(ids == "ALL"){
                     all++;
                 }
