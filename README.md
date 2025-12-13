@@ -109,6 +109,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/harsh-quare/LeetRoad/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3583-count-special-triplets](https://github.com/harsh-quare/LeetRoad/tree/master/3583-count-special-triplets) |
 | [3592-find-x-sum-of-all-k-long-subarrays-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3592-find-x-sum-of-all-k-long-subarrays-ii) |
+| [3606-coupon-code-validator](https://github.com/harsh-quare/LeetRoad/tree/master/3606-coupon-code-validator) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/harsh-quare/LeetRoad/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
 | [3621-minimum-operations-to-make-array-values-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/3621-minimum-operations-to-make-array-values-equal-to-k) |
 | [3623-count-number-of-trapezoids-i](https://github.com/harsh-quare/LeetRoad/tree/master/3623-count-number-of-trapezoids-i) |
@@ -330,6 +331,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3433-count-mentions-per-user](https://github.com/harsh-quare/LeetRoad/tree/master/3433-count-mentions-per-user) |
 | [3437-maximum-total-damage-with-spell-casting](https://github.com/harsh-quare/LeetRoad/tree/master/3437-maximum-total-damage-with-spell-casting) |
 | [3531-count-covered-buildings](https://github.com/harsh-quare/LeetRoad/tree/master/3531-count-covered-buildings) |
+| [3606-coupon-code-validator](https://github.com/harsh-quare/LeetRoad/tree/master/3606-coupon-code-validator) |
 | [3622-maximum-frequency-of-an-element-after-performing-operations-i](https://github.com/harsh-quare/LeetRoad/tree/master/3622-maximum-frequency-of-an-element-after-performing-operations-i) |
 | [3647-zero-array-transformation-iii](https://github.com/harsh-quare/LeetRoad/tree/master/3647-zero-array-transformation-iii) |
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/harsh-quare/LeetRoad/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
@@ -771,6 +773,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3581-the-two-sneaky-numbers-of-digitville](https://github.com/harsh-quare/LeetRoad/tree/master/3581-the-two-sneaky-numbers-of-digitville) |
 | [3583-count-special-triplets](https://github.com/harsh-quare/LeetRoad/tree/master/3583-count-special-triplets) |
 | [3592-find-x-sum-of-all-k-long-subarrays-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3592-find-x-sum-of-all-k-long-subarrays-ii) |
+| [3606-coupon-code-validator](https://github.com/harsh-quare/LeetRoad/tree/master/3606-coupon-code-validator) |
 | [3610-find-x-sum-of-all-k-long-subarrays-i](https://github.com/harsh-quare/LeetRoad/tree/master/3610-find-x-sum-of-all-k-long-subarrays-i) |
 | [3612-adjacent-increasing-subarrays-detection-i](https://github.com/harsh-quare/LeetRoad/tree/master/3612-adjacent-increasing-subarrays-detection-i) |
 | [3616-make-array-elements-equal-to-zero](https://github.com/harsh-quare/LeetRoad/tree/master/3616-make-array-elements-equal-to-zero) |
@@ -1277,6 +1280,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3447-clear-digits](https://github.com/harsh-quare/LeetRoad/tree/master/3447-clear-digits) |
 | [3455-minimum-length-of-string-after-operations](https://github.com/harsh-quare/LeetRoad/tree/master/3455-minimum-length-of-string-after-operations) |
 | [3462-vowels-game-in-a-string](https://github.com/harsh-quare/LeetRoad/tree/master/3462-vowels-game-in-a-string) |
+| [3606-coupon-code-validator](https://github.com/harsh-quare/LeetRoad/tree/master/3606-coupon-code-validator) |
 | [3617-find-the-original-typed-string-i](https://github.com/harsh-quare/LeetRoad/tree/master/3617-find-the-original-typed-string-i) |
 | [3618-find-the-original-typed-string-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3618-find-the-original-typed-string-ii) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/harsh-quare/LeetRoad/tree/master/3629-total-characters-in-string-after-transformations-i) |
