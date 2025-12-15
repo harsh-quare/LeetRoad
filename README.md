@@ -394,6 +394,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1925-count-square-sum-triples](https://github.com/harsh-quare/LeetRoad/tree/master/1925-count-square-sum-triples) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/harsh-quare/LeetRoad/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2050-count-good-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/2050-count-good-numbers) |
+| [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/harsh-quare/LeetRoad/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2147-number-of-ways-to-divide-a-long-corridor](https://github.com/harsh-quare/LeetRoad/tree/master/2147-number-of-ways-to-divide-a-long-corridor) |
 | [2149-remove-colored-pieces-if-both-neighbors-are-the-same-color](https://github.com/harsh-quare/LeetRoad/tree/master/2149-remove-colored-pieces-if-both-neighbors-are-the-same-color) |
 | [2202-sum-of-k-mirror-numbers](https://github.com/harsh-quare/LeetRoad/tree/master/2202-sum-of-k-mirror-numbers) |
@@ -626,6 +627,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2093-check-if-string-is-a-prefix-of-array](https://github.com/harsh-quare/LeetRoad/tree/master/2093-check-if-string-is-a-prefix-of-array) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/harsh-quare/LeetRoad/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2107-find-unique-binary-string](https://github.com/harsh-quare/LeetRoad/tree/master/2107-find-unique-binary-string) |
+| [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/harsh-quare/LeetRoad/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2118-maximum-earnings-from-taxi](https://github.com/harsh-quare/LeetRoad/tree/master/2118-maximum-earnings-from-taxi) |
 | [2122-count-special-quadruplets](https://github.com/harsh-quare/LeetRoad/tree/master/2122-count-special-quadruplets) |
 | [2137-final-value-of-variable-after-performing-operations](https://github.com/harsh-quare/LeetRoad/tree/master/2137-final-value-of-variable-after-performing-operations) |
@@ -1063,6 +1065,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/harsh-quare/LeetRoad/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/harsh-quare/LeetRoad/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/harsh-quare/LeetRoad/tree/master/2090-number-of-ways-to-arrive-at-destination) |
+| [2110-number-of-smooth-descent-periods-of-a-stock](https://github.com/harsh-quare/LeetRoad/tree/master/2110-number-of-smooth-descent-periods-of-a-stock) |
 | [2118-maximum-earnings-from-taxi](https://github.com/harsh-quare/LeetRoad/tree/master/2118-maximum-earnings-from-taxi) |
 | [2147-number-of-ways-to-divide-a-long-corridor](https://github.com/harsh-quare/LeetRoad/tree/master/2147-number-of-ways-to-divide-a-long-corridor) |
 | [2164-two-best-non-overlapping-events](https://github.com/harsh-quare/LeetRoad/tree/master/2164-two-best-non-overlapping-events) |
