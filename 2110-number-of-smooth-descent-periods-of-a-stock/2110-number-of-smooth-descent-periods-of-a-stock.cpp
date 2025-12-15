@@ -9,11 +9,11 @@ public:
         while(left < size){
             int right = left + 1;
 
+            result += 1;
             while(right < size && prices[right] == prices[right - 1] - 1){
                 right++;
+                result += (right - left);
             }
-
-            result = result + 1LL * (right - left) * (right - left + 1) / 2;
 
             left = right;
         }   
