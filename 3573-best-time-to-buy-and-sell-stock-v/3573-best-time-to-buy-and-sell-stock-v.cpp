@@ -52,5 +52,5 @@ public:
 //            else -> active transaction => Normal transaction
 
 // 1. index
-// 2. transOccured
-// 3. transType
+// 2. transType
+// 3. k
