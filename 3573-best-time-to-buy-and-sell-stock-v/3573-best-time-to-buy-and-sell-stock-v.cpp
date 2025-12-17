@@ -4,28 +4,32 @@ public:
         // base case
         if(id >= prices.size() || k == 0){
             if(transType == 0) return 0;
-            else return LLONG_MIN/2;
+            else return LLONG_MIN/2;  // invalidate this path
         }
 
         if(dp[id][transType][k] != -1) return dp[id][transType][k];
         
-        long long ans = solve(id+1, transType, prices, k, dp);  // op1 => skip => all three transTypes
-        if(transType == 0){
-            // op2 => begin normal txn
-            ans = max(ans, -prices[id] + solve(id+1, 1, prices, k, dp));
-            // op3 => begin short selling txn
-            ans = max(ans, prices[id] + solve(id+1, 2, prices, k, dp));
+        // option-1: skip
+        long long ans = solve(id+1, transType, prices, k, dp);
+
+        // option-2: Buy
+        if(transType == 0){   
+            // no active tranasction => Begin Normal transaction
+            ans = max(ans, -prices[id] + solve(id + 1, 1, prices, k, dp));
+            // no active tranasction => Begin Short selling transaction
+            ans = max(ans, prices[id] + solve(id + 1, 2, prices, k, dp));
         }
-        else if(transType == 1){
-            // op2 => sell and finish the txn
-            ans = max(ans, prices[id] + solve(id+1, 0, prices, k-1, dp));
-        }
-        else{
-            // transType == 2
-            // op2 => buy and finish the short selling txn
-            ans = max(ans, -prices[id] + solve(id+1, 0, prices, k-1, dp));
+        else if(transType == 2){   // active transaction => Short selling transaction => buy and complete the transaction
+            ans = max(ans, -prices[id] + solve(id + 1, 0, prices, k-1, dp));
         }
 
+        // option-3: Sell
+        // if(transType == 0){   // no active tranasction => Begin Short selling transaction
+        //     ans = max(ans, prices[id] + solve(id + 1, 2, prices, k, dp));
+        // }
+        else if(transType == 1){   // active transaction => Normal transaction => Sell and finish the transaction
+            ans = max(ans, prices[id] + solve(id + 1, 0, prices, k-1, dp));
+        }
 
         return dp[id][transType][k] = ans;
     }
@@ -48,5 +52,5 @@ public:
 //            else -> active transaction => Normal transaction
 
 // 1. index
-// 2. transType
-// 3. k
+// 2. transOccured
+// 3. transType
