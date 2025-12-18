@@ -13,9 +13,7 @@ public:
             prefPrices[i+1] = prefPrices[i] + prices[i];
             total += (long long)prices[i] * strategy[i];
             pref[i+1] = total;
-            cout << prefPrices[i] << ", ";
         }
-        cout << prefPrices[n] << endl;
         ans = max(ans, total);
 
         for(int i = k-1; i < n; i++){
