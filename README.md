@@ -10,6 +10,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0036-valid-sudoku](https://github.com/harsh-quare/LeetRoad/tree/master/0036-valid-sudoku) |
 | [0037-sudoku-solver](https://github.com/harsh-quare/LeetRoad/tree/master/0037-sudoku-solver) |
 | [0073-set-matrix-zeroes](https://github.com/harsh-quare/LeetRoad/tree/master/0073-set-matrix-zeroes) |
+| [0146-lru-cache](https://github.com/harsh-quare/LeetRoad/tree/master/0146-lru-cache) |
 | [0166-fraction-to-recurring-decimal](https://github.com/harsh-quare/LeetRoad/tree/master/0166-fraction-to-recurring-decimal) |
 | [0187-repeated-dna-sequences](https://github.com/harsh-quare/LeetRoad/tree/master/0187-repeated-dna-sequences) |
 | [0219-contains-duplicate-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0219-contains-duplicate-ii) |
@@ -342,6 +343,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Linked List
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/harsh-quare/LeetRoad/tree/master/0146-lru-cache) |
 | [0147-insertion-sort-list](https://github.com/harsh-quare/LeetRoad/tree/master/0147-insertion-sort-list) |
 | [0148-sort-list](https://github.com/harsh-quare/LeetRoad/tree/master/0148-sort-list) |
 | [0432-all-oone-data-structure](https://github.com/harsh-quare/LeetRoad/tree/master/0432-all-oone-data-structure) |
@@ -1495,6 +1497,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Design
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/harsh-quare/LeetRoad/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/harsh-quare/LeetRoad/tree/master/0155-min-stack) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/harsh-quare/LeetRoad/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0303-range-sum-query-immutable](https://github.com/harsh-quare/LeetRoad/tree/master/0303-range-sum-query-immutable) |
@@ -1633,6 +1636,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Doubly-Linked List
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/harsh-quare/LeetRoad/tree/master/0146-lru-cache) |
 | [0432-all-oone-data-structure](https://github.com/harsh-quare/LeetRoad/tree/master/0432-all-oone-data-structure) |
 ## Stack
 |  |
