@@ -1,64 +1,46 @@
 class Solution {
+using pii = pair<int, int>;
+const int INF = INT_MAX;
 public:
     vector<int> findAllPeople(int n, vector<vector<int>>& meetings, int firstPerson) {
-        vector<bool> knows(n, 0);
-        knows[0] = knows[firstPerson] = true;
+        vector<vector<pii>> adj(n);
+        for(auto& meeting: meetings){
+            int p1 = meeting[0];
+            int p2 = meeting[1];
+            int time = meeting[2];
 
-        sort(meetings.begin(), meetings.end(), [&](const auto& a, const auto& b){
-            return a[2] < b[2];
-        });
+            adj[p1].push_back({p2, time});
+            adj[p2].push_back({p1, time});
+        }
 
-        int totalMeetings = meetings.size();
-        int curIdx = 0;
+        vector<int> knowTime(n, INF);
 
-        while(curIdx < totalMeetings){
-            int endTimeIdx = curIdx;
-            while(endTimeIdx < totalMeetings && meetings[endTimeIdx][2] == meetings[curIdx][2]){
-                endTimeIdx++;
-            }
-
-            // adjacency list to create a graph for this time
-            unordered_map<int, vector<int>> adj;
-
-            for(int idx = curIdx; idx < endTimeIdx; idx++){
-                int person1 = meetings[idx][0];
-                int person2 = meetings[idx][1];
-
-                adj[person1].push_back(person2);
-                adj[person2].push_back(person1);
-            }
-
-            queue<int> q;
-            // push all the guys in the curr time grp who knows the secret
-            for(auto& [person,_]: adj){
-                if(knows[person]){
-                    q.push(person);
-                }
-            }
-
-            while(!q.empty()){
-                int curPerson = q.front();
-                q.pop();
-
-                for(auto& personNbr: adj[curPerson]){
-                    if(!knows[personNbr]){
-                        knows[personNbr] = true;
-                        q.push(personNbr);
-                    }
-                }
-            }
-
-            // move to next time group
-            curIdx = endTimeIdx;
-        } 
-
+        priority_queue<pii, vector<pii>, greater<pii>> pq;
+        pq.push({0, 0});
+        pq.push({0, firstPerson});
+    
         vector<int> res;
-        for(int person = 0; person < n; person++){
-            if(knows[person]){
-                res.push_back(person);
+        while(!pq.empty()){
+            int pqTime = pq.top().first;
+            int person = pq.top().second;
+            pq.pop();
+
+            if(knowTime[person] != INT_MAX) continue;
+
+            // if does not know
+            knowTime[person] = pqTime;
+            res.push_back(person);
+
+            for(auto& pr: adj[person]){
+                int time = pr.second;
+                int nbr = pr.first;
+                if(knowTime[nbr] == INF && time >= pqTime){
+                    pq.push({time, nbr});
+                }
             }
         }
 
         return res;
+
     }
 };
