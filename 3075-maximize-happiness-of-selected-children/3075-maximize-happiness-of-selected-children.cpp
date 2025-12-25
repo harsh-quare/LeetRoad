@@ -1,11 +1,15 @@
 class Solution {
 public:
     long long maximumHappinessSum(vector<int>& happiness, int k) {
-        sort(happiness.rbegin(), happiness.rend());
+        int n = happiness.size();
+        sort(happiness.begin(), happiness.end());
         long long total = 0;
-        for(int i = 0; i < k; i++){
-            int newVal = max(0, happiness[i] - i);
+        int cnt = 0;
+        for(int i = n-1; i >= n-k; i--){
+            int newVal = max(0, happiness[i] - cnt);
             if(newVal == 0) break;   // from now onwards, you will only get 0s
+
+            cnt++;
             total += newVal;
         }
 
