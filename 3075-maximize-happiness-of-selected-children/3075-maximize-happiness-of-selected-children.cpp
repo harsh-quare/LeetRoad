@@ -5,6 +5,7 @@ public:
         long long total = 0;
         for(int i = 0; i < k; i++){
             int newVal = max(0, happiness[i] - i);
+            if(newVal == 0) break;   // from now onwards, you will only get 0s
             total += newVal;
         }
 
