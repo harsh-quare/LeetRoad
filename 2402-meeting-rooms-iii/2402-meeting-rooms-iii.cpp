@@ -1,13 +1,15 @@
 class Solution {
 public:
     int mostBooked(int n, vector<vector<int>>& meetings) {
-        priority_queue<int, vector<int>, greater<int>> active;
-        for(int i = 0; i < n; i++) active.push(i);
+        set<int> active;
+        for(int i = 0; i < n; i++) active.insert(i);
 
         vector<int> meetingCnt(n, 0);
         priority_queue<pair<long long, int>, vector<pair<long long, int>>, greater<pair<long long, int>>> pq;
 
-        sort(meetings.begin(), meetings.end());
+        sort(meetings.begin(), meetings.end(), [&](const vector<int>& a, const vector<int>& b){
+            return a[0] < b[0];
+        });
 
         for(auto& meeting: meetings){
             int start = meeting[0];
@@ -15,16 +17,15 @@ public:
 
             // release all the booked rooms if they are done
             while(!pq.empty() && pq.top().first < start){
-                active.push(pq.top().second);  // make the room active again
+                active.insert(pq.top().second);  // make the room active again
                 pq.pop();  // pop this room 
             }
 
-            if(!active.empty()){
-                int room = active.top();
-                active.pop();  // mark not active
-
+            if(active.size() > 0){
+                int room = *active.begin();
                 meetingCnt[room]++;
                 pq.push({end, room});
+                active.erase(room);  // mark not active
             }
             else{
                 int latestRoom = pq.top().second;
