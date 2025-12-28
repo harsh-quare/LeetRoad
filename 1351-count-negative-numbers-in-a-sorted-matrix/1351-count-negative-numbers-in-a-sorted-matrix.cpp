@@ -5,9 +5,17 @@ public:
         int m = grid[0].size();
 
         int cnt = 0;
-        for(int r = 0; r < n; r++){
-            int idx = grid[r].end() - upper_bound(grid[r].begin(), grid[r].end(), 0, greater<int>());
-            cnt += idx;
+        int x = n-1, y = 0;
+        while(x >= 0 && y < m){
+            if(grid[x][y] >= 0){
+                // there might be negative values to the right of it => go and check
+                y++;
+            }
+            else{
+                // found negative, that means all the values are negative to its right, bcz array sorted in non decreasing order
+                cnt += m - y;  // count all the elements to its right, this row is done
+                x--;  // move to previous row
+            }
         }
 
         return cnt;
