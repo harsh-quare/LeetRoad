@@ -375,6 +375,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0007-reverse-integer](https://github.com/harsh-quare/LeetRoad/tree/master/0007-reverse-integer) |
 | [0009-palindrome-number](https://github.com/harsh-quare/LeetRoad/tree/master/0009-palindrome-number) |
 | [0029-divide-two-integers](https://github.com/harsh-quare/LeetRoad/tree/master/0029-divide-two-integers) |
+| [0066-plus-one](https://github.com/harsh-quare/LeetRoad/tree/master/0066-plus-one) |
 | [0166-fraction-to-recurring-decimal](https://github.com/harsh-quare/LeetRoad/tree/master/0166-fraction-to-recurring-decimal) |
 | [0231-power-of-two](https://github.com/harsh-quare/LeetRoad/tree/master/0231-power-of-two) |
 | [0241-different-ways-to-add-parentheses](https://github.com/harsh-quare/LeetRoad/tree/master/0241-different-ways-to-add-parentheses) |
@@ -492,6 +493,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/harsh-quare/LeetRoad/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/harsh-quare/LeetRoad/tree/master/0055-jump-game) |
 | [0059-spiral-matrix-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0059-spiral-matrix-ii) |
+| [0066-plus-one](https://github.com/harsh-quare/LeetRoad/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/harsh-quare/LeetRoad/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/harsh-quare/LeetRoad/tree/master/0075-sort-colors) |
 | [0118-pascals-triangle](https://github.com/harsh-quare/LeetRoad/tree/master/0118-pascals-triangle) |
