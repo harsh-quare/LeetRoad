@@ -605,6 +605,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/harsh-quare/LeetRoad/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/harsh-quare/LeetRoad/tree/master/1497-design-a-stack-with-increment-operation) |
+| [1504-count-submatrices-with-all-ones](https://github.com/harsh-quare/LeetRoad/tree/master/1504-count-submatrices-with-all-ones) |
 | [1510-find-lucky-integer-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/1510-find-lucky-integer-in-an-array) |
 | [1524-string-matching-in-an-array](https://github.com/harsh-quare/LeetRoad/tree/master/1524-string-matching-in-an-array) |
 | [1548-check-if-all-1s-are-at-least-length-k-places-away](https://github.com/harsh-quare/LeetRoad/tree/master/1548-check-if-all-1s-are-at-least-length-k-places-away) |
@@ -945,6 +946,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1402-count-square-submatrices-with-all-ones](https://github.com/harsh-quare/LeetRoad/tree/master/1402-count-square-submatrices-with-all-ones) |
 | [1414-shortest-path-in-a-grid-with-obstacles-elimination](https://github.com/harsh-quare/LeetRoad/tree/master/1414-shortest-path-in-a-grid-with-obstacles-elimination) |
 | [1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid](https://github.com/harsh-quare/LeetRoad/tree/master/1485-minimum-cost-to-make-at-least-one-valid-path-in-a-grid) |
+| [1504-count-submatrices-with-all-ones](https://github.com/harsh-quare/LeetRoad/tree/master/1504-count-submatrices-with-all-ones) |
 | [1753-path-with-minimum-effort](https://github.com/harsh-quare/LeetRoad/tree/master/1753-path-with-minimum-effort) |
 | [1876-map-of-highest-peak](https://github.com/harsh-quare/LeetRoad/tree/master/1876-map-of-highest-peak) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/harsh-quare/LeetRoad/tree/master/1970-last-day-where-you-can-still-cross) |
@@ -1102,6 +1104,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1262-greatest-sum-divisible-by-three](https://github.com/harsh-quare/LeetRoad/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/harsh-quare/LeetRoad/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1402-count-square-submatrices-with-all-ones](https://github.com/harsh-quare/LeetRoad/tree/master/1402-count-square-submatrices-with-all-ones) |
+| [1504-count-submatrices-with-all-ones](https://github.com/harsh-quare/LeetRoad/tree/master/1504-count-submatrices-with-all-ones) |
 | [1586-longest-subarray-of-1s-after-deleting-one-element](https://github.com/harsh-quare/LeetRoad/tree/master/1586-longest-subarray-of-1s-after-deleting-one-element) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/harsh-quare/LeetRoad/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1696-jump-game-vi](https://github.com/harsh-quare/LeetRoad/tree/master/1696-jump-game-vi) |
@@ -1699,6 +1702,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0957-minimum-add-to-make-parentheses-valid](https://github.com/harsh-quare/LeetRoad/tree/master/0957-minimum-add-to-make-parentheses-valid) |
 | [1002-maximum-width-ramp](https://github.com/harsh-quare/LeetRoad/tree/master/1002-maximum-width-ramp) |
 | [1497-design-a-stack-with-increment-operation](https://github.com/harsh-quare/LeetRoad/tree/master/1497-design-a-stack-with-increment-operation) |
+| [1504-count-submatrices-with-all-ones](https://github.com/harsh-quare/LeetRoad/tree/master/1504-count-submatrices-with-all-ones) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/harsh-quare/LeetRoad/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/harsh-quare/LeetRoad/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1648-minimum-insertions-to-balance-a-parentheses-string](https://github.com/harsh-quare/LeetRoad/tree/master/1648-minimum-insertions-to-balance-a-parentheses-string) |
@@ -1825,6 +1829,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0402-remove-k-digits](https://github.com/harsh-quare/LeetRoad/tree/master/0402-remove-k-digits) |
 | [0780-max-chunks-to-make-sorted](https://github.com/harsh-quare/LeetRoad/tree/master/0780-max-chunks-to-make-sorted) |
 | [1002-maximum-width-ramp](https://github.com/harsh-quare/LeetRoad/tree/master/1002-maximum-width-ramp) |
+| [1504-count-submatrices-with-all-ones](https://github.com/harsh-quare/LeetRoad/tree/master/1504-count-submatrices-with-all-ones) |
 | [1570-final-prices-with-a-special-discount-in-a-shop](https://github.com/harsh-quare/LeetRoad/tree/master/1570-final-prices-with-a-special-discount-in-a-shop) |
 | [1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array](https://github.com/harsh-quare/LeetRoad/tree/master/1633-minimum-number-of-increments-on-subarrays-to-form-a-target-array) |
 | [1679-shortest-subarray-to-be-removed-to-make-array-sorted](https://github.com/harsh-quare/LeetRoad/tree/master/1679-shortest-subarray-to-be-removed-to-make-array-sorted) |
