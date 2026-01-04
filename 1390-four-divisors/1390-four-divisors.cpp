@@ -3,26 +3,27 @@ private:
         int getDivisorsSum(int num){
         int curDivSum = 0;
         int divCnt = 0;
-        for(int i = 1; i <= sqrt(num); i++){
+        for(int i = 1; i*i <= num; i++){
+
             if(num % i == 0){
-                // 1st divisor is 'i'
-                divCnt++;
-                curDivSum += i;
-                
-                // another divisor is 'num/i'
-                if(i != num/i){
+                int div1 = i;
+                int div2 = num / i;
+
+                if(div1 == div2){
                     divCnt++;
-                    curDivSum += num/i;
+                    curDivSum += div1;
+                }                
+                else{
+                    divCnt += 2;
+                    curDivSum += div1 + div2;
                 }
             }
 
             // check if more than 4 divisors
             if(divCnt > 4) return 0;
         }
-
-        if(divCnt != 4) return 0;  // in case of lesser than equal to 3 
         
-        return curDivSum;
+        return divCnt == 4 ? curDivSum : 0;  // only when exactly 4 divisors
     }
 public:
     int sumFourDivisors(vector<int>& nums) {
