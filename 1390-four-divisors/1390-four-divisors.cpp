@@ -1,15 +1,28 @@
 class Solution {
 private:
-    vector<int> getDivisors(int num){
-        vector<int> divisors;
+        int getDivisorsSum(int num){
+        int curDivSum = 0;
+        int divCnt = 0;
         for(int i = 1; i <= sqrt(num); i++){
             if(num % i == 0){
-                divisors.push_back(i);
-                if(i != num/i) divisors.push_back(num/i);
+                // 1st divisor is 'i'
+                divCnt++;
+                curDivSum += i;
+                
+                // another divisor is 'num/i'
+                if(i != num/i){
+                    divCnt++;
+                    curDivSum += num/i;
+                }
             }
+
+            // check if more than 4 divisors
+            if(divCnt > 4) return 0;
         }
 
-        return divisors;
+        if(divCnt != 4) return 0;  // in case of lesser than equal to 3 
+        
+        return curDivSum;
     }
 public:
     int sumFourDivisors(vector<int>& nums) {
@@ -17,13 +30,9 @@ public:
 
         int ans = 0;
         for(int num: nums){
-            vector<int> divisors = getDivisors(num);
+            int divSum = getDivisorsSum(num);
 
-            if(divisors.size() == 4) {
-                for(int div: divisors){
-                    ans += div;
-                }
-            }
+            ans += divSum;
         }
 
         return ans;
