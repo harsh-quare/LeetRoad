@@ -647,6 +647,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1940-maximum-xor-for-each-query](https://github.com/harsh-quare/LeetRoad/tree/master/1940-maximum-xor-for-each-query) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/harsh-quare/LeetRoad/tree/master/1970-last-day-where-you-can-still-cross) |
 | [1972-rotating-the-box](https://github.com/harsh-quare/LeetRoad/tree/master/1972-rotating-the-box) |
+| [1975-maximum-matrix-sum](https://github.com/harsh-quare/LeetRoad/tree/master/1975-maximum-matrix-sum) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/harsh-quare/LeetRoad/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/harsh-quare/LeetRoad/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2000-minimum-speed-to-arrive-on-time](https://github.com/harsh-quare/LeetRoad/tree/master/2000-minimum-speed-to-arrive-on-time) |
@@ -953,6 +954,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1876-map-of-highest-peak](https://github.com/harsh-quare/LeetRoad/tree/master/1876-map-of-highest-peak) |
 | [1970-last-day-where-you-can-still-cross](https://github.com/harsh-quare/LeetRoad/tree/master/1970-last-day-where-you-can-still-cross) |
 | [1972-rotating-the-box](https://github.com/harsh-quare/LeetRoad/tree/master/1972-rotating-the-box) |
+| [1975-maximum-matrix-sum](https://github.com/harsh-quare/LeetRoad/tree/master/1975-maximum-matrix-sum) |
 | [2145-grid-game](https://github.com/harsh-quare/LeetRoad/tree/master/2145-grid-game) |
 | [2244-number-of-laser-beams-in-a-bank](https://github.com/harsh-quare/LeetRoad/tree/master/2244-number-of-laser-beams-in-a-bank) |
 | [2343-count-unguarded-cells-in-the-grid](https://github.com/harsh-quare/LeetRoad/tree/master/2343-count-unguarded-cells-in-the-grid) |
@@ -1194,6 +1196,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1834-minimum-number-of-people-to-teach](https://github.com/harsh-quare/LeetRoad/tree/master/1834-minimum-number-of-people-to-teach) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/harsh-quare/LeetRoad/tree/master/1838-frequency-of-the-most-frequent-element) |
 | [1917-maximum-average-pass-ratio](https://github.com/harsh-quare/LeetRoad/tree/master/1917-maximum-average-pass-ratio) |
+| [1975-maximum-matrix-sum](https://github.com/harsh-quare/LeetRoad/tree/master/1975-maximum-matrix-sum) |
 | [2094-remove-stones-to-minimize-the-total](https://github.com/harsh-quare/LeetRoad/tree/master/2094-remove-stones-to-minimize-the-total) |
 | [2095-minimum-number-of-swaps-to-make-the-string-balanced](https://github.com/harsh-quare/LeetRoad/tree/master/2095-minimum-number-of-swaps-to-make-the-string-balanced) |
 | [2140-longest-subsequence-repeated-k-times](https://github.com/harsh-quare/LeetRoad/tree/master/2140-longest-subsequence-repeated-k-times) |
