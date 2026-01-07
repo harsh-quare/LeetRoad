@@ -27,11 +27,8 @@ private:
 
         long long curSum = 0;
 
-        long long leftSum = getMaxProd(root->left, treeSum, ans);
-        long long rightSum = getMaxProd(root->right, treeSum, ans);
-        
-        curSum += leftSum;
-        curSum += rightSum;
+        curSum += getMaxProd(root->left, treeSum, ans);
+        curSum += getMaxProd(root->right, treeSum, ans);
         curSum += root->val;
 
         long long otherSum = treeSum - curSum;
