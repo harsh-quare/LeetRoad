@@ -22,18 +22,9 @@ public:
         int n1 = nums1.size();
         int n2 = nums2.size();
         vector<vector<int>> dp(n1+1, vector<int>(n2+1, -1));
-        int ans1 = solve(0, 0, nums1, nums2, dp);
 
-        // int n1Max = *max_element(nums1.begin(), nums1.end());
-        // int n1Min = *min_element(nums1.begin(), nums1.end());
-        // int n2Max = *max_element(nums2.begin(), nums2.end());
-        // int n2Min = *min_element(nums2.begin(), nums2.end());
+        int ans = solve(0, 0, nums1, nums2, dp);
 
-        // int ans2 = max(n1Max*n2Min, n1Max*n2Max);
-        // int ans3 = max(n1Min*n2Max, n1Min*n2Min);
-
-        // if(ans1 == 0) return max(ans2, ans3);
-
-        return ans1;
+        return ans;
     }
 };
