@@ -510,6 +510,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0066-plus-one](https://github.com/harsh-quare/LeetRoad/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/harsh-quare/LeetRoad/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/harsh-quare/LeetRoad/tree/master/0075-sort-colors) |
+| [0085-maximal-rectangle](https://github.com/harsh-quare/LeetRoad/tree/master/0085-maximal-rectangle) |
 | [0118-pascals-triangle](https://github.com/harsh-quare/LeetRoad/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/harsh-quare/LeetRoad/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/harsh-quare/LeetRoad/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -941,6 +942,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0054-spiral-matrix](https://github.com/harsh-quare/LeetRoad/tree/master/0054-spiral-matrix) |
 | [0059-spiral-matrix-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0059-spiral-matrix-ii) |
 | [0073-set-matrix-zeroes](https://github.com/harsh-quare/LeetRoad/tree/master/0073-set-matrix-zeroes) |
+| [0085-maximal-rectangle](https://github.com/harsh-quare/LeetRoad/tree/master/0085-maximal-rectangle) |
 | [0212-word-search-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0212-word-search-ii) |
 | [0289-game-of-life](https://github.com/harsh-quare/LeetRoad/tree/master/0289-game-of-life) |
 | [0304-range-sum-query-2d-immutable](https://github.com/harsh-quare/LeetRoad/tree/master/0304-range-sum-query-2d-immutable) |
@@ -1088,6 +1090,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0045-jump-game-ii](https://github.com/harsh-quare/LeetRoad/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/harsh-quare/LeetRoad/tree/master/0055-jump-game) |
+| [0085-maximal-rectangle](https://github.com/harsh-quare/LeetRoad/tree/master/0085-maximal-rectangle) |
 | [0118-pascals-triangle](https://github.com/harsh-quare/LeetRoad/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/harsh-quare/LeetRoad/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/harsh-quare/LeetRoad/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -1718,6 +1721,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0071-simplify-path](https://github.com/harsh-quare/LeetRoad/tree/master/0071-simplify-path) |
+| [0085-maximal-rectangle](https://github.com/harsh-quare/LeetRoad/tree/master/0085-maximal-rectangle) |
 | [0155-min-stack](https://github.com/harsh-quare/LeetRoad/tree/master/0155-min-stack) |
 | [0402-remove-k-digits](https://github.com/harsh-quare/LeetRoad/tree/master/0402-remove-k-digits) |
 | [0780-max-chunks-to-make-sorted](https://github.com/harsh-quare/LeetRoad/tree/master/0780-max-chunks-to-make-sorted) |
@@ -1848,6 +1852,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Monotonic Stack
 |  |
 | ------- |
+| [0085-maximal-rectangle](https://github.com/harsh-quare/LeetRoad/tree/master/0085-maximal-rectangle) |
 | [0402-remove-k-digits](https://github.com/harsh-quare/LeetRoad/tree/master/0402-remove-k-digits) |
 | [0780-max-chunks-to-make-sorted](https://github.com/harsh-quare/LeetRoad/tree/master/0780-max-chunks-to-make-sorted) |
 | [1002-maximum-width-ramp](https://github.com/harsh-quare/LeetRoad/tree/master/1002-maximum-width-ramp) |
