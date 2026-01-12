@@ -13,9 +13,7 @@ public:
             if(y2-y1 == x2-x1) ans += abs(x1-x2);
             else{
                 int maxi = max(abs(x1-x2), abs(y1-y2));
-                int mini = min(abs(x1-x2), abs(y1-y2));
-
-                ans += mini + (maxi-mini);
+                ans += maxi;
             }
         }
 
