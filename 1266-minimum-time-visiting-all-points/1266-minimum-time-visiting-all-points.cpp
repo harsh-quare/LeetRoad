@@ -10,11 +10,8 @@ public:
             int x2 = points[i][0];
             int y2 = points[i][1];
 
-            if(y2-y1 == x2-x1) ans += abs(x1-x2);
-            else{
-                int maxi = max(abs(x1-x2), abs(y1-y2));
-                ans += maxi;
-            }
+            int maxi = max(abs(x1-x2), abs(y1-y2));
+            ans += maxi;
         }
 
         return ans;
