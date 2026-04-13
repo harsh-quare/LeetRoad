@@ -653,6 +653,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1831-ways-to-split-array-into-three-subarrays](https://github.com/harsh-quare/LeetRoad/tree/master/1831-ways-to-split-array-into-three-subarrays) |
 | [1834-minimum-number-of-people-to-teach](https://github.com/harsh-quare/LeetRoad/tree/master/1834-minimum-number-of-people-to-teach) |
 | [1838-frequency-of-the-most-frequent-element](https://github.com/harsh-quare/LeetRoad/tree/master/1838-frequency-of-the-most-frequent-element) |
+| [1848-minimum-distance-to-the-target-element](https://github.com/harsh-quare/LeetRoad/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/harsh-quare/LeetRoad/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1876-map-of-highest-peak](https://github.com/harsh-quare/LeetRoad/tree/master/1876-map-of-highest-peak) |
 | [1878-check-if-array-is-sorted-and-rotated](https://github.com/harsh-quare/LeetRoad/tree/master/1878-check-if-array-is-sorted-and-rotated) |
