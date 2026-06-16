@@ -480,6 +480,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3681-maximum-area-rectangle-with-point-constraints-i](https://github.com/harsh-quare/LeetRoad/tree/master/3681-maximum-area-rectangle-with-point-constraints-i) |
 | [3682-count-the-number-of-arrays-with-k-matching-adjacent-elements](https://github.com/harsh-quare/LeetRoad/tree/master/3682-count-the-number-of-arrays-with-k-matching-adjacent-elements) |
 | [3744-minimum-operations-to-make-array-elements-zero](https://github.com/harsh-quare/LeetRoad/tree/master/3744-minimum-operations-to-make-array-elements-zero) |
+| [3751-total-waviness-of-numbers-in-range-i](https://github.com/harsh-quare/LeetRoad/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3754-maximum-manhattan-distance-after-k-changes](https://github.com/harsh-quare/LeetRoad/tree/master/3754-maximum-manhattan-distance-after-k-changes) |
 | [3817-maximum-containers-on-a-ship](https://github.com/harsh-quare/LeetRoad/tree/master/3817-maximum-containers-on-a-ship) |
 | [3830-find-closest-person](https://github.com/harsh-quare/LeetRoad/tree/master/3830-find-closest-person) |
@@ -1184,6 +1185,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3637-count-number-of-balanced-permutations](https://github.com/harsh-quare/LeetRoad/tree/master/3637-count-number-of-balanced-permutations) |
 | [3648-find-the-maximum-number-of-fruits-collected](https://github.com/harsh-quare/LeetRoad/tree/master/3648-find-the-maximum-number-of-fruits-collected) |
 | [3733-length-of-longest-v-shaped-diagonal-segment](https://github.com/harsh-quare/LeetRoad/tree/master/3733-length-of-longest-v-shaped-diagonal-segment) |
+| [3751-total-waviness-of-numbers-in-range-i](https://github.com/harsh-quare/LeetRoad/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3795-zero-array-transformation-iv](https://github.com/harsh-quare/LeetRoad/tree/master/3795-zero-array-transformation-iv) |
 | [3892-best-time-to-buy-and-sell-stock-v](https://github.com/harsh-quare/LeetRoad/tree/master/3892-best-time-to-buy-and-sell-stock-v) |
 ## Greedy
@@ -1924,6 +1926,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3681-maximum-area-rectangle-with-point-constraints-i](https://github.com/harsh-quare/LeetRoad/tree/master/3681-maximum-area-rectangle-with-point-constraints-i) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/harsh-quare/LeetRoad/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
 | [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
+| [3751-total-waviness-of-numbers-in-range-i](https://github.com/harsh-quare/LeetRoad/tree/master/3751-total-waviness-of-numbers-in-range-i) |
 | [3761-maximum-difference-between-even-and-odd-frequency-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3761-maximum-difference-between-even-and-odd-frequency-ii) |
 | [3789-maximize-subarrays-after-removing-one-conflicting-pair](https://github.com/harsh-quare/LeetRoad/tree/master/3789-maximize-subarrays-after-removing-one-conflicting-pair) |
 | [4073-lexicographically-smallest-string-after-reverse](https://github.com/harsh-quare/LeetRoad/tree/master/4073-lexicographically-smallest-string-after-reverse) |
