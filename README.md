@@ -855,6 +855,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3657-check-if-grid-can-be-cut-into-sections](https://github.com/harsh-quare/LeetRoad/tree/master/3657-check-if-grid-can-be-cut-into-sections) |
 | [3681-maximum-area-rectangle-with-point-constraints-i](https://github.com/harsh-quare/LeetRoad/tree/master/3681-maximum-area-rectangle-with-point-constraints-i) |
 | [3685-count-subarrays-of-length-three-with-a-condition](https://github.com/harsh-quare/LeetRoad/tree/master/3685-count-subarrays-of-length-three-with-a-condition) |
+| [3689-maximum-total-subarray-value-i](https://github.com/harsh-quare/LeetRoad/tree/master/3689-maximum-total-subarray-value-i) |
 | [3733-length-of-longest-v-shaped-diagonal-segment](https://github.com/harsh-quare/LeetRoad/tree/master/3733-length-of-longest-v-shaped-diagonal-segment) |
 | [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
 | [3743-reschedule-meetings-for-maximum-free-time-i](https://github.com/harsh-quare/LeetRoad/tree/master/3743-reschedule-meetings-for-maximum-free-time-i) |
@@ -1259,6 +1260,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [3387-minimum-operations-to-make-median-of-array-equal-to-k](https://github.com/harsh-quare/LeetRoad/tree/master/3387-minimum-operations-to-make-median-of-array-equal-to-k) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/harsh-quare/LeetRoad/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
 | [3647-zero-array-transformation-iii](https://github.com/harsh-quare/LeetRoad/tree/master/3647-zero-array-transformation-iii) |
+| [3689-maximum-total-subarray-value-i](https://github.com/harsh-quare/LeetRoad/tree/master/3689-maximum-total-subarray-value-i) |
 | [3741-reschedule-meetings-for-maximum-free-time-ii](https://github.com/harsh-quare/LeetRoad/tree/master/3741-reschedule-meetings-for-maximum-free-time-ii) |
 | [3743-reschedule-meetings-for-maximum-free-time-i](https://github.com/harsh-quare/LeetRoad/tree/master/3743-reschedule-meetings-for-maximum-free-time-i) |
 | [3788-maximum-unique-subarray-sum-after-deletion](https://github.com/harsh-quare/LeetRoad/tree/master/3788-maximum-unique-subarray-sum-after-deletion) |
